@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Jill's Catering · Tea room, outside catering and ready meals in Catton</title>
+    <meta name="description" content="Concept preview: Jill's Catering, a family-run tea room, outside caterer and home-made ready-meal service in Catton, near Allendale, Northumberland." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&display=swap" />
+    <link rel="stylesheet" href="hark.css" />
+    <link rel="stylesheet" href="hark-hero.css" />
+    <style>
+      :root{--x-plum:#5B3A4E;--x-green:#3E5A45;--x-oat:#F5EFE4;--x-flour:#FFFDF8;--x-ink:#231C1A;--x-honey:#D69A3C;--x-line:rgba(35,28,26,.14);--x-r:22px;--x-serif:"Fraunces",Georgia,serif;--x-sans:"DM Sans",system-ui,sans-serif;--x-hand:"Caveat",cursive;--x-w:1240px;--x-pad:clamp(20px,4vw,48px);--x-ease:cubic-bezier(.2,.7,.2,1)}
+      html{scroll-behavior:smooth}
+      body.x-body{margin:0;background:var(--x-flour);color:var(--x-ink);font:400 17px/1.6 var(--x-sans);-webkit-font-smoothing:antialiased}
+      .x-body *{box-sizing:border-box}
+      .x-body a{color:inherit}
+      .x-body img{max-width:100%;display:block}
+      .x-wrap{max-width:var(--x-w);margin:0 auto;padding:0 var(--x-pad)}
+      .x-banner{background:var(--x-ink);color:var(--x-oat);font-size:12.5px;text-align:center;padding:7px 16px;letter-spacing:.02em}
+      .x-label{font:600 12px/1.3 var(--x-sans);letter-spacing:.18em;text-transform:uppercase;color:var(--x-plum);margin:0 0 18px}
+      .x-hand{font-family:var(--x-hand);font-weight:600;color:var(--x-honey);font-size:1.15em;line-height:1}
+      .x-h1,.x-h2,.x-h3{font-family:var(--x-serif);font-variation-settings:"SOFT" 100;font-weight:400;letter-spacing:-.02em;margin:0}
+      .x-h1{font-size:clamp(46px,8.6vw,124px);line-height:.95}
+      .x-h2{font-size:clamp(36px,5.4vw,76px);line-height:1}
+      .x-h3{font-size:clamp(24px,2.4vw,32px);line-height:1.1}
+      .x-h1 em,.x-h2 em,.x-h3 em{font-style:italic;color:var(--x-plum)}
+      .x-lead{font-size:clamp(18px,1.6vw,21px);max-width:58ch;color:#4a3f3b}
+      /* nav */
+      .x-nav{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--x-line)}
+      .x-nav .x-wrap{display:flex;align-items:center;gap:24px;min-height:72px}
+      .x-mark{display:flex;flex-direction:column;text-decoration:none;line-height:1}
+      .x-mark b{font:italic 400 32px/1 var(--x-serif);font-variation-settings:"SOFT" 100;display:flex;align-items:flex-end;gap:6px}
+      .x-mark b svg{width:22px;height:12px;color:var(--x-green);margin-bottom:5px}
+      .x-mark small{font:600 9.5px/1 var(--x-sans);letter-spacing:.26em;color:var(--x-green);margin-top:4px}
+      .x-links{display:flex;gap:4px;margin:0 auto;list-style:none;padding:0}
+      .x-links a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-size:14.5px;font-weight:500;border-radius:999px;transition:background .25s}
+      .x-links a:hover{background:var(--x-oat)}
+      .x-links a[aria-current=page]{background:var(--x-plum);color:var(--x-flour)}
+      .x-actions{display:flex;gap:8px}
+      .x-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 22px;border-radius:999px;font:600 15px/1 var(--x-sans);text-decoration:none;border:1px solid var(--x-ink);background:transparent;cursor:pointer;transition:transform .3s var(--x-ease),background .3s,color .3s}
+      .x-btn:hover{transform:translateY(-2px)}
+      .x-btn--honey{background:var(--x-honey);border-color:var(--x-honey);color:var(--x-ink)}
+      .x-btn--honey:hover{background:#c88a2d}
+      .x-btn--light{border-color:rgba(255,253,248,.7);color:var(--x-flour)}
+      .x-btn--plum{background:var(--x-plum);border-color:var(--x-plum);color:var(--x-flour)}
+      .x-menu{display:none;margin-left:auto;width:46px;height:46px;border-radius:50%;border:1px solid var(--x-line);background:var(--x-flour);cursor:pointer;font-size:20px}
+      @media (max-width:1080px){.x-links,.x-actions .x-call{display:none}.x-menu{display:block}.x-actions{margin-left:0}
+        .x-nav.is-open .x-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--x-flour);padding:12px var(--x-pad) 24px;border-bottom:1px solid var(--x-line)}
+        .x-nav.is-open .x-links a{font:400 26px/1.2 var(--x-serif);min-height:52px}}
+      @media (max-width:520px){.x-actions{display:none}}
+      /* pages */
+      .x-page{display:none}
+      .x-page.is-active{display:block;animation:x-in .6s var(--x-ease)}
+      @keyframes x-in{from{opacity:0}to{opacity:1}}
+      .x-sec{padding:clamp(72px,10vw,140px) 0;position:relative}
+      .x-sec--oat{background:var(--x-oat)}
+      .x-sec--plum{background:var(--x-plum);color:var(--x-flour)}
+      .x-sec--plum .x-label{color:var(--x-honey)}
+      .x-sec--plum .x-h2 em{color:var(--x-honey)}
+      .x-head{display:grid;grid-template-columns:1fr 1fr;gap:32px 64px;align-items:end;margin-bottom:56px}
+      .x-head p{margin:0}
+      @media (max-width:860px){.x-head{grid-template-columns:1fr}}
+      /* hero */
+      .x-hero{position:relative;min-height:min(92vh,880px);display:flex;align-items:flex-end;overflow:hidden;color:var(--x-flour);background:var(--x-green)}
+      .x-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:x-kb 24s ease-in-out infinite alternate}
+      @keyframes x-kb{from{transform:scale(1)}to{transform:scale(1.12) translate(-1.5%,-1%)}}
+      .x-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(35,28,26,.15) 0%,rgba(35,28,26,.25) 40%,rgba(35,28,26,.78) 100%)}
+      .x-hero .x-wrap{position:relative;z-index:2;width:100%;padding-bottom:clamp(40px,7vw,88px);padding-top:120px}
+      .x-hero .x-label{color:var(--x-oat)}
+      .x-hero .x-h1 em{color:#f3c98a}
+      .x-hero .x-lead{color:rgba(255,253,248,.9);margin:24px 0 32px}
+      .x-hero--short{min-height:min(70vh,640px)}
+      .x-cta{display:flex;flex-wrap:wrap;gap:12px}
+      .x-float{position:absolute;z-index:3;top:28px;right:var(--x-pad);display:inline-flex;align-items:center;gap:10px;padding:10px 18px;border-radius:999px;background:rgba(255,253,248,.92);color:var(--x-ink);font-size:14px;font-weight:600;animation:x-bob 5s ease-in-out infinite}
+      @keyframes x-bob{50%{transform:translateY(-6px)}}
+      .x-dot{width:9px;height:9px;border-radius:50%;background:var(--x-green);box-shadow:0 0 0 4px rgba(62,90,69,.2);flex:none}
+      .x-dot.is-closed{background:var(--x-plum);box-shadow:0 0 0 4px rgba(91,58,78,.2)}
+      .x-status{display:inline-flex;align-items:center;gap:12px;padding:14px 20px;border-radius:var(--x-r);background:rgba(255,253,248,.12);border:1px solid rgba(255,253,248,.3);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);margin-top:28px;font-size:15px}
+      .x-status strong{font-weight:600}
+      .x-status--solid{background:var(--x-flour);border-color:var(--x-line);color:var(--x-ink)}
+      /* marquee */
+      .x-marquee{background:var(--x-green);color:var(--x-oat);overflow:hidden;padding:20px 0;border-block:1px solid rgba(0,0,0,.1)}
+      .x-marquee div{display:flex;width:max-content;animation:x-mq 38s linear infinite}
+      .x-marquee span{font:italic 400 clamp(22px,2.6vw,34px)/1 var(--x-serif);white-space:nowrap;padding-right:.6em}
+      @keyframes x-mq{to{transform:translateX(-50%)}}
+      /* stats */
+      .x-stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--x-line)}
+      .x-stats div{padding:28px 20px 0 0;border-right:1px solid var(--x-line);padding-left:20px}
+      .x-stats div:first-child{padding-left:0}.x-stats div:last-child{border-right:0}
+      .x-stats b{display:block;font:300 clamp(44px,5.4vw,80px)/1 var(--x-serif);font-variation-settings:"SOFT" 100;letter-spacing:-.03em}
+      .x-stats span{font-size:14px;color:#5d514c}
+      @media (max-width:760px){.x-stats{grid-template-columns:1fr 1fr}.x-stats div{border-right:0;padding-left:0;border-bottom:1px solid var(--x-line);padding-bottom:20px}}
+      /* cards */
+      .x-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+      @media (max-width:900px){.x-cards{grid-template-columns:1fr}}
+      .x-card{position:relative;display:flex;flex-direction:column;gap:14px;padding:32px;border-radius:var(--x-r);border:1px solid var(--x-line);background:var(--x-flour);text-decoration:none;min-height:340px;overflow:hidden;transition:transform .45s var(--x-ease),box-shadow .45s var(--x-ease)}
+      .x-card:hover{transform:translateY(-8px);box-shadow:0 24px 50px -24px rgba(35,28,26,.35)}
+      .x-card .x-num{font:italic 400 18px/1 var(--x-serif);color:var(--x-plum)}
+      .x-card p{margin:0;color:#4a3f3b}
+      .x-card .x-more{margin-top:auto;font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;gap:8px}
+      .x-card svg.x-contour{position:absolute;right:-30px;bottom:-10px;width:220px;color:var(--x-green);opacity:.18}
+      .x-card--plum{background:var(--x-plum);color:var(--x-flour);border-color:var(--x-plum)}.x-card--plum p{color:rgba(255,253,248,.85)}.x-card--plum .x-num{color:var(--x-honey)}.x-card--plum svg.x-contour{color:var(--x-honey)}
+      .x-card--green{background:var(--x-green);color:var(--x-flour);border-color:var(--x-green)}.x-card--green p{color:rgba(255,253,248,.85)}.x-card--green .x-num{color:var(--x-honey)}.x-card--green svg.x-contour{color:var(--x-oat)}
+      /* split */
+      .x-split{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(32px,6vw,96px);align-items:center}
+      .x-split--rev>:first-child{order:2}
+      @media (max-width:860px){.x-split{grid-template-columns:1fr}.x-split--rev>:first-child{order:0}}
+      .x-photo{border-radius:var(--x-r);overflow:hidden;aspect-ratio:4/5;position:relative}
+      .x-photo img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--x-ease)}
+      .x-photo:hover img{transform:scale(1.04)}
+      .x-prose p{margin:0 0 1em;max-width:60ch}
+      /* contour band */
+      .x-contour-band{display:block;width:100%;height:60px;color:var(--x-green);opacity:.35}
+      /* reviews */
+      .x-carousel{position:relative;overflow:hidden}
+      .x-track{display:flex;transition:transform .8s var(--x-ease)}
+      .x-slide{flex:0 0 100%;padding-right:8px}
+      .x-quote{font:italic 300 clamp(28px,4vw,56px)/1.12 var(--x-serif);font-variation-settings:"SOFT" 100;letter-spacing:-.015em;margin:0;max-width:22ch}
+      .x-quote:before{content:"\201C";color:var(--x-honey)}.x-quote:after{content:"\201D";color:var(--x-honey)}
+      .x-cite{display:block;margin-top:24px;font:600 12px/1 var(--x-sans);letter-spacing:.18em;text-transform:uppercase;opacity:.8;font-style:normal}
+      .x-ctrl{display:flex;gap:10px;margin-top:40px;align-items:center}
+      .x-ctrl button{width:52px;height:52px;border-radius:50%;border:1px solid currentColor;background:transparent;color:inherit;font-size:20px;cursor:pointer;transition:background .3s,color .3s}
+      .x-ctrl button:hover{background:var(--x-honey);border-color:var(--x-honey);color:var(--x-ink)}
+      .x-ctrl span{margin-left:12px;font-size:14px;opacity:.8}
+      /* footer */
+      .x-foot{background:var(--x-ink);color:var(--x-oat);padding:clamp(72px,10vw,130px) 0 120px;overflow:hidden;position:relative}
+      .x-foot .x-h1 em{color:var(--x-honey)}
+      .x-foot .x-label{color:var(--x-honey)}
+      .x-giant{font:italic 400 clamp(120px,30vw,420px)/.8 var(--x-serif);font-variation-settings:"SOFT" 100;letter-spacing:-.05em;color:var(--x-plum);margin:64px 0 0;white-space:nowrap;user-select:none}
+      .x-fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;border-top:1px solid rgba(245,239,228,.18);padding-top:40px;margin-top:64px;font-size:15px}
+      .x-fgrid h4{font:600 12px/1 var(--x-sans);letter-spacing:.18em;text-transform:uppercase;color:var(--x-honey);margin:0 0 14px}
+      .x-fgrid p{margin:0 0 6px}
+      .x-fgrid a{text-decoration:none;opacity:.9}.x-fgrid a:hover{color:var(--x-honey)}
+      .x-credit{margin-top:48px;font-size:13px;opacity:.7;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+      @media (max-width:760px){.x-fgrid{grid-template-columns:1fr 1fr}}
+      .x-mbar{display:none}
+      @media (max-width:760px){.x-mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;padding:8px;border-radius:999px;background:rgba(35,28,26,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}.x-mbar .x-btn{min-height:46px}.x-mbar .x-btn--light{border-color:rgba(255,253,248,.4)}}
+      /* lists, chips, panels */
+      .x-panel{border:1px solid var(--x-line);border-radius:var(--x-r);padding:clamp(24px,3vw,40px);background:var(--x-flour)}
+      .x-panel--oat{background:var(--x-oat);border-color:transparent}
+      .x-grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+      .x-grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+      @media (max-width:860px){.x-grid2,.x-grid3{grid-template-columns:1fr}}
+      .x-menu-list{list-style:none;padding:0;margin:20px 0 0;columns:2;column-gap:28px}
+      .x-menu-list li{break-inside:avoid;padding:10px 0;border-bottom:1px dashed var(--x-line);font:400 19px/1.3 var(--x-serif)}
+      .x-note{font-size:14px;color:#6b5e58;margin:20px 0 0}
+      .x-chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:0}
+      .x-chips li{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;border:1px solid var(--x-line);background:var(--x-flour);font-weight:500;transition:background .3s,color .3s}
+      .x-chips li:hover{background:var(--x-green);color:var(--x-flour)}
+      .x-chips li:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--x-honey)}
+      .x-steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s}
+      .x-steps li{counter-increment:s;padding:32px;border-radius:var(--x-r);border:1px solid var(--x-line);background:var(--x-flour)}
+      .x-steps li:before{content:"0" counter(s);display:block;font:italic 300 56px/1 var(--x-serif);color:var(--x-plum);margin-bottom:24px}
+      .x-steps p{margin:8px 0 0;color:#4a3f3b}
+      @media (max-width:860px){.x-steps{grid-template-columns:1fr}}
+      /* timeline */
+      .x-tl{list-style:none;margin:0;padding:0;position:relative}
+      .x-tl:before{content:"";position:absolute;left:clamp(110px,18vw,220px);top:8px;bottom:8px;width:1px;background:var(--x-line)}
+      .x-tl li{display:grid;grid-template-columns:clamp(110px,18vw,220px) 1fr;gap:0 clamp(28px,5vw,72px);padding:0 0 clamp(40px,6vw,72px);position:relative}
+      .x-tl li:after{content:"";position:absolute;left:clamp(110px,18vw,220px);top:14px;width:13px;height:13px;margin-left:-6px;border-radius:50%;background:var(--x-flour);border:2px solid var(--x-plum)}
+      .x-tl li:last-child:after{background:var(--x-honey);border-color:var(--x-honey)}
+      .x-tl .x-when{font:italic 400 clamp(26px,3vw,40px)/1 var(--x-serif);color:var(--x-plum);padding-right:24px}
+      .x-tl p{margin:10px 0 0;max-width:56ch;color:#4a3f3b}
+      /* hours */
+      .x-hours{width:100%;border-collapse:collapse;font-size:17px}
+      .x-hours th,.x-hours td{text-align:left;padding:16px 0;border-bottom:1px solid var(--x-line);font-weight:400}
+      .x-hours td{text-align:right}
+      .x-hours tr.is-closed td{color:#8a7d77}
+      .x-hours tr.is-today th,.x-hours tr.is-today td{font-weight:600;color:var(--x-green)}
+      .x-hours tr.is-today th:after{content:"Today";margin-left:10px;font:600 10.5px/1 var(--x-sans);letter-spacing:.14em;text-transform:uppercase;padding:4px 8px;border-radius:999px;background:var(--x-green);color:var(--x-flour);vertical-align:middle}
+      .x-sec--plum .x-hours th,.x-sec--plum .x-hours td{border-color:rgba(255,253,248,.2)}
+      .x-sec--plum .x-hours tr.is-today th,.x-sec--plum .x-hours tr.is-today td{color:var(--x-honey)}
+      .x-sec--plum .x-hours tr.is-today th:after{background:var(--x-honey);color:var(--x-ink)}
+      .x-panel p{color:#4a3f3b}
+      .x-map{border:0;width:100%;height:100%;min-height:380px;border-radius:var(--x-r);display:block;filter:saturate(.8)}
+      /* review wall */
+      .x-wall{columns:3;column-gap:20px}
+      .x-wall figure{break-inside:avoid;margin:0 0 20px;padding:32px;border-radius:var(--x-r);border:1px solid var(--x-line);background:var(--x-flour)}
+      .x-wall blockquote{margin:0;font:italic 300 clamp(21px,1.9vw,26px)/1.3 var(--x-serif);font-variation-settings:"SOFT" 100}
+      .x-wall figure:nth-child(3n+1){background:var(--x-oat);border-color:transparent}
+      .x-wall .x-cite{color:var(--x-plum)}
+      .x-stars{color:var(--x-honey);letter-spacing:.1em;font-size:20px}
+      @media (max-width:900px){.x-wall{columns:2}}@media (max-width:600px){.x-wall{columns:1}}
+      /* form + faq */
+      .x-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+      .x-form label{display:flex;flex-direction:column;gap:6px;font:600 12px/1 var(--x-sans);letter-spacing:.12em;text-transform:uppercase;color:var(--x-plum)}
+      .x-form .x-full{grid-column:1/-1}
+      .x-form input,.x-form select,.x-form textarea{font:400 16px/1.4 var(--x-sans);color:var(--x-ink);text-transform:none;letter-spacing:0;min-height:50px;padding:12px 16px;border:1px solid var(--x-line);border-radius:14px;background:var(--x-flour)}
+      .x-form input:focus,.x-form select:focus,.x-form textarea:focus{outline:2px solid var(--x-honey);outline-offset:1px}
+      @media (max-width:600px){.x-form{grid-template-columns:1fr}}
+      .x-faq details{border-bottom:1px solid var(--x-line)}
+      .x-faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;font:400 clamp(21px,2.2vw,28px)/1.2 var(--x-serif)}
+      .x-faq summary::-webkit-details-marker{display:none}
+      .x-faq summary:after{content:"+";flex:none;width:40px;height:40px;border-radius:50%;border:1px solid var(--x-line);display:grid;place-items:center;font:300 22px/1 var(--x-sans);transition:transform .35s var(--x-ease),background .3s}
+      .x-faq details[open] summary:after{transform:rotate(45deg);background:var(--x-honey);border-color:var(--x-honey)}
+      .x-faq details p{margin:0 0 24px;max-width:62ch;color:#4a3f3b}
+      .x-contact a{display:block;text-decoration:none;font:400 clamp(24px,2.6vw,34px)/1.2 var(--x-serif);padding:18px 0;border-bottom:1px solid var(--x-line);word-break:break-word;transition:color .3s}
+      .x-contact a:hover{color:var(--x-plum)}
+      .x-contact small{display:block;font:600 11px/1 var(--x-sans);letter-spacing:.18em;text-transform:uppercase;color:var(--x-green);margin-bottom:8px}
+      .x-art{border-radius:var(--x-r);background:var(--x-green);color:var(--x-oat);aspect-ratio:4/5;display:flex;flex-direction:column;justify-content:flex-end;padding:40px;position:relative;overflow:hidden}
+      .x-art svg{position:absolute;inset:-10% -30% auto auto;width:140%;color:var(--x-oat);opacity:.25}
+      .x-art p{margin:0;font:italic 300 clamp(30px,3.6vw,48px)/1.1 var(--x-serif);position:relative}
+      /* contrast and tap fixes */
+      .x-body a.x-btn--honey{color:var(--x-ink)}
+      .x-body a.x-btn--light{color:var(--x-flour)}
+      .x-body a.x-btn--plum{color:var(--x-flour)}
+      .x-body a.x-card--plum,.x-body a.x-card--green{color:var(--x-flour)}
+      .x-mark small{font-size:12px;letter-spacing:.2em}
+      .x-status{background:rgba(35,28,26,.62);border-color:rgba(255,253,248,.25);color:var(--x-flour)}
+      .x-status--solid{background:var(--x-flour);color:var(--x-ink)}
+      .x-prose .x-hand{color:var(--x-plum)}
+      .x-giant{color:#b48ea4}
+      .x-art .x-hand{color:#f3c98a}
+      .x-fgrid a,.x-credit a{display:inline-flex;align-items:center;min-height:44px;min-width:44px}
+      .x-fgrid p{margin:0}
+      /* reveals */
+      .x-rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--x-ease),transform .9s var(--x-ease)}
+      .x-rv.is-in{opacity:1;transform:none}
+      @media (prefers-reduced-motion:reduce){.x-rv{opacity:1;transform:none;transition:none}.x-hero>img,.x-marquee div,.x-float{animation:none}}
+    </style>
+  </head>
+  <body class="x-body">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <symbol id="hill" viewBox="0 0 44 24"><path d="M1 22c6-2 8-13 15-15 6-2 8 6 13 5 5-1 7-8 14-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="contour" viewBox="0 0 240 120"><g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M2 110c30-6 44-50 82-56 34-5 40 24 70 20 28-4 38-34 84-40"/><path d="M2 96c28-6 44-40 80-44 30-3 38 20 66 16 26-4 36-28 90-32"/><path d="M14 118c30-4 50-34 76-36 30-2 40 22 70 18 30-4 46-22 78-24"/><path d="M40 70c14-12 26-24 44-24 16 0 22 10 36 8"/></g></symbol>
+      <symbol id="band" viewBox="0 0 1200 60" preserveAspectRatio="none"><g fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 50C120 44 180 14 300 18s200 34 320 26 190-38 300-36 200 26 280 22"/><path d="M0 58C130 52 200 28 310 30s190 26 310 20 200-30 300-28 210 20 280 18"/></g></symbol>
+    </svg>
+    <div class="x-banner">Independent concept preview by Teta Digitals. Not the official website of Jill's Catering.</div>
+    <header class="x-nav" id="nav">
+      <div class="x-wrap">
+        <a class="x-mark" href="#/" aria-label="Jill's Catering, home"><b>Jill's<svg aria-hidden="true"><use href="#hill"/></svg></b><small>CATERING · CATTON</small></a>
+        <ul class="x-links" id="links">
+          <li><a href="#/tea-room">Tea room</a></li>
+          <li><a href="#/catering">Catering</a></li>
+          <li><a href="#/ready-meals">Ready meals</a></li>
+          <li><a href="#/our-story">Our story</a></li>
+          <li><a href="#/reviews">Reviews</a></li>
+          <li><a href="#/visit">Visit</a></li>
+          <li><a href="#/contact">Contact</a></li>
+        </ul>
+        <div class="x-actions">
+          <a class="x-btn x-call" href="tel:07957571885">Call 07957 571885</a>
+          <a class="x-btn x-btn--honey" href="#/contact">Enquire</a>
+        </div>
+        <button class="x-menu" id="menu" aria-expanded="false" aria-controls="links" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HOME -->
+      <div class="x-page" data-route="/">
+        <section class="x-hero">
+          <img src="jills-hero.png" alt="Jill's tea room shed in the countryside of the Allen Valleys" />
+          <span class="x-float"><span class="x-dot"></span>Tea room open Fri to Sun</span>
+          <div class="x-wrap">
+            <p class="x-label x-rv">Catton · Allendale · Northumberland</p>
+            <h1 class="x-h1 x-rv">Homemade food, served with <em>a view</em> of the valleys.</h1>
+            <p class="x-lead x-rv">A weekend tea room, outside catering for local celebrations and funerals, and home-made frozen ready meals for the Allen Valleys and beyond.</p>
+            <div class="x-cta x-rv"><a class="x-btn x-btn--honey" href="tel:07957571885">Call 07957 571885</a><a class="x-btn x-btn--light" href="#/visit">Plan a visit</a></div>
+            <div class="x-status x-rv" data-status><span class="x-dot"></span><span>Checking today's hours…</span></div>
+          </div>
+        </section>
+        <div class="x-marquee" aria-label="Homemade pies, cakes and bakes, outside catering, frozen ready meals, Northumberland views"><div aria-hidden="true"><span>Homemade pies · Cakes &amp; bakes · Outside catering · Frozen ready meals · Northumberland views ·</span><span>Homemade pies · Cakes &amp; bakes · Outside catering · Frozen ready meals · Northumberland views ·</span></div></div>
+        <section class="x-sec">
+          <div class="x-wrap">
+            <div class="x-head"><h2 class="x-h2 x-rv">A little shed with <em>a big</em> following.</h2><p class="x-lead x-rv">Jill Wilkinson, born and bred in Allendale, has been cooking for the valleys since around 2009. Everything is made by hand, in her own kitchen.</p></div>
+            <div class="x-stats">
+              <div class="x-rv"><b>4.9</b><span>Stars on Google</span></div>
+              <div class="x-rv"><b>130</b><span>Google reviews</span></div>
+              <div class="x-rv"><b>2009</b><span>Cooking since around</span></div>
+              <div class="x-rv"><b>3 days</b><span>Tea room open, Fri to Sun</span></div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--oat">
+          <div class="x-wrap">
+            <div class="x-head"><div><p class="x-label x-rv">What Jill does</p><h2 class="x-h2 x-rv">Three ways to <em>eat well</em>.</h2></div><p class="x-lead x-rv">Sit in and take in the view, have Jill bring a spread to your occasion, or fill the freezer with proper home cooking.</p></div>
+            <div class="x-cards">
+              <a class="x-card x-rv" href="#/tea-room"><span class="x-num">01</span><h3 class="x-h3">The tea room</h3><p>Breakfasts, soup, pies, toasties and a counter of cakes in "The Shed", with countryside views. Friday to Sunday.</p><span class="x-more">Inside The Shed →</span><svg class="x-contour" aria-hidden="true"><use href="#contour"/></svg></a>
+              <a class="x-card x-card--plum x-rv" href="#/catering"><span class="x-num">02</span><h3 class="x-h3">Outside catering</h3><p>Home-made spreads for local celebrations, parties and funerals across the Allen Valleys.</p><span class="x-more">Plan a spread →</span><svg class="x-contour" aria-hidden="true"><use href="#contour"/></svg></a>
+              <a class="x-card x-card--green x-rv" href="#/ready-meals"><span class="x-num">03</span><h3 class="x-h3">Frozen ready meals</h3><p>Home-made meals, frozen and delivered to people in the local area during the week. Just heat up.</p><span class="x-more">See delivery areas →</span><svg class="x-contour" aria-hidden="true"><use href="#contour"/></svg></a>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap x-split">
+            <div><p class="x-label x-rv">Our story</p><h2 class="x-h2 x-rv">It started with <em>an old van</em> and a family kitchen.</h2></div>
+            <div class="x-prose x-rv"><p class="x-lead">Jill began selling her home-made food from a van her dad refurbished. As word spread, a purpose-built kitchen went up next to the house, and it grew into the small tea room everyone calls <span class="x-hand">The Shed</span>.</p><a class="x-btn" href="#/our-story">Read Jill's story</a></div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--plum">
+          <div class="x-wrap">
+            <p class="x-label x-rv">4.9 stars · 130 Google reviews</p>
+            <div class="x-carousel x-rv" data-carousel aria-roledescription="carousel" aria-label="Reviews">
+              <div class="x-track">
+                <figure class="x-slide"><blockquote class="x-quote">Soup was delicious, husband said the homemade steak pie was of award-winning standard and the cakes, cheesecakes and fresh fruit pavlova looked delicious.</blockquote><cite class="x-cite">Google review · Mar 2026</cite></figure>
+                <figure class="x-slide"><blockquote class="x-quote">Lovely home cooked food in a cosy cafe with fantastic views.</blockquote><cite class="x-cite">Google review · Feb 2026</cite></figure>
+                <figure class="x-slide"><blockquote class="x-quote">Stumbled across this beautiful spot! Gorgeous homemade food with an amazing view. Friendly and helpful staff. Would recommend a visit here 100%.</blockquote><cite class="x-cite">Google review · Sep 2025</cite></figure>
+                <figure class="x-slide"><blockquote class="x-quote">What a little gem, found by my son, when planning our hike in the Allendale area. Loved it! Beautifully located, well established and run by lovely ladies.</blockquote><cite class="x-cite">Google review · Jul 2024</cite></figure>
+              </div>
+              <div class="x-ctrl"><button type="button" data-prev aria-label="Previous review">←</button><button type="button" data-next aria-label="Next review">→</button><span data-count></span><a class="x-btn x-btn--light" style="margin-left:auto" href="#/reviews">All reviews</a></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- TEA ROOM -->
+      <div class="x-page" data-route="/tea-room">
+        <section class="x-sec">
+          <div class="x-wrap x-split">
+            <div>
+              <p class="x-label x-rv">The tea room · Friday to Sunday</p>
+              <h1 class="x-h1 x-rv">Welcome to <em>The Shed.</em></h1>
+              <p class="x-lead x-rv" style="margin-top:28px">A small, cosy tea room beside Jill's kitchen in Catton. Its unusual shape earned it the name the team use for it: The Shed.</p>
+              <div class="x-status x-status--solid x-rv" data-status><span class="x-dot"></span><span>Checking today's hours…</span></div>
+            </div>
+            <div class="x-photo x-rv"><img src="jills-cakes.png" alt="Homemade cakes and bakes on the counter" /></div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--oat">
+          <div class="x-wrap">
+            <div class="x-head"><h2 class="x-h2 x-rv">Pull up a chair, <em>whatever</em> the weather.</h2><p class="x-lead x-rv">What visitors mention most, in their own words.</p></div>
+            <div class="x-grid3">
+              <div class="x-panel x-rv"><h3 class="x-h3">The views</h3><p>Stunning Northumbrian countryside all around, from every seat.</p></div>
+              <div class="x-panel x-rv"><h3 class="x-h3">Inside and out</h3><p>All-weather seating, with outdoor seating too when the sun is out.</p></div>
+              <div class="x-panel x-rv"><h3 class="x-h3">The hens</h3><p>Free range hens, friendly staff, and a chilled atmosphere with good music.</p></div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap">
+            <div class="x-head"><div><p class="x-label x-rv">On the board</p><h2 class="x-h2 x-rv">A taste of what Jill <em>bakes and cooks.</em></h2></div><p class="x-lead x-rv">The board changes, so ask what's on. Portions are generous and everything is homemade.</p></div>
+            <div class="x-grid2">
+              <div class="x-panel x-rv"><h3 class="x-h3">Savoury</h3><ul class="x-menu-list"><li>Breakfasts</li><li>Soup</li><li>Homemade steak pie</li><li>Pies and pasties</li><li>Coronation chicken</li><li>Sandwiches</li><li>Toasties</li><li>Bacon, brie and chutney toastie</li><li>Jacket potatoes</li><li>Toast with home-made raspberry jam</li></ul></div>
+              <div class="x-panel x-panel--oat x-rv"><h3 class="x-h3">Bakes and puddings</h3><ul class="x-menu-list"><li>Cakes</li><li>Scones</li><li>Tray bakes</li><li>Ginger cake</li><li>Coffee and walnut cake</li><li>Cheesecakes</li><li>Salted caramel cheesecake</li><li>Fresh fruit pavlova</li><li>Coffee</li></ul></div>
+            </div>
+            <p class="x-note x-rv">A taste of what Jill bakes and cooks. The board changes, so ask what's on.</p>
+          </div>
+        </section>
+        <section class="x-sec x-sec--plum">
+          <div class="x-wrap x-split">
+            <div><p class="x-label x-rv">Opening hours</p><h2 class="x-h2 x-rv">Weekends, <em>from ten.</em></h2><div class="x-cta x-rv" style="margin-top:32px"><a class="x-btn x-btn--honey" href="#/visit">Plan a visit</a><a class="x-btn x-btn--light" href="tel:07957571885">Call 07957 571885</a></div></div>
+            <table class="x-hours x-rv" style="color:var(--x-flour)">
+              <tr data-today="Fri"><th scope="row">Friday</th><td>10am to 4pm</td></tr>
+              <tr data-today="Sat"><th scope="row">Saturday</th><td>10am to 4pm</td></tr>
+              <tr data-today="Sun"><th scope="row">Sunday</th><td>11am to 4pm</td></tr>
+              <tr><th scope="row">Monday to Thursday</th><td>Closed</td></tr>
+            </table>
+          </div>
+        </section>
+      </div>
+
+      <!-- CATERING -->
+      <div class="x-page" data-route="/catering">
+        <section class="x-sec">
+          <div class="x-wrap x-split">
+            <div>
+              <p class="x-label x-rv">Outside catering · Allen Valleys</p>
+              <h1 class="x-h1 x-rv">A homemade spread, <em>brought</em> to you.</h1>
+              <p class="x-lead x-rv" style="margin-top:28px">Jill caters for local celebrations, parties and funerals across the Allen Valleys, with the same home cooking that fills the tea room.</p>
+              <div class="x-cta x-rv" style="margin-top:32px"><a class="x-btn x-btn--honey" href="#/contact">Enquire about catering</a><a class="x-btn" href="tel:07957571885">Call 07957 571885</a></div>
+            </div>
+            <div class="x-art x-rv"><svg aria-hidden="true"><use href="#contour"/></svg><p>Celebrations,<br />parties and<br /><span class="x-hand" style="font-size:1.3em">funerals.</span></p></div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--oat">
+          <div class="x-wrap">
+            <div class="x-head"><div><p class="x-label x-rv">How it works</p><h2 class="x-h2 x-rv">Three steps to <em>a good spread.</em></h2></div><p class="x-lead x-rv">No forms to wrestle with. A conversation with Jill is how every booking starts.</p></div>
+            <ol class="x-steps">
+              <li class="x-rv"><h3 class="x-h3">Tell Jill the details</h3><p>The date, how many guests, and what the occasion is.</p></li>
+              <li class="x-rv"><h3 class="x-h3">She suggests a spread</h3><p>Jill puts forward food to suit your numbers and the day.</p></li>
+              <li class="x-rv"><h3 class="x-h3">Confirm with Jill</h3><p>Settle the details by phone or email, and leave the food to her.</p></li>
+            </ol>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap x-split">
+            <div><h2 class="x-h2 x-rv">Planning something? <em>Ask Jill.</em></h2></div>
+            <div class="x-contact x-rv">
+              <a href="tel:07957571885"><small>Phone</small>07957 571885</a>
+              <a href="mailto:jill.wilkinson@hotmail.co.uk?subject=Catering%20enquiry"><small>Email</small>jill.wilkinson@hotmail.co.uk</a>
+              <a href="https://www.facebook.com/Jillscatering/" target="_blank" rel="noopener"><small>Facebook</small>Message Jill's Catering</a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- READY MEALS -->
+      <div class="x-page" data-route="/ready-meals">
+        <section class="x-sec">
+          <div class="x-wrap x-split x-split--rev">
+            <div>
+              <p class="x-label x-rv">Frozen ready meals · Delivered in the week</p>
+              <h1 class="x-h1 x-rv">Proper home cooking, <em>just heat up.</em></h1>
+              <p class="x-lead x-rv" style="margin-top:28px">Jill makes home-made meals, freezes them and delivers them to people in the local area during the week. Ideal for anyone who can't easily get to the shops.</p>
+              <div class="x-cta x-rv" style="margin-top:32px"><a class="x-btn x-btn--honey" href="tel:07957571885">Call 07957 571885</a><a class="x-btn" href="#/contact">Send an enquiry</a></div>
+            </div>
+            <div class="x-photo x-rv"><img src="jills-pie.png" alt="Homemade steak pie and a bowl of soup" /></div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--oat">
+          <div class="x-wrap">
+            <div class="x-head"><div><p class="x-label x-rv">Where meals have gone</p><h2 class="x-h2 x-rv">Across the valleys <em>and beyond.</em></h2></div><p class="x-lead x-rv">Jill's meals have been delivered to all of these places. Call to check current delivery areas and days.</p></div>
+            <ul class="x-chips x-rv">
+              <li>The Allen Valleys</li><li>Haydon Bridge</li><li>Fourstones</li><li>Newbrough</li><li>Acomb</li><li>Corbridge</li><li>Hexham</li><li>Slaley</li><li>Surrounding areas</li>
+            </ul>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap x-grid3">
+            <div class="x-panel x-rv"><h3 class="x-h3">Home-made</h3><p>Cooked by Jill in her own kitchen, the same food that fills the tea room.</p></div>
+            <div class="x-panel x-rv"><h3 class="x-h3">Frozen</h3><p>Into the freezer when they arrive, ready for whenever you need a meal.</p></div>
+            <div class="x-panel x-panel--oat x-rv"><h3 class="x-h3">Call first</h3><p>Areas and days can change, so ring <a href="tel:07957571885">07957 571885</a> to check what's current.</p></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- OUR STORY -->
+      <div class="x-page" data-route="/our-story">
+        <section class="x-sec x-sec--oat">
+          <div class="x-wrap">
+            <p class="x-label x-rv">Our story · Born and bred in Allendale</p>
+            <h1 class="x-h1 x-rv">From an old van to <em>The Shed.</em></h1>
+            <p class="x-lead x-rv" style="margin-top:28px">Jill's Catering is run by Jill Wilkinson, who grew up in Allendale and has been feeding the valleys for well over a decade.</p>
+          </div>
+        </section>
+        <svg class="x-contour-band" aria-hidden="true" preserveAspectRatio="none"><use href="#band"/></svg>
+        <section class="x-sec" style="padding-top:60px">
+          <div class="x-wrap">
+            <ol class="x-tl">
+              <li class="x-rv"><span class="x-when">c.2009</span><div><h2 class="x-h3">The van</h2><p>Jill starts selling her home-made food from an old van her dad refurbished, cooking everything in her own kitchen.</p></div></li>
+              <li class="x-rv"><span class="x-when">Growing</span><div><h2 class="x-h3">A purpose-built kitchen</h2><p>As the business grows, Jill has a purpose-built kitchen built next to her house in Catton.</p></div></li>
+              <li class="x-rv"><span class="x-when">The Shed</span><div><h2 class="x-h3">A tea room is born</h2><p>The kitchen becomes a small tea room, known to those who work there as "The Shed" because of its unusual shape.</p></div></li>
+              <li class="x-rv"><span class="x-when">2019</span><div><h2 class="x-h3">Ten years</h2><p>Jill's Catering celebrates its tenth anniversary.</p></div></li>
+              <li class="x-rv"><span class="x-when">Today</span><div><h2 class="x-h3">Tea room, catering and deliveries</h2><p>A weekend tea room, outside catering for local occasions, and frozen ready meals delivered around the area during the week.</p></div></li>
+            </ol>
+          </div>
+        </section>
+        <section class="x-sec x-sec--plum">
+          <div class="x-wrap x-split">
+            <h2 class="x-h2 x-rv">Come and see where it <em>all happens.</em></h2>
+            <div class="x-cta x-rv"><a class="x-btn x-btn--honey" href="#/visit">Plan a visit</a><a class="x-btn x-btn--light" href="#/reviews">Read the reviews</a></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- REVIEWS -->
+      <div class="x-page" data-route="/reviews">
+        <section class="x-sec x-sec--oat">
+          <div class="x-wrap x-split">
+            <div><p class="x-label x-rv">Reviews</p><h1 class="x-h1 x-rv">In their <em>own words.</em></h1></div>
+            <div class="x-rv"><p class="x-stars" aria-hidden="true">★★★★★</p><p style="font:300 clamp(64px,8vw,120px)/1 var(--x-serif);margin:0">4.9</p><p class="x-lead">Average rating from 130 Google reviews.</p></div>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap x-wall">
+            <figure class="x-rv"><blockquote>"Soup was delicious, husband said the homemade steak pie was of award-winning standard and the cakes, cheesecakes and fresh fruit pavlova looked delicious."</blockquote><cite class="x-cite">Google review · Mar 2026</cite></figure>
+            <figure class="x-rv"><blockquote>"Lovely spot, views are amazing. Coronation chicken can vary obviously, it was delicious! And the cakes and desserts are just wow! Homemade, great portions."</blockquote><cite class="x-cite">Google review · Feb 2026</cite></figure>
+            <figure class="x-rv"><blockquote>"Lovely home cooked food in a cosy cafe with fantastic views."</blockquote><cite class="x-cite">Google review · Feb 2026</cite></figure>
+            <figure class="x-rv"><blockquote>"Popped in for lunch nice choice of food well cooked and tasty staff friendly and helpful and the views are spectacular"</blockquote><cite class="x-cite">Google review · Dec 2025</cite></figure>
+            <figure class="x-rv"><blockquote>"Stumbled across this beautiful spot! Gorgeous homemade food with an amazing view. Friendly and helpful staff. Would recommend a visit here 100%."</blockquote><cite class="x-cite">Google review · Sep 2025</cite></figure>
+            <figure class="x-rv"><blockquote>"Lovely spot for breakfast, lunch or tea &amp; great for all weather seating. We asked for breakfast that wasn't on the menu and Jill was very accommodating."</blockquote><cite class="x-cite">Google review · Jul 2024</cite></figure>
+            <figure class="x-rv"><blockquote>"What a little gem, found by my son, when planning our hike in the Allendale area. Loved it! Beautifully located, well established and run by lovely ladies."</blockquote><cite class="x-cite">Google review · Jul 2024</cite></figure>
+          </div>
+        </section>
+        <section class="x-sec x-sec--plum">
+          <div class="x-wrap x-split">
+            <h2 class="x-h2 x-rv">Taste it for <em>yourself.</em></h2>
+            <div class="x-cta x-rv"><a class="x-btn x-btn--honey" href="#/visit">Plan a visit</a><a class="x-btn x-btn--light" href="https://www.facebook.com/Jillscatering/" target="_blank" rel="noopener">Follow on Facebook</a></div>
+          </div>
+        </section>
+      </div>
+      <!-- VISIT -->
+      <div class="x-page" data-route="/visit">
+        <section class="x-sec">
+          <div class="x-wrap x-split">
+            <div>
+              <p class="x-label x-rv">Visit · Catton, near Allendale</p>
+              <h1 class="x-h1 x-rv">Find us up <em>Folly Lane.</em></h1>
+              <p class="x-lead x-rv" style="margin-top:28px">Folly House, Folly Lane, Catton, Hexham, Northumberland NE47 9LT</p>
+              <div class="x-cta x-rv" style="margin-top:28px"><a class="x-btn x-btn--honey" href="https://www.google.com/maps/search/?api=1&amp;query=Jills+Catering+Folly+House+Catton+NE47+9LT" target="_blank" rel="noopener">Get directions</a><a class="x-btn" href="tel:07957571885">Call 07957 571885</a></div>
+              <div class="x-status x-status--solid x-rv" data-status><span class="x-dot"></span><span>Checking today's hours…</span></div>
+            </div>
+            <div class="x-panel x-rv">
+              <p class="x-label">Tea room hours</p>
+              <table class="x-hours">
+                <tr data-today="Fri"><th scope="row">Friday</th><td>10am to 4pm</td></tr>
+                <tr data-today="Sat"><th scope="row">Saturday</th><td>10am to 4pm</td></tr>
+                <tr data-today="Sun"><th scope="row">Sunday</th><td>11am to 4pm</td></tr>
+                <tr class="is-closed" data-today="Mon"><th scope="row">Monday</th><td>Closed</td></tr>
+                <tr class="is-closed" data-today="Tue"><th scope="row">Tuesday</th><td>Closed</td></tr>
+                <tr class="is-closed" data-today="Wed"><th scope="row">Wednesday</th><td>Closed</td></tr>
+                <tr class="is-closed" data-today="Thu"><th scope="row">Thursday</th><td>Closed</td></tr>
+              </table>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--oat" style="padding-top:0;background:linear-gradient(var(--x-flour) 50%,var(--x-oat) 50%)">
+          <div class="x-wrap"><iframe class="x-map x-rv" src="https://www.google.com/maps?q=Folly+House,+Folly+Lane,+Catton,+NE47+9LT&amp;output=embed" title="Map of Jill's Catering, Folly House, Catton" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </section>
+        <section class="x-sec x-sec--oat" style="padding-top:20px">
+          <div class="x-wrap">
+            <div class="x-head"><h2 class="x-h2 x-rv">Good to know <em>before you go.</em></h2></div>
+            <div class="x-grid3">
+              <div class="x-panel x-rv"><h3 class="x-h3">Walking nearby?</h3><p>A good stop on walks in the Allendale area, for breakfast, lunch or tea.</p></div>
+              <div class="x-panel x-rv"><h3 class="x-h3">Any weather</h3><p>All-weather seating inside, and outdoor seating for brighter days.</p></div>
+              <div class="x-panel x-rv"><h3 class="x-h3">Ask what's on</h3><p>The board changes. If you're after something special, give Jill a call first.</p></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="x-page" data-route="/contact">
+        <section class="x-sec">
+          <div class="x-wrap x-split" style="align-items:start">
+            <div>
+              <p class="x-label x-rv">Contact · Enquiries</p>
+              <h1 class="x-h1 x-rv">Say hello to <em>Jill.</em></h1>
+              <p class="x-lead x-rv" style="margin-top:28px">Enquiries are by phone, email or Facebook. Phone is quickest.</p>
+              <div class="x-contact x-rv" style="margin-top:24px">
+                <a href="tel:07957571885"><small>Phone</small>07957 571885</a>
+                <a href="mailto:jill.wilkinson@hotmail.co.uk"><small>Email</small>jill.wilkinson@hotmail.co.uk</a>
+                <a href="https://www.facebook.com/Jillscatering/" target="_blank" rel="noopener"><small>Facebook</small>facebook.com/Jillscatering</a>
+              </div>
+            </div>
+            <div class="x-panel x-panel--oat x-rv">
+              <h2 class="x-h3" style="margin-bottom:8px">Send an enquiry</h2>
+              <p class="x-note" style="margin:0 0 24px">This opens your email app with the details filled in, addressed to jill.wilkinson@hotmail.co.uk.</p>
+              <form class="x-form" data-mailto>
+                <label>Name<input name="Name" autocomplete="name" required /></label>
+                <label>Phone<input name="Phone" type="tel" autocomplete="tel" /></label>
+                <label>Enquiry type<select name="Enquiry"><option>Catering</option><option>Ready meals</option><option>Tea room</option></select></label>
+                <label>Date<input name="Date" type="date" /></label>
+                <label class="x-full">Guests<input name="Guests" type="number" min="1" inputmode="numeric" /></label>
+                <label class="x-full">Message<textarea name="message" rows="5"></textarea></label>
+                <div class="x-full"><button class="x-btn x-btn--plum" type="submit">Open email to Jill</button></div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--oat">
+          <div class="x-wrap x-split" style="align-items:start">
+            <div><p class="x-label x-rv">FAQ</p><h2 class="x-h2 x-rv">Questions, <em>answered.</em></h2></div>
+            <div class="x-faq x-rv">
+              <details><summary>When is the tea room open?</summary><p>Friday 10am to 4pm, Saturday 10am to 4pm and Sunday 11am to 4pm. Closed Monday to Thursday.</p></details>
+              <details><summary>Do you cater for funerals?</summary><p>Yes. Jill provides outside catering for funerals, as well as local celebrations and parties across the Allen Valleys.</p></details>
+              <details><summary>Do you deliver meals?</summary><p>Yes, home-made frozen ready meals are delivered to people in the local area during the week. Call 07957 571885 to check current delivery areas and days.</p></details>
+              <details><summary>Is there outdoor seating?</summary><p>Yes. There's outdoor seating as well as all-weather seating, all with countryside views.</p></details>
+              <details><summary>How do I book catering?</summary><p>Tell Jill the date, numbers and occasion by phone, email or Facebook. She'll suggest a spread, and you confirm by phone or email.</p></details>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- /PAGES -->
+    </main>
+
+    <footer class="x-foot">
+      <div class="x-wrap">
+        <p class="x-label">Catering · Tea room · Ready meals</p>
+        <h2 class="x-h1">Let Jill <em>feed you.</em></h2>
+        <div class="x-cta" style="margin-top:36px"><a class="x-btn x-btn--honey" href="tel:07957571885">Call 07957 571885</a><a class="x-btn x-btn--light" href="#/contact">Send an enquiry</a></div>
+        <div class="x-fgrid">
+          <div><h4>Find us</h4><p>Folly House, Folly Lane<br />Catton, Hexham<br />Northumberland NE47 9LT</p></div>
+          <div><h4>Tea room</h4><p>Fri 10am to 4pm</p><p>Sat 10am to 4pm</p><p>Sun 11am to 4pm</p><p>Mon to Thu closed</p></div>
+          <div><h4>Contact</h4><p><a href="tel:07957571885">07957 571885</a></p><p><a href="mailto:jill.wilkinson@hotmail.co.uk">jill.wilkinson@hotmail.co.uk</a></p><p><a href="https://www.facebook.com/Jillscatering/" target="_blank" rel="noopener">Facebook</a></p></div>
+          <div><h4>Explore</h4><p><a href="#/tea-room">Tea room</a></p><p><a href="#/catering">Catering</a></p><p><a href="#/ready-meals">Ready meals</a></p><p><a href="#/our-story">Our story</a></p><p><a href="#/visit">Visit</a></p></div>
+        </div>
+        <p class="x-giant" aria-hidden="true">Jill's</p>
+        <div class="x-credit"><span>Concept preview. Not the official website of Jill's Catering.</span><a href="https://teta.dpdns.org" target="_blank" rel="noopener">Developed by Teta Digitals</a></div>
+      </div>
+    </footer>
+
+    <nav class="x-mbar" aria-label="Quick actions"><a class="x-btn x-btn--honey" href="tel:07957571885">Call</a><a class="x-btn x-btn--light" href="https://www.google.com/maps/search/?api=1&amp;query=Jills+Catering+Folly+House+Catton+NE47+9LT" target="_blank" rel="noopener">Directions</a></nav>
+
+    <script src="hark.js"></script>
+    <script>
+      (function () {
+        var $ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+        var nav = document.getElementById("nav"), menu = document.getElementById("menu");
+        menu.addEventListener("click", function () { var o = nav.classList.toggle("is-open"); menu.setAttribute("aria-expanded", o); menu.textContent = o ? "✕" : "☰"; });
+        var io = "IntersectionObserver" in window ? new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } }); }, { threshold: 0.12 }) : null;
+        function route() {
+          var r = (location.hash.replace(/^#/, "") || "/");
+          var page = $('.x-page[data-route="' + r + '"]')[0] || $('.x-page[data-route="/"]')[0];
+          $(".x-page").forEach(function (p) { p.classList.toggle("is-active", p === page); });
+          $(".x-links a").forEach(function (a) { a.getAttribute("href") === "#" + page.dataset.route ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current"); });
+          nav.classList.remove("is-open"); menu.setAttribute("aria-expanded", "false"); menu.textContent = "☰";
+          window.scrollTo(0, 0);
+          var t = page.querySelector("h1,h2"); document.title = (t ? t.textContent + " · " : "") + "Jill's Catering";
+          $(".x-rv", page).forEach(function (el, i) { if (io) { el.style.transitionDelay = (i % 4) * 90 + "ms"; io.observe(el); } else el.classList.add("is-in"); });
+        }
+        window.addEventListener("hashchange", route);
+        // open today, UK time
+        var H = { Fri: [10, 16], Sat: [10, 16], Sun: [11, 16] }, D = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], L = { Fri: "Friday", Sat: "Saturday", Sun: "Sunday" };
+        function fmt(h) { return (h > 12 ? h - 12 : h) + (h >= 12 ? "pm" : "am"); }
+        var parts = {}; new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/London", weekday: "short", hour: "numeric", minute: "numeric", hour12: false }).formatToParts(new Date()).forEach(function (p) { parts[p.type] = p.value; });
+        var day = parts.weekday, now = (+parts.hour % 24) + (+parts.minute) / 60, h = H[day], open = false, msg;
+        if (h && now >= h[0] && now < h[1]) { open = true; msg = "<strong>Open now</strong> until " + fmt(h[1]) + " today"; }
+        else if (h && now < h[0]) msg = "<strong>Closed now</strong> · opens today at " + fmt(h[0]);
+        else { var i = D.indexOf(day), n; for (var k = 1; k < 8; k++) { n = D[(i + k) % 7]; if (H[n]) break; } msg = "<strong>Closed today</strong> · next open " + (k === 1 ? "tomorrow" : L[n]) + " at " + fmt(H[n][0]); }
+        $("[data-status]").forEach(function (el) { el.innerHTML = '<span class="x-dot' + (open ? "" : " is-closed") + '"></span><span>' + msg + "</span>"; });
+        $("[data-today]").forEach(function (tr) { if (tr.dataset.today === day) tr.classList.add("is-today"); });
+        // carousels
+        $("[data-carousel]").forEach(function (c) {
+          var tr = c.querySelector(".x-track"), n = tr.children.length, i = 0, cnt = c.querySelector("[data-count]");
+          function go(j) { i = (j + n) % n; tr.style.transform = "translateX(" + -100 * i + "%)"; if (cnt) cnt.textContent = (i + 1) + " / " + n; $(".x-slide", tr).forEach(function (s, k) { s.setAttribute("aria-hidden", k !== i); }); }
+          c.querySelector("[data-prev]").onclick = function () { go(i - 1); stop(); };
+          c.querySelector("[data-next]").onclick = function () { go(i + 1); stop(); };
+          var t = matchMedia("(prefers-reduced-motion: reduce)").matches ? null : setInterval(function () { if (c.offsetParent) go(i + 1); }, 7000);
+          function stop() { clearInterval(t); }
+          go(0);
+        });
+        // enquiry form
+        $("form[data-mailto]").forEach(function (f) {
+          f.addEventListener("submit", function (e) {
+            e.preventDefault(); var d = new FormData(f), b = "";
+            d.forEach(function (v, k) { if (k !== "message") b += k + ": " + v + "\n"; });
+            b += "\n" + (d.get("message") || "");
+            location.href = "mailto:jill.wilkinson@hotmail.co.uk?subject=" + encodeURIComponent((d.get("Enquiry") || "Enquiry") + " enquiry from " + (d.get("Name") || "the website")) + "&body=" + encodeURIComponent(b);
+          });
+        });
+        route();
+      })();
+    </script>
+  </body>
+</html>
