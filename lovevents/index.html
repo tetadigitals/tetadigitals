@@ -1,0 +1,1061 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>LovEvents Banquet Hall &amp; Catering, Anderson, Indiana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="hark.css" />
+    <link rel="stylesheet" href="hark-charts.css" />
+    <style>
+      :root {
+        --x-plum: #2a1426;
+        --x-plum-deep: #1c0c1a;
+        --x-ivory: #fbf7f2;
+        --x-gold: #c9a86a;
+        --x-gold-soft: #e3cfa5;
+        --x-gold-ink: #7a5c24;
+        --x-blush: #e8c4c0;
+        --x-ink: #241320;
+        --x-ink-soft: #5e4a57;
+        --x-serif: "Cormorant Garamond", Georgia, serif;
+        --x-body: "Jost", "Inter", system-ui, sans-serif;
+        --x-max: 1180px;
+        --x-pad: clamp(20px, 5vw, 56px);
+        --chart-ink: #2a1426;
+        --chart-ink-2: #5e4a57;
+        --chart-muted: #c9a86a;
+        --chart-grid: rgb(42 20 38 / 0.08);
+        --chart-reference: rgb(201 168 106 / 0.5);
+        color-scheme: light;
+      }
+      html { scroll-behavior: smooth; background: var(--x-ivory); }
+      body {
+        background: var(--x-ivory);
+        color: var(--x-ink);
+        font-family: var(--x-body);
+        font-weight: 300;
+        font-size: 16.5px;
+        line-height: 1.7;
+        letter-spacing: 0.01em;
+      }
+      ::selection { background: var(--x-gold); color: var(--x-plum-deep); }
+      :focus-visible { outline: 2px solid var(--x-gold); outline-offset: 3px; }
+      .x-wrap { max-width: var(--x-max); margin: 0 auto; padding-inline: var(--x-pad); }
+      .x-serif { font-family: var(--x-serif); }
+
+      /* top banner */
+      .x-banner {
+        background: var(--x-plum-deep);
+        color: #e9dcea;
+        font-size: 12.5px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        padding: 9px 16px;
+        border-bottom: 1px solid rgb(201 168 106 / 0.35);
+      }
+      /* nav */
+      .x-nav {
+        position: sticky; top: 0; z-index: 60;
+        background: rgb(251 247 242 / 0.92);
+        -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px);
+        border-bottom: 1px solid rgb(201 168 106 / 0.4);
+      }
+      .x-nav__in { display: flex; align-items: center; gap: 18px; min-height: 76px; }
+      .x-mark { font-family: var(--x-serif); font-size: 29px; line-height: 1; letter-spacing: 0.01em; text-decoration: none; color: var(--x-plum); white-space: nowrap; }
+      .x-mark i { font-style: normal; font-family: var(--x-body); font-weight: 400; font-size: 17px; letter-spacing: 0.22em; text-transform: uppercase; }
+      .x-mark b { font-weight: 500; color: var(--x-gold); }
+      .x-mark span { display: block; font-family: var(--x-body); font-size: 9.5px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--x-ink-soft); margin-top: 3px; font-weight: 400; }
+      .x-menu { display: flex; align-items: center; gap: 4px; margin-left: auto; }
+      .x-menu a {
+        font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase;
+        color: var(--x-ink-soft); text-decoration: none; padding: 10px 11px; border-radius: 2px;
+        transition: color 180ms var(--ease-out);
+      }
+      .x-menu a:hover { color: var(--x-plum); }
+      .x-menu a[aria-current="page"] { color: var(--x-plum); box-shadow: inset 0 -1px 0 var(--x-gold); }
+      .x-cta {
+        display: inline-flex; align-items: center; justify-content: center; min-height: 44px;
+        padding: 11px 24px; border: 1px solid var(--x-gold); background: var(--x-gold); color: var(--x-plum-deep);
+        font-size: 12.5px; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; border-radius: 2px;
+        transition: background 200ms var(--ease-out), color 200ms var(--ease-out);
+        cursor: pointer; font-family: var(--x-body); font-weight: 500;
+      }
+      .x-cta:hover { background: transparent; color: var(--x-plum); }
+      .x-cta--ghost { background: transparent; color: var(--x-plum); }
+      .x-cta--ghost:hover { background: var(--x-gold); color: var(--x-plum-deep); }
+      .x-cta--light { border-color: rgb(251 247 242 / 0.6); background: transparent; color: var(--x-ivory); }
+      .x-cta--light:hover { background: var(--x-ivory); color: var(--x-plum); }
+      .x-burger { display: none; margin-left: auto; width: 46px; height: 46px; border: 1px solid rgb(201 168 106 / 0.6); background: transparent; border-radius: 2px; cursor: pointer; position: relative; }
+      .x-burger span, .x-burger span::before, .x-burger span::after { position: absolute; left: 50%; width: 20px; height: 1.4px; background: var(--x-plum); transform: translateX(-50%); content: ""; }
+      .x-burger span { top: 50%; margin-top: -0.7px; }
+      .x-burger span::before { top: -6px; } .x-burger span::after { top: 6px; }
+      @media (max-width: 960px) {
+        .x-burger { display: block; }
+        .x-menu {
+          display: none; position: absolute; left: 0; right: 0; top: 100%;
+          flex-direction: column; align-items: stretch; gap: 0; background: var(--x-ivory);
+          border-bottom: 1px solid rgb(201 168 106 / 0.5); padding: 10px var(--x-pad) 22px;
+        }
+        .x-menu.is-open { display: flex; }
+        .x-menu a { padding: 14px 0; border-bottom: 1px solid rgb(42 20 38 / 0.08); font-size: 14px; }
+        .x-menu .x-cta { margin-top: 16px; }
+        .x-nav__cta { display: none; }
+      }
+
+      /* page headers */
+      .x-head { position: relative; overflow: hidden; background: var(--x-plum); }
+      .x-head img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.5; }
+      .x-head::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgb(28 12 26 / 0.72), rgb(42 20 38 / 0.82)); }
+      .x-head__in { position: relative; z-index: 2; padding-block: clamp(64px, 11vw, 120px); color: var(--x-ivory); }
+      .x-head--home .x-head__in { padding-block: clamp(96px, 16vw, 190px); }
+      .x-head--home img { opacity: 0.62; object-position: center 55%; }
+      .x-eyebrow { font-size: 11.5px; letter-spacing: 0.34em; text-transform: uppercase; color: var(--x-gold); margin-bottom: 18px; }
+      h1 { font-family: var(--x-serif); font-weight: 400; font-size: clamp(38px, 6.4vw, 76px); line-height: 1.08; letter-spacing: 0.005em; max-width: 16ch; }
+      h1 em { font-style: italic; color: var(--x-blush); }
+      .x-lede { font-size: clamp(16px, 1.6vw, 19px); max-width: 56ch; margin-top: 22px; color: rgb(251 247 242 / 0.85); font-weight: 300; }
+      .x-head .x-rule { margin-top: 28px; }
+      .x-rule { width: 64px; height: 1px; background: var(--x-gold); }
+      .x-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+
+      /* sections */
+      .x-sec { padding-block: clamp(56px, 8vw, 104px); }
+      .x-sec--plum { background: var(--x-plum); color: var(--x-ivory); }
+      .x-sec--plum .x-ktitle, .x-sec--plum h2, .x-sec--plum h3 { color: var(--x-ivory); }
+      .x-sec--tint { background: #f4ece3; }
+      h2 { font-family: var(--x-serif); font-weight: 400; font-size: clamp(29px, 3.9vw, 46px); line-height: 1.14; color: var(--x-plum); max-width: 20ch; }
+      h2 em { font-style: italic; color: var(--x-gold); }
+      h3 { font-family: var(--x-serif); font-weight: 500; font-size: clamp(21px, 2.2vw, 27px); line-height: 1.2; color: var(--x-plum); }
+      .x-sec p { max-width: 68ch; }
+      .x-sec--plum p { color: rgb(251 247 242 / 0.82); }
+      .x-stack > * + * { margin-top: 18px; }
+      .x-intro { margin-bottom: 44px; }
+      .x-intro h2 + p { margin-top: 18px; }
+      .x-kicker { font-size: 11.5px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--x-gold); margin-bottom: 14px; }
+
+      /* trust strip */
+      .x-trust { background: var(--x-plum-deep); color: var(--x-ivory); border-block: 1px solid rgb(201 168 106 / 0.3); }
+      .x-trust ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 40px; padding-block: 20px; }
+      .x-trust li { font-size: 12.5px; letter-spacing: 0.15em; text-transform: uppercase; color: rgb(251 247 242 / 0.88); }
+      .x-trust b { color: var(--x-gold); font-weight: 500; }
+
+      /* grids + cards */
+      .x-grid { display: grid; gap: 24px; }
+      .x-grid--2 { grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); }
+      .x-grid--3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+      .x-card { border: 1px solid rgb(201 168 106 / 0.45); background: #fffdfa; padding: 30px 28px 32px; border-radius: 2px; }
+      .x-sec--plum .x-card { background: rgb(251 247 242 / 0.05); border-color: rgb(201 168 106 / 0.35); }
+      .x-card h3 { margin-bottom: 12px; }
+      .x-card p + p { margin-top: 14px; }
+      .x-card .x-more { display: inline-block; margin-top: 20px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--x-plum); text-decoration: none; border-bottom: 1px solid var(--x-gold); padding-bottom: 3px; }
+      .x-sec--plum .x-card .x-more { color: var(--x-gold-soft); }
+      .x-card .x-more:hover { color: var(--x-gold); }
+      .x-num { font-family: var(--x-serif); font-size: 15px; letter-spacing: 0.2em; color: var(--x-gold); display: block; margin-bottom: 10px; }
+      .x-media { overflow: hidden; border-radius: 2px; }
+      .x-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 900ms var(--ease-out); }
+      .x-media:hover img { transform: scale(1.06); }
+      .x-split { display: grid; gap: clamp(28px, 5vw, 56px); grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); align-items: center; }
+      .x-split .x-media img { aspect-ratio: 4 / 3; }
+
+      /* quote */
+      .x-quote { border-left: 1px solid var(--x-gold); padding-left: 26px; }
+      .x-quote p { font-family: var(--x-serif); font-style: italic; font-size: clamp(20px, 2.6vw, 30px); line-height: 1.38; color: var(--x-plum); max-width: 34ch; }
+      .x-sec--plum .x-quote p { color: var(--x-ivory); }
+      .x-quote cite { display: block; margin-top: 18px; font-style: normal; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--x-ink-soft); }
+      .x-sec--plum .x-quote cite { color: var(--x-gold-soft); }
+      .x-stars { color: var(--x-gold); letter-spacing: 0.22em; font-size: 14px; }
+
+      /* review cards */
+      .x-rcard { border: 1px solid rgb(201 168 106 / 0.45); background: #fffdfa; padding: 28px; border-radius: 2px; display: flex; flex-direction: column; gap: 14px; }
+      .x-rcard p { font-family: var(--x-serif); font-size: 19px; line-height: 1.5; font-style: italic; color: var(--x-ink); }
+      .x-rcard footer { font-size: 11.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--x-ink-soft); margin-top: auto; }
+
+      /* room list */
+      .x-room { display: grid; grid-template-columns: 1fr auto; gap: 8px 24px; align-items: baseline; border-top: 1px solid rgb(201 168 106 / 0.45); padding-block: 26px; }
+      .x-room:last-child { border-bottom: 1px solid rgb(201 168 106 / 0.45); }
+      .x-room h3 { grid-column: 1; }
+      .x-room .x-cap { font-family: var(--x-serif); font-size: clamp(26px, 3vw, 36px); color: var(--x-gold); grid-column: 2; grid-row: 1 / span 2; align-self: center; white-space: nowrap; }
+      .x-room p { grid-column: 1; }
+
+      /* slider */
+      .x-tool { border: 1px solid rgb(201 168 106 / 0.5); background: #fffdfa; padding: clamp(24px, 4vw, 40px); border-radius: 2px; }
+      .x-sec--plum .x-tool { background: rgb(251 247 242 / 0.05); }
+      .x-tool input[type="range"] { width: 100%; margin: 26px 0 10px; accent-color: var(--x-gold); height: 28px; }
+      .x-tool output { display: block; font-family: var(--x-serif); font-size: clamp(30px, 5vw, 46px); color: var(--x-plum); line-height: 1.1; }
+      .x-sec--plum .x-tool output { color: var(--x-ivory); }
+      .x-tool .x-result { margin-top: 10px; font-size: 17px; }
+      .x-tool .x-result b { color: var(--x-gold); font-weight: 500; }
+      .x-scale { display: flex; justify-content: space-between; font-size: 12px; letter-spacing: 0.12em; color: var(--x-ink-soft); }
+      .x-sec--plum .x-scale { color: rgb(251 247 242 / 0.7); }
+
+      /* form */
+      .x-form { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+      .x-field { display: flex; flex-direction: column; gap: 7px; }
+      .x-field--full { grid-column: 1 / -1; }
+      .x-field label { font-size: 11.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--x-ink-soft); }
+      .x-field input, .x-field select, .x-field textarea {
+        font-family: var(--x-body); font-size: 16px; font-weight: 300; color: var(--x-ink);
+        background: #fffdfa; border: 1px solid rgb(42 20 38 / 0.18); border-radius: 2px;
+        padding: 12px 14px; min-height: 46px; width: 100%;
+      }
+      .x-field textarea { min-height: 128px; resize: vertical; }
+      .x-field input:focus, .x-field select:focus, .x-field textarea:focus { border-color: var(--x-gold); outline: none; }
+
+      /* detail rows */
+      .x-rows { border-top: 1px solid rgb(201 168 106 / 0.45); }
+      .x-rows div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 20px; padding: 14px 0; border-bottom: 1px solid rgb(201 168 106 / 0.3); }
+      .x-rows dt { font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--x-ink-soft); margin: 0; }
+      .x-rows dd { margin: 0; font-size: 16px; }
+      .x-rows div.is-today { background: rgb(201 168 106 / 0.16); padding-inline: 12px; }
+      .x-rows div.is-today dt { color: var(--x-plum); }
+      .x-rows div.is-today dd::after { content: " · Today"; color: var(--x-gold); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; }
+
+      /* faq */
+      .x-faq { border-top: 1px solid rgb(201 168 106 / 0.45); }
+      .x-faq details { border-bottom: 1px solid rgb(201 168 106 / 0.35); }
+      .x-faq summary { cursor: pointer; list-style: none; padding: 20px 36px 20px 0; position: relative; font-family: var(--x-serif); font-size: 21px; color: var(--x-plum); }
+      .x-faq summary::-webkit-details-marker { display: none; }
+      .x-faq summary::after { content: "+"; position: absolute; right: 4px; top: 18px; color: var(--x-gold); font-size: 22px; }
+      .x-faq details[open] summary::after { content: "\2013"; }
+      .x-faq p { padding-bottom: 22px; }
+
+      /* monogram */
+      .x-monogram { width: clamp(150px, 22vw, 220px); aspect-ratio: 1; display: grid; place-items: center; border: 1px solid var(--x-gold); border-radius: 50%; font-family: var(--x-serif); font-size: clamp(42px, 6vw, 64px); color: var(--x-gold); letter-spacing: 0.04em; }
+
+      /* map + misc */
+      .x-map { border: 1px solid rgb(201 168 106 / 0.45); border-radius: 2px; overflow: hidden; line-height: 0; }
+      .x-map iframe { width: 100%; height: 340px; border: 0; }
+      .x-ratings { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+      .x-rating { border: 1px solid rgb(201 168 106 / 0.45); padding: 26px; text-align: center; border-radius: 2px; }
+      .x-rating b { display: block; font-family: var(--x-serif); font-size: 44px; font-weight: 400; color: var(--x-plum); line-height: 1.1; }
+      .x-rating span { display: block; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--x-ink-soft); margin-top: 8px; }
+      .chart { background: #fffdfa; border: 1px solid rgb(201 168 106 / 0.45); border-radius: 2px; padding: 26px; }
+      .chart__cap { font-family: var(--x-serif); font-size: 21px; color: var(--x-plum); margin-bottom: 16px; }
+      .chart__cap small { display: block; font-family: var(--x-body); font-size: 12px; letter-spacing: 0.1em; color: var(--x-ink-soft); margin-top: 6px; }
+      .x-link { color: var(--x-plum); text-decoration: none; border-bottom: 1px solid var(--x-gold); padding-bottom: 2px; }
+      .x-sec--plum .x-link { color: var(--x-ivory); }
+      .x-note { font-size: 13px; color: var(--x-ink-soft); letter-spacing: 0.02em; }
+      .x-sec--plum .x-note { color: rgb(251 247 242 / 0.65); }
+
+      /* footer */
+      .x-foot { background: var(--x-plum-deep); color: rgb(251 247 242 / 0.78); padding-block: clamp(48px, 7vw, 76px) 36px; font-size: 14.5px; }
+      .x-foot .x-mark { color: var(--x-ivory); }
+      .x-foot .x-mark span { color: rgb(251 247 242 / 0.6); }
+      .x-foot h4 { font-size: 11.5px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--x-gold); margin: 0 0 14px; font-weight: 500; }
+      .x-foot a { color: inherit; text-decoration: none; }
+      .x-foot a:hover { color: var(--x-gold); }
+      .x-foot__grid { display: grid; gap: 36px; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+      .x-foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+      .x-foot__base { margin-top: 44px; padding-top: 24px; border-top: 1px solid rgb(201 168 106 / 0.28); display: flex; flex-wrap: wrap; gap: 10px 28px; justify-content: space-between; font-size: 12.5px; color: rgb(251 247 242 / 0.6); }
+
+      /* mobile call bar */
+      .x-callbar { display: none; }
+      @media (max-width: 760px) {
+        .x-callbar {
+          display: grid; grid-template-columns: 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 70;
+          background: var(--x-plum-deep); border-top: 1px solid rgb(201 168 106 / 0.45);
+        }
+        .x-callbar a { min-height: 54px; display: flex; align-items: center; justify-content: center; color: var(--x-ivory); text-decoration: none; font-size: 12.5px; letter-spacing: 0.16em; text-transform: uppercase; }
+        .x-callbar a + a { background: var(--x-gold); color: var(--x-plum-deep); }
+        .x-foot { padding-bottom: 86px; }
+      }
+
+      /* reveal */
+      .x-rise { opacity: 0; transform: translateY(22px); transition: opacity 900ms var(--ease-out), transform 900ms var(--ease-out); }
+      .x-rise.is-in { opacity: 1; transform: none; }
+      @media (prefers-reduced-motion: reduce) {
+        .x-rise { opacity: 1; transform: none; transition: none; }
+        .x-media img { transition: none; }
+      }
+      .x-site { margin-inline: calc(50% - 50vw); margin-block: -12px -40px; min-width: 0; }
+      /* accessibility fixes: deeper gold on light grounds, 12px minimum, 44px taps */
+      .x-mark { display: inline-block; min-height: 44px; }
+      .x-mark span { font-size: 12px; letter-spacing: 0.2em; }
+      .x-mark b { color: var(--x-gold-ink); }
+      .x-foot .x-mark b { color: var(--x-gold); }
+      .x-eyebrow, .x-kicker, .x-foot h4, .x-field label { font-size: 12px; }
+      .x-kicker, .x-num, h2 em { color: var(--x-gold-ink); }
+      .x-sec--plum .x-kicker, .x-sec--plum .x-num, .x-sec--plum h2 em { color: var(--x-gold); }
+      .x-tool .x-result b { color: var(--x-gold-ink); }
+      .x-sec--plum .x-card { background: #35192f; }
+      .x-sec--plum .x-card .x-more { color: var(--x-gold-soft); }
+      .x-menu a.x-cta, .x-menu a.x-cta[aria-current] { color: var(--x-plum-deep); }
+      .x-menu a.x-cta:hover { color: var(--x-plum); }
+      .x-link, .x-card .x-more { display: inline-flex; align-items: center; min-height: 44px; }
+      .x-foot ul a, .x-foot__base a { display: inline-flex; align-items: center; min-height: 44px; }
+      .x-foot ul { gap: 2px; }
+      .x-quote cite, .x-rcard footer { font-size: 12px; }
+      .x-room .x-cap, .x-stars, .x-monogram, .x-rows div.is-today dd::after, .x-faq summary::after { color: var(--x-gold-ink); }
+      .x-sec--plum .x-stars { color: var(--x-gold); }
+      .x-route { display: none; }
+      .x-route.is-active { display: block; }
+    </style>
+  </head>
+  <body>
+    <div class="page" id="top">
+    <div class="x-site">
+    <p class="x-banner">Independent concept preview by Teta Digitals. Not the official website of LovEvents Banquet Hall &amp; Catering.</p>
+
+    <header class="x-nav">
+      <div class="x-wrap x-nav__in">
+        <a class="x-mark" href="#/" aria-label="LovEvents, home">
+          Lov<i><b>E</b>vents</i>
+          <span>Banquet Hall &amp; Catering</span>
+        </a>
+        <button class="x-burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span></button>
+        <nav class="x-menu" id="menu" aria-label="Main">
+          <a href="#/">Home</a>
+          <a href="#/venue">The Venue</a>
+          <a href="#/catering">Catering</a>
+          <a href="#/decor">Decor &amp; Rentals</a>
+          <a href="#/events">Events</a>
+          <a href="#/about">About</a>
+          <a href="#/reviews">Reviews</a>
+          <a href="#/contact">Contact</a>
+          <a class="x-cta" href="#/contact">Book a Tour</a>
+        </nav>
+        <a class="x-cta x-nav__cta" href="#/contact">Book a Tour</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HOME -->
+      <div class="x-route" data-route="/">
+        <section class="x-head x-head--home">
+          <img src="lov-hero.png" alt="An elegant banquet hall set for a celebration at dusk" />
+          <div class="x-wrap x-head__in">
+            <p class="x-eyebrow x-rise">Banquet Hall &amp; Catering · Anderson, Indiana</p>
+            <h1 class="x-rise">Where every celebration becomes a <em>LOVEly</em> event.</h1>
+            <p class="x-lede x-rise">Four elegant rooms, in-house catering and full decor design under one roof in Anderson, Indiana. Up to 280 guests.</p>
+            <div class="x-actions x-rise">
+              <a class="x-cta" href="#/contact">Book a Tour</a>
+              <a class="x-cta x-cta--light" href="#/venue">Explore the Rooms</a>
+            </div>
+          </div>
+        </section>
+        <div class="x-trust">
+          <ul class="x-wrap">
+            <li><b>4.6 ★</b> from 97 Google reviews</li>
+            <li><b>4</b> rooms</li>
+            <li>Up to <b>280</b> guests</li>
+            <li>Catering <b>+</b> decor in-house</li>
+          </ul>
+        </div>
+
+        <section class="x-sec">
+          <div class="x-wrap x-split">
+            <div class="x-stack x-rise">
+              <p class="x-kicker">Welcome to LovEvents</p>
+              <h2>A celebration should feel like <em>yours</em>, down to the last linen.</h2>
+              <p>LovEvents is the banquet hall SeBrina and Chris Love built after years of decorating other people's rented halls. Today their own venue on Broadway Street in North Anderson holds four rooms, a catering kitchen and the decor collection SeBrina has gathered over a career in furniture and interior design.</p>
+              <p>That means one team listens to your vision, sets the room, serves the meal and makes sure the evening feels the way you pictured it. No juggling vendors, no guessing whether the tablecloths will match the flowers.</p>
+              <p><a class="x-link" href="#/about">Read the Love story</a></p>
+            </div>
+            <figure class="x-media x-rise" style="margin:0"><img src="lov-decor.png" alt="Tables dressed in linens, centerpieces and soft lighting" /></figure>
+          </div>
+        </section>
+
+        <section class="x-sec x-sec--plum" aria-labelledby="one-stop">
+          <div class="x-wrap">
+            <div class="x-intro x-rise">
+              <p class="x-kicker">The one-stop shop</p>
+              <h2 id="one-stop">Venue, catering, decor and rentals. <em>One call.</em></h2>
+              <p style="margin-top:18px">Most celebrations need four vendors. At LovEvents they come from the same family, and you can choose a package that brings them all together. As one bride put it, the package deal "includes EVERYTHING! Even bridal party flowers!"</p>
+            </div>
+            <div class="x-grid x-grid--2">
+              <div class="x-card x-rise"><span class="x-num">I</span><h3>The venue</h3><p>Four rooms for 120 to 280 guests, with a staff that can run up to four events at once.</p><a class="x-more" href="#/venue">See the rooms</a></div>
+              <div class="x-card x-rise"><span class="x-num">II</span><h3>Catering</h3><p>On-site catering with a custom menu planned alongside you for your guests and your occasion.</p><a class="x-more" href="#/catering">About catering</a></div>
+              <div class="x-card x-rise"><span class="x-num">III</span><h3>Decor &amp; design</h3><p>Full event decorating by SeBrina and her team: color themes, centerpieces, backdrops and table settings.</p><a class="x-more" href="#/decor">See decor</a></div>
+              <div class="x-card x-rise"><span class="x-num">IV</span><h3>Linen &amp; decor rentals</h3><p>Hosting somewhere else? Rent linens and decor for an event at LovEvents or anywhere you need.</p><a class="x-more" href="#/decor">Rentals</a></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap x-split">
+            <figure class="x-media x-rise" style="margin:0"><img src="lov-catering.png" alt="A catered spread prepared for guests" /></figure>
+            <div class="x-stack x-rise">
+              <p class="x-kicker">Catering</p>
+              <h2>Food your guests will <em>talk about</em> on the drive home.</h2>
+              <p>Review after review mentions the food. Our kitchen caters on-site, so every dish arrives at your tables from just down the hall, and your menu is shaped in conversation with our team.</p>
+              <p><a class="x-link" href="#/catering">Request a catering quote</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec x-sec--tint">
+          <div class="x-wrap">
+            <div class="x-intro x-rise">
+              <p class="x-kicker">Every kind of gathering</p>
+              <h2>Weddings, milestones, reunions and the work events in between.</h2>
+            </div>
+            <div class="x-grid x-grid--3">
+              <div class="x-card x-rise"><h3>Weddings &amp; receptions</h3><p>From an intimate 55 guests to a grand 280, styled to your colors.</p><a class="x-more" href="#/events">Weddings</a></div>
+              <div class="x-card x-rise"><h3>Birthdays &amp; anniversaries</h3><p>Sweet 16s, 60th birthdays and anniversaries worth dressing up for.</p><a class="x-more" href="#/events">Celebrations</a></div>
+              <div class="x-card x-rise"><h3>Reunions &amp; corporate</h3><p>Class reunions, graduations, seminars and company gatherings.</p><a class="x-more" href="#/events">All events</a></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec x-sec--plum">
+          <div class="x-wrap">
+            <div class="x-quote x-rise">
+              <p class="x-stars" aria-label="Five stars">★★★★★</p>
+              <p>"My husband and I had a vision for our wedding and Sabrina brought it to life. Our dream wedding unfolded right before our eyes."</p>
+              <cite>Google review · November 2025</cite>
+            </div>
+            <div class="x-actions x-rise"><a class="x-cta x-cta--light" href="#/reviews">Read all reviews</a></div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap x-rise" style="text-align:center">
+            <p class="x-kicker">Come see it in person</p>
+            <h2 style="margin-inline:auto">Walk the rooms, picture your day, and <em>let us help</em> with the rest.</h2>
+            <div class="x-actions" style="justify-content:center">
+              <a class="x-cta" href="#/contact">Book a Tour</a>
+              <a class="x-cta x-cta--ghost" href="tel:+13179464500">Call (317) 946-4500</a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- VENUE -->
+      <div class="x-route" data-route="/venue">
+        <section class="x-head">
+          <img src="lov-hero.png" alt="" style="object-position:center 30%;opacity:0.45" />
+          <div class="x-wrap x-head__in">
+            <p class="x-eyebrow">The Venue</p>
+            <h1>Four rooms, <em>one</em> gracious address.</h1>
+            <p class="x-lede">From 120 to 280 guests, each room is a blank canvas waiting for your colors, your music and your people.</p>
+            <div class="x-rule"></div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap">
+            <div class="x-intro x-stack x-rise">
+              <p class="x-kicker">The rooms</p>
+              <h2>Choose the room that fits your guest list, then make it <em>your own</em>.</h2>
+              <p>LovEvents Hall opened with four rooms so that every celebration can have a space sized to it. A room that is too big feels empty; one that fits feels full of life. Tell us your guest count and we will show you the room that feels just right.</p>
+            </div>
+            <div class="x-rise">
+              <div class="x-room"><h3>The Diamond Room</h3><span class="x-cap">280 guests</span><p>Our grandest room and the home of our largest weddings, receptions and class reunions.</p></div>
+              <div class="x-room"><h3>The Pearl Room</h3><span class="x-cap">170 guests</span><p>Ideal for a full wedding reception, a milestone anniversary or a graduation party with the whole family.</p></div>
+              <div class="x-room"><h3>The Silver Room</h3><span class="x-cap">150 guests</span><p>Lovely for smaller weddings, sweet 16s and 60th birthdays. One couple hosted about 55 guests here with the all-inclusive package.</p></div>
+              <div class="x-room"><h3>The Gold Room</h3><span class="x-cap">120 guests</span><p>Our most intimate room, suited to birthday dinners, seminars, showers and corporate gatherings.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec x-sec--tint">
+          <div class="x-wrap x-split" style="align-items:start">
+            <figure class="chart x-rise" style="margin:0">
+              <figcaption class="chart__cap">The Diamond Room holds more than twice the Gold Room<small>Maximum guests per room</small></figcaption>
+              <div class="chart__canvas"><canvas id="capacity" role="img" aria-label="Diamond Room 280 guests, Pearl Room 170, Silver Room 150, Gold Room 120"></canvas></div>
+            </figure>
+            <script type="application/json" id="rooms-data">
+              [{"room":"Diamond","guests":280},{"room":"Pearl","guests":170},{"room":"Silver","guests":150},{"room":"Gold","guests":120}]
+            </script>
+            <div class="x-tool x-rise">
+              <p class="x-kicker">Which room fits?</p>
+              <label for="guests" class="x-note">Slide to your expected guest count</label>
+              <input type="range" id="guests" min="10" max="320" step="5" value="100" aria-describedby="guests-res" />
+              <div class="x-scale"><span>10</span><span>320</span></div>
+              <output id="guests-out" for="guests" style="margin-top:20px">100 guests</output>
+              <p class="x-result" id="guests-res" aria-live="polite"></p>
+              <div class="x-actions"><a class="x-cta" href="#/contact">Ask about your date</a></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec x-sec--plum">
+          <div class="x-wrap x-grid x-grid--2">
+            <div class="x-stack x-rise">
+              <p class="x-kicker">Running together</p>
+              <h2>Up to <em>four events</em> at once, each with its own care.</h2>
+              <p>Our staff can run up to four events at the same time, one in each room. A graduation party in one room never spills into the reunion next door, and every host gets the same attention to the details.</p>
+            </div>
+            <div class="x-stack x-rise">
+              <p class="x-kicker">Accessibility</p>
+              <h2>Welcoming <em>every</em> guest.</h2>
+              <p>LovEvents has a wheelchair accessible entrance, wheelchair accessible parking and a wheelchair accessible restroom, so grandparents and guests of every ability can celebrate with ease. Credit cards are accepted.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- CATERING -->
+      <div class="x-route" data-route="/catering">
+        <section class="x-head">
+          <img src="lov-catering.png" alt="" style="opacity:0.55" />
+          <div class="x-wrap x-head__in">
+            <p class="x-eyebrow">Catering</p>
+            <h1>A table set with <em>care</em>, served from our own kitchen.</h1>
+            <p class="x-lede">On-site catering for weddings, parties and corporate events, with a menu shaped around your guests.</p>
+            <div class="x-actions"><a class="x-cta" href="#/contact">Request a catering quote</a></div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap x-split">
+            <div class="x-stack x-rise">
+              <p class="x-kicker">On-site catering</p>
+              <h2>The meal is where a party <em>slows down</em> and becomes a memory.</h2>
+              <p>At LovEvents the catering happens right here, in the same building as your celebration. There is no outside caterer arriving late, no hand-off between vendors, and no wondering whether the food will match the feel of the room. The people who set your tables are the same people who serve them.</p>
+              <p>Guests notice. "The food was excellent," wrote one class reunion. "Wonderful food," said a couple on WeddingWire. "The food was amazing," said another bride and groom after their fairytale wedding.</p>
+            </div>
+            <figure class="x-media x-rise" style="margin:0"><img src="lov-catering.png" alt="Dishes prepared by the LovEvents catering team" style="object-position:30% center" /></figure>
+          </div>
+        </section>
+
+        <section class="x-sec x-sec--plum">
+          <div class="x-wrap">
+            <div class="x-intro x-rise">
+              <p class="x-kicker">How it works</p>
+              <h2>Your menu begins with a <em>conversation</em>.</h2>
+              <p style="margin-top:18px">We do not hand you a fixed list. Every menu is discussed with our team so it suits your occasion, your guest count and your budget.</p>
+            </div>
+            <div class="x-grid x-grid--3">
+              <div class="x-card x-rise"><span class="x-num">01</span><h3>Tell us the occasion</h3><p>A wedding dinner, a graduation open house and a corporate seminar lunch each call for something different. Share your event, date and guest count.</p></div>
+              <div class="x-card x-rise"><span class="x-num">02</span><h3>Plan the menu together</h3><p>Talk through what you love, what your guests need and how you would like the meal to feel. We shape a custom menu around it.</p></div>
+              <div class="x-card x-rise"><span class="x-num">03</span><h3>Choose the service style</h3><p>Ask us about buffet or plated service, and we will help you decide which suits your room, your timeline and your celebration.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap x-grid x-grid--3">
+            <div class="x-stack x-rise"><h3>Weddings</h3><p>A reception meal that matches the romance of the room, planned alongside your decor so the whole evening feels of a piece.</p></div>
+            <div class="x-stack x-rise"><h3>Parties</h3><p>Birthdays, anniversaries, sweet 16s and graduations, with food that keeps the celebration going.</p></div>
+            <div class="x-stack x-rise"><h3>Corporate events</h3><p>Seminars and company gatherings catered without fuss, so your team can focus on the agenda.</p></div>
+          </div>
+        </section>
+
+        <section class="x-sec x-sec--tint">
+          <div class="x-wrap x-rise" style="text-align:center">
+            <p class="x-kicker">Pricing</p>
+            <h2 style="margin-inline:auto">Every menu is custom, so every quote is too.</h2>
+            <p style="margin:18px auto 0">Catering can be booked on its own with a room, or as part of an all-inclusive package. Contact us for a custom quote.</p>
+            <div class="x-actions" style="justify-content:center"><a class="x-cta" href="#/contact">Request a catering quote</a><a class="x-cta x-cta--ghost" href="tel:+13179464500">Call (317) 946-4500</a></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- DECOR -->
+      <div class="x-route" data-route="/decor">
+        <section class="x-head">
+          <img src="lov-decor.png" alt="" style="opacity:0.55;object-position:center 40%" />
+          <div class="x-wrap x-head__in">
+            <p class="x-eyebrow">Decor &amp; Rentals</p>
+            <h1>Endless color and style, <em>designed</em> around you.</h1>
+            <p class="x-lede">Full event decorating and design, plus linen and decor rentals for LovEvents or anywhere you celebrate.</p>
+            <div class="x-rule"></div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap x-split">
+            <figure class="x-media x-rise" style="margin:0"><img src="lov-decor.png" alt="A styled table with linens and centerpieces" style="object-position:70% center" /></figure>
+            <div class="x-stack x-rise">
+              <p class="x-kicker">A designer's eye</p>
+              <h2>Decor is where LovEvents <em>began</em>.</h2>
+              <p>Before there was a hall, there was SeBrina Love and a collection of decor. With over 15 years in the furniture and interior decor industry, and several furniture stores behind her, she began meeting clients to understand how they pictured their event. Then she decorated their rental halls with pieces from her own inventory.</p>
+              <p>That same process shapes every LovEvents celebration today. It starts with listening, and it ends with a room that looks the way you imagined it. One WeddingWire reviewer summed it up: "endless color and style choices."</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec x-sec--plum">
+          <div class="x-wrap">
+            <div class="x-intro x-rise">
+              <p class="x-kicker">What we style</p>
+              <h2>Every surface, every color, <em>every</em> detail.</h2>
+            </div>
+            <div class="x-grid x-grid--2">
+              <div class="x-card x-rise"><h3>Linens</h3><p>Tablecloths and linens that set the tone of the room the moment guests walk in.</p></div>
+              <div class="x-card x-rise"><h3>Centerpieces</h3><p>Focal points for every table, chosen to suit your theme and your guest count.</p></div>
+              <div class="x-card x-rise"><h3>Color themes</h3><p>Bring us your palette, or let us help you find one. We carry it through the whole room.</p></div>
+              <div class="x-card x-rise"><h3>Backdrops</h3><p>A beautiful setting for the head table, the cake and every photo your guests will share.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap">
+            <div class="x-intro x-rise">
+              <p class="x-kicker">The design process</p>
+              <h2>Three steps from <em>vision</em> to the big reveal.</h2>
+            </div>
+            <div class="x-grid x-grid--3">
+              <div class="x-rise x-stack"><span class="x-num" style="font-size:44px;letter-spacing:0">01</span><h3>Share your vision</h3><p>Meet with SeBrina and tell her how you see the day: the colors, the mood, the moments that matter most.</p></div>
+              <div class="x-rise x-stack"><span class="x-num" style="font-size:44px;letter-spacing:0">02</span><h3>We design the look</h3><p>We bring your ideas together into one look, from linens and centerpieces to the backdrop behind your table.</p></div>
+              <div class="x-rise x-stack"><span class="x-num" style="font-size:44px;letter-spacing:0">03</span><h3>We set it up</h3><p>On the day, our team dresses the room so you can simply walk in and enjoy it.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec x-sec--tint">
+          <div class="x-wrap x-split">
+            <div class="x-stack x-rise">
+              <p class="x-kicker">Rentals</p>
+              <h2>Celebrating somewhere else? Our decor can <em>travel</em>.</h2>
+              <p>Linen and decor rentals are available for events at LovEvents or anywhere needed. Whether it is a backyard, a church hall or another venue, you can still have the LovEvents look.</p>
+              <div class="x-actions"><a class="x-cta" href="#/contact">Ask about rentals</a></div>
+            </div>
+            <div class="x-quote x-rise">
+              <p>"Beautiful venue, endless color and style choices, tasty food and affordable and amazing service!!"</p>
+              <cite>Joyce · WeddingWire · October 2018</cite>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- EVENTS -->
+      <div class="x-route" data-route="/events">
+        <section class="x-head">
+          <img src="lov-hero.png" alt="" style="opacity:0.4;object-position:center 75%;transform:scale(1.25)" />
+          <div class="x-wrap x-head__in">
+            <p class="x-eyebrow">Events</p>
+            <h1>Every milestone deserves a <em>beautiful</em> room.</h1>
+            <p class="x-lede">Weddings, anniversaries, birthdays, graduations, reunions and corporate events, each planned around the people in it.</p>
+            <div class="x-rule"></div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap x-split" style="align-items:start">
+            <div class="x-stack x-rise">
+              <p class="x-kicker">Weddings &amp; receptions</p>
+              <h2>The day you have <em>imagined</em>, brought to life.</h2>
+              <p>Couples come to LovEvents with a vision, and leave having watched it unfold. The rooms, the decor and the meal are planned together, so your colors carry from the backdrop to the centerpieces to the plates.</p>
+              <p>Whether you are hosting about 55 guests in the Silver Room or a full 280 in the Diamond Room, ask about the all-inclusive package that brings it all together, right down to the bridal party flowers.</p>
+            </div>
+            <div class="x-stack">
+              <div class="x-quote x-rise"><p>"Today they made our fairytale wedding come to life and we can not be more thankful."</p><cite>Google review · October 2022</cite></div>
+              <div class="x-quote x-rise"><p>"We rented the Silver Room and did the package deal that includes EVERYTHING! Even bridal party flowers!!!"</p><cite>Google review · May 2025</cite></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec x-sec--plum">
+          <div class="x-wrap x-grid x-grid--2">
+            <div class="x-stack x-rise">
+              <p class="x-kicker">Anniversaries</p>
+              <h3 style="font-size:clamp(26px,3vw,36px)">Toast the years together.</h3>
+              <p>SeBrina and Chris have been married 31 years themselves, so they know what an anniversary means. Gather the people who have been there all along, in a room dressed for the occasion.</p>
+            </div>
+            <div class="x-stack x-rise">
+              <p class="x-kicker">Birthdays &amp; sweet 16s</p>
+              <h3 style="font-size:clamp(26px,3vw,36px)">From sweet 16 to 60th.</h3>
+              <p>Whether it is a first big party or a milestone 60th birthday, we will help you choose a theme and color palette that suits the guest of honor, then make the whole room sparkle.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap x-split" style="align-items:start">
+            <div class="x-stack x-rise">
+              <p class="x-kicker">Graduations</p>
+              <h3 style="font-size:clamp(26px,3vw,36px)">Celebrate the next chapter.</h3>
+              <p>Bring together family, friends and classmates to honor all that hard work. Our rooms suit a relaxed open house or a sit-down dinner, catered from our own kitchen.</p>
+            </div>
+            <div class="x-stack x-rise">
+              <p class="x-kicker">Class reunions</p>
+              <h3 style="font-size:clamp(26px,3vw,36px)">Bring the class back together.</h3>
+              <p>Reunion committees love how easy we are to work with. Tell us your numbers and your class colors, and we will handle the room, the meal and the decor.</p>
+              <div class="x-quote"><p>"We used LovEvents for our 40th Class reunion and we couldn't be happier."</p><cite>Google review · July 2025</cite></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec x-sec--tint">
+          <div class="x-wrap x-split">
+            <div class="x-stack x-rise">
+              <p class="x-kicker">Corporate events &amp; seminars</p>
+              <h2>Professional, polished and <em>easy</em>.</h2>
+              <p>Host a seminar, a training day or a company celebration in a setting that feels a step above the usual meeting room. With on-site catering and a staff that can run up to four events at once, your gathering runs smoothly from arrival to the last goodbye.</p>
+            </div>
+            <div class="x-quote x-rise"><p>"Would highly recommend for any type of event."</p><cite>Google review · August 2025</cite></div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap x-rise" style="text-align:center">
+            <h2 style="margin-inline:auto">Have a date in mind?</h2>
+            <div class="x-actions" style="justify-content:center"><a class="x-cta" href="#/contact">Book a Tour</a><a class="x-cta x-cta--ghost" href="#/venue">Find your room</a></div>
+          </div>
+        </section>
+      </div>
+      <!-- ABOUT -->
+      <div class="x-route" data-route="/about">
+        <section class="x-head">
+          <img src="lov-decor.png" alt="" style="opacity:0.42;object-position:center 15%;transform:scale(1.15)" />
+          <div class="x-wrap x-head__in">
+            <p class="x-eyebrow">About LovEvents</p>
+            <h1>A family business, built on <em>Love</em>.</h1>
+            <p class="x-lede">Married 31 years and partners in business, SeBrina and Chris Love bring a lifetime of design and hospitality to every event.</p>
+            <div class="x-rule"></div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap x-split">
+            <div class="x-stack x-rise">
+              <p class="x-kicker">The Love story</p>
+              <h2>From furniture showrooms to <em>banquet halls</em>.</h2>
+              <p>For over 15 years, SeBrina and Chris Love worked in the furniture and interior decor industry, owning several furniture stores along the way. They learned how a room makes people feel, and how the right piece in the right place can change everything.</p>
+              <p>SeBrina carried that eye into events. She began meeting clients to understand how they envisioned their celebration, then decorated their rental halls with decor she had inventoried and rented herself. Word spread, one beautiful room at a time.</p>
+              <p>Then the couple relocated from Indianapolis to Anderson and opened LovEvents Hall with four rooms of their own. Today their staff can run up to four events at once, and they still offer linen and decor rentals for events at their venue or anywhere needed.</p>
+            </div>
+            <figure class="x-media x-rise" style="margin:0"><img src="lov-decor.png" alt="Event decor styled by the LovEvents team" style="object-position:20% center" /></figure>
+          </div>
+        </section>
+
+        <section class="x-sec x-sec--plum">
+          <div class="x-wrap">
+            <div class="x-intro x-rise">
+              <p class="x-kicker">What we value</p>
+              <h2>How we treat <em>every</em> client.</h2>
+            </div>
+            <div class="x-grid x-grid--2">
+              <div class="x-card x-rise"><h3>Honest</h3><p>Straight answers about rooms, timing and what is possible, so you can plan with confidence.</p></div>
+              <div class="x-card x-rise"><h3>Sincere</h3><p>We care about your event because we care about the people celebrating it.</p></div>
+              <div class="x-card x-rise"><h3>Cheerful</h3><p>Planning should be a joy. Expect a warm welcome every time you visit or call.</p></div>
+              <div class="x-card x-rise"><h3>Personal attention</h3><p>You work with the owners themselves, from the first conversation to the final setup.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap x-split">
+            <div class="x-rise" style="display:grid;place-items:center"><div class="x-monogram" aria-hidden="true">S &amp; C</div></div>
+            <div class="x-stack x-rise">
+              <p class="x-kicker">Meet SeBrina &amp; Chris</p>
+              <h2>Partners in marriage, partners in <em>business</em>.</h2>
+              <p><strong style="font-weight:500">SeBrina Love</strong> is the designer at the heart of LovEvents. Clients describe her as the person who listens to a vision and brings it to life.</p>
+              <p><strong style="font-weight:500">Chris Love</strong> works beside her in running the business. Together, as one couple wrote after their wedding, "Chris and Sebrina are absolutely amazing."</p>
+              <div class="x-actions"><a class="x-cta" href="#/contact">Meet them on a tour</a></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- REVIEWS -->
+      <div class="x-route" data-route="/reviews">
+        <section class="x-head">
+          <img src="lov-catering.png" alt="" style="opacity:0.4;object-position:center 80%;transform:scale(1.2)" />
+          <div class="x-wrap x-head__in">
+            <p class="x-eyebrow">Reviews</p>
+            <h1>In the words of our <em>guests</em>.</h1>
+            <p class="x-lede">Couples, families and reunion committees on the food, the decor and the people behind LovEvents.</p>
+            <div class="x-rule"></div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap">
+            <div class="x-ratings x-rise">
+              <div class="x-rating"><p class="x-stars" aria-hidden="true">★★★★★</p><b>4.6</b><span>Google · 97 reviews</span></div>
+              <div class="x-rating"><p class="x-stars" aria-hidden="true">★★★★★</p><b>94%</b><span>Facebook recommend · 57 reviews</span></div>
+              <div class="x-rating"><p class="x-stars" aria-hidden="true">★★★★★</p><b>5.0</b><span>WeddingWire</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec x-sec--tint" style="padding-top:clamp(40px,6vw,72px)">
+          <div class="x-wrap x-grid x-grid--2">
+            <blockquote class="x-rcard x-rise" style="margin:0"><p>"My husband and I had a vision for our wedding and Sabrina brought it to life. Our dream wedding unfolded right before our eyes. Between the breathtaking decorations to the delicious food and I must not forget about how incredible this venue is."</p><footer>Google review · Nov 2025</footer></blockquote>
+            <blockquote class="x-rcard x-rise" style="margin:0"><p>"I've been to this business more than once and it has exceeded my expectations every time! The food, the decorations, the staff, the location are great! Would highly recommend for any type of event."</p><footer>Google review · Aug 2025</footer></blockquote>
+            <blockquote class="x-rcard x-rise" style="margin:0"><p>"We used LovEvents for our 40th Class reunion and we couldn't be happier. Sabrina and her team were incredibly easy to work with, answering all of our questions and accommodating all of our needs. The food was excellent and the decorations and set were perfect."</p><footer>Google review · Jul 2025</footer></blockquote>
+            <blockquote class="x-rcard x-rise" style="margin:0"><p>"We had a small wedding for around 55 people we rented the Silver Room and did the package deal that includes EVERYTHING! Even bridal party flowers!!!"</p><footer>Google review · May 2025</footer></blockquote>
+            <blockquote class="x-rcard x-rise" style="margin:0"><p>"Chris and Sebrina are absolutely amazing. Today they made our fairytale wedding come to life and we can not be more thankful. The food was amazing, the atmosphere and the magic of the room."</p><footer>Google review · Oct 2022</footer></blockquote>
+            <blockquote class="x-rcard x-rise" style="margin:0"><p>"Wonderful food, beautiful decor, highly responsive, flexible! This is affordable elegance!!"</p><footer>A. Barnes · WeddingWire · Dec 2022</footer></blockquote>
+            <blockquote class="x-rcard x-rise" style="margin:0"><p>"Beautiful venue, endless color and style choices, tasty food and affordable and amazing service!!"</p><footer>Joyce · WeddingWire · Oct 2018</footer></blockquote>
+          </div>
+        </section>
+
+        <section class="x-sec x-sec--plum">
+          <div class="x-wrap x-rise" style="text-align:center">
+            <p class="x-kicker">Celebrated with us?</p>
+            <h2 style="margin-inline:auto">We would <em>love</em> to hear about your event.</h2>
+            <div class="x-actions" style="justify-content:center">
+              <a class="x-cta" href="https://www.google.com/maps/search/?api=1&amp;query=LovEvents+Banquet+Hall+%26+Catering+1803+Broadway+St+Anderson+IN" target="_blank" rel="noopener">Leave a review</a>
+              <a class="x-cta x-cta--light" href="#/contact">Book a Tour</a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="x-route" data-route="/contact">
+        <section class="x-head">
+          <img src="lov-hero.png" alt="" style="opacity:0.5;object-position:right center" />
+          <div class="x-wrap x-head__in">
+            <p class="x-eyebrow">Contact &amp; Book a Tour</p>
+            <h1>Let us start planning your <em>LOVEly</em> event.</h1>
+            <p class="x-lede">Send an inquiry, call us, or stop by Broadway Street to walk the rooms.</p>
+            <div class="x-rule"></div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap x-split" style="align-items:start">
+            <div class="x-rise">
+              <p class="x-kicker">Event inquiry</p>
+              <h2 style="margin-bottom:28px">Tell us about your celebration.</h2>
+              <form class="x-form" id="inquiry" novalidate>
+                <div class="x-field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required /></div>
+                <div class="x-field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" /></div>
+                <div class="x-field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" /></div>
+                <div class="x-field"><label for="f-type">Event type</label>
+                  <select id="f-type" name="type">
+                    <option>Wedding or reception</option><option>Anniversary</option><option>Birthday or sweet 16</option><option>Graduation</option><option>Class reunion</option><option>Corporate event or seminar</option><option>Decor or linen rental only</option><option>Other</option>
+                  </select></div>
+                <div class="x-field"><label for="f-date">Event date</label><input id="f-date" name="date" type="date" /></div>
+                <div class="x-field"><label for="f-guests">Guest count</label><input id="f-guests" name="guests" type="number" min="1" max="280" inputmode="numeric" /></div>
+                <div class="x-field x-field--full"><label for="f-room">Room preference</label>
+                  <select id="f-room" name="room">
+                    <option>Not sure yet</option><option>The Diamond Room (up to 280)</option><option>The Pearl Room (up to 170)</option><option>The Silver Room (up to 150)</option><option>The Gold Room (up to 120)</option>
+                  </select></div>
+                <div class="x-field x-field--full"><label for="f-msg">Message</label><textarea id="f-msg" name="message" placeholder="Your vision, catering or decor needs, and whether you would like a tour"></textarea></div>
+                <div class="x-field--full"><button class="x-cta" type="submit">Send inquiry</button><p class="x-note" style="margin-top:12px">Opens your email app with your details filled in, addressed to yourlovelyevent@yahoo.com.</p></div>
+              </form>
+            </div>
+            <div class="x-stack x-rise">
+              <p class="x-kicker">Reach us</p>
+              <dl class="x-rows">
+                <div><dt>Phone</dt><dd><a class="x-link" href="tel:+13179464500">(317) 946-4500</a></dd></div>
+                <div><dt>Email</dt><dd><a class="x-link" href="mailto:yourlovelyevent@yahoo.com">yourlovelyevent@yahoo.com</a></dd></div>
+                <div><dt>Address</dt><dd>1803 Broadway St, Anderson, IN 46012<br /><span class="x-note">North Anderson</span></dd></div>
+              </dl>
+              <p class="x-kicker" style="margin-top:36px">Hours</p>
+              <dl class="x-rows" id="hours">
+                <div data-day="1"><dt>Monday</dt><dd>10 AM to 6 PM</dd></div>
+                <div data-day="2"><dt>Tuesday</dt><dd>10 AM to 6 PM</dd></div>
+                <div data-day="3"><dt>Wednesday</dt><dd>10 AM to 9 PM</dd></div>
+                <div data-day="4"><dt>Thursday</dt><dd>10 AM to 9 PM</dd></div>
+                <div data-day="5"><dt>Friday</dt><dd>10 AM to 11:45 PM</dd></div>
+                <div data-day="6"><dt>Saturday</dt><dd>1 PM to 11:45 PM</dd></div>
+                <div data-day="0"><dt>Sunday</dt><dd>10 AM to 10 PM</dd></div>
+              </dl>
+              <p class="x-note">Wheelchair accessible entrance, parking and restroom. Credit cards accepted.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec x-sec--tint" style="padding-top:0;background:transparent">
+          <div class="x-wrap x-map x-rise" style="padding:0">
+            <iframe src="https://www.google.com/maps?q=1803+Broadway+St,+Anderson,+IN+46012&amp;output=embed" title="Map of LovEvents at 1803 Broadway St, Anderson, Indiana" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </section>
+
+        <section class="x-sec x-sec--tint">
+          <div class="x-wrap">
+            <div class="x-intro x-rise"><p class="x-kicker">Questions</p><h2>Frequently asked.</h2></div>
+            <div class="x-faq x-rise">
+              <details><summary>How many guests can you host?</summary><p>Up to 280 guests in the Diamond Room. Our other rooms hold up to 170, 150 and 120.</p></details>
+              <details><summary>Do you cater?</summary><p>Yes. Catering is done on-site, with a custom menu discussed with our team.</p></details>
+              <details><summary>Can I rent decor for another venue?</summary><p>Yes. Linen and decor rentals are available for events at LovEvents or anywhere needed.</p></details>
+              <details><summary>Do you offer all-inclusive packages?</summary><p>Yes. Contact us for a custom quote.</p></details>
+              <details><summary>Can we tour?</summary><p>Yes. Call (317) 946-4500 or send the inquiry form above and we will set a time.</p></details>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="x-foot">
+      <div class="x-wrap">
+        <div class="x-foot__grid">
+          <div>
+            <a class="x-mark" href="#/">Lov<i><b>E</b>vents</i><span>Banquet Hall &amp; Catering</span></a>
+            <p style="margin-top:18px;max-width:30ch">Four elegant rooms, in-house catering and full decor design, under one roof in Anderson, Indiana.</p>
+          </div>
+          <div>
+            <h4>Visit</h4>
+            <ul>
+              <li>1803 Broadway St<br />Anderson, IN 46012</li>
+              <li><a href="tel:+13179464500">(317) 946-4500</a></li>
+              <li><a href="mailto:yourlovelyevent@yahoo.com">yourlovelyevent@yahoo.com</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Hours</h4>
+            <ul>
+              <li>Mon &amp; Tue 10 AM to 6 PM</li>
+              <li>Wed &amp; Thu 10 AM to 9 PM</li>
+              <li>Fri 10 AM to 11:45 PM</li>
+              <li>Sat 1 PM to 11:45 PM</li>
+              <li>Sun 10 AM to 10 PM</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Follow</h4>
+            <ul>
+              <li><a href="https://www.facebook.com/LovEventsIndy" target="_blank" rel="noopener">Facebook</a></li>
+              <li><a href="https://www.instagram.com/loveventsbanquethall/" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="#/contact">Book a tour</a></li>
+              <li><a href="#/reviews">Reviews</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="x-foot__base">
+          <span>&copy; 2026 LovEvents Banquet Hall &amp; Catering. Wheelchair accessible entrance, parking and restroom. Credit cards accepted.</span>
+          <span>Concept preview. <a href="https://teta.dpdns.org" target="_blank" rel="noopener">Developed by Teta Digitals</a></span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="x-callbar">
+      <a href="tel:+13179464500">Call (317) 946-4500</a>
+      <a href="#/contact">Book a Tour</a>
+    </div>
+    </div>
+    </div>
+
+    <script src="hark.js"></script>
+    <script src="chart.js"></script>
+    <script src="datalabels.js"></script>
+    <script src="hark-charts.js"></script>
+    <script>
+      (function () {
+        var ROUTES = {
+          "/": "LovEvents Banquet Hall & Catering, Anderson, Indiana",
+          "/venue": "The Venue, four rooms up to 280 guests | LovEvents",
+          "/catering": "On-site Catering | LovEvents Banquet Hall",
+          "/decor": "Decor & Rentals | LovEvents Banquet Hall",
+          "/events": "Events We Host | LovEvents Banquet Hall",
+          "/about": "About SeBrina & Chris Love | LovEvents",
+          "/reviews": "Reviews, 4.6 stars from 97 Google reviews | LovEvents",
+          "/contact": "Contact & Book a Tour | LovEvents Banquet Hall"
+        };
+        var main = document.getElementById("main");
+        var menu = document.getElementById("menu");
+        var burger = document.getElementById("burger");
+        var chartDrawn = false;
+
+        burger.addEventListener("click", function () {
+          var open = menu.classList.toggle("is-open");
+          burger.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+
+        function reveal(scope) {
+          var items = scope.querySelectorAll(".x-rise");
+          if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            [].forEach.call(items, function (el) { el.classList.add("is-in"); });
+            return;
+          }
+          var io = new IntersectionObserver(function (es) {
+            es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } });
+          }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+          [].forEach.call(items, function (el) { el.classList.remove("is-in"); io.observe(el); });
+        }
+
+        function route() {
+          var path = (location.hash || "#/").replace(/^#/, "");
+          if (!ROUTES[path]) path = "/";
+          var found = false;
+          [].forEach.call(main.querySelectorAll(".x-route"), function (sec) {
+            var on = sec.getAttribute("data-route") === path;
+            sec.classList.toggle("is-active", on);
+            if (on) { found = true; reveal(sec); }
+          });
+          if (!found) {
+            var home = main.querySelector('[data-route="/"]');
+            if (home) { home.classList.add("is-active"); reveal(home); }
+          }
+          document.title = ROUTES[path];
+          [].forEach.call(menu.querySelectorAll("a"), function (a) {
+            if (a.getAttribute("href") === "#" + path && !a.classList.contains("x-cta")) a.setAttribute("aria-current", "page");
+            else a.removeAttribute("aria-current");
+          });
+          menu.classList.remove("is-open");
+          burger.setAttribute("aria-expanded", "false");
+          window.scrollTo(0, 0);
+          if (path === "/venue") { drawChart(); sizer(); }
+        }
+
+        function drawChart() {
+          var canvas = document.getElementById("capacity");
+          if (!canvas || chartDrawn || typeof Chart === "undefined") return;
+          chartDrawn = true;
+          var rooms = Hark.data("rooms-data");
+          new Chart(canvas, {
+            type: "bar",
+            data: {
+              labels: rooms.map(function (r) { return r.room; }),
+              datasets: [{ label: "Guests", data: rooms.map(function (r) { return r.guests; }), backgroundColor: rooms.map(function (r) { return r.guests === 280 ? "var(--chart-ink)" : "var(--chart-muted)"; }) }]
+            },
+            options: {
+              indexAxis: "y",
+              plugins: {
+                legend: { display: false },
+                datalabels: Hark.labels.values,
+                tooltip: { callbacks: { label: function (ctx) { return ctx.raw + " guests"; } } }
+              },
+              scales: { x: { ticks: { callback: function (v) { return v + ""; } } } }
+            }
+          });
+        }
+
+        function sizer() {
+          var input = document.getElementById("guests");
+          if (!input || input.dataset.ready) return;
+          input.dataset.ready = "1";
+          var out = document.getElementById("guests-out");
+          var res = document.getElementById("guests-res");
+          var rooms = [
+            { name: "The Gold Room", cap: 120 },
+            { name: "The Silver Room", cap: 150 },
+            { name: "The Pearl Room", cap: 170 },
+            { name: "The Diamond Room", cap: 280 }
+          ];
+          function update() {
+            var n = Number(input.value);
+            out.textContent = n + (n === 1 ? " guest" : " guests");
+            var fit = rooms.filter(function (r) { return r.cap >= n; })[0];
+            res.innerHTML = fit
+              ? "We would start you in <b>" + fit.name + "</b>, which seats up to " + fit.cap + ". Larger rooms are available if you want more space around the tables."
+              : "Above 280 guests we would talk through timing and layout together. <b>The Diamond Room</b> is our largest at 280.";
+          }
+          input.addEventListener("input", update);
+          update();
+        }
+
+        var today = String(new Date().getDay());
+        [].forEach.call(document.querySelectorAll("#hours [data-day]"), function (row) {
+          if (row.getAttribute("data-day") === today) row.classList.add("is-today");
+        });
+
+        var form = document.getElementById("inquiry");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var v = function (id) { return document.getElementById(id).value.trim(); };
+          var type = v("f-type");
+          var body = [
+            "Name: " + v("f-name"),
+            "Email: " + v("f-email"),
+            "Phone: " + v("f-phone"),
+            "Event type: " + type,
+            "Event date: " + v("f-date"),
+            "Guest count: " + v("f-guests"),
+            "Room preference: " + v("f-room"),
+            "",
+            v("f-msg")
+          ].join("\n");
+          var subject = "Event inquiry: " + type + (v("f-date") ? " on " + v("f-date") : "");
+          window.location.href = "mailto:yourlovelyevent@yahoo.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        });
+
+        window.addEventListener("hashchange", route);
+        route();
+      })();
+    </script>
+  </body>
+</html>
