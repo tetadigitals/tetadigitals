@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en" data-theme="light">
   <head>
+<meta name="robots" content="noindex,nofollow">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Shoreline Realty Corp., Brokerage — Always Here For You</title>
+    <title>Shoreline Realty Corp., Brokerage, Always Here For You</title>
     <meta name="description" content="Family-run boutique brokerage in Port Credit, Mississauga. Helping families buy, sell and lease homes since 1999." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -517,7 +518,7 @@
       }
     </style>
   </head>
-  <body>
+  <body><div style="background:#111;color:#fff;font:600 12px/1.4 system-ui,sans-serif;text-align:center;padding:8px 12px;position:relative;z-index:99999">Independent concept preview by Teta Digitals. Not the official website of Shoreline Realty.</div>
     <!-- ============ Utility line ============ -->
     <div class="x-util">
       <div class="x-wrap">
@@ -529,7 +530,7 @@
     <!-- ============ Header ============ -->
     <header class="x-head" id="head">
       <div class="x-wrap">
-        <a class="x-mark" href="#/" aria-label="Shoreline Realty Corp., Brokerage — home">
+        <a class="x-mark" href="#/" aria-label="Shoreline Realty Corp., Brokerage, home">
           <svg width="26" height="38" viewBox="0 0 26 38" fill="none" aria-hidden="true">
             <path d="M13 2.5 10.2 8h5.6L13 2.5Z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
             <path d="M9.2 9.6h7.6M8.4 13.2h9.2M7.3 19.6h11.4M6.2 26h13.6M5 34.5h16" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
@@ -744,7 +745,7 @@
               </div>
               <div class="x-out" aria-live="polite">
                 <span class="x-field" style="display:block"><span>Ballpark range</span></span>
-                <b id="estOut">—</b>
+                <b id="estOut">-</b>
               </div>
               <p class="x-dis">A ballpark for planning only, not an appraisal. Illustrative rates; every home is unique.</p>
               <a class="x-btn x-btn--gold magnetic" href="#/sell/estimate">Request my full evaluation</a>
@@ -987,7 +988,7 @@
               </div>
               <div class="x-out" aria-live="polite">
                 <span class="x-field" style="display:block"><span>Estimated monthly payment</span></span>
-                <b id="mtgOut">—</b>
+                <b id="mtgOut">-</b>
                 <span class="x-dis" id="mtgSub"></span>
               </div>
               <p class="x-dis">Estimate only, not a mortgage quote. Assumes semi-annual compounding; excludes mortgage default insurance, property tax and fees.</p>
@@ -1094,7 +1095,7 @@
               </div>
               <div class="x-out" aria-live="polite">
                 <span class="x-field" style="display:block"><span>Ballpark range (±8%)</span></span>
-                <b id="sellEstOut">—</b>
+                <b id="sellEstOut">-</b>
               </div>
               <p class="x-dis">A ballpark for planning only, not an appraisal. Illustrative rates; every home is unique.</p>
               <a class="x-btn x-btn--gold magnetic" href="#/sell/evaluation">Request my full evaluation</a>
@@ -1917,7 +1918,7 @@
       </section>
 
       <!-- =====================================================================
-           PAGE: ADMIN  (#/admin) — interim view
+           PAGE: ADMIN  (#/admin), interim view
            ===================================================================== -->
       <section data-page="admin" aria-label="Agent dashboard">
         <!-- Sign-in (front-end demo only) -->
@@ -1957,7 +1958,7 @@
                 </div>
                 <button class="x-btn x-btn--ghost" type="button" id="admOut">Sign out</button>
               </div>
-              <p class="x-adm-banner" role="note">Demo dashboard — data resets on reload. Connect a CRM/MLS® feed for production.</p>
+              <p class="x-adm-banner" role="note">Demo dashboard, data resets on reload. Connect a CRM/MLS® feed for production.</p>
             </div>
           </div>
 
@@ -2143,16 +2144,16 @@
         };
         window.SR_ROUTES = LISTINGS; // shared with the admin dashboard
         var TITLES = {
-          home: "Shoreline Realty Corp., Brokerage — Always Here For You",
-          buy: "Buy a home — Shoreline Realty",
-          sell: "Sell your home — Shoreline Realty",
-          lease: "Lease — Shoreline Realty",
-          listings: "Listings — Shoreline Realty",
-          listing: "Listing — Shoreline Realty",
-          story: "Our story — Shoreline Realty",
-          team: "Team — Shoreline Realty",
-          contact: "Contact — Shoreline Realty",
-          admin: "Agent login — Shoreline Realty"
+          home: "Shoreline Realty Corp., Brokerage, Always Here For You",
+          buy: "Buy a home, Shoreline Realty",
+          sell: "Sell your home, Shoreline Realty",
+          lease: "Lease, Shoreline Realty",
+          listings: "Listings, Shoreline Realty",
+          listing: "Listing, Shoreline Realty",
+          story: "Our story, Shoreline Realty",
+          team: "Team, Shoreline Realty",
+          contact: "Contact, Shoreline Realty",
+          admin: "Agent login, Shoreline Realty"
         };
 
         /* ---------- header state ---------- */
@@ -2204,7 +2205,7 @@
             $("#lstTitle").textContent = L.t;
             $("#lstMeta").textContent = L.s + " · " + L.a + " · " + L.k;
             $("#lstLine").textContent = L.p + ". Full details are coming to this page. Sample listing shown for demonstration.";
-            doc.title = L.t + " — Shoreline Realty";
+            doc.title = L.t + ", Shoreline Realty";
           }
           if (r.page === "listings") {
             var bits = [], st = r.query.get("status"), ar = r.query.get("area"), ty = r.query.get("type");
@@ -2780,7 +2781,7 @@
             return (b.area === l.area) - (a.area === l.area) || (a.status === "sold") - (b.status === "sold") || a.order - b.order;
           }).slice(0, 3);
           $("#ldMore").innerHTML = more.map(card).join("");
-          doc.title = l.title + " — Shoreline Realty";
+          doc.title = l.title + ", Shoreline Realty";
         }
 
         /* lightbox */
@@ -2835,7 +2836,7 @@
             var l = BY[decodeURIComponent(m[1])];
             if (l) { renderDetail(l); return; }
             showNF(true);
-            doc.title = "Listing not found — Shoreline Realty";
+            doc.title = "Listing not found, Shoreline Realty";
             return;
           }
           if (/^#\/listings?\/?(\?|$)/.test(h)) {
@@ -3319,7 +3320,7 @@
           var on = signedIn();
           login.hidden = on; dash.hidden = !on;
           if (on) { $("#admWho").textContent = "Signed in as " + store.get(KEY); render(); }
-          if ($('section[data-page="admin"].is-active')) doc.title = (on ? "Dashboard" : "Agent login") + " — Shoreline Realty";
+          if ($('section[data-page="admin"].is-active')) doc.title = (on ? "Dashboard" : "Agent login") + ", Shoreline Realty";
         }
         lf.addEventListener("submit", function (e) {
           e.preventDefault();
@@ -3494,5 +3495,5 @@
         view();
       })();
     </script>
-  </body>
+  <div style="background:#111;color:#ccc;font:13px system-ui,sans-serif;text-align:center;padding:14px">Developed by <a href="https://teta.dpdns.org" style="color:#fff">Teta Digitals</a></div></body>
 </html>
