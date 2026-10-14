@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Gordon's Heating &amp; Cooling | Cumberland, MD (concept preview)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="hark.css" />
+    <link rel="stylesheet" href="hark-hero.css" />
+    <style>
+      :root {
+        --navy: #0e1a2b;
+        --ice: #eaf3fa;
+        --ember: #f2662b;
+        --glacier: #3ba7e0;
+        --slate: #5b6b7f;
+        --line: rgba(14, 26, 43, 0.12);
+        --line-d: rgba(255, 255, 255, 0.16);
+        --x-r: 22px;
+        --ember-t: #b8430f;
+        --glacier-t: #1b6c99;
+        --ember-btn: #c2410c;
+        --navy-2: #17263a;
+      }
+      html body.x-body {
+        background: #fff;
+        color: var(--navy);
+        font-family: "Inter", system-ui, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      .x-wrap { max-width: 1200px; margin: 0 auto; padding-inline: 24px; }
+      .x-mono {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 12px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--slate);
+        margin: 0 0 18px;
+      }
+      .x-mono b { color: var(--ember-t); font-weight: 500; }
+      .x-mono b.x-cool { color: var(--glacier-t); }
+      .x-sec--navy .x-mono b, .x-foot .x-mono b { color: var(--ember); }
+      .x-sec--navy .x-mono b.x-cool { color: var(--glacier); }
+      .x-foot .x-mono { color: #9fb2c7; }
+      .x-d1, .x-d2, .x-d3 {
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.035em;
+        line-height: 0.95;
+        margin: 0;
+      }
+      .x-d1 { font-size: clamp(44px, 8.4vw, 118px); }
+      .x-d2 { font-size: clamp(34px, 5.2vw, 68px); }
+      .x-d3 { font-size: clamp(22px, 2.4vw, 30px); line-height: 1.1; letter-spacing: -0.02em; }
+      .x-lead { font-size: clamp(16px, 1.4vw, 19px); color: var(--slate); max-width: 56ch; margin: 22px 0 0; }
+      .x-sec { padding: clamp(64px, 8vw, 118px) 0; }
+      .x-sec--ice { background: var(--ice); }
+      .x-sec--navy { background: var(--navy); color: #fff; }
+      .x-sec--navy .x-lead, .x-sec--navy .x-mono, .x-sec--navy .x-muted { color: #9fb2c7; }
+      .x-muted { color: var(--slate); }
+      .x-rule { height: 2px; border: 0; margin: 0; background: linear-gradient(90deg, var(--ember), var(--glacier)); }
+      .x-grid { display: grid; gap: 22px; }
+      @media (min-width: 760px) { .x-g2 { grid-template-columns: 1fr 1fr; } .x-g3 { grid-template-columns: repeat(3, 1fr); } .x-g4 { grid-template-columns: repeat(4, 1fr); } }
+
+      /* banner + nav */
+      .x-banner { background: var(--navy); color: #c7d6e6; font-size: 12px; text-align: center; padding: 9px 16px; line-height: 1.4; }
+      .x-nav { position: sticky; top: 0; z-index: 60; background: rgba(255,255,255,0.88); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+      .x-nav__in { display: flex; align-items: center; gap: 18px; height: 72px; }
+      .x-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; min-height: 48px; }
+      .x-logo svg { flex: none; }
+      .x-logo b { font-family: "Manrope", sans-serif; font-weight: 800; font-size: 21px; letter-spacing: -0.03em; display: block; line-height: 1; }
+      .x-logo span { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.08em; color: var(--slate); }
+      .x-menu { display: none; gap: 4px; margin-left: auto; }
+      .x-menu a { text-decoration: none; font-size: 14px; font-weight: 500; color: var(--slate); padding: 10px 12px; border-radius: 999px; min-height: 44px; display: inline-flex; align-items: center; }
+      .x-menu a:hover { color: var(--navy); background: var(--ice); }
+      .x-menu a.is-on { color: var(--navy); background: var(--ice); }
+      .x-navcta { display: none; gap: 10px; }
+      .x-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 12px 22px; border-radius: 999px; font-size: 14px; font-weight: 600; text-decoration: none; border: 1px solid var(--navy); color: var(--navy); background: transparent; cursor: pointer; transition: transform .2s var(--ease-out, ease), background .2s; }
+      .x-btn:hover { transform: translateY(-2px); }
+      .x-btn--fill { background: var(--navy); color: #fff; }
+      .x-btn--ember { background: var(--ember-btn); border-color: var(--ember-btn); color: #fff; }
+      .x-btn--ghost-d { border-color: var(--line-d); color: #fff; }
+      .x-btn--sm { min-height: 44px; padding: 10px 18px; font-size: 13px; }
+      .x-burger { margin-left: auto; width: 46px; height: 46px; border-radius: 12px; border: 1px solid var(--line); background: #fff; display: grid; place-items: center; cursor: pointer; }
+      .x-drawer { display: none; border-top: 1px solid var(--line); background: #fff; padding: 14px 24px 22px; }
+      .x-drawer.is-open { display: block; }
+      .x-drawer a { display: block; text-decoration: none; padding: 13px 0; font-weight: 600; border-bottom: 1px solid var(--line); }
+      @media (min-width: 1040px) { .x-menu, .x-navcta { display: flex; } .x-burger { display: none; } .x-drawer { display: none !important; } }
+
+      /* hero */
+      .x-hero { padding: clamp(46px, 6vw, 92px) 0 clamp(56px, 7vw, 104px); }
+      .x-hero__in { display: grid; gap: 34px; align-items: center; }
+      @media (min-width: 900px) { .x-hero__in { grid-template-columns: 1.05fr 0.95fr; gap: 54px; } }
+      .x-shot { position: relative; }
+      .x-shot img { width: 100%; border-radius: var(--x-r); aspect-ratio: 4/3; object-fit: cover; }
+      .x-chipfloat { position: absolute; background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 12px 16px; box-shadow: 0 18px 40px rgba(14,26,43,.16); font-size: 13px; font-weight: 600; }
+      .x-chipfloat small { display: block; font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--slate); font-weight: 400; }
+      .x-chipfloat--a { left: -10px; bottom: 36px; }
+      .x-chipfloat--b { right: -10px; top: 28px; }
+      .x-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+
+      /* marquee */
+      .x-marq { background: var(--navy); color: #fff; overflow: hidden; padding: 18px 0; }
+      .x-marq__t { display: flex; gap: 0; width: max-content; animation: x-slide 38s linear infinite; }
+      .x-marq span { font-family: "Manrope", sans-serif; font-weight: 800; font-size: clamp(18px, 2vw, 26px); letter-spacing: -0.02em; padding-right: 26px; white-space: nowrap; }
+      .x-marq span i { color: var(--ember); font-style: normal; padding-left: 26px; }
+      @keyframes x-slide { to { transform: translateX(-50%); } }
+      @media (prefers-reduced-motion: reduce) { .x-marq__t { animation: none; } }
+
+      /* cards */
+      .x-card { border: 1px solid var(--line); border-radius: var(--x-r); padding: 26px; background: #fff; transition: transform .25s ease, box-shadow .25s ease; }
+      .x-card:hover { transform: translateY(-6px); box-shadow: 0 20px 44px rgba(14,26,43,.1); }
+      .x-card h3 { font-family: "Manrope", sans-serif; font-weight: 800; font-size: 21px; letter-spacing: -0.02em; margin: 14px 0 8px; }
+      .x-card p { color: var(--slate); font-size: 15px; margin: 0; }
+      .x-card ul { color: var(--slate); font-size: 15px; margin: 10px 0 0; padding-left: 18px; }
+      .x-card li { margin-top: 4px; }
+      .x-card__n { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .14em; color: var(--ember-t); }
+      .x-card--cool .x-card__n { color: var(--glacier-t); }
+      .x-card--d { background: var(--navy-2); border-color: var(--line-d); color: #fff; }
+      .x-card--d .x-card__n { color: var(--ember); }
+      .x-card--d.x-card--cool .x-card__n { color: var(--glacier); }
+      .x-card--d p, .x-card--d ul { color: #9fb2c7; }
+      .x-card--wide { grid-column: 1 / -1; }
+      .x-card img { border-radius: 14px; margin-bottom: 16px; aspect-ratio: 16/10; object-fit: cover; width: 100%; }
+      @media (min-width: 760px) { .x-bento { grid-template-columns: repeat(6, 1fr); } .x-bento > * { grid-column: span 2; } .x-bento > .x-sp3 { grid-column: span 3; } }
+
+      /* stats */
+      .x-stat { border-top: 2px solid var(--navy); padding-top: 18px; }
+      .x-sec--navy .x-stat { border-color: var(--ember); }
+      .x-stat b { display: block; font-family: "Manrope", sans-serif; font-weight: 800; font-size: clamp(38px, 5vw, 62px); letter-spacing: -0.04em; line-height: 1; }
+      .x-stat span { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--slate); }
+      .x-sec--navy .x-stat span { color: #9fb2c7; }
+
+      /* toggle */
+      .x-tog { display: inline-flex; padding: 5px; border-radius: 999px; background: var(--ice); border: 1px solid var(--line); }
+      .x-sec--navy .x-tog { background: var(--navy-2); border-color: var(--line-d); }
+      .x-tog button { border: 0; background: transparent; color: inherit; font: inherit; font-weight: 600; font-size: 14px; padding: 12px 26px; min-height: 44px; border-radius: 999px; cursor: pointer; }
+      .x-tog button.is-on { background: var(--ember-btn); color: #fff; }
+      .x-tog button.is-on[data-mode="cool"] { background: var(--glacier-t); }
+      .x-pane[hidden] { display: none; }
+
+      /* process */
+      .x-proc { display: grid; gap: 22px; }
+      @media (min-width: 900px) { .x-proc { grid-template-columns: 0.9fr 1.1fr; align-items: start; } .x-proc__head { position: sticky; top: 104px; } }
+      .x-step { border-top: 1px solid var(--line-d); padding: 26px 0; display: grid; grid-template-columns: 64px 1fr; gap: 18px; }
+      .x-step b { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--ember); }
+      .x-step h3 { font-family: "Manrope", sans-serif; font-weight: 800; font-size: 22px; letter-spacing: -.02em; margin: 0 0 6px; }
+      .x-step p { margin: 0; color: #9fb2c7; font-size: 15px; }
+
+      /* chips */
+      .x-chips { display: flex; flex-wrap: wrap; gap: 10px; }
+      .x-chip { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 999px; padding: 10px 16px; font-size: 14px; font-weight: 500; background: #fff; }
+      .x-chip em { font-style: normal; font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--glacier-t); letter-spacing: .1em; }
+      .x-sec--navy .x-chip { background: var(--navy-2); border-color: var(--line-d); }
+
+      /* quote, faq, form */
+      .x-quote { font-family: "Manrope", sans-serif; font-weight: 700; font-size: clamp(21px, 2.8vw, 34px); letter-spacing: -.02em; line-height: 1.25; margin: 0; }
+      .x-faq { border-top: 1px solid var(--line); }
+      .x-faq details { border-bottom: 1px solid var(--line); }
+      .x-faq summary { cursor: pointer; list-style: none; padding: 20px 0; font-family: "Manrope", sans-serif; font-weight: 700; font-size: 18px; display: flex; justify-content: space-between; gap: 16px; min-height: 44px; align-items: center; }
+      .x-faq summary::-webkit-details-marker { display: none; }
+      .x-faq summary::after { content: "+"; color: var(--ember); font-size: 22px; }
+      .x-faq details[open] summary::after { content: "\2013"; }
+      .x-faq p { margin: 0 0 20px; color: var(--slate); max-width: 68ch; }
+      .x-field { display: block; margin-bottom: 14px; }
+      .x-field span { display: block; font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--slate); margin-bottom: 7px; }
+      .x-field input, .x-field select, .x-field textarea { width: 100%; font: inherit; font-size: 15px; color: var(--navy); background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 13px 14px; min-height: 48px; }
+      .x-map { width: 100%; height: 380px; border: 0; border-radius: var(--x-r); }
+
+      /* footer */
+      .x-foot { background: var(--navy); color: #9fb2c7; padding: clamp(56px, 7vw, 96px) 0 110px; }
+      .x-foot a { color: #fff; }
+      .x-word { font-family: "Manrope", sans-serif; font-weight: 800; letter-spacing: -0.05em; font-size: clamp(56px, 16vw, 210px); line-height: 0.85; color: #fff; margin: 54px 0 22px; }
+      .x-footgrid { display: grid; gap: 26px; margin-top: 44px; border-top: 1px solid var(--line-d); padding-top: 34px; font-size: 14px; }
+      @media (min-width: 760px) { .x-footgrid { grid-template-columns: repeat(4, 1fr); } }
+      .x-footgrid h4 { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: #9fb2c7; margin: 0 0 12px; font-weight: 500; }
+      .x-footgrid a { display: flex; align-items: center; min-height: 44px; text-decoration: none; padding: 6px 0; }
+      .x-footgrid a:hover { text-decoration: underline; }
+
+      /* mobile call bar */
+      .x-callbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 70; display: flex; gap: 10px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(14,26,43,.96); backdrop-filter: blur(10px); }
+      .x-callbar a { flex: 1; }
+      @media (min-width: 1040px) { .x-callbar { display: none; } .x-foot { padding-bottom: clamp(56px, 7vw, 96px); } }
+
+      /* reveal */
+      .x-rev { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
+      .x-rev.is-in { opacity: 1; transform: none; }
+      @media (prefers-reduced-motion: reduce) { .x-rev { opacity: 1; transform: none; transition: none; } }
+      .x-page[hidden] { display: none; }
+    </style>
+  </head>
+  <body class="x-body">
+    <p class="x-banner">Independent concept preview by Teta Digitals. Not the official website of Gordon's Heating &amp; Cooling.</p>
+    <header class="x-nav">
+      <div class="x-wrap x-nav__in">
+        <a class="x-logo" href="#/">
+          <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M16 2c3 4.5 6.5 7 6.5 12A6.5 6.5 0 0 1 16 20.5z" fill="#F2662B" />
+            <g stroke="#3BA7E0" stroke-width="2" stroke-linecap="round">
+              <path d="M16 20v10M16 24l-4-3M16 24l4-3M11 27l10-6M21 27 11 21" />
+            </g>
+          </svg>
+          <span><b>Gordon's</b><span>HEATING &amp; COOLING</span></span>
+        </a>
+        <nav class="x-menu" id="menu" aria-label="Pages"></nav>
+        <div class="x-navcta">
+          <a class="x-btn x-btn--sm" href="tel:+12407275691">Call (240) 727-5691</a>
+          <a class="x-btn x-btn--sm x-btn--fill" href="#/contact">Free estimate</a>
+        </div>
+        <button class="x-burger" id="burger" aria-label="Open menu" aria-expanded="false">
+          <svg width="20" height="14" viewBox="0 0 20 14" aria-hidden="true"><path d="M0 1h20M0 7h20M0 13h20" stroke="#0E1A2B" stroke-width="2" /></svg>
+        </button>
+      </div>
+      <div class="x-drawer" id="drawer"></div>
+    </header>
+    <hr class="x-rule" />
+
+    <main id="main">
+      <!-- HOME -->
+      <div class="x-page" id="p-home">
+        <section class="x-hero">
+          <div class="x-wrap x-hero__in">
+            <div class="x-rev">
+              <p class="x-mono"><b>/ 01</b> Cumberland, MD &middot; Since 1992</p>
+              <h1 class="x-d1">Warm winters.<br />Cool summers.<br />Since 1992.</h1>
+              <p class="x-lead">Full service heating and air conditioning across Western Maryland from owner/operator Tim Gordon, with free estimates and free safety inspections.</p>
+              <div class="x-row">
+                <a class="x-btn x-btn--ember" href="tel:+12407275691">Call (240) 727-5691</a>
+                <a class="x-btn" href="#/contact">Free estimate</a>
+              </div>
+            </div>
+            <div class="x-shot x-rev">
+              <img src="gordon-hero.png" alt="A Western Maryland house at winter dusk" />
+              <div class="x-chipfloat x-chipfloat--a"><small>Established</small>Since 1992</div>
+              <div class="x-chipfloat x-chipfloat--b"><small>Google</small>4.8 stars &middot; 84 reviews</div>
+            </div>
+          </div>
+        </section>
+
+        <div class="x-marq" aria-hidden="true">
+          <div class="x-marq__t">
+            <span>Furnaces<i>&middot;</i>Air conditioning<i>&middot;</i>Heat pumps<i>&middot;</i>Ductwork<i>&middot;</i>Maintenance<i>&middot;</i>Free safety inspections<i>&middot;</i>Carbon monoxide screening<i>&middot;</i></span>
+            <span>Furnaces<i>&middot;</i>Air conditioning<i>&middot;</i>Heat pumps<i>&middot;</i>Ductwork<i>&middot;</i>Maintenance<i>&middot;</i>Free safety inspections<i>&middot;</i>Carbon monoxide screening<i>&middot;</i></span>
+          </div>
+        </div>
+
+        <section class="x-sec">
+          <div class="x-wrap">
+            <div class="x-grid x-g4">
+              <div class="x-stat x-rev"><b data-count="1992" data-plain="1">1992</b><span>Established</span></div>
+              <div class="x-stat x-rev"><b data-count="4.8" data-dec="1">4.8</b><span>Google rating</span></div>
+              <div class="x-stat x-rev"><b data-count="84">84</b><span>Google reviews</span></div>
+              <div class="x-stat x-rev"><b data-count="24" data-suffix="h">24h</b><span>A day for your questions</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec x-sec--navy">
+          <div class="x-wrap">
+            <p class="x-mono"><b>/ 02</b> Heat or cool</p>
+            <h2 class="x-d2">One contractor for both seasons.</h2>
+            <div class="x-row" style="margin-bottom: 34px">
+              <div class="x-tog" role="group" aria-label="Heating or cooling">
+                <button type="button" data-mode="heat" class="is-on" aria-pressed="true">Heating</button>
+                <button type="button" data-mode="cool" aria-pressed="false">Cooling</button>
+              </div>
+            </div>
+            <div class="x-pane" data-pane="heat">
+              <div class="x-grid x-g3">
+                <div class="x-card x-card--d"><p class="x-card__n">/ FURNACES</p><h3>Install and repair</h3><p>Furnace repair, new installation and removal of old equipment, residential and commercial.</p></div>
+                <div class="x-card x-card--d"><p class="x-card__n">/ HEAT PUMPS</p><h3>Year round systems</h3><p>Heat pump service and installation for homes that heat and cool from one system.</p></div>
+                <div class="x-card x-card--d"><p class="x-card__n">/ SAFETY</p><h3>Free inspection</h3><p>A free safety inspection of your HVAC equipment, including carbon monoxide screening.</p></div>
+              </div>
+              <div class="x-row"><a class="x-btn x-btn--ember" href="#/heating">See heating services</a></div>
+            </div>
+            <div class="x-pane" data-pane="cool" hidden>
+              <div class="x-grid x-g3">
+                <div class="x-card x-card--d x-card--cool"><p class="x-card__n">/ AIR CONDITIONING</p><h3>Install and repair</h3><p>Air conditioning repair and new installation, plus removal of the old unit.</p></div>
+                <div class="x-card x-card--d x-card--cool"><p class="x-card__n">/ THERMOSTATS</p><h3>Controls that work</h3><p>Thermostat replacement and setup so the system runs the way you expect.</p></div>
+                <div class="x-card x-card--d x-card--cool"><p class="x-card__n">/ TUNE-UPS</p><h3>Before the heat</h3><p>Seasonal maintenance and tune-ups so cooling season does not start with a breakdown.</p></div>
+              </div>
+              <div class="x-row"><a class="x-btn x-btn--ghost-d" href="#/cooling">See cooling services</a></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap">
+            <p class="x-mono"><b>/ 03</b> Services</p>
+            <h2 class="x-d2">Repair, installation,<br />and everything in between.</h2>
+            <p class="x-lead" style="margin-bottom: 38px">A full service heating and air conditioning contractor for residential and commercial work across Allegany County and nearby.</p>
+            <div class="x-grid x-bento">
+              <a class="x-card x-sp3 x-rev" href="#/heating" style="text-decoration: none; color: inherit">
+                <img src="gordon-heating.png" alt="A residential furnace being serviced" />
+                <p class="x-card__n">/ 01 HEATING</p><h3>Furnaces and heat pumps</h3><p>Install, repair and removal, with seasonal tune-ups before the cold sets in.</p>
+              </a>
+              <a class="x-card x-sp3 x-card--cool x-rev" href="#/cooling" style="text-decoration: none; color: inherit">
+                <img src="gordon-cooling.png" alt="An outdoor air conditioning condenser unit" />
+                <p class="x-card__n">/ 02 COOLING</p><h3>Air conditioning</h3><p>AC install and repair, heat pumps and thermostats for homes and businesses.</p>
+              </a>
+              <a class="x-card x-rev" href="#/safety" style="text-decoration: none; color: inherit"><p class="x-card__n">/ 03</p><h3>Free safety inspections</h3><p>Including carbon monoxide screening. No charge.</p></a>
+              <a class="x-card x-rev" href="#/maintenance" style="text-decoration: none; color: inherit"><p class="x-card__n">/ 04</p><h3>Maintenance</h3><p>Seasonal tune-ups, filters and all repair work.</p></a>
+              <a class="x-card x-rev" href="#/maintenance" style="text-decoration: none; color: inherit"><p class="x-card__n">/ 05</p><h3>Ductwork</h3><p>Ductwork service as part of the system, not an afterthought.</p></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec x-sec--ice">
+          <div class="x-wrap x-grid x-g2" style="align-items: center">
+            <div class="x-rev">
+              <p class="x-mono"><b>/ 04</b> Safety first</p>
+              <h2 class="x-d2">A free safety inspection, carbon monoxide screening included.</h2>
+              <p class="x-lead">Consider the safety of your family or business. Contact us today for a FREE safety inspection of your HVAC equipment, including carbon monoxide screening.</p>
+              <div class="x-row"><a class="x-btn x-btn--fill" href="#/safety">What we check</a><a class="x-btn" href="#/contact">Request an inspection</a></div>
+            </div>
+            <div class="x-grid x-rev">
+              <div class="x-card"><p class="x-card__n">/ WHY</p><h3>Carbon monoxide is invisible</h3><p>It has no colour and no smell, so equipment that produces it deserves a regular look.</p></div>
+              <div class="x-card x-card--cool"><p class="x-card__n">/ COST</p><h3>Free, and so are estimates</h3><p>Free estimates and free safety inspections, residential and commercial.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec x-sec--navy">
+          <div class="x-wrap x-proc">
+            <div class="x-proc__head">
+              <p class="x-mono"><b>/ 05</b> How it goes</p>
+              <h2 class="x-d2">Four steps, no mystery.</h2>
+              <p class="x-lead">Call us anytime with your heating or cooling questions or problems; we are here for you 24 hours a day.</p>
+            </div>
+            <div>
+              <div class="x-step x-rev"><b>01</b><div><h3>Call Tim</h3><p>Describe the problem, or the system you are thinking about replacing.</p></div></div>
+              <div class="x-step x-rev"><b>02</b><div><h3>Free estimate or safety inspection</h3><p>We look at the equipment and screen for carbon monoxide, at no charge.</p></div></div>
+              <div class="x-step x-rev"><b>03</b><div><h3>Clear recommendation</h3><p>What needs doing now, what can wait, and what it involves.</p></div></div>
+              <div class="x-step x-rev"><b>04</b><div><h3>Repair, install or tune-up</h3><p>All repair and maintenance work, installation and removal of old equipment.</p></div></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap">
+            <p class="x-mono"><b>/ 06</b> Service area</p>
+            <h2 class="x-d2">Based in Cumberland, serving Allegany County and nearby.</h2>
+            <p class="x-lead" style="margin-bottom: 30px">Western Maryland and surrounding areas, including nearby Pennsylvania and West Virginia.</p>
+            <div class="x-chips x-rev">
+              <span class="x-chip">Cumberland <em>MD</em></span><span class="x-chip">La Vale <em>MD</em></span><span class="x-chip">Cresaptown <em>MD</em></span><span class="x-chip">Frostburg <em>MD</em></span><span class="x-chip">Flintstone <em>MD</em></span><span class="x-chip">Ellerslie <em>MD</em></span><span class="x-chip">Lonaconing <em>MD</em></span><span class="x-chip">Hyndman <em>PA</em></span><span class="x-chip">Fort Ashby <em>WV</em></span><span class="x-chip">Keyser <em>WV</em></span>
+            </div>
+            <div class="x-row"><a class="x-btn" href="#/service-area">See the map</a></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- HEATING -->
+      <div class="x-page" id="p-heating" hidden>
+        <section class="x-hero">
+          <div class="x-wrap x-hero__in">
+            <div class="x-rev">
+              <p class="x-mono"><b>/ 01</b> Heating</p>
+              <h1 class="x-d1">Heat you can count on.</h1>
+              <p class="x-lead">Furnaces and heat pumps: repair, installation, removal and everything in between, for homes and businesses across Allegany County.</p>
+              <div class="x-row">
+                <a class="x-btn x-btn--ember" href="tel:+12407275691">Call (240) 727-5691</a>
+                <a class="x-btn" href="#/contact">Free estimate</a>
+              </div>
+            </div>
+            <div class="x-shot x-rev">
+              <img src="gordon-heating.png" alt="A residential furnace being serviced" />
+              <div class="x-chipfloat x-chipfloat--a"><small>Questions</small>24 hours a day</div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--ice">
+          <div class="x-wrap">
+            <p class="x-mono"><b>/ 02</b> What we do</p>
+            <h2 class="x-d2" style="margin-bottom: 38px">Heating services.</h2>
+            <div class="x-grid x-g2">
+              <div class="x-card x-rev"><p class="x-card__n">/ FURNACES</p><h3>Furnace repair</h3><p>Diagnosis and repair when the furnace will not start, short cycles or stops keeping up.</p></div>
+              <div class="x-card x-rev"><p class="x-card__n">/ FURNACES</p><h3>Furnace installation</h3><p>New furnace installation, with a free estimate first so you know what is involved.</p></div>
+              <div class="x-card x-rev"><p class="x-card__n">/ HEAT PUMPS</p><h3>Heat pump service</h3><p>Repair and installation of heat pumps that heat in winter and cool in summer.</p></div>
+              <div class="x-card x-rev"><p class="x-card__n">/ REMOVAL</p><h3>Old equipment removal</h3><p>Removal of the old unit when it is replaced, so it is not left behind.</p></div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap x-proc">
+            <div class="x-proc__head">
+              <p class="x-mono"><b>/ 03</b> Warning signs</p>
+              <h2 class="x-d2">Signs your heat needs attention.</h2>
+              <p class="x-lead">General signs worth a call. If anything smells of gas or a CO alarm sounds, leave the building first.</p>
+            </div>
+            <div class="x-grid x-g2">
+              <div class="x-card x-rev"><h3>Uneven rooms</h3><p>Some rooms stay cold while others overheat.</p></div>
+              <div class="x-card x-rev"><h3>New noises</h3><p>Banging, squealing or rattling at startup or while running.</p></div>
+              <div class="x-card x-rev"><h3>Short cycling</h3><p>The system turns on and off far more often than it used to.</p></div>
+              <div class="x-card x-rev"><h3>Rising bills</h3><p>Energy costs climb without a change in how you use the heat.</p></div>
+              <div class="x-card x-rev"><h3>Odd smells or soot</h3><p>Burning smells that linger, or soot near the equipment.</p></div>
+              <div class="x-card x-rev"><h3>Yellow burner flame</h3><p>On gas equipment, a flame that is not a steady blue is worth checking.</p></div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--navy">
+          <div class="x-wrap">
+            <p class="x-mono"><b>/ 04</b> Before winter</p>
+            <h2 class="x-d2" style="max-width: 20ch">Pair a tune-up with a free safety inspection.</h2>
+            <p class="x-lead">The inspection includes carbon monoxide screening, at no charge.</p>
+            <div class="x-row"><a class="x-btn x-btn--ember" href="#/safety">About the inspection</a><a class="x-btn x-btn--ghost-d" href="#/maintenance">Maintenance</a></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- COOLING -->
+      <div class="x-page" id="p-cooling" hidden>
+        <section class="x-hero">
+          <div class="x-wrap x-hero__in">
+            <div class="x-rev">
+              <p class="x-mono"><b style="color: var(--glacier)">/ 01</b> Cooling</p>
+              <h1 class="x-d1">Cool air, all summer.</h1>
+              <p class="x-lead">Air conditioning installation and repair, heat pumps and thermostats, for homes and businesses in Western Maryland and surrounding areas.</p>
+              <div class="x-row">
+                <a class="x-btn x-btn--fill" href="tel:+12407275691">Call (240) 727-5691</a>
+                <a class="x-btn" href="#/contact">Free estimate</a>
+              </div>
+            </div>
+            <div class="x-shot x-rev">
+              <img src="gordon-cooling.png" alt="An outdoor air conditioning condenser unit" />
+              <div class="x-chipfloat x-chipfloat--b"><small>Estimates</small>Always free</div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--ice">
+          <div class="x-wrap">
+            <p class="x-mono"><b style="color: var(--glacier)">/ 02</b> What we do</p>
+            <h2 class="x-d2" style="margin-bottom: 38px">Cooling services.</h2>
+            <div class="x-grid x-g2">
+              <div class="x-card x-card--cool x-rev"><p class="x-card__n">/ AC</p><h3>AC repair</h3><p>Warm air, weak airflow, ice on the lines or a unit that will not start.</p></div>
+              <div class="x-card x-card--cool x-rev"><p class="x-card__n">/ AC</p><h3>AC installation</h3><p>New air conditioning installed, and the old unit removed.</p></div>
+              <div class="x-card x-card--cool x-rev"><p class="x-card__n">/ HEAT PUMPS</p><h3>Heat pumps</h3><p>One system for summer cooling and winter heating, installed and repaired.</p></div>
+              <div class="x-card x-card--cool x-rev"><p class="x-card__n">/ CONTROLS</p><h3>Thermostats</h3><p>Thermostat replacement and setup so the system follows your schedule.</p></div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap">
+            <p class="x-mono"><b style="color: var(--glacier)">/ 03</b> Summer readiness</p>
+            <h2 class="x-d2" style="margin-bottom: 38px">Get ready before the first heat wave.</h2>
+            <div class="x-grid x-g3">
+              <div class="x-card x-card--cool x-rev"><p class="x-card__n">01</p><h3>Change the filter</h3><p>A clogged filter is a common cause of weak airflow and strain.</p></div>
+              <div class="x-card x-card--cool x-rev"><p class="x-card__n">02</p><h3>Clear the outdoor unit</h3><p>Keep leaves, grass and shrubs a couple of feet back from the condenser.</p></div>
+              <div class="x-card x-card--cool x-rev"><p class="x-card__n">03</p><h3>Test it early</h3><p>Run the AC on a mild day so problems show up before you need it most.</p></div>
+              <div class="x-card x-card--cool x-rev"><p class="x-card__n">04</p><h3>Check the thermostat</h3><p>Fresh batteries and the right mode and schedule for summer.</p></div>
+              <div class="x-card x-card--cool x-rev"><p class="x-card__n">05</p><h3>Open the vents</h3><p>Blocked or closed supply vents make rooms uneven.</p></div>
+              <div class="x-card x-card--cool x-rev"><p class="x-card__n">06</p><h3>Book a tune-up</h3><p>A seasonal tune-up before summer starts.</p></div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--navy">
+          <div class="x-wrap">
+            <p class="x-mono"><b style="color: var(--glacier)">/ 04</b> Questions</p>
+            <h2 class="x-d2" style="max-width: 20ch">AC acting up? Call us anytime.</h2>
+            <p class="x-lead">We are here for you 24 hours a day with your heating and cooling questions or problems.</p>
+            <div class="x-row"><a class="x-btn x-btn--ember" href="tel:+12407275691">Call (240) 727-5691</a><a class="x-btn x-btn--ghost-d" href="#/contact">Request an estimate</a></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- SAFETY -->
+      <div class="x-page" id="p-safety" hidden>
+        <section class="x-hero x-sec--navy">
+          <div class="x-wrap">
+            <p class="x-mono"><b>/ 01</b> Free safety inspection</p>
+            <h1 class="x-d1" style="max-width: 12ch">Safety first. And it's free.</h1>
+            <p class="x-lead">Consider the safety of your family or business. Contact us today for a FREE safety inspection of your HVAC equipment, including carbon monoxide screening.</p>
+            <div class="x-row"><a class="x-btn x-btn--ember" href="tel:+12407275691">Call (240) 727-5691</a><a class="x-btn x-btn--ghost-d" href="#/contact">Request an inspection</a></div>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap">
+            <p class="x-mono"><b>/ 02</b> Why carbon monoxide matters</p>
+            <h2 class="x-d2" style="margin-bottom: 38px">You cannot see it or smell it.</h2>
+            <div class="x-grid x-g3">
+              <div class="x-card x-rev"><p class="x-card__n">/ INVISIBLE</p><h3>Odorless and colorless</h3><p>Carbon monoxide gives no warning you can see or smell, which is why screening and alarms matter.</p></div>
+              <div class="x-card x-rev"><p class="x-card__n">/ ALARMS</p><h3>Install CO alarms</h3><p>Put carbon monoxide alarms in the home, especially near sleeping areas, and test them regularly.</p></div>
+              <div class="x-card x-rev" style="border-color: var(--ember)"><p class="x-card__n">/ EMERGENCY</p><h3>Alarm sounds and people feel ill?</h3><p>Get everyone outside into fresh air and call 911. Do not go back in until it is declared safe.</p></div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--ice">
+          <div class="x-wrap x-proc">
+            <div class="x-proc__head">
+              <p class="x-mono"><b>/ 03</b> The inspection</p>
+              <h2 class="x-d2">What a safety inspection looks at.</h2>
+              <p class="x-lead">A general picture of what an HVAC safety check covers. Tim will walk you through what he finds on your equipment.</p>
+            </div>
+            <div class="x-grid">
+              <div class="x-card x-rev"><p class="x-card__n">01</p><h3>Carbon monoxide screening</h3><p>Checking for CO around the heating equipment and living space.</p></div>
+              <div class="x-card x-rev"><p class="x-card__n">02</p><h3>Venting and flue</h3><p>Making sure combustion gases leave the house the way they should.</p></div>
+              <div class="x-card x-rev"><p class="x-card__n">03</p><h3>Burners and combustion</h3><p>How the equipment lights and burns.</p></div>
+              <div class="x-card x-rev"><p class="x-card__n">04</p><h3>Controls and wiring</h3><p>Safety controls, connections and the thermostat.</p></div>
+              <div class="x-card x-rev"><p class="x-card__n">05</p><h3>Overall condition</h3><p>Wear, leaks, rust or anything that needs attention now or later.</p></div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap">
+            <h2 class="x-d2" style="max-width: 20ch">Homes and businesses. No charge.</h2>
+            <p class="x-lead">Free safety inspections for residential and commercial customers across Allegany County and nearby.</p>
+            <div class="x-row"><a class="x-btn x-btn--ember" href="#/contact">Book a free inspection</a></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- MAINTENANCE -->
+      <div class="x-page" id="p-maintenance" hidden>
+        <section class="x-hero x-sec--ice">
+          <div class="x-wrap">
+            <p class="x-mono"><b>/ 01</b> Maintenance</p>
+            <h1 class="x-d1" style="max-width: 13ch">All repair and maintenance work.</h1>
+            <p class="x-lead">Seasonal tune-ups, ductwork and the everyday fixes that keep a system running through the winter and summer seasons.</p>
+            <div class="x-row"><a class="x-btn x-btn--fill" href="tel:+12407275691">Call (240) 727-5691</a><a class="x-btn" href="#/contact">Schedule a tune-up</a></div>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap">
+            <p class="x-mono"><b>/ 02</b> Seasonal tune-ups</p>
+            <h2 class="x-d2" style="margin-bottom: 38px">Two seasons, two checkups.</h2>
+            <div class="x-grid x-g2">
+              <div class="x-card x-rev"><p class="x-card__n">/ FALL &middot; HEATING</p><h3>Before the cold</h3><p>A furnace or heat pump tune-up before you rely on it, ideally paired with the free safety inspection and carbon monoxide screening.</p></div>
+              <div class="x-card x-card--cool x-rev"><p class="x-card__n">/ SPRING &middot; COOLING</p><h3>Before the heat</h3><p>An air conditioning or heat pump tune-up before summer, so cooling season starts smoothly.</p></div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--navy">
+          <div class="x-wrap">
+            <p class="x-mono"><b>/ 03</b> Filter tips</p>
+            <h2 class="x-d2" style="margin-bottom: 38px">The cheapest maintenance there is.</h2>
+            <div class="x-grid x-g3">
+              <div class="x-card x-card--d x-rev"><h3>Check monthly</h3><p>Look at the filter every month during heavy heating and cooling use.</p></div>
+              <div class="x-card x-card--d x-rev"><h3>Replace when dirty</h3><p>Follow the filter maker's guidance; pets, dust and construction shorten its life.</p></div>
+              <div class="x-card x-card--d x-rev"><h3>Right size, right way</h3><p>Match the size printed on the old filter and point the airflow arrow toward the equipment.</p></div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap x-grid x-g2" style="align-items: center">
+            <div class="x-rev">
+              <p class="x-mono"><b>/ 04</b> Ductwork</p>
+              <h2 class="x-d2">The part of the system you never see.</h2>
+              <p class="x-lead">Ducts carry every bit of heated and cooled air through the house. Ductwork service is part of the full service work Gordon's does.</p>
+            </div>
+            <div class="x-card x-rev">
+              <h3>Signs ducts need a look</h3>
+              <ul><li>Rooms that never reach the set temperature</li><li>Weak airflow at some vents</li><li>Dust that returns quickly</li><li>Whistling or rattling in the ducts</li></ul>
+              <div class="x-row"><a class="x-btn x-btn--fill" href="#/contact">Ask about ductwork</a></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ABOUT -->
+      <div class="x-page" id="p-about" hidden>
+        <section class="x-hero">
+          <div class="x-wrap">
+            <p class="x-mono"><b>/ 01</b> About</p>
+            <h1 class="x-d1" style="max-width: 12ch">Tim Gordon, owner and operator.</h1>
+            <p class="x-lead">Gordon's Heating &amp; Cooling was established in 1992 and has grown to be a strong, reputable business throughout Allegany County.</p>
+          </div>
+        </section>
+        <section class="x-sec x-sec--navy">
+          <div class="x-wrap">
+            <p class="x-mono"><b>/ 02</b> In their words</p>
+            <blockquote class="x-quote" style="max-width: 30ch">"We have always maintained a professional and proactive effort to making sure your home is comfortable throughout the winter and summer seasons."</blockquote>
+            <p class="x-mono" style="margin-top: 22px">Gordon's Heating &amp; Cooling</p>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap x-proc">
+            <div class="x-proc__head">
+              <p class="x-mono"><b>/ 03</b> Since 1992</p>
+              <h2 class="x-d2">From Cumberland outward.</h2>
+            </div>
+            <div class="x-grid">
+              <div class="x-card x-rev"><p class="x-card__n">/ 1992</p><h3>Founded in Cumberland</h3><p>Tim Gordon starts Gordon's Heating &amp; Cooling in Cumberland, Maryland.</p></div>
+              <div class="x-card x-card--cool x-rev"><p class="x-card__n">/ TODAY</p><h3>Serving Allegany County and beyond</h3><p>A strong, reputable business across Allegany County and nearby Pennsylvania and West Virginia, rated 4.8 stars from 84 Google reviews.</p></div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--ice">
+          <div class="x-wrap">
+            <p class="x-mono"><b>/ 04</b> Values</p>
+            <h2 class="x-d2" style="margin-bottom: 38px">How the work gets done.</h2>
+            <div class="x-grid x-g4">
+              <div class="x-card x-rev"><p class="x-card__n">01</p><h3>Professional</h3><p>Repair, installation and everything in between, done properly.</p></div>
+              <div class="x-card x-rev"><p class="x-card__n">02</p><h3>Proactive</h3><p>Tune-ups and inspections that catch problems before the season does.</p></div>
+              <div class="x-card x-rev"><p class="x-card__n">03</p><h3>Safety first</h3><p>Free safety inspections with carbon monoxide screening.</p></div>
+              <div class="x-card x-rev"><p class="x-card__n">04</p><h3>Available</h3><p>Here for your questions 24 hours a day.</p></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- SERVICE AREA -->
+      <div class="x-page" id="p-area" hidden>
+        <section class="x-hero">
+          <div class="x-wrap">
+            <p class="x-mono"><b>/ 01</b> Service area</p>
+            <h1 class="x-d1" style="max-width: 13ch">Western Maryland and around.</h1>
+            <p class="x-lead">Based in Cumberland, serving Allegany County and nearby, including parts of Pennsylvania and West Virginia.</p>
+          </div>
+        </section>
+        <section class="x-sec x-sec--ice">
+          <div class="x-wrap">
+            <p class="x-mono"><b>/ 02</b> Towns we serve</p>
+            <div class="x-grid x-g4" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))">
+              <div class="x-card x-rev"><p class="x-card__n">MD</p><h3>Cumberland</h3></div>
+              <div class="x-card x-rev"><p class="x-card__n">MD</p><h3>La Vale</h3></div>
+              <div class="x-card x-rev"><p class="x-card__n">MD</p><h3>Cresaptown</h3></div>
+              <div class="x-card x-rev"><p class="x-card__n">MD</p><h3>Frostburg</h3></div>
+              <div class="x-card x-rev"><p class="x-card__n">MD</p><h3>Flintstone</h3></div>
+              <div class="x-card x-rev"><p class="x-card__n">MD</p><h3>Ellerslie</h3></div>
+              <div class="x-card x-rev"><p class="x-card__n">MD</p><h3>Lonaconing</h3></div>
+              <div class="x-card x-card--cool x-rev"><p class="x-card__n">PA</p><h3>Hyndman</h3></div>
+              <div class="x-card x-card--cool x-rev"><p class="x-card__n">WV</p><h3>Fort Ashby</h3></div>
+              <div class="x-card x-card--cool x-rev"><p class="x-card__n">WV</p><h3>Keyser</h3></div>
+            </div>
+            <p class="x-muted" style="margin-top: 22px; font-size: 14px">Town list from the Gordon's Facebook page. Not listed? Call and ask.</p>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap">
+            <p class="x-mono"><b>/ 03</b> Map</p>
+            <iframe class="x-map" src="https://www.google.com/maps?q=Cumberland,+MD&amp;output=embed" title="Map of Cumberland, Maryland" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="x-row"><a class="x-btn x-btn--ember" href="tel:+12407275691">Call (240) 727-5691</a><a class="x-btn" href="#/contact">Free estimate</a></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="x-page" id="p-contact" hidden>
+        <section class="x-hero">
+          <div class="x-wrap x-hero__in" style="align-items: start">
+            <div class="x-rev">
+              <p class="x-mono"><b>/ 01</b> Contact</p>
+              <h1 class="x-d1">Talk to Tim.</h1>
+              <p class="x-lead">Call us anytime with your heating or cooling questions or problems; we are here for you 24 hours a day.</p>
+              <div class="x-card" style="margin-top: 30px">
+                <p class="x-card__n">/ PHONE</p>
+                <h3><a href="tel:+12407275691" style="text-decoration: none">(240) 727-5691</a></h3>
+                <p class="x-card__n" style="margin-top: 18px">/ EMAIL</p>
+                <p><a href="mailto:gordonarmstrongair@gmail.com" style="color: var(--navy)">gordonarmstrongair@gmail.com</a></p>
+                <p class="x-card__n" style="margin-top: 18px">/ BASED IN</p>
+                <p>Cumberland, serving Allegany County and nearby</p>
+              </div>
+            </div>
+            <form class="x-card x-rev" id="quote" style="background: var(--ice)">
+              <h3 style="margin-top: 0">Request a free estimate or safety inspection</h3>
+              <p style="margin-bottom: 20px">This opens your email app with the details filled in.</p>
+              <label class="x-field"><span>Name</span><input name="name" required autocomplete="name" /></label>
+              <label class="x-field"><span>Phone</span><input name="phone" type="tel" required autocomplete="tel" /></label>
+              <label class="x-field"><span>Town</span><input name="town" placeholder="e.g. Frostburg" /></label>
+              <label class="x-field"><span>Service</span>
+                <select name="service">
+                  <option>Free estimate</option><option>Free safety inspection (CO screening)</option><option>Furnace repair or install</option><option>Air conditioning repair or install</option><option>Heat pump</option><option>Ductwork</option><option>Thermostat</option><option>Seasonal tune-up</option><option>Commercial</option><option>Other</option>
+                </select>
+              </label>
+              <label class="x-field"><span>Message</span><textarea name="message" rows="4"></textarea></label>
+              <button class="x-btn x-btn--ember" type="submit" style="width: 100%">Send request</button>
+            </form>
+          </div>
+        </section>
+        <section class="x-sec x-sec--navy">
+          <div class="x-wrap">
+            <p class="x-mono"><b>/ 02</b> Ratings</p>
+            <div class="x-grid x-g2">
+              <div class="x-stat"><b>4.8 &#9733;</b><span>84 Google reviews</span></div>
+              <div class="x-stat" style="border-color: var(--glacier)"><b>96%</b><span>Recommend on Facebook &middot; 51 reviews</span></div>
+            </div>
+            <div class="x-row">
+              <a class="x-btn x-btn--ember" href="https://www.google.com/maps/search/?api=1&amp;query=Gordon%27s+Heating+%26+Cooling+Cumberland+MD" target="_blank" rel="noopener">Read Google reviews</a>
+              <a class="x-btn x-btn--ghost-d" href="https://www.facebook.com/tgordonhvac/" target="_blank" rel="noopener">Facebook page</a>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap x-proc">
+            <div class="x-proc__head">
+              <p class="x-mono"><b>/ 03</b> FAQ</p>
+              <h2 class="x-d2">Common questions.</h2>
+            </div>
+            <div class="x-faq">
+              <details><summary>Are estimates free?</summary><p>Yes. Gordon's offers free estimates.</p></details>
+              <details><summary>Is the safety inspection really free?</summary><p>Yes. The safety inspection of your HVAC equipment is free, and it includes carbon monoxide screening.</p></details>
+              <details><summary>Do you do commercial work?</summary><p>Yes. Gordon's is a full service heating and air conditioning contractor for residential and commercial customers.</p></details>
+              <details><summary>What areas do you serve?</summary><p>Based in Cumberland, serving Allegany County and nearby: Cumberland, La Vale, Cresaptown, Frostburg, Flintstone, Ellerslie and Lonaconing in Maryland, Hyndman PA, and Fort Ashby and Keyser WV. <a href="#/service-area" style="color: var(--navy)">See the map</a>.</p></details>
+              <details><summary>Can I call after hours?</summary><p>Yes. Call anytime with your heating or cooling questions or problems; they are here for you 24 hours a day at <a href="tel:+12407275691" style="color: var(--navy)">(240) 727-5691</a>.</p></details>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="x-foot">
+      <div class="x-wrap">
+        <p class="x-mono">/ Free estimates &middot; Free safety inspections</p>
+        <h2 class="x-d2" style="color: #fff; max-width: 18ch">Let's get the house comfortable again.</h2>
+        <div class="x-row">
+          <a class="x-btn x-btn--ember" href="tel:+12407275691">Call (240) 727-5691</a>
+          <a class="x-btn x-btn--ghost-d" href="mailto:gordonarmstrongair@gmail.com">gordonarmstrongair@gmail.com</a>
+        </div>
+        <p class="x-word">GORDON'S</p>
+        <div class="x-footgrid">
+          <div>
+            <h4>Pages</h4>
+            <a href="#/">Home</a><a href="#/heating">Heating</a><a href="#/cooling">Cooling</a><a href="#/safety">Safety</a>
+          </div>
+          <div>
+            <h4>More</h4>
+            <a href="#/maintenance">Maintenance</a><a href="#/about">About</a><a href="#/service-area">Service area</a><a href="#/contact">Contact</a>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <a href="tel:+12407275691">(240) 727-5691</a><a href="mailto:gordonarmstrongair@gmail.com">gordonarmstrongair@gmail.com</a>
+            <a href="https://www.facebook.com/tgordonhvac/" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Gordon%27s+Heating+%26+Cooling+Cumberland+MD" target="_blank" rel="noopener">Google reviews</a>
+          </div>
+          <div>
+            <h4>Gordon's Heating &amp; Cooling</h4>
+            <p style="margin: 0">Based in Cumberland, serving Allegany County and nearby. Owner/operator Tim Gordon. Established 1992.</p>
+            <p style="margin: 14px 0 0">Concept preview only.</p>
+            <a href="https://teta.dpdns.org" target="_blank" rel="noopener">Developed by Teta Digitals</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="x-callbar">
+      <a class="x-btn x-btn--ember x-btn--sm" href="tel:+12407275691">Call now</a>
+      <a class="x-btn x-btn--ghost-d x-btn--sm" href="#/contact">Free estimate</a>
+    </div>
+
+    <script src="hark.js"></script>
+    <script>
+      (function () {
+        var PAGES = [
+          ["#/", "Home", "p-home"],
+          ["#/heating", "Heating", "p-heating"],
+          ["#/cooling", "Cooling", "p-cooling"],
+          ["#/safety", "Safety", "p-safety"],
+          ["#/maintenance", "Maintenance", "p-maintenance"],
+          ["#/about", "About", "p-about"],
+          ["#/service-area", "Service area", "p-area"],
+          ["#/contact", "Contact", "p-contact"]
+        ];
+        var menu = document.getElementById("menu"), drawer = document.getElementById("drawer");
+        PAGES.forEach(function (p) {
+          menu.insertAdjacentHTML("beforeend", '<a href="' + p[0] + '" data-r="' + p[0] + '">' + p[1] + "</a>");
+          drawer.insertAdjacentHTML("beforeend", '<a href="' + p[0] + '">' + p[1] + "</a>");
+        });
+        drawer.insertAdjacentHTML("beforeend", '<a href="tel:+12407275691">Call (240) 727-5691</a>');
+        var burger = document.getElementById("burger");
+        burger.addEventListener("click", function () {
+          var open = drawer.classList.toggle("is-open");
+          burger.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+
+        function reveal(scope) {
+          var els = scope.querySelectorAll(".x-rev");
+          if (!("IntersectionObserver" in window)) return;
+          var io = new IntersectionObserver(function (es) {
+            es.forEach(function (e, i) {
+              if (e.isIntersecting) {
+                var el = e.target;
+                setTimeout(function () { el.classList.add("is-in"); }, (i % 6) * 70);
+                io.unobserve(el);
+              }
+            });
+          }, { rootMargin: "0px 0px -8%" });
+          els.forEach(function (el) { io.observe(el); });
+        }
+        function counts(scope) {
+          scope.querySelectorAll("[data-count]").forEach(function (el) {
+            if (el.dataset.done) return;
+            el.dataset.done = "1";
+            var end = parseFloat(el.dataset.count), dec = +(el.dataset.dec || 0), suf = el.dataset.suffix || "";
+            if (el.dataset.plain) return;
+            var t0 = null, dur = 1100;
+            function tick(t) {
+              if (!t0) t0 = t;
+              var k = Math.min(1, (t - t0) / dur), v = end * (1 - Math.pow(1 - k, 3));
+              el.textContent = v.toFixed(dec) + suf;
+              if (k < 1) requestAnimationFrame(tick);
+            }
+            requestAnimationFrame(tick);
+          });
+        }
+        function route() {
+          var h = location.hash || "#/";
+          var hit = PAGES.filter(function (p) { return p[0] === h; })[0] || PAGES[0];
+          PAGES.forEach(function (p) {
+            var el = document.getElementById(p[2]);
+            if (el) el.hidden = p[2] !== hit[2];
+          });
+          menu.querySelectorAll("a").forEach(function (a) { a.classList.toggle("is-on", a.dataset.r === hit[0]); });
+          drawer.classList.remove("is-open");
+          burger.setAttribute("aria-expanded", "false");
+          document.title = (hit[1] === "Home" ? "Gordon's Heating & Cooling | Cumberland, MD" : hit[1] + " | Gordon's Heating & Cooling") + " (concept preview)";
+          window.scrollTo(0, 0);
+          var page = document.getElementById(hit[2]);
+          if (page) { reveal(page); counts(page); }
+        }
+        document.getElementById("quote").addEventListener("submit", function (e) {
+          e.preventDefault();
+          var f = e.target, v = function (n) { return f.elements[n].value.trim(); };
+          var body = "Name: " + v("name") + "\nPhone: " + v("phone") + "\nTown: " + v("town") + "\nService: " + v("service") + "\n\n" + v("message");
+          location.href = "mailto:gordonarmstrongair@gmail.com?subject=" + encodeURIComponent(v("service") + " request from " + v("name")) + "&body=" + encodeURIComponent(body);
+        });
+        window.addEventListener("hashchange", route);
+        route();
+
+        document.addEventListener("click", function (e) {
+          var b = e.target.closest(".x-tog button");
+          if (!b) return;
+          var box = b.closest("section");
+          box.querySelectorAll(".x-tog button").forEach(function (o) {
+            var on = o === b;
+            o.classList.toggle("is-on", on);
+            o.setAttribute("aria-pressed", on ? "true" : "false");
+          });
+          box.querySelectorAll(".x-pane").forEach(function (p) { p.hidden = p.dataset.pane !== b.dataset.mode; });
+        });
+      })();
+    </script>
+  </body>
+</html>
