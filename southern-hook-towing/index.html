@@ -1,0 +1,1033 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Southern Hook Towing &amp; Recovery | 24/7 Towing in Sumrall, MS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="hark.css" />
+    <style>
+      :root {
+        --ink: #0b0b0c;
+        --ink-2: #121214;
+        --paper: #f2efe9;
+        --amber: #ffb000;
+        --steel: #8a8f98;
+        --hair: rgba(242, 239, 233, 0.14);
+        --hair-2: rgba(242, 239, 233, 0.08);
+        --disp: "Space Grotesk", var(--sans);
+        --mono: "JetBrains Mono", ui-monospace, monospace;
+        --body: "Inter", var(--sans);
+        --pad: clamp(18px, 4vw, 56px);
+      }
+      html { background: var(--ink); }
+      body {
+        background: var(--ink);
+        color: var(--paper);
+        font-family: var(--body);
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 999;
+        pointer-events: none;
+        opacity: 0.045;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");
+      }
+      ::selection { background: var(--amber); color: var(--ink); }
+      a { color: inherit; text-decoration: none; }
+      img { display: block; max-width: 100%; }
+      :focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+
+      .x-wrap { width: min(1240px, 100%); margin: 0 auto; padding-inline: clamp(16px, 4vw, 40px); }
+      .x-lab {
+        font: 500 12px/1.4 var(--mono);
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--steel);
+        margin: 0 0 18px;
+      }
+      .x-lab b { color: var(--amber); font-weight: 500; }
+      h1, h2, h3 { font-family: var(--disp); font-weight: 700; letter-spacing: -0.03em; line-height: 0.98; margin: 0; }
+      .x-d1 { font-size: clamp(40px, 8.4vw, 124px); }
+      .x-d2 { font-size: clamp(32px, 5.6vw, 72px); }
+      .x-d3 { font-size: clamp(22px, 2.4vw, 30px); line-height: 1.05; }
+      p { margin: 0; }
+      .x-sub { color: var(--steel); font-size: clamp(15px, 1.3vw, 19px); max-width: 60ch; }
+      .x-amber { color: var(--amber); }
+
+      /* banner + nav */
+      .x-banner {
+        background: var(--ink-2);
+        border-bottom: 1px solid var(--hair-2);
+        font: 400 12px/1.5 var(--mono);
+        letter-spacing: 0.04em;
+        color: var(--steel);
+        text-align: center;
+        padding: 7px 14px;
+      }
+      .x-nav {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(11, 11, 12, 0.72);
+        -webkit-backdrop-filter: blur(16px);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid var(--hair-2);
+      }
+      .x-nav__in { display: flex; align-items: center; gap: 20px; min-height: 72px; }
+      .x-mark { display: flex; align-items: center; gap: 10px; margin-right: auto; }
+      .x-mark__t { font-family: var(--disp); font-weight: 700; letter-spacing: -0.01em; font-size: 17px; line-height: 1; }
+      .x-mark__s { font: 400 12px/1.4 var(--mono); letter-spacing: 0.08em; color: var(--steel); }
+      .x-menu { display: flex; gap: 4px; flex-wrap: wrap; }
+      .x-menu a {
+        font-size: 14px;
+        color: var(--steel);
+        padding: 10px 12px;
+        border-radius: 999px;
+        transition: color 0.2s var(--ease-out), background 0.2s var(--ease-out);
+      }
+      .x-menu a:hover { color: var(--paper); background: rgba(242, 239, 233, 0.06); }
+      .x-menu a[aria-current="page"] { color: var(--paper); background: rgba(242, 239, 233, 0.09); }
+      .x-call {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--amber);
+        color: var(--ink);
+        font-weight: 600;
+        font-size: 14px;
+        padding: 12px 18px;
+        min-height: 44px;
+        border-radius: 999px;
+        white-space: nowrap;
+        transition: transform 0.2s var(--ease-out), filter 0.2s var(--ease-out);
+      }
+      .x-call:hover { transform: translateY(-1px); filter: brightness(1.08); }
+      .x-burger {
+        display: none;
+        background: none;
+        border: 1px solid var(--hair);
+        color: var(--paper);
+        border-radius: 999px;
+        min-width: 44px;
+        min-height: 44px;
+        font: 500 12px/1 var(--mono);
+        letter-spacing: 0.1em;
+        cursor: pointer;
+      }
+      @media (max-width: 1040px) {
+        .x-burger { display: inline-block; }
+        .x-menu {
+          display: none;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 100%;
+          flex-direction: column;
+          gap: 2px;
+          background: #0e0e10;
+          border-bottom: 1px solid var(--hair);
+          padding: 12px clamp(16px, 4vw, 40px) 20px;
+        }
+        .x-menu.is-open { display: flex; }
+        .x-menu a { padding: 12px 10px; font-size: 16px; }
+        .x-nav__in { position: relative; }
+      }
+      @media (max-width: 600px) { .x-nav .x-call { display: none; } }
+
+      /* buttons */
+      .x-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        min-height: 52px;
+        padding: 14px 26px;
+        border-radius: 999px;
+        border: 1px solid var(--hair);
+        color: var(--paper);
+        font-weight: 500;
+        font-size: 15px;
+        transition: background 0.2s var(--ease-out), border-color 0.2s var(--ease-out), transform 0.2s var(--ease-out);
+      }
+      .x-btn:hover { background: rgba(242, 239, 233, 0.07); border-color: rgba(242, 239, 233, 0.3); transform: translateY(-1px); }
+      .x-btn--amber { background: var(--amber); color: var(--ink); border-color: var(--amber); font-weight: 600; }
+      .x-btn--amber:hover { background: #ffc233; border-color: #ffc233; }
+      .x-btns { display: flex; flex-wrap: wrap; gap: 12px; }
+
+      /* sections */
+      .x-sec { padding-block: clamp(56px, 8vw, 120px); border-top: 1px solid var(--hair-2); }
+      .x-sec--flush { border-top: 0; }
+      .x-head { display: grid; gap: 20px; margin-bottom: clamp(32px, 4vw, 56px); }
+      @media (min-width: 900px) {
+        .x-head--split { grid-template-columns: 1.2fr 1fr; align-items: end; }
+      }
+
+      /* hero */
+      .x-hero { position: relative; min-height: min(92vh, 860px); display: flex; align-items: flex-end; overflow: hidden; }
+      .x-hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+      .x-hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(11, 11, 12, 0.78) 0%, rgba(11, 11, 12, 0.35) 38%, rgba(11, 11, 12, 0.92) 100%);
+      }
+      .x-hero__in { position: relative; z-index: 2; padding-block: clamp(40px, 7vw, 92px); width: 100%; }
+      .x-hero--page { min-height: min(62vh, 560px); }
+      .x-hero--plain { min-height: 0; background: linear-gradient(180deg, #141416, var(--ink)); }
+      .x-hero--plain .x-hero__in { padding-block: clamp(56px, 8vw, 110px); }
+      .x-hero h1 > span { display: block; }
+
+      /* marquee */
+      .x-marq { overflow: hidden; border-block: 1px solid var(--hair-2); background: var(--ink-2); padding-block: 16px; }
+      .x-marq__t { display: flex; width: max-content; animation: x-slide 32s linear infinite; }
+      .x-marq__t > span {
+        font: 700 clamp(18px, 2.4vw, 30px)/1 var(--disp);
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        padding-right: 28px;
+        color: var(--paper);
+      }
+      .x-marq__t > span em { color: var(--amber); font-style: normal; }
+      @keyframes x-slide { to { transform: translateX(-50%); } }
+      @media (prefers-reduced-motion: reduce) { .x-marq__t { animation: none; } }
+
+      /* stats */
+      .x-stats { display: grid; gap: 1px; background: var(--hair-2); border: 1px solid var(--hair-2); border-radius: 24px; overflow: hidden; }
+      @media (min-width: 720px) { .x-stats { grid-template-columns: repeat(4, 1fr); } }
+      .x-stat { background: var(--ink); padding: clamp(24px, 3vw, 40px); }
+      .x-stat__f { font: 700 clamp(36px, 5vw, 64px)/1 var(--disp); letter-spacing: -0.04em; }
+      .x-stat__l { font: 400 12px/1.5 var(--mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--steel); margin-top: 10px; }
+
+      /* bento */
+      .x-bento { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+      .x-card {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid var(--hair);
+        border-radius: 24px;
+        background: #0f0f11;
+        padding: clamp(22px, 2.4vw, 32px);
+        min-height: 230px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        transition: border-color 0.3s var(--ease-out), transform 0.3s var(--ease-out);
+      }
+      .x-card:hover { border-color: rgba(255, 176, 0, 0.5); transform: translateY(-3px); }
+      .x-card__n { font: 500 12px/1 var(--mono); letter-spacing: 0.16em; color: var(--amber); }
+      .x-card h3 { font-size: clamp(21px, 2vw, 27px); }
+      .x-card p { color: var(--steel); font-size: 15px; }
+      .x-card__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.45s var(--ease-out), transform 0.6s var(--ease-out); transform: scale(1.06); }
+      .x-card--rev:hover .x-card__img { opacity: 0.26; transform: scale(1); }
+      .x-card > * { position: relative; z-index: 1; }
+      .x-card--wide { grid-column: span 2; }
+      @media (max-width: 720px) { .x-card--wide { grid-column: span 1; } }
+      .x-card ul { margin: 0; padding-left: 18px; color: var(--steel); font-size: 15px; }
+      .x-card li { margin-top: 4px; }
+
+      /* sticky scroll */
+      .x-sticky { display: grid; gap: 32px; }
+      @media (min-width: 900px) { .x-sticky { grid-template-columns: 0.9fr 1.1fr; gap: 60px; } .x-sticky__l { position: sticky; top: 110px; align-self: start; } }
+      .x-steps { display: grid; gap: 14px; }
+      .x-step { border: 1px solid var(--hair); border-radius: 22px; padding: clamp(22px, 2.4vw, 34px); background: #0f0f11; display: grid; gap: 10px; }
+      .x-step__n { font: 500 12px/1 var(--mono); letter-spacing: 0.16em; color: var(--amber); }
+      .x-step p { color: var(--steel); }
+
+      /* quotes */
+      .x-quotes { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+      .x-quote { border: 1px solid var(--hair); border-radius: 22px; padding: clamp(22px, 2.4vw, 32px); background: #0f0f11; display: grid; gap: 14px; align-content: start; }
+      .x-quote blockquote { margin: 0; font-size: 16px; line-height: 1.6; }
+      .x-quote figcaption { font: 400 12px/1.5 var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--steel); }
+      .x-stars { color: var(--amber); letter-spacing: 0.18em; font-size: 14px; }
+
+      /* slider */
+      .x-slider { position: relative; }
+      .x-slides { display: grid; }
+      .x-slides > figure { grid-area: 1 / 1; opacity: 0; visibility: hidden; transition: opacity 0.4s var(--ease-out); }
+      .x-slides > figure.is-on { opacity: 1; visibility: visible; }
+      .x-slider__nav { display: flex; gap: 8px; margin-top: 18px; align-items: center; }
+      .x-dots { display: flex; gap: 6px; margin-left: auto; }
+      .x-dots { gap: 0; }
+      .x-dots button { width: 44px; height: 44px; padding: 0; border: 0; background: none; cursor: pointer; }
+      .x-dots button::before { content: ""; display: block; width: 24px; margin: 0 auto; height: 3px; background: var(--hair); border-radius: 2px; }
+      .x-dots button[aria-current="true"]::before { background: var(--amber); }
+      .x-arrow { width: 46px; height: 46px; border-radius: 999px; border: 1px solid var(--hair); background: none; color: var(--paper); cursor: pointer; font-size: 16px; }
+      .x-arrow:hover { background: rgba(242, 239, 233, 0.07); }
+
+      /* chips */
+      .x-chips { display: flex; flex-wrap: wrap; gap: 10px; }
+      .x-chip { border: 1px solid var(--hair); border-radius: 999px; padding: 10px 18px; font-size: 14px; color: var(--paper); }
+      .x-chip--amber { border-color: rgba(255, 176, 0, 0.45); color: var(--amber); }
+
+      /* panels, lists, forms */
+      .x-panel { border: 1px solid var(--hair); border-radius: 26px; padding: clamp(24px, 3vw, 44px); background: #0f0f11; }
+      .x-grid2 { display: grid; gap: 14px; }
+      @media (min-width: 860px) { .x-grid2 { grid-template-columns: 1fr 1fr; } }
+      .x-dl { display: grid; gap: 0; }
+      .x-dl > div { display: flex; justify-content: space-between; gap: 18px; padding: 14px 0; border-bottom: 1px solid var(--hair-2); }
+      .x-dl dt { color: var(--steel); font: 400 12.5px/1.5 var(--mono); letter-spacing: 0.1em; text-transform: uppercase; }
+      .x-dl dd { margin: 0; text-align: right; }
+      .x-form { display: grid; gap: 14px; }
+      .x-field { display: grid; gap: 7px; }
+      .x-field span { font: 400 12px/1.4 var(--mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--steel); }
+      .x-field input, .x-field textarea {
+        background: #141416;
+        border: 1px solid var(--hair);
+        border-radius: 14px;
+        color: var(--paper);
+        font: 400 15px/1.5 var(--body);
+        padding: 13px 15px;
+        min-height: 48px;
+        width: 100%;
+      }
+      .x-field textarea { min-height: 118px; resize: vertical; }
+      .x-field input:focus, .x-field textarea:focus { outline: 2px solid var(--amber); outline-offset: 1px; }
+      details.x-faq { border-bottom: 1px solid var(--hair-2); padding: 18px 0; }
+      details.x-faq summary { cursor: pointer; font-family: var(--disp); font-weight: 700; font-size: clamp(18px, 2vw, 23px); letter-spacing: -0.02em; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+      details.x-faq summary::-webkit-details-marker { display: none; }
+      details.x-faq summary::after { content: "+"; color: var(--amber); font-family: var(--mono); }
+      details.x-faq[open] summary::after { content: "\2013"; }
+      details.x-faq p { color: var(--steel); margin-top: 12px; max-width: 70ch; }
+      .x-map { border: 1px solid var(--hair); border-radius: 26px; overflow: hidden; background: #141416; }
+      .x-map iframe { width: 100%; height: 360px; border: 0; display: block; }
+      .x-fig { border-radius: 26px; overflow: hidden; border: 1px solid var(--hair); }
+      .x-fig img { width: 100%; height: clamp(240px, 40vw, 460px); object-fit: cover; }
+
+      /* footer CTA + footer */
+      .x-cta { text-align: center; padding-block: clamp(60px, 9vw, 130px); border-top: 1px solid var(--hair-2); }
+      .x-cta .x-btns { justify-content: center; margin-top: 32px; }
+      .x-foot { border-top: 1px solid var(--hair-2); padding-block: 48px 36px; }
+      .x-foot__grid { display: grid; gap: 28px; }
+      @media (min-width: 860px) { .x-foot__grid { grid-template-columns: repeat(4, 1fr); } }
+      .x-foot h4 { font: 500 12px/1 var(--mono); letter-spacing: 0.16em; text-transform: uppercase; color: var(--steel); margin: 0 0 14px; }
+      .x-foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; font-size: 15px; }
+      .x-foot a:hover { color: var(--amber); }
+      .x-wordmark { font: 700 clamp(30px, 11.5vw, 150px)/0.9 var(--disp); letter-spacing: -0.045em; color: #6b6e74; margin-top: 48px; white-space: nowrap; overflow: hidden; }
+      .x-legal { display: flex; flex-wrap: wrap; gap: 10px 26px; justify-content: space-between; align-items: center; margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--hair-2); color: var(--steel); font-size: 13px; }
+      .x-legal a { color: var(--paper); display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; text-underline-offset: 3px; }
+      .x-foot ul a { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; }
+      .x-foot ul { gap: 2px; }
+      html, body { overflow-x: clip; }
+      .x-menu a[aria-current="page"] { color: var(--paper) !important; background: #232325 !important; }
+      .x-menu a:hover { background: #1b1b1d; }
+
+      /* mobile call bar */
+      .x-bar { position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 60; display: none; }
+      .x-bar a { display: flex; justify-content: center; }
+      @media (max-width: 600px) { .x-bar { display: block; } .x-foot { padding-bottom: 92px; } }
+
+      /* reveals */
+      .rv { opacity: 0; transform: translateY(22px); transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out); }
+      .rv.is-in { opacity: 1; transform: none; }
+      @media (prefers-reduced-motion: reduce) { .rv { opacity: 1; transform: none; transition: none; } }
+      .x-page { display: none; }
+      .x-page.is-on { display: block; }
+    </style>
+  </head>
+  <body>
+    <p class="x-banner">Independent concept preview by Teta Digitals. Not the official website of Southern Hook Towing &amp; Recovery.</p>
+
+    <header class="x-nav">
+      <div class="x-wrap x-nav__in">
+        <a class="x-mark" href="#/">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2v9a4 4 0 1 1-4 4" stroke="#FFB000" stroke-width="2" stroke-linecap="round" />
+            <circle cx="12" cy="2.6" r="1.6" fill="#FFB000" />
+          </svg>
+          <span>
+            <span class="x-mark__t">SOUTHERN HOOK</span><br />
+            <span class="x-mark__s">TOWING &amp; RECOVERY</span>
+          </span>
+        </a>
+        <nav class="x-menu" id="menu" aria-label="Pages">
+          <a href="#/">Home</a>
+          <a href="#/services">Services</a>
+          <a href="#/heavy-duty">Heavy Duty</a>
+          <a href="#/roadside">Roadside</a>
+          <a href="#/commercial">Commercial</a>
+          <a href="#/about">About</a>
+          <a href="#/reviews">Reviews</a>
+          <a href="#/contact">Contact</a>
+        </nav>
+        <button class="x-burger" id="burger" aria-expanded="false" aria-controls="menu">MENU</button>
+        <a class="x-call" href="tel:+16014368945">Call 24/7 (601) 436-8945</a>
+      </div>
+    </header>
+
+    <main id="app">
+      <!-- HOME -->
+      <article class="x-page" id="p-home">
+        <section class="x-hero">
+          <img class="x-hero__img" src="shook-hero.png" alt="Heavy wrecker on a rural Mississippi highway at blue hour" />
+          <div class="x-hero__in">
+            <div class="x-wrap">
+              <p class="x-lab rv">[ <b>24/7</b> ] SUMRALL, MISSISSIPPI</p>
+              <h1 class="x-d1 rv"><span>Stuck on the side of 42?</span><span class="x-amber">We're already rolling.</span></h1>
+              <p class="x-sub rv" style="margin-top: 26px">
+                Light, medium and heavy duty towing, accident recovery and roadside service across the Pine Belt. Every day, every hour.
+              </p>
+              <div class="x-btns rv" style="margin-top: 32px">
+                <a class="x-btn x-btn--amber" href="tel:+16014368945">Call 24/7 (601) 436-8945</a>
+                <a class="x-btn" href="#/contact">Request a tow</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="x-marq" aria-hidden="true">
+          <div class="x-marq__t">
+            <span>24/7 TOWING <em>&middot;</em> HEAVY DUTY <em>&middot;</em> ACCIDENT RECOVERY <em>&middot;</em> WINCH-OUTS <em>&middot;</em> ROADSIDE <em>&middot;</em> LOCKOUTS <em>&middot;</em>&nbsp;</span>
+            <span>24/7 TOWING <em>&middot;</em> HEAVY DUTY <em>&middot;</em> ACCIDENT RECOVERY <em>&middot;</em> WINCH-OUTS <em>&middot;</em> ROADSIDE <em>&middot;</em> LOCKOUTS <em>&middot;</em>&nbsp;</span>
+          </div>
+        </div>
+
+        <section class="x-sec x-sec--flush">
+          <div class="x-wrap">
+            <div class="x-stats rv">
+              <div class="x-stat"><p class="x-stat__f"><span data-count="4.9" data-dec="1">4.9</span></p><p class="x-stat__l">Google rating</p></div>
+              <div class="x-stat"><p class="x-stat__f"><span data-count="154">154</span></p><p class="x-stat__l">Google reviews</p></div>
+              <div class="x-stat"><p class="x-stat__f">24/7</p><p class="x-stat__l">Every day, every hour</p></div>
+              <div class="x-stat"><p class="x-stat__f">L to H</p><p class="x-stat__l">Light to heavy duty</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap">
+            <div class="x-head x-head--split">
+              <div>
+                <p class="x-lab rv">[ <b>01</b> ] SERVICES</p>
+                <h2 class="x-d2 rv">One call covers the ditch, the shoulder and the shop.</h2>
+              </div>
+              <p class="x-sub rv">From a flat tire on the shoulder to a loaded truck off the road, the same number answers.</p>
+            </div>
+            <div class="x-bento">
+              <article class="x-card x-card--rev x-card--wide rv">
+                <img class="x-card__img" src="shook-flatbed.png" alt="Flatbed tow truck loading a vehicle" />
+                <p class="x-card__n">[ 01 ]</p>
+                <h3>Flatbed &amp; light duty towing</h3>
+                <p>Cars, trucks, SUVs and motorcycles moved on a flatbed, loaded and secured with care.</p>
+              </article>
+              <article class="x-card x-card--rev rv">
+                <img class="x-card__img" src="shook-winch.png" alt="Winch-out recovery on a muddy shoulder" />
+                <p class="x-card__n">[ 02 ]</p>
+                <h3>Winch-outs</h3>
+                <p>Out of the ditch, the mud or the soft shoulder and back onto the pavement.</p>
+              </article>
+              <article class="x-card rv">
+                <p class="x-card__n">[ 03 ]</p>
+                <h3>Medium &amp; heavy duty</h3>
+                <p>Bigger iron, bigger hook. Trucks, equipment and loads that light duty cannot handle.</p>
+              </article>
+              <article class="x-card rv">
+                <p class="x-card__n">[ 04 ]</p>
+                <h3>Accident recovery</h3>
+                <p>Scene clearing and vehicle recovery after a wreck, day or night.</p>
+              </article>
+              <article class="x-card rv">
+                <p class="x-card__n">[ 05 ]</p>
+                <h3>Roadside assistance</h3>
+                <p>Jump starts, lockouts, flat tire changes and fuel delivery, wherever you stopped.</p>
+              </article>
+              <article class="x-card rv">
+                <p class="x-card__n">[ 06 ]</p>
+                <h3>On-site service</h3>
+                <p>Battery and tire service done where you are, when a tow is not what you need.</p>
+              </article>
+            </div>
+            <div class="x-btns rv" style="margin-top: 28px"><a class="x-btn" href="#/services">See all services</a></div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap x-sticky">
+            <div class="x-sticky__l">
+              <p class="x-lab rv">[ <b>02</b> ] PROCESS</p>
+              <h2 class="x-d2 rv">What happens when you call.</h2>
+              <p class="x-sub rv" style="margin-top: 20px">No phone tree, no call-back queue. You talk to someone and a truck gets pointed at you.</p>
+              <div class="x-btns rv" style="margin-top: 28px"><a class="x-btn x-btn--amber" href="tel:+16014368945">Call now</a></div>
+            </div>
+            <div class="x-steps">
+              <div class="x-step rv"><p class="x-step__n">[ 01 ]</p><h3 class="x-d3">Call</h3><p>Ring (601) 436-8945 any hour of any day. Someone picks up.</p></div>
+              <div class="x-step rv"><p class="x-step__n">[ 02 ]</p><h3 class="x-d3">We confirm location and vehicle</h3><p>Where you are, what you are driving, and what went wrong, so the right truck comes.</p></div>
+              <div class="x-step rv"><p class="x-step__n">[ 03 ]</p><h3 class="x-d3">Truck dispatched</h3><p>Light duty, flatbed or heavy, matched to the job and sent your way.</p></div>
+              <div class="x-step rv"><p class="x-step__n">[ 04 ]</p><h3 class="x-d3">Towed or fixed on the spot</h3><p>A jump, a tire or a lockout gets handled roadside. Anything more goes on the deck.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap">
+            <div class="x-head x-head--split">
+              <div>
+                <p class="x-lab rv">[ <b>03</b> ] REVIEWS</p>
+                <h2 class="x-d2 rv">4.9 stars from 154 Google reviews.</h2>
+              </div>
+              <p class="x-sub rv">In their words, not ours.</p>
+            </div>
+            <div class="x-slider rv" id="slider">
+              <div class="x-slides">
+                <figure class="x-quote is-on">
+                  <p class="x-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                  <blockquote>"They answered the phone promptly and had their driver on site within an hour. The driver was very professional and courteous. Their equipment was in excellent shape and the driver was very thorough and careful with our vehicle. If you need a tow these are the guys to call."</blockquote>
+                  <figcaption>Google review &middot; Mar 2026</figcaption>
+                </figure>
+                <figure class="x-quote">
+                  <p class="x-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                  <blockquote>"This is twice that my family needed towing service in the past month. I've never experienced such rapid response to emergency needs. Cody is such a professional who I can absolutely trust to treat our autos with care."</blockquote>
+                  <figcaption>Google review &middot; Feb 2026</figcaption>
+                </figure>
+                <figure class="x-quote">
+                  <p class="x-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                  <blockquote>"Amazingly punctual service! I call 4 local shops that didnt have the equipment to assist or claimed to be 24 hr but would not answer. Southern Hook took care of our company within the hour of calling... Payment was also very convenient."</blockquote>
+                  <figcaption>Google review &middot; Feb 2026</figcaption>
+                </figure>
+                <figure class="x-quote">
+                  <p class="x-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                  <blockquote>"Their customer service was excellent from the moment I called, friendly, professional, and reassuring. They arrived much faster than expected and took care of everything efficiently."</blockquote>
+                  <figcaption>Google review &middot; Jan 2026</figcaption>
+                </figure>
+              </div>
+              <div class="x-slider__nav">
+                <button class="x-arrow" type="button" data-slide="-1" aria-label="Previous review">&#8592;</button>
+                <button class="x-arrow" type="button" data-slide="1" aria-label="Next review">&#8594;</button>
+                <div class="x-dots" id="dots"></div>
+              </div>
+            </div>
+            <div class="x-btns rv" style="margin-top: 28px"><a class="x-btn" href="#/reviews">Read every review</a></div>
+          </div>
+        </section>
+
+        <section class="x-sec">
+          <div class="x-wrap">
+            <p class="x-lab rv">[ <b>04</b> ] SERVICE AREA</p>
+            <h2 class="x-d2 rv" style="margin-bottom: 28px">Sumrall out to the edges of the Pine Belt.</h2>
+            <div class="x-chips rv">
+              <span class="x-chip x-chip--amber">Sumrall</span>
+              <span class="x-chip">Hattiesburg</span>
+              <span class="x-chip">Columbia</span>
+              <span class="x-chip">Carson</span>
+              <span class="x-chip">Ellisville</span>
+              <span class="x-chip">Lamar County</span>
+              <span class="x-chip">Surrounding Pine Belt</span>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- SERVICES -->
+      <article class="x-page" id="p-services">
+        <section class="x-hero x-hero--page">
+          <img class="x-hero__img" src="shook-flatbed.png" alt="Flatbed tow truck carrying a vehicle" />
+          <div class="x-hero__in">
+            <div class="x-wrap">
+              <p class="x-lab rv">[ <b>01</b> ] SERVICES</p>
+              <h1 class="x-d1 rv"><span>Every kind of tow.</span><span class="x-amber">One number.</span></h1>
+              <p class="x-sub rv" style="margin-top: 24px">Light to heavy duty towing, recovery and roadside service, 24 hours a day across the Pine Belt.</p>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--flush">
+          <div class="x-wrap">
+            <div class="x-bento">
+              <article class="x-card x-card--wide rv"><p class="x-card__n">[ 01 ]</p><h3>Light duty towing</h3><p>Cars, pickups and SUVs towed to the shop, the house or wherever you need them.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 02 ]</p><h3>Flatbed towing</h3><p>All four wheels off the road. The gentle option for low, AWD or damaged vehicles.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 03 ]</p><h3>Medium duty towing</h3><p>Box trucks, work trucks and larger vehicles.</p></article>
+              <article class="x-card x-card--wide rv"><p class="x-card__n">[ 04 ]</p><h3>Heavy duty towing</h3><p>Big trucks and heavy equipment moved with the right gear. <a class="x-amber" href="#/heavy-duty">Heavy duty &amp; recovery &rarr;</a></p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 05 ]</p><h3>Accident recovery</h3><p>Wreck recovery and scene clearing, day or night.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 06 ]</p><h3>Winch-outs</h3><p>Pulled out of ditches, mud and soft shoulders.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 07 ]</p><h3>Motorcycle towing</h3><p>Bikes loaded and strapped down with care.</p></article>
+              <article class="x-card x-card--wide rv"><p class="x-card__n">[ 08 ]</p><h3>Roadside assistance</h3><ul><li>Jump starts</li><li>Lockouts</li><li>Flat tire changes</li><li>Fuel delivery</li></ul><p><a class="x-amber" href="#/roadside">Roadside help &rarr;</a></p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 09 ]</p><h3>Battery service</h3><p>Dead battery handled where you are.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 10 ]</p><h3>Tire service</h3><p>A flat sorted on the spot, no tow needed.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 11 ]</p><h3>On-site service</h3><p>When the fix can happen where you stopped, we come to you.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 12 ]</p><h3>Commercial calls</h3><p>Fleets, dealers and shops. <a class="x-amber" href="#/commercial">For business &rarr;</a></p></article>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap x-grid2">
+            <div>
+              <p class="x-lab rv">[ <b>02</b> ] IN THEIR WORDS</p>
+              <h2 class="x-d2 rv">Affordable, for any need.</h2>
+            </div>
+            <div class="x-panel rv">
+              <blockquote style="margin: 0; font-size: 18px">"We offer affordable services to meet any needs in the towing and recovery industry as well as roadside service."</blockquote>
+              <p class="x-lab" style="margin: 16px 0 0">Southern Hook Towing &amp; Recovery</p>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- HEAVY DUTY -->
+      <article class="x-page" id="p-heavy">
+        <section class="x-hero x-hero--page">
+          <img class="x-hero__img" src="shook-winch.png" alt="Wrecker winching a vehicle out of a ditch" />
+          <div class="x-hero__in">
+            <div class="x-wrap">
+              <p class="x-lab rv">[ <b>02</b> ] HEAVY DUTY &amp; RECOVERY</p>
+              <h1 class="x-d1 rv"><span>Off the road.</span><span class="x-amber">Back on it.</span></h1>
+              <p class="x-sub rv" style="margin-top: 24px">Medium and heavy duty towing, accident recovery and winch-outs from ditches and mud, around the clock.</p>
+              <div class="x-btns rv" style="margin-top: 28px"><a class="x-btn x-btn--amber" href="tel:+16014368945">Call 24/7 (601) 436-8945</a></div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--flush">
+          <div class="x-wrap">
+            <div class="x-bento">
+              <article class="x-card rv"><p class="x-card__n">[ 01 ]</p><h3>Medium duty towing</h3><p>Box trucks, service trucks, larger pickups and work vehicles.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 02 ]</p><h3>Heavy duty towing</h3><p>Big rigs and heavy equipment that need more than a light-duty truck can give.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 03 ]</p><h3>Accident recovery</h3><p>Wrecked vehicles recovered and the scene cleared so the road can reopen.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 04 ]</p><h3>Winch-outs</h3><p>Ditches, mud, soft shoulders and backroads after a Pine Belt rain.</p></article>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap x-sticky">
+            <div class="x-sticky__l">
+              <p class="x-lab rv">[ <b>03</b> ] SAFETY</p>
+              <h2 class="x-d2 rv">Slow is smooth on a recovery.</h2>
+              <p class="x-sub rv" style="margin-top: 20px">How a recovery job is approached, in general terms. Every scene is different.</p>
+            </div>
+            <div class="x-steps">
+              <div class="x-step rv"><p class="x-step__n">[ 01 ]</p><h3 class="x-d3">Secure the scene</h3><p>Lights on, truck positioned to protect the work area from traffic.</p></div>
+              <div class="x-step rv"><p class="x-step__n">[ 02 ]</p><h3 class="x-d3">Read the ground</h3><p>Check the angle, the footing and the vehicle before any line goes on.</p></div>
+              <div class="x-step rv"><p class="x-step__n">[ 03 ]</p><h3 class="x-d3">Rig for the load</h3><p>Attachment points and equipment chosen for the vehicle, not forced.</p></div>
+              <div class="x-step rv"><p class="x-step__n">[ 04 ]</p><h3 class="x-d3">Pull steady, then load</h3><p>A controlled pull back to solid ground, then secured for the tow.</p></div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap">
+            <figure class="x-quote rv" style="max-width: 880px">
+              <p class="x-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+              <blockquote style="font-size: clamp(18px, 2vw, 24px)">"Their equipment was in excellent shape and the driver was very thorough and careful with our vehicle."</blockquote>
+              <figcaption>Google review &middot; Mar 2026</figcaption>
+            </figure>
+          </div>
+        </section>
+      </article>
+
+      <!-- ROADSIDE -->
+      <article class="x-page" id="p-roadside">
+        <section class="x-hero x-hero--plain">
+          <div class="x-hero__in">
+            <div class="x-wrap">
+              <p class="x-lab rv">[ <b>03</b> ] ROADSIDE ASSISTANCE</p>
+              <h1 class="x-d1 rv"><span>Not every call</span><span class="x-amber">needs a tow.</span></h1>
+              <p class="x-sub rv" style="margin-top: 24px">Dead battery, locked keys, a flat or an empty tank. Fixed where you stopped, 24/7.</p>
+              <div class="x-btns rv" style="margin-top: 28px"><a class="x-btn x-btn--amber" href="tel:+16014368945">Call 24/7 (601) 436-8945</a></div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--flush">
+          <div class="x-wrap">
+            <div class="x-bento">
+              <article class="x-card rv"><p class="x-card__n">[ 01 ]</p><h3>Jump starts</h3><p>A boost to get a dead battery turning over again.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 02 ]</p><h3>Lockouts</h3><p>Keys on the seat, doors locked. We get you back in.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 03 ]</p><h3>Flat tire changes</h3><p>Your spare on, or a spare brought to you.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 04 ]</p><h3>Fuel delivery</h3><p>Enough fuel to get you to the next station.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 05 ]</p><h3>Battery service</h3><p>Battery trouble handled on site.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 06 ]</p><h3>Tire service</h3><p>Tire problems sorted without a trip on the hook.</p></article>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap x-grid2">
+            <div>
+              <p class="x-lab rv">[ <b>04</b> ] A REAL CALL</p>
+              <h2 class="x-d2 rv">Flat, no spare, side of the highway.</h2>
+            </div>
+            <figure class="x-quote rv">
+              <p class="x-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+              <blockquote style="font-size: clamp(17px, 1.8vw, 21px)">"I was on the side of the highway, with a flat and no spare... In short time, southern hook and tow brought me a spare and put it on for me, at little cost. Very nice and friendly. I was blessed today."</blockquote>
+              <figcaption>Google review &middot; Feb 2026</figcaption>
+            </figure>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap x-sticky">
+            <div class="x-sticky__l">
+              <p class="x-lab rv">[ <b>05</b> ] WHILE YOU WAIT</p>
+              <h2 class="x-d2 rv">What to do while you wait.</h2>
+              <p class="x-sub rv" style="margin-top: 20px">General safety advice. If anyone is hurt or in danger, call 911 first.</p>
+            </div>
+            <div class="x-steps">
+              <div class="x-step rv"><p class="x-step__n">[ 01 ]</p><h3 class="x-d3">Get as far off the road as you can</h3><p>Pull onto the shoulder or a lot if the car still rolls.</p></div>
+              <div class="x-step rv"><p class="x-step__n">[ 02 ]</p><h3 class="x-d3">Hazards on</h3><p>At night, keep interior or parking lights on too so you can be seen.</p></div>
+              <div class="x-step rv"><p class="x-step__n">[ 03 ]</p><h3 class="x-d3">Stay clear of traffic</h3><p>Exit on the side away from the road. If it is safer, wait off the roadway, away from the car.</p></div>
+              <div class="x-step rv"><p class="x-step__n">[ 04 ]</p><h3 class="x-d3">Know where you are</h3><p>Note the highway, the nearest mile marker, exit or crossroad, and your direction.</p></div>
+              <div class="x-step rv"><p class="x-step__n">[ 05 ]</p><h3 class="x-d3">Keep your phone charged</h3><p>Save battery for the call back and keep the line free.</p></div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- COMMERCIAL -->
+      <article class="x-page" id="p-commercial">
+        <section class="x-hero x-hero--plain">
+          <div class="x-hero__in">
+            <div class="x-wrap">
+              <p class="x-lab rv">[ <b>04</b> ] COMMERCIAL &amp; FLEET</p>
+              <h1 class="x-d1 rv"><span>A 24/7 call your</span><span class="x-amber">business can count on.</span></h1>
+              <p class="x-sub rv" style="margin-top: 24px">For fleets, dealerships, repair shops and any business that needs a tow company that actually answers.</p>
+              <div class="x-btns rv" style="margin-top: 28px">
+                <a class="x-btn x-btn--amber" href="#account">Set up a commercial account</a>
+                <a class="x-btn" href="tel:+16014368945">Call (601) 436-8945</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--flush">
+          <div class="x-wrap">
+            <div class="x-bento">
+              <article class="x-card rv"><p class="x-card__n">[ 01 ]</p><h3>Fleets</h3><p>Work trucks and service vehicles moved or recovered when they go down.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 02 ]</p><h3>Dealerships</h3><p>Flatbed moves for inventory, trade-ins and customer vehicles.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 03 ]</p><h3>Repair shops</h3><p>Getting customer cars to your bays, light to heavy duty.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 04 ]</p><h3>Any business</h3><p>One dependable number for whatever breaks down, any hour.</p></article>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap x-grid2">
+            <div>
+              <p class="x-lab rv">[ <b>05</b> ] FROM A BUSINESS CUSTOMER</p>
+              <h2 class="x-d2 rv">Four shops couldn't. Southern Hook did, within the hour.</h2>
+              <p class="x-sub rv" style="margin-top: 20px">Between Hattiesburg and Ellisville.</p>
+            </div>
+            <figure class="x-quote rv">
+              <p class="x-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+              <blockquote style="font-size: clamp(17px, 1.8vw, 21px)">"Amazingly punctual service! I call 4 local shops that didnt have the equipment to assist or claimed to be 24 hr but would not answer. Southern Hook took care of our company within the hour of calling... Payment was also very convenient."</blockquote>
+              <figcaption>Google review &middot; Feb 2026</figcaption>
+            </figure>
+          </div>
+        </section>
+        <section class="x-sec" id="account">
+          <div class="x-wrap x-grid2">
+            <div>
+              <p class="x-lab rv">[ <b>06</b> ] ACCOUNT INQUIRY</p>
+              <h2 class="x-d2 rv">Set up a commercial account.</h2>
+              <p class="x-sub rv" style="margin-top: 20px">Tell us about your business. This opens an email to southernhooktowing@gmail.com with your details filled in, and the team will follow up on how it works.</p>
+            </div>
+            <form class="x-panel x-form rv" data-mail="Commercial account inquiry">
+              <label class="x-field"><span>Business name</span><input name="Business" required /></label>
+              <label class="x-field"><span>Contact name</span><input name="Contact" required /></label>
+              <label class="x-field"><span>Phone</span><input name="Phone" type="tel" required /></label>
+              <label class="x-field"><span>Email</span><input name="Email" type="email" /></label>
+              <label class="x-field"><span>Type of business and vehicles</span><input name="Business type and vehicles" placeholder="Fleet, dealership, repair shop..." /></label>
+              <label class="x-field"><span>What you need</span><textarea name="Needs"></textarea></label>
+              <button class="x-btn x-btn--amber" type="submit" style="justify-content: center; cursor: pointer">Send inquiry</button>
+            </form>
+          </div>
+        </section>
+      </article>
+
+      <!-- ABOUT -->
+      <article class="x-page" id="p-about">
+        <section class="x-hero x-hero--plain">
+          <div class="x-hero__in">
+            <div class="x-wrap">
+              <p class="x-lab rv">[ <b>05</b> ] ABOUT</p>
+              <h1 class="x-d1 rv"><span>Local hooks,</span><span class="x-amber">Sumrall roots.</span></h1>
+              <p class="x-sub rv" style="margin-top: 24px">A towing and recovery company based on Highway 42, serving the Pine Belt around the clock.</p>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--flush">
+          <div class="x-wrap">
+            <div class="x-panel rv">
+              <p class="x-lab">[ IN THEIR OWN WORDS ]</p>
+              <blockquote style="margin: 0; font: 500 clamp(22px, 3vw, 38px)/1.25 var(--disp); letter-spacing: -0.02em">"We offer affordable services to meet any needs in the towing and recovery industry as well as roadside service. With our years of experience and knowledge in the towing industry we strive to bring the best work quality and attitude to any tow or service performed."</blockquote>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap">
+            <div class="x-head">
+              <p class="x-lab rv">[ <b>06</b> ] VALUES</p>
+              <h2 class="x-d2 rv">What customers keep naming.</h2>
+            </div>
+            <div class="x-bento">
+              <article class="x-card rv"><p class="x-card__n">[ 01 ]</p><h3>Punctual</h3><p>"Amazingly punctual service!" A phone that gets answered, a truck that shows up.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 02 ]</p><h3>Honest</h3><p>Customers say team member Cody was "upfront about the whole process."</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 03 ]</p><h3>Careful</h3><p>"Thorough and careful with our vehicle." Your car treated like it matters.</p></article>
+              <article class="x-card rv"><p class="x-card__n">[ 04 ]</p><h3>Clean equipment</h3><p>"The truck was spotless very clean." Equipment kept in excellent shape.</p></article>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap x-grid2">
+            <div>
+              <p class="x-lab rv">[ <b>07</b> ] THE YARD</p>
+              <h2 class="x-d2 rv">Behind the Napa on Hwy 42.</h2>
+              <p class="x-sub rv" style="margin-top: 20px">The office and tow yard sit directly behind the Napa Auto Parts (Munn Diesel Sales) on Highway 42, near Highway 42 and Cubic Fortenberry Rd.</p>
+              <div class="x-btns rv" style="margin-top: 28px"><a class="x-btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=925%20Highway%2042%2C%20Sumrall%2C%20MS%2039482" target="_blank" rel="noopener">Get directions</a></div>
+            </div>
+            <dl class="x-panel x-dl rv">
+              <div><dt>Address</dt><dd>925 Highway 42, Sumrall, MS 39482</dd></div>
+              <div><dt>Landmark</dt><dd>Behind Napa Auto Parts</dd></div>
+              <div><dt>Hours</dt><dd>24/7, every day</dd></div>
+              <div><dt>Phone</dt><dd><a href="tel:+16014368945">(601) 436-8945</a></dd></div>
+            </dl>
+          </div>
+        </section>
+      </article>
+
+      <!-- REVIEWS -->
+      <article class="x-page" id="p-reviews">
+        <section class="x-hero x-hero--plain">
+          <div class="x-hero__in">
+            <div class="x-wrap">
+              <p class="x-lab rv">[ <b>06</b> ] REVIEWS</p>
+              <h1 class="x-d1 rv"><span><span data-count="4.9" data-dec="1">4.9</span> stars.</span><span class="x-amber"><span data-count="154">154</span> Google reviews.</span></h1>
+              <p class="x-sub rv" style="margin-top: 24px">A selection of recent Google reviews, quoted as written.</p>
+              <div class="x-btns rv" style="margin-top: 28px"><a class="x-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Southern+Hook+Towing+%26+Recovery+925+Highway+42+Sumrall+MS" target="_blank" rel="noopener">Read all on Google</a></div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--flush">
+          <div class="x-wrap x-quotes">
+            <figure class="x-quote rv"><p class="x-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote>"They answered the phone promptly and had their driver on site within an hour. The driver was very professional and courteous. Their equipment was in excellent shape and the driver was very thorough and careful with our vehicle. If you need a tow these are the guys to call."</blockquote><figcaption>Google &middot; Mar 2026</figcaption></figure>
+            <figure class="x-quote rv"><p class="x-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote>"This is twice that my family needed towing service in the past month. I've never experienced such rapid response to emergency needs. Cody is such a professional who I can absolutely trust to treat our autos with care."</blockquote><figcaption>Google &middot; Feb 2026</figcaption></figure>
+            <figure class="x-quote rv"><p class="x-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote>"Amazingly punctual service! I call 4 local shops that didnt have the equipment to assist or claimed to be 24 hr but would not answer. Southern Hook took care of our company within the hour of calling... Payment was also very convenient."</blockquote><figcaption>Google &middot; Feb 2026</figcaption></figure>
+            <figure class="x-quote rv"><p class="x-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote>"I was on the side of the highway, with a flat and no spare... In short time, southern hook and tow brought me a spare and put it on for me, at little cost. Very nice and friendly. I was blessed today."</blockquote><figcaption>Google &middot; Feb 2026</figcaption></figure>
+            <figure class="x-quote rv"><p class="x-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote>"The owner is a really cool guy also the truck was spotless very clean"</blockquote><figcaption>Google &middot; Feb 2026</figcaption></figure>
+            <figure class="x-quote rv"><p class="x-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote>"Cody, is a great guy. He was very quick to respond and upfront about the whole process... Highly recommend him if you want someone genuine and honest."</blockquote><figcaption>Google &middot; Feb 2026</figcaption></figure>
+            <figure class="x-quote rv"><p class="x-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote>"Their customer service was excellent from the moment I called, friendly, professional, and reassuring. They arrived much faster than expected and took care of everything efficiently."</blockquote><figcaption>Google &middot; Jan 2026</figcaption></figure>
+          </div>
+        </section>
+      </article>
+
+      <!-- CONTACT -->
+      <article class="x-page" id="p-contact">
+        <section class="x-hero x-hero--plain">
+          <div class="x-hero__in">
+            <div class="x-wrap">
+              <p class="x-lab rv">[ <b>07</b> ] CONTACT</p>
+              <h1 class="x-d1 rv"><span>Need a tow?</span><span class="x-amber">Call. It's faster.</span></h1>
+              <a class="rv" href="tel:+16014368945" style="display: inline-block; margin-top: 28px; font: 700 clamp(36px, 7vw, 92px)/1 var(--disp); letter-spacing: -0.04em; border-bottom: 3px solid var(--amber)">(601) 436-8945</a>
+              <p class="x-sub rv" style="margin-top: 20px">Answered 24 hours a day, 7 days a week.</p>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-sec--flush">
+          <div class="x-wrap x-grid2">
+            <dl class="x-panel x-dl rv">
+              <div><dt>Phone</dt><dd><a href="tel:+16014368945">(601) 436-8945</a></dd></div>
+              <div><dt>Email</dt><dd><a href="mailto:southernhooktowing@gmail.com">southernhooktowing@gmail.com</a></dd></div>
+              <div><dt>Address</dt><dd>925 Highway 42<br />Sumrall, MS 39482</dd></div>
+              <div><dt>Find us</dt><dd>Directly behind the Napa Auto Parts (Munn Diesel Sales), near Hwy 42 and Cubic Fortenberry Rd</dd></div>
+              <div><dt>Hours</dt><dd>24/7, every day</dd></div>
+              <div><dt>Social</dt><dd><a href="https://www.facebook.com/profile.php?id=61562557756899" target="_blank" rel="noopener">Facebook</a></dd></div>
+              <div style="border: 0; padding-bottom: 0"><dd style="text-align: left"><a class="x-btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=925%20Highway%2042%2C%20Sumrall%2C%20MS%2039482" target="_blank" rel="noopener">Get directions</a></dd></div>
+            </dl>
+            <div class="x-map rv">
+              <iframe src="https://www.google.com/maps?q=925+Highway+42,+Sumrall,+MS+39482&amp;output=embed" title="Map of 925 Highway 42, Sumrall, MS" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap x-grid2">
+            <div>
+              <p class="x-lab rv">[ <b>08</b> ] REQUEST A TOW</p>
+              <h2 class="x-d2 rv">Request a tow.</h2>
+              <p class="x-sub rv" style="margin-top: 20px">This opens an email to southernhooktowing@gmail.com with your details filled in.</p>
+              <p class="rv" style="margin-top: 20px; color: var(--amber); font: 500 13px/1.5 var(--mono); letter-spacing: 0.08em; text-transform: uppercase">For emergencies, call. It's faster.</p>
+            </div>
+            <form class="x-panel x-form rv" data-mail="Tow request">
+              <label class="x-field"><span>Name</span><input name="Name" required /></label>
+              <label class="x-field"><span>Phone</span><input name="Phone" type="tel" required /></label>
+              <label class="x-field"><span>Location</span><input name="Location" placeholder="Road, mile marker or nearest crossroad" required /></label>
+              <label class="x-field"><span>Vehicle</span><input name="Vehicle" placeholder="Year, make, model" /></label>
+              <label class="x-field"><span>Issue</span><textarea name="Issue" placeholder="Won't start, flat, in a ditch, accident..."></textarea></label>
+              <button class="x-btn x-btn--amber" type="submit" style="justify-content: center; cursor: pointer">Send request</button>
+            </form>
+          </div>
+        </section>
+        <section class="x-sec">
+          <div class="x-wrap x-grid2">
+            <div>
+              <p class="x-lab rv">[ <b>09</b> ] FAQ</p>
+              <h2 class="x-d2 rv">Quick answers.</h2>
+            </div>
+            <div class="rv">
+              <details class="x-faq"><summary>Are you really 24/7?</summary><p>Yes. Southern Hook is open 24 hours a day, every day. Call (601) 436-8945.</p></details>
+              <details class="x-faq"><summary>What areas do you serve?</summary><p>Sumrall, Hattiesburg, Columbia, Carson, Ellisville and the surrounding Pine Belt in the Lamar County area.</p></details>
+              <details class="x-faq"><summary>Do you tow heavy trucks?</summary><p>Yes. Light, medium and heavy duty towing, plus accident recovery and winch-outs.</p></details>
+              <details class="x-faq"><summary>Can you change a tire instead of towing?</summary><p>Often, yes. Flat tire changes, tire service, jump starts, lockouts and fuel delivery are handled on the spot.</p></details>
+              <details class="x-faq"><summary>How do I pay?</summary><p>Cards are accepted, per the company's listings. Ask on the call if you have a question about payment.</p></details>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <section class="x-cta">
+      <div class="x-wrap">
+        <p class="x-lab">[ <b>24/7</b> ] (601) 436-8945</p>
+        <h2 class="x-d1">Stuck? We're already<br />on the way.</h2>
+        <div class="x-btns">
+          <a class="x-btn x-btn--amber" href="tel:+16014368945">Call 24/7 (601) 436-8945</a>
+          <a class="x-btn" href="#/contact">Request a tow</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="x-foot">
+      <div class="x-wrap">
+        <div class="x-foot__grid">
+          <div>
+            <h4>Southern Hook</h4>
+            <ul>
+              <li>925 Highway 42<br />Sumrall, MS 39482</li>
+              <li>Behind the Napa Auto Parts (Munn Diesel Sales)</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Reach us</h4>
+            <ul>
+              <li><a href="tel:+16014368945">(601) 436-8945</a></li>
+              <li><a href="mailto:southernhooktowing@gmail.com">southernhooktowing@gmail.com</a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=61562557756899" target="_blank" rel="noopener">Facebook</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="#/services">Services</a></li>
+              <li><a href="#/heavy-duty">Heavy Duty &amp; Recovery</a></li>
+              <li><a href="#/roadside">Roadside</a></li>
+              <li><a href="#/commercial">Commercial</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>More</h4>
+            <ul>
+              <li><a href="#/about">About</a></li>
+              <li><a href="#/reviews">Reviews</a></li>
+              <li><a href="#/contact">Contact</a></li>
+              <li>Open 24 hours, every day</li>
+            </ul>
+          </div>
+        </div>
+        <p class="x-wordmark" aria-hidden="true">SOUTHERN HOOK</p>
+        <div class="x-legal">
+          <span>Independent concept preview. Not the official website of Southern Hook Towing &amp; Recovery.</span>
+          <span>Developed by <a href="https://teta.dpdns.org" target="_blank" rel="noopener">Teta Digitals</a></span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="x-bar"><a class="x-call" href="tel:+16014368945">Call 24/7 (601) 436-8945</a></div>
+
+    <script src="hark.js"></script>
+    <script>
+      (function () {
+        var routes = {
+          "#/": ["p-home", "Southern Hook Towing & Recovery | 24/7 Towing in Sumrall, MS"],
+          "#/services": ["p-services", "Services | Southern Hook Towing & Recovery"],
+          "#/heavy-duty": ["p-heavy", "Heavy Duty & Recovery | Southern Hook Towing & Recovery"],
+          "#/roadside": ["p-roadside", "Roadside Assistance | Southern Hook Towing & Recovery"],
+          "#/commercial": ["p-commercial", "Commercial & Fleet | Southern Hook Towing & Recovery"],
+          "#/about": ["p-about", "About | Southern Hook Towing & Recovery"],
+          "#/reviews": ["p-reviews", "Reviews | Southern Hook Towing & Recovery"],
+          "#/contact": ["p-contact", "Contact | Southern Hook Towing & Recovery"]
+        };
+        var io = window.IntersectionObserver
+          ? new IntersectionObserver(function (es) {
+              es.forEach(function (e, i) {
+                if (e.isIntersecting) {
+                  var el = e.target;
+                  setTimeout(function () { el.classList.add("is-in"); }, (i % 6) * 70);
+                  io.unobserve(el);
+                }
+              });
+            }, { rootMargin: "0px 0px -8%" })
+          : null;
+        function reveal(scope) {
+          [].forEach.call(scope.querySelectorAll(".rv"), function (el) {
+            el.classList.remove("is-in");
+            if (io) io.observe(el); else el.classList.add("is-in");
+          });
+        }
+        function counters(scope) {
+          [].forEach.call(scope.querySelectorAll("[data-count]"), function (el) {
+            var to = parseFloat(el.getAttribute("data-count")), dec = +(el.getAttribute("data-dec") || 0), t0 = null;
+            if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+            function step(t) {
+              if (!t0) t0 = t;
+              var k = Math.min((t - t0) / 1100, 1);
+              el.textContent = (to * (1 - Math.pow(1 - k, 3))).toFixed(dec);
+              if (k < 1) requestAnimationFrame(step);
+            }
+            requestAnimationFrame(step);
+          });
+        }
+        function route() {
+          var h = location.hash;
+          if (!routes[h]) h = "#/";
+          var def = routes[h];
+          [].forEach.call(document.querySelectorAll(".x-page"), function (p) { p.classList.toggle("is-on", p.id === def[0]); });
+          document.title = def[1];
+          [].forEach.call(document.querySelectorAll(".x-menu a"), function (a) {
+            if (a.getAttribute("href") === h) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+          });
+          var menu = document.getElementById("menu");
+          menu.classList.remove("is-open");
+          document.getElementById("burger").setAttribute("aria-expanded", "false");
+          window.scrollTo(0, 0);
+          var page = document.getElementById(def[0]);
+          if (page) { reveal(page); counters(page); }
+        }
+        window.addEventListener("hashchange", route);
+        document.getElementById("burger").addEventListener("click", function () {
+          var m = document.getElementById("menu"), open = m.classList.toggle("is-open");
+          this.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+        var slider = document.getElementById("slider");
+        if (slider) {
+          var figs = [].slice.call(slider.querySelectorAll(".x-slides > figure")), dots = document.getElementById("dots"), cur = 0;
+          figs.forEach(function (f, i) {
+            var b = document.createElement("button");
+            b.type = "button";
+            b.setAttribute("aria-label", "Review " + (i + 1));
+            b.addEventListener("click", function () { go(i); });
+            dots.appendChild(b);
+          });
+          function go(i) {
+            cur = (i + figs.length) % figs.length;
+            figs.forEach(function (f, j) { f.classList.toggle("is-on", j === cur); });
+            [].forEach.call(dots.children, function (d, j) { d.setAttribute("aria-current", j === cur ? "true" : "false"); });
+          }
+          [].forEach.call(slider.querySelectorAll("[data-slide]"), function (b) {
+            b.addEventListener("click", function () { go(cur + +b.getAttribute("data-slide")); });
+          });
+          go(0);
+        }
+        [].forEach.call(document.querySelectorAll("form[data-mail]"), function (f) {
+          f.addEventListener("submit", function (e) {
+            e.preventDefault();
+            var lines = [].map.call(f.querySelectorAll("input, textarea"), function (el) { return el.name + ": " + el.value; });
+            location.href = "mailto:southernhooktowing@gmail.com?subject=" + encodeURIComponent(f.getAttribute("data-mail")) + "&body=" + encodeURIComponent(lines.join("\n"));
+          });
+        });
+        document.querySelector('a[href="#account"]').addEventListener("click", function (e) {
+          e.preventDefault();
+          document.getElementById("account").scrollIntoView({ behavior: "smooth" });
+        });
+        reveal(document);
+        route();
+      })();
+    </script>
+  </body>
+</html>
