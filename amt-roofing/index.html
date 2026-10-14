@@ -1,0 +1,957 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>A.M.T Roofing Penarth · Concept preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter+Tight:wght@400;500;600&display=swap"
+    />
+    <style>
+      :root {
+        --slate: #1c2126;
+        --graphite: #2a3138;
+        --limestone: #f3efe8;
+        --white: #ffffff;
+        --lead: #8a939b;
+        --copper: #c2703d;
+        --ink: #1c2126;
+        --hair: rgba(28, 33, 38, 0.14);
+        --hair-dk: rgba(243, 239, 232, 0.16);
+        --r: 18px;
+        --pad: clamp(18px, 5vw, 76px);
+        --serif: "Fraunces", Georgia, serif;
+        --sans: "Inter Tight", system-ui, sans-serif;
+      }
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0;
+        background: var(--limestone);
+        color: var(--ink);
+        font: 400 17px/1.6 var(--sans);
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+      img { max-width: 100%; display: block; }
+      a { color: inherit; }
+      h1, h2, h3, h4, p, figure, dl, dd { margin: 0; }
+      ul { margin: 0; padding: 0; list-style: none; }
+      :focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
+
+      /* layout */
+      .x-wrap { max-width: 1240px; margin: 0 auto; padding-inline: clamp(16px, 4vw, 48px); }
+      .x-sec { padding-block: clamp(56px, 9vw, 128px); }
+      .x-dark { background: var(--slate); color: var(--limestone); }
+      .x-graph { background: var(--graphite); color: var(--limestone); }
+      .x-light { background: var(--white); }
+      .x-stone { background: var(--limestone); }
+
+      /* type */
+      .x-label {
+        font: 500 12px/1.4 var(--sans);
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #9a5024;
+      }
+      .x-dark .x-label, .x-graph .x-label, .x-hero .x-label, .x-foot .x-label { color: #d58d5c; }
+      .x-label--lead, .x-dark .x-label--lead, .x-graph .x-label--lead { color: #5f6870; }
+      .x-dark .x-label--lead, .x-graph .x-label--lead, .x-hero .x-label--lead { color: #a3abb2; }
+      .x-dsp {
+        font: 300 clamp(44px, 9.2vw, 122px) / 0.94 var(--serif);
+        letter-spacing: -0.02em;
+      }
+      .x-h2 { font: 300 clamp(32px, 5vw, 64px) / 1.03 var(--serif); letter-spacing: -0.015em; }
+      .x-h3 { font: 400 clamp(21px, 2.2vw, 28px) / 1.2 var(--serif); }
+      .x-lead { font-size: clamp(18px, 1.6vw, 22px); line-height: 1.55; color: #475059; max-width: 56ch; }
+      .x-dark .x-lead, .x-graph .x-lead, .x-hero .x-lead { color: #bcc3ca; }
+      .x-muted { color: #59626a; }
+      .x-dark .x-muted, .x-graph .x-muted, .x-foot .x-muted { color: #a3abb2; }
+      .x-mono { font-variant-numeric: tabular-nums; }
+
+      /* buttons */
+      .x-btn {
+        display: inline-flex; align-items: center; gap: 10px;
+        min-height: 48px; padding: 0 24px; border-radius: 999px;
+        font: 500 15px/1 var(--sans); letter-spacing: 0.01em;
+        text-decoration: none; border: 1px solid transparent;
+        background: #a65a2b; color: #fff;
+        transition: transform .25s ease, background .25s ease, color .25s ease;
+      }
+      .x-btn:hover { transform: translateY(-2px); background: #8f4c22; }
+      .x-btn--ghost { background: transparent; color: inherit; border-color: var(--hair); }
+      .x-dark .x-btn--ghost, .x-graph .x-btn--ghost { border-color: var(--hair-dk); }
+      .x-btn--ghost:hover { background: rgba(194, 112, 61, 0.1); border-color: var(--copper); }
+      .x-btns { display: flex; flex-wrap: wrap; gap: 12px; }
+      .x-tlink {
+        display: inline-flex; align-items: center; gap: 8px; min-height: 44px;
+        font: 500 14px/1 var(--sans); letter-spacing: 0.06em; text-transform: uppercase;
+        text-decoration: none; border-bottom: 1px solid var(--copper); color: inherit;
+        padding-bottom: 2px;
+      }
+      .x-tlink:hover { color: var(--copper); }
+
+      /* chevron motif */
+      .x-chev { display: block; width: 100%; height: 26px; color: var(--copper); opacity: .55; }
+      .x-chev--big { height: 56px; opacity: .22; }
+
+      /* banner + nav */
+      .x-banner {
+        background: var(--graphite); color: #cfd5da;
+        font: 400 12px/1.4 var(--sans); text-align: center;
+        padding: 9px 16px;
+      }
+      .x-nav {
+        position: sticky; top: 0; z-index: 60;
+        background: rgba(243, 239, 232, 0.86);
+        backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--hair);
+      }
+      .x-nav__in { display: flex; align-items: center; gap: 20px; min-height: 72px; }
+      .x-mark { display: flex; align-items: center; gap: 10px; text-decoration: none; margin-right: auto; }
+      .x-mark svg { color: var(--copper); }
+      .x-mark b { font: 400 24px/1 var(--serif); letter-spacing: 0.02em; display: block; }
+      .x-mark > span > span { font: 500 12px/1.4 var(--sans); letter-spacing: 0.12em; color: #59626a; white-space: nowrap; }
+      .x-mark { min-height: 44px; min-width: 0; }
+      .x-foot .x-mark > span > span { color: #a3abb2 !important; }
+      .x-nav__links { display: flex; gap: 4px; align-items: center; }
+      .x-nav__links a {
+        display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px;
+        font: 500 14px/1 var(--sans); text-decoration: none; color: #3b434b; border-radius: 999px;
+      }
+      .x-nav__links a:hover { color: var(--copper); }
+      .x-nav__links a[aria-current="page"] { color: var(--slate); box-shadow: inset 0 -2px 0 var(--copper); border-radius: 0; }
+      .x-nav__cta { display: flex; gap: 8px; align-items: center; }
+      .x-burger {
+        display: none; width: 46px; height: 46px; flex: 0 0 46px; border-radius: 999px;
+        border: 1px solid var(--hair); background: transparent; align-items: center; justify-content: center;
+      }
+      .x-burger span { display: block; width: 18px; height: 1.5px; background: var(--ink); box-shadow: 0 -5px 0 var(--ink), 0 5px 0 var(--ink); }
+      @media (max-width: 1040px) {
+        .x-nav__links { display: none; }
+        .x-burger { display: inline-flex; }
+        .x-nav__cta .x-btn--ghost { display: none; }
+      }
+      @media (max-width: 760px) { .x-nav__cta .x-btn { display: none; } }
+      .x-mobile { display: none; border-top: 1px solid var(--hair); padding: 12px 0 22px; }
+      .x-mobile.is-open { display: block; }
+      .x-mobile a {
+        display: block; padding: 13px 0; text-decoration: none;
+        font: 400 22px/1.2 var(--serif); border-bottom: 1px solid var(--hair);
+      }
+
+      /* hero */
+      .x-hero { position: relative; background: var(--slate); color: var(--limestone); overflow: hidden; }
+      .x-hero__img {
+        position: relative; height: clamp(360px, 62vw, 640px); overflow: hidden;
+      }
+      .x-hero__img img {
+        width: 100%; height: 100%; object-fit: cover;
+        clip-path: inset(0 0 100% 0); animation: reveal 1.1s cubic-bezier(.2,.7,.2,1) .15s forwards;
+      }
+      @keyframes reveal { to { clip-path: inset(0 0 0 0); } }
+      .x-hero__img::after {
+        content: ""; position: absolute; inset: 0;
+        background: linear-gradient(180deg, rgba(28,33,38,.55) 0%, rgba(28,33,38,.15) 40%, rgba(28,33,38,.9) 100%);
+      }
+      .x-hero__copy { position: relative; margin-top: clamp(-120px, -12vw, -60px); padding-bottom: clamp(36px, 5vw, 64px); }
+      .x-hero__copy h1 { max-width: 15ch; }
+      .x-hero__meta {
+        display: flex; flex-wrap: wrap; gap: 10px 28px; align-items: center;
+        margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--hair-dk);
+        font-size: 15px; color: #c3cad1;
+      }
+
+      /* marquee */
+      .x-marq { overflow: hidden; border-block: 1px solid var(--hair); background: var(--white); padding: 18px 0; }
+      .x-marq__t { display: flex; gap: 0; width: max-content; animation: slide 40s linear infinite; }
+      .x-marq__t span {
+        font: 300 clamp(22px, 3vw, 38px)/1 var(--serif); padding-inline: 26px;
+        display: inline-flex; align-items: center; gap: 26px; white-space: nowrap; color: #343c44;
+      }
+      .x-marq__t span::after { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--copper); }
+      @keyframes slide { to { transform: translateX(-50%); } }
+      @media (prefers-reduced-motion: reduce) { .x-marq__t { animation: none; } .x-hero__img img { animation: none; clip-path: none; } }
+
+      /* grids */
+      .x-split { display: grid; gap: clamp(28px, 5vw, 72px); align-items: start; }
+      @media (min-width: 900px) { .x-split { grid-template-columns: 1fr 1fr; align-items: center; } .x-split--narrow { grid-template-columns: 0.85fr 1.15fr; } }
+      .x-head { max-width: 62ch; }
+      .x-head .x-label { margin-bottom: 18px; }
+      .x-head .x-lead { margin-top: 20px; }
+      .x-fig { border-radius: var(--r); overflow: hidden; }
+      .x-fig img { width: 100%; height: 100%; object-fit: cover; }
+      .x-fig figcaption { font-size: 13px; color: #6c757d; padding-top: 10px; }
+
+      /* stats */
+      .x-stats { display: grid; gap: 1px; background: var(--hair-dk); border-block: 1px solid var(--hair-dk); grid-template-columns: repeat(2, 1fr); }
+      @media (min-width: 760px) { .x-stats { grid-template-columns: repeat(4, 1fr); } }
+      .x-stat { background: var(--slate); padding: clamp(22px, 3vw, 38px) 20px; }
+      .x-stat b { display: block; font: 300 clamp(34px, 4.4vw, 56px)/1 var(--serif); letter-spacing: -0.02em; }
+      .x-stat span { display: block; margin-top: 10px; font-size: 13px; color: var(--lead); letter-spacing: .04em; }
+
+      /* numbered index */
+      .x-index { border-top: 1px solid var(--hair); }
+      .x-index a {
+        display: grid; grid-template-columns: 56px 1fr auto; gap: 16px; align-items: center;
+        padding: clamp(20px, 2.6vw, 34px) 0; border-bottom: 1px solid var(--hair);
+        text-decoration: none; position: relative; transition: padding-left .3s ease, color .3s ease;
+      }
+      .x-index a:hover { padding-left: 14px; color: var(--copper); }
+      .x-index .n { font: 500 12px/1 var(--sans); letter-spacing: .14em; color: #5f6870; }
+      .x-index .t { font: 300 clamp(26px, 3.6vw, 46px)/1.05 var(--serif); letter-spacing: -0.01em; }
+      .x-index .d { font-size: 14px; color: #59626a; max-width: 34ch; text-align: right; }
+      @media (max-width: 760px) { .x-index a { grid-template-columns: 44px 1fr; } .x-index .d { display: none; } }
+      .x-index__prev {
+        position: fixed; width: 300px; height: 210px; border-radius: 14px; overflow: hidden;
+        pointer-events: none; opacity: 0; transform: translate(-50%, -50%) scale(.95);
+        transition: opacity .3s ease, transform .3s ease; z-index: 40;
+      }
+      .x-index__prev.is-on { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+      .x-index__prev img { width: 100%; height: 100%; object-fit: cover; }
+      @media (max-width: 900px) { .x-index__prev { display: none; } }
+
+      /* cards */
+      .x-cards { display: grid; gap: 18px; }
+      @media (min-width: 720px) { .x-cards { grid-template-columns: repeat(2, 1fr); } .x-cards--3 { grid-template-columns: repeat(3, 1fr); } }
+      .x-card {
+        background: var(--white); border: 1px solid var(--hair); border-radius: var(--r);
+        padding: clamp(22px, 3vw, 34px); display: flex; flex-direction: column; gap: 12px;
+      }
+      .x-dark .x-card, .x-graph .x-card { background: rgba(243,239,232,.05); border-color: var(--hair-dk); }
+      .x-card ul li { padding: 8px 0 8px 20px; position: relative; border-bottom: 1px solid var(--hair); font-size: 15px; }
+      .x-dark .x-card ul li, .x-graph .x-card ul li { border-color: var(--hair-dk); }
+      .x-card ul li:last-child { border-bottom: 0; }
+      .x-card ul li::before { content: ""; position: absolute; left: 0; top: 16px; width: 9px; height: 5px; border-left: 1.5px solid var(--copper); border-top: 1.5px solid var(--copper); transform: skewX(-36deg); }
+
+      /* job sheet */
+      .x-job { border: 1px solid var(--hair-dk); border-radius: var(--r); overflow: hidden; }
+      .x-job__top { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: baseline; padding: 20px clamp(20px, 3vw, 34px); border-bottom: 1px solid var(--hair-dk); }
+      .x-job__rows { display: grid; }
+      @media (min-width: 720px) { .x-job__rows { grid-template-columns: repeat(2, 1fr); } }
+      .x-job__rows div { padding: 18px clamp(20px, 3vw, 34px); border-bottom: 1px solid var(--hair-dk); }
+      .x-job__rows div:nth-child(odd) { border-right: 1px solid var(--hair-dk); }
+      @media (max-width: 719px) { .x-job__rows div:nth-child(odd) { border-right: 0; } }
+      .x-job__rows dt { font: 500 12px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: #a3abb2; }
+      .x-job__rows dd { margin-top: 8px; font-size: 16px; }
+      .x-job__foot { padding: 18px clamp(20px, 3vw, 34px); font-size: 14px; color: #a3abb2; }
+      .x-light .x-job, .x-stone .x-job { border-color: var(--hair); }
+      .x-light .x-job *, .x-stone .x-job * { border-color: var(--hair); }
+
+      /* carousel */
+      .x-quote { position: relative; }
+      .x-quote__mark { font: 400 clamp(90px, 14vw, 190px)/0.7 var(--serif); color: var(--copper); opacity: .3; }
+      .x-slides { position: relative; min-height: 1px; }
+      .x-slide { display: none; }
+      .x-slide.is-on { display: block; animation: fade .5s ease; }
+      @keyframes fade { from { opacity: 0; transform: translateY(8px); } }
+      .x-slide blockquote { margin: 0; font: 300 clamp(21px, 2.9vw, 36px)/1.3 var(--serif); letter-spacing: -0.01em; max-width: 22ch; max-width: 30ch; }
+      .x-slide cite { display: block; margin-top: 22px; font: 500 13px/1.4 var(--sans); font-style: normal; letter-spacing: .12em; text-transform: uppercase; color: var(--lead); }
+      .x-dots { display: flex; gap: 8px; margin-top: 34px; }
+      .x-dots button { width: 44px; height: 44px; border: 0; background: transparent; padding: 0; cursor: pointer; display: grid; place-items: center; }
+      .x-dots button::before { content: ""; width: 30px; height: 2px; background: currentColor; opacity: .3; transition: opacity .3s; }
+      .x-dots button[aria-selected="true"]::before { opacity: 1; background: var(--copper); }
+
+      /* process (sticky) */
+      .x-proc { display: grid; gap: clamp(24px, 4vw, 56px); }
+      @media (min-width: 900px) { .x-proc { grid-template-columns: 0.8fr 1.2fr; align-items: start; } .x-proc__side { position: sticky; top: 110px; } }
+      .x-step { padding: clamp(22px, 3vw, 34px) 0; border-top: 1px solid var(--hair); display: grid; grid-template-columns: 64px 1fr; gap: 16px; }
+      .x-dark .x-step, .x-graph .x-step { border-color: var(--hair-dk); }
+      .x-step:last-child { border-bottom: 1px solid var(--hair); }
+      .x-dark .x-step:last-child, .x-graph .x-step:last-child { border-color: var(--hair-dk); }
+      .x-step b { font: 300 30px/1 var(--serif); color: var(--copper); }
+
+      /* chips */
+      .x-chips { display: flex; flex-wrap: wrap; gap: 10px; }
+      .x-chips li {
+        border: 1px solid var(--hair); border-radius: 999px; padding: 10px 18px;
+        font-size: 14px; letter-spacing: .02em;
+      }
+      .x-dark .x-chips li, .x-graph .x-chips li { border-color: var(--hair-dk); }
+
+      /* faq */
+      .x-faq { border-top: 1px solid var(--hair); }
+      .x-faq details { border-bottom: 1px solid var(--hair); }
+      .x-faq summary {
+        list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 18px;
+        align-items: center; padding: 22px 0; min-height: 44px;
+        font: 400 clamp(18px, 2vw, 24px)/1.3 var(--serif);
+      }
+      .x-faq summary::-webkit-details-marker { display: none; }
+      .x-faq summary::after { content: "+"; font: 300 26px/1 var(--serif); color: var(--copper); }
+      .x-faq details[open] summary::after { content: "+"; transform: rotate(45deg); }
+      .x-faq summary::after { transition: transform .3s ease; }
+      .x-faq p { padding-bottom: 22px; color: #5a636b; max-width: 68ch; }
+
+      /* form */
+      .x-form { display: grid; gap: 14px; }
+      @media (min-width: 680px) { .x-form { grid-template-columns: 1fr 1fr; } .x-form .full { grid-column: 1 / -1; } }
+      .x-field { display: grid; gap: 7px; }
+      .x-field span { font: 500 12px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: #5f6870; }
+      .x-field input, .x-field select, .x-field textarea {
+        font: 400 16px/1.5 var(--sans); color: inherit; background: var(--white);
+        border: 1px solid var(--hair); border-radius: 12px; padding: 13px 14px; min-height: 48px; width: 100%;
+      }
+      .x-field textarea { min-height: 130px; resize: vertical; }
+
+      /* contact list */
+      .x-deflist div { display: flex; justify-content: space-between; gap: 18px; padding: 16px 0; border-bottom: 1px solid var(--hair-dk); }
+      .x-deflist dt { color: var(--lead); font-size: 14px; letter-spacing: .04em; }
+      .x-deflist dd { text-align: right; }
+      .x-deflist a { text-decoration: none; border-bottom: 1px solid var(--copper); }
+
+      /* footer */
+      .x-fcta { text-align: center; }
+      .x-word {
+        font: 300 clamp(78px, 24vw, 330px)/0.8 var(--serif); letter-spacing: -0.03em;
+        color: var(--limestone); opacity: .13; user-select: none; text-align: center; padding-top: 10px;
+      }
+      .x-foot { background: var(--slate); color: var(--limestone); padding-bottom: 40px; }
+      .x-foot__grid { display: grid; gap: 28px; padding-block: clamp(36px, 5vw, 64px); border-top: 1px solid var(--hair-dk); }
+      @media (min-width: 820px) { .x-foot__grid { grid-template-columns: 1.4fr 1fr 1fr 1fr; } }
+      .x-foot h4 { font: 500 12px/1 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: #a3abb2; margin-bottom: 8px; }
+      .x-foot li a, .x-foot p a { text-decoration: none; color: #d6dade; display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; }
+      .x-foot li { padding: 0; }
+      .x-foot li a:hover, .x-foot p a:hover { color: var(--copper); }
+      .x-foot__base { border-top: 1px solid var(--hair-dk); padding-top: 22px; display: flex; flex-wrap: wrap; gap: 10px 24px; justify-content: space-between; font-size: 13px; color: #a3abb2; align-items: center; }
+
+      /* mobile call bar */
+      .x-callbar { display: none; }
+      @media (max-width: 760px) {
+        .x-callbar {
+          display: grid; grid-template-columns: 1fr 1fr; gap: 8px; position: fixed; left: 0; right: 0; bottom: 0;
+          z-index: 70; padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+          background: rgba(28,33,38,.95); backdrop-filter: blur(10px);
+        }
+        .x-callbar .x-btn { justify-content: center; width: 100%; }
+        body { padding-bottom: 76px; }
+      }
+
+      /* reveals */
+      .rv { opacity: 0; transform: translateY(22px); transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
+      .rv.is-in { opacity: 1; transform: none; }
+      @media (prefers-reduced-motion: reduce) { .rv { opacity: 1; transform: none; transition: none; } }
+
+      .x-page { display: none; }
+      .x-page.is-on { display: block; }
+      .x-stack > * + * { margin-top: clamp(18px, 2.4vw, 28px); }
+    </style>
+  </head>
+  <body>
+    <p class="x-banner">Independent concept preview by Teta Digitals. Not the official website of A.M.T Roofing.</p>
+
+    <header class="x-nav">
+      <div class="x-wrap x-nav__in">
+        <a class="x-mark" href="#/" aria-label="A.M.T Roofing, home">
+          <svg width="30" height="20" viewBox="0 0 30 20" fill="none" aria-hidden="true"><path d="M1 15 L15 3 L29 15" stroke="currentColor" stroke-width="2" stroke-linecap="square"/><path d="M6 19 L15 11 L24 19" stroke="currentColor" stroke-width="1.2" opacity=".5"/></svg>
+          <span style="display:block"><b>A.M.T</b><span>ROOFING · PENARTH</span></span>
+        </a>
+        <nav class="x-nav__links" id="navlinks" aria-label="Pages"></nav>
+        <div class="x-nav__cta">
+          <a class="x-btn x-btn--ghost" href="tel:+447464879664">Call 07464 879664</a>
+          <a class="x-btn" href="#/contact">Free quote</a>
+          <button class="x-burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span></button>
+        </div>
+      </div>
+      <div class="x-mobile" id="mobile"><div class="x-wrap" id="mobilelinks"></div></div>
+    </header>
+
+    <main id="app">
+      <!-- HOME -->
+      <div class="x-page" id="p-home">
+        <section class="x-hero">
+          <div class="x-hero__img">
+            <img src="amt-hero.png" alt="Victorian terrace in Penarth with a newly laid slate roof" />
+          </div>
+          <div class="x-wrap x-hero__copy">
+            <p class="x-label rv">Penarth · Vale of Glamorgan</p>
+            <h1 class="x-dsp rv" style="margin-top:18px">Roofs built properly. Sites left spotless.</h1>
+            <p class="x-lead rv" style="margin-top:24px">For all your pitched and flat roofing needs. We take on small repairs to full new roofs, with a clean, reliable, quality and friendly service.</p>
+            <div class="x-btns rv" style="margin-top:30px">
+              <a class="x-btn" href="#/contact">Get a free quote</a>
+              <a class="x-btn x-btn--ghost" href="tel:+447464879664">Call 07464 879664</a>
+            </div>
+            <p class="x-hero__meta rv"><span>4.7 stars from 61 Google reviews</span><span>Run by brothers Ashley and Dave</span><span>Pitched, flat, repairs, guttering</span></p>
+          </div>
+        </section>
+
+        <div class="x-marq" aria-hidden="true">
+          <div class="x-marq__t">
+            <span>Strip and re-roofs</span><span>Slate</span><span>Marley tiles</span><span>GRP flat roofs</span><span>Lead work</span><span>Dry ridge</span><span>Guttering</span><span>Fascias and soffits</span><span>Leak repairs</span>
+            <span>Strip and re-roofs</span><span>Slate</span><span>Marley tiles</span><span>GRP flat roofs</span><span>Lead work</span><span>Dry ridge</span><span>Guttering</span><span>Fascias and soffits</span><span>Leak repairs</span>
+          </div>
+        </div>
+
+        <section class="x-sec x-light">
+          <div class="x-wrap x-split x-split--narrow">
+            <div class="x-head rv">
+              <p class="x-label">No. 01 / The firm</p>
+              <h2 class="x-h2">Two brothers, one standard, every roof.</h2>
+            </div>
+            <div class="x-stack rv">
+              <p class="x-lead">A.M.T Roofing is run by brothers Ashley and Dave. In their own words: "We cover all aspects of roofing from roofing repairs for a damaged or leaking roof, new roofs, flat roofs."</p>
+              <p class="x-muted">Reviewers keep saying the same two things: the detail is right, and the site is swept at the end of every shift. One puts it plainly, Ashley is "a perfectionist".</p>
+              <a class="x-tlink" href="#/about">More about us</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec x-dark">
+          <div class="x-wrap">
+            <p class="x-label rv" style="margin-bottom:28px">No. 02 / What people say</p>
+          </div>
+          <div class="x-stats rv">
+            <div class="x-stat"><b class="x-mono">4.7</b><span>Google rating</span></div>
+            <div class="x-stat"><b class="x-mono">61</b><span>Google reviews</span></div>
+            <div class="x-stat"><b class="x-mono">100%</b><span>Recommend on Facebook</span></div>
+            <div class="x-stat"><b class="x-mono">4.8K</b><span>Facebook followers</span></div>
+          </div>
+          <div class="x-wrap" style="margin-top:clamp(36px,5vw,64px)">
+            <div class="x-quote">
+              <p class="x-quote__mark" aria-hidden="true">&ldquo;</p>
+              <div class="x-slides" id="slides" style="margin-top:-18px"></div>
+              <div class="x-dots" id="dots" role="tablist" aria-label="Reviews"></div>
+              <a class="x-tlink" href="#/reviews" style="margin-top:18px">Read all reviews</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="x-sec x-stone">
+          <div class="x-wrap">
+            <div class="x-head rv" style="margin-bottom:clamp(28px,4vw,54px)">
+              <p class="x-label">No. 03 / Services</p>
+              <h2 class="x-h2">Small repairs to full new roofs.</h2>
+            </div>
+            <div class="x-index rv" id="svc-index">
+              <a href="#/pitched-roofs" data-img="amt-detail.png"><span class="n">01</span><span class="t">Pitched roofs</span><span class="d">Strip and re-roofs, slate and Marley tiles, dry ridge, felt support trays</span></a>
+              <a href="#/flat-roofs" data-img="amt-flat.png"><span class="n">02</span><span class="t">Flat roofs</span><span class="d">GRP fibreglass for extensions, garages and dormers</span></a>
+              <a href="#/guttering" data-img="amt-flat.png"><span class="n">03</span><span class="t">Guttering and fascias</span><span class="d">Gutters, fascias, soffits, downpipes, GRP dry bonding gutters</span></a>
+              <a href="#/repairs" data-img="amt-detail.png"><span class="n">04</span><span class="t">Repairs and leaks</span><span class="d">Slipped tiles, storm damage, lead work around chimney stacks</span></a>
+            </div>
+            <figure class="x-index__prev" id="svc-prev" aria-hidden="true"><img src="amt-detail.png" alt="" data-k="amt-detail.png" /><img src="amt-flat.png" alt="" data-k="amt-flat.png" style="position:absolute;inset:0" /></figure>
+          </div>
+        </section>
+
+        <section class="x-sec x-graph">
+          <div class="x-wrap">
+            <div class="x-head rv" style="margin-bottom:clamp(24px,3vw,40px)">
+              <p class="x-label">No. 04 / Job sheet</p>
+              <h2 class="x-h2">A recent complete re-roof.</h2>
+            </div>
+            <div class="x-job rv js-job"></div>
+          </div>
+        </section>
+
+        <section class="x-sec x-light">
+          <div class="x-wrap x-proc">
+            <div class="x-proc__side x-head rv">
+              <p class="x-label">No. 05 / How it works</p>
+              <h2 class="x-h2">Four steps, no fuss.</h2>
+              <p class="x-lead" style="margin-top:18px">From the first call to the last sweep of the drive.</p>
+            </div>
+            <div class="rv" id="process"></div>
+          </div>
+        </section>
+
+        <section class="x-sec x-stone">
+          <div class="x-wrap x-split">
+            <div class="x-head rv">
+              <p class="x-label">No. 06 / Where we work</p>
+              <h2 class="x-h2">Based in Penarth, out across the Vale.</h2>
+              <p class="x-lead" style="margin-top:18px">Based in Penarth, working across Penarth, Llandough, Cogan, Cardiff and the Vale of Glamorgan.</p>
+            </div>
+            <ul class="x-chips rv" id="areas"></ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- PITCHED -->
+      <div class="x-page" id="p-pitched">
+        <section class="x-hero">
+          <div class="x-hero__img" style="height:clamp(300px,46vw,520px)">
+            <img src="amt-detail.png" alt="Pitched roof detail with lead work around a chimney stack" />
+          </div>
+          <div class="x-wrap x-hero__copy">
+            <p class="x-label rv">No. 01 / Pitched roofs</p>
+            <h1 class="x-dsp rv" style="margin-top:18px">Pitched roofs, stripped back and done right.</h1>
+            <p class="x-lead rv" style="margin-top:22px">Complete strip and re-roofs in slate and Marley tiles, including Victorian terraces, finished with dry ridge and new lead around the chimney.</p>
+            <div class="x-btns rv" style="margin-top:28px"><a class="x-btn" href="#/contact">Quote for a re-roof</a><a class="x-btn x-btn--ghost" href="tel:+447464879664">Call 07464 879664</a></div>
+          </div>
+        </section>
+        <section class="x-sec x-light">
+          <div class="x-wrap">
+            <div class="x-head rv" style="margin-bottom:clamp(28px,4vw,48px)">
+              <p class="x-label">What we do</p>
+              <h2 class="x-h2">From the battens to the ridge.</h2>
+            </div>
+            <div class="x-cards x-cards--3">
+              <div class="x-card rv"><p class="x-label x-label--lead">01</p><h3 class="x-h3">Strip and re-roof</h3><p class="x-muted">The old covering comes off and the roof goes back on new, start to finish. One Cardiff customer had a complete strip off and re roof of a Victorian age property.</p></div>
+              <div class="x-card rv"><p class="x-label x-label--lead">02</p><h3 class="x-h3">Slate and Marley tiles</h3><p class="x-muted">Natural slate for period terraces, or Marley tiles such as Marley Modern, laid over felt support trays at the eaves.</p></div>
+              <div class="x-card rv"><p class="x-label x-label--lead">03</p><h3 class="x-h3">Victorian terraces</h3><p class="x-muted">Penarth and Cardiff are full of them. Older roofs need care at the chimney, the party walls and the gutters.</p></div>
+              <div class="x-card rv"><p class="x-label x-label--lead">04</p><h3 class="x-h3">Dry ridge systems</h3><p class="x-muted">Ridge tiles mechanically fixed rather than relying on mortar bedding alone.</p></div>
+              <div class="x-card rv"><p class="x-label x-label--lead">05</p><h3 class="x-h3">Lead around chimney stacks</h3><p class="x-muted">New lead work where the stack meets the roof, one of the commonest places for water to get in.</p></div>
+              <div class="x-card rv"><p class="x-label x-label--lead">06</p><h3 class="x-h3">Water goods included</h3><p class="x-muted">A re-roof is the right moment for new fascias, gutters and downpipes. See <a class="x-tlink" style="min-height:0" href="#/guttering">guttering</a>.</p></div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-graph">
+          <div class="x-wrap">
+            <div class="x-head rv" style="margin-bottom:clamp(24px,3vw,40px)">
+              <p class="x-label">Job sheet</p>
+              <h2 class="x-h2">Marley Modern, four days, start to finish.</h2>
+            </div>
+            <div class="x-job rv js-job"></div>
+          </div>
+        </section>
+        <section class="x-sec x-stone">
+          <div class="x-wrap x-split">
+            <blockquote class="rv" style="margin:0"><p class="x-quote__mark" aria-hidden="true">&ldquo;</p><p class="x-h3" style="font-size:clamp(22px,2.6vw,32px);margin-top:-20px">Just had a whole re roof installation completed by Ashley and his brother David. Ashley is a perfectionist and you can see that in the final results.</p><cite class="x-label x-label--lead" style="display:block;margin-top:20px;font-style:normal">Karl Burt</cite></blockquote>
+            <div class="x-stack rv"><p class="x-lead">Thinking about a new roof? We will come and look at it, then put the quote in writing.</p><div class="x-btns"><a class="x-btn" href="#/contact">Request a quote</a></div></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- FLAT -->
+      <div class="x-page" id="p-flat">
+        <section class="x-hero">
+          <div class="x-hero__img" style="height:clamp(300px,46vw,520px)">
+            <img src="amt-flat.png" alt="A finished GRP fibreglass flat roof with new guttering" />
+          </div>
+          <div class="x-wrap x-hero__copy">
+            <p class="x-label rv">No. 02 / Flat roofs</p>
+            <h1 class="x-dsp rv" style="margin-top:18px">GRP flat roofs, laid in one seamless skin.</h1>
+            <p class="x-lead rv" style="margin-top:22px">Fibreglass flat roofs for extensions, garages and dormers across Penarth and Cardiff.</p>
+            <div class="x-btns rv" style="margin-top:28px"><a class="x-btn" href="#/contact">Quote for a flat roof</a><a class="x-btn x-btn--ghost" href="tel:+447464879664">Call 07464 879664</a></div>
+          </div>
+        </section>
+        <section class="x-sec x-light">
+          <div class="x-wrap">
+            <div class="x-head rv" style="margin-bottom:clamp(28px,4vw,48px)">
+              <p class="x-label">Where it goes</p>
+              <h2 class="x-h2">Three places flat roofs earn their keep.</h2>
+            </div>
+            <div class="x-index rv">
+              <a href="#/contact"><span class="n">01</span><span class="t">Extensions</span><span class="d">Kitchen and rear extensions, often with a lower roof to tie in</span></a>
+              <a href="#/contact"><span class="n">02</span><span class="t">Garages</span><span class="d">Replacing tired felt over a garage or outbuilding</span></a>
+              <a href="#/contact"><span class="n">03</span><span class="t">Dormers</span><span class="d">The flat top of a dormer, where it meets the main pitched roof</span></a>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-dark">
+          <div class="x-wrap x-split x-split--narrow">
+            <div class="x-head rv">
+              <p class="x-label">Why GRP</p>
+              <h2 class="x-h2">Why fibreglass suits a flat roof.</h2>
+              <p class="x-lead" style="margin-top:18px">General points about the material. We will tell you on the visit whether it suits your roof.</p>
+            </div>
+            <div class="x-cards">
+              <div class="x-card rv"><h3 class="x-h3">Seamless</h3><p class="x-muted">Laid as one continuous layer, with no joints or seams for water to find.</p></div>
+              <div class="x-card rv"><h3 class="x-h3">Tough finish</h3><p class="x-muted">A hard topcoat that stands up to foot traffic for maintenance.</p></div>
+              <div class="x-card rv"><h3 class="x-h3">Neat edges</h3><p class="x-muted">Formed trims at the edges and upstands give a crisp, tidy finish.</p></div>
+              <div class="x-card rv"><h3 class="x-h3">Low upkeep</h3><p class="x-muted">No loose chippings and little to maintain once it is down.</p></div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-stone">
+          <div class="x-wrap x-split">
+            <div class="x-head rv"><p class="x-label">Next step</p><h2 class="x-h2">Leaking flat roof?</h2></div>
+            <div class="x-stack rv"><p class="x-lead">Send a photo and a postcode by email, or call. We take on small repairs to full new roofs.</p><div class="x-btns"><a class="x-btn" href="#/contact">Request a quote</a><a class="x-btn x-btn--ghost" href="mailto:amtroofing@outlook.com">Email us</a></div></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- GUTTERING -->
+      <div class="x-page" id="p-guttering">
+        <section class="x-hero">
+          <div class="x-hero__img" style="height:clamp(300px,46vw,520px)">
+            <img src="amt-flat.png" alt="New guttering and fascia along a roof edge" />
+          </div>
+          <div class="x-wrap x-hero__copy">
+            <p class="x-label rv">No. 03 / Guttering</p>
+            <h1 class="x-dsp rv" style="margin-top:18px">The roofline that carries the water away.</h1>
+            <p class="x-lead rv" style="margin-top:22px">Gutters, fascias, soffits and downpipes, replaced on their own or as part of a new roof.</p>
+            <div class="x-btns rv" style="margin-top:28px"><a class="x-btn" href="#/contact">Quote for guttering</a><a class="x-btn x-btn--ghost" href="tel:+447464879664">Call 07464 879664</a></div>
+          </div>
+        </section>
+        <section class="x-sec x-light">
+          <div class="x-wrap">
+            <div class="x-head rv" style="margin-bottom:clamp(28px,4vw,48px)">
+              <p class="x-label">The roofline</p>
+              <h2 class="x-h2">Five parts, one job.</h2>
+            </div>
+            <div class="x-index rv">
+              <a href="#/contact"><span class="n">01</span><span class="t">Gutters</span><span class="d">New runs to replace sagging, leaking or blocked gutters</span></a>
+              <a href="#/contact"><span class="n">02</span><span class="t">Fascias</span><span class="d">The boards along the eaves that the gutters fix to</span></a>
+              <a href="#/contact"><span class="n">03</span><span class="t">Soffits</span><span class="d">The underside of the eaves, closing off the roof space</span></a>
+              <a href="#/contact"><span class="n">04</span><span class="t">Downpipes</span><span class="d">Taking the water from the gutter down to the drain</span></a>
+              <a href="#/contact"><span class="n">05</span><span class="t">GRP dry bonding gutters</span><span class="d">Fibreglass gutters bonded in place, as fitted on our recent re-roof</span></a>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-dark">
+          <div class="x-wrap x-split">
+            <blockquote class="rv" style="margin:0"><p class="x-quote__mark" aria-hidden="true">&ldquo;</p><p class="x-h3" style="font-size:clamp(22px,2.6vw,32px);margin-top:-20px">They also replaced our lower roof and all of our gutters, fascias and soffits. They worked very hard, always cleaned up at the end of the day.</p><cite class="x-label x-label--lead" style="display:block;margin-top:20px;font-style:normal">Jeremy Blake</cite></blockquote>
+            <div class="x-stack rv"><p class="x-lead">Having a re-roof? It is the natural time to renew the water goods too, while we are up there.</p><a class="x-tlink" href="#/pitched-roofs">See pitched roofs</a></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- REPAIRS -->
+      <div class="x-page" id="p-repairs">
+        <section class="x-hero">
+          <div class="x-hero__img" style="height:clamp(300px,46vw,520px)">
+            <img src="amt-detail.png" alt="Close view of roof tiles and chimney flashing under repair" />
+          </div>
+          <div class="x-wrap x-hero__copy">
+            <p class="x-label rv">No. 04 / Repairs</p>
+            <h1 class="x-dsp rv" style="margin-top:18px">Leaks found. Tiles back. Roof sound.</h1>
+            <p class="x-lead rv" style="margin-top:22px">"We take on small repairs to full new roofs." Leaks, slipped tiles and storm damage, sorted properly.</p>
+            <div class="x-btns rv" style="margin-top:28px"><a class="x-btn" href="tel:+447464879664">Call 07464 879664</a><a class="x-btn x-btn--ghost" href="#/contact">Request a repair</a></div>
+          </div>
+        </section>
+        <section class="x-sec x-light">
+          <div class="x-wrap">
+            <div class="x-head rv" style="margin-bottom:clamp(28px,4vw,48px)">
+              <p class="x-label">Repairs we take on</p>
+              <h2 class="x-h2">No job too small to do well.</h2>
+            </div>
+            <div class="x-cards x-cards--3">
+              <div class="x-card rv"><p class="x-label x-label--lead">01</p><h3 class="x-h3">Leaks</h3><p class="x-muted">Tracing where the water is getting in, often at the chimney, valleys or flat roof edges, and fixing the cause.</p></div>
+              <div class="x-card rv"><p class="x-label x-label--lead">02</p><h3 class="x-h3">Slipped tiles and slates</h3><p class="x-muted">Refixing or replacing loose and missing tiles and slates before the weather gets underneath.</p></div>
+              <div class="x-card rv"><p class="x-label x-label--lead">03</p><h3 class="x-h3">Storm damage</h3><p class="x-muted">Wind-lifted ridges, broken tiles and damaged lead after a storm.</p></div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-stone">
+          <div class="x-wrap x-split x-split--narrow">
+            <div class="x-head rv">
+              <p class="x-label">Signs to watch for</p>
+              <h2 class="x-h2">When to call a roofer.</h2>
+              <p class="x-lead" style="margin-top:18px">General signs that a roof needs a look. If in doubt, ring.</p>
+            </div>
+            <div class="x-faq rv">
+              <details><summary>Damp patches on a ceiling</summary><p>Stains or damp upstairs, especially after rain, usually mean water is getting in somewhere above.</p></details>
+              <details><summary>Tiles or slates on the ground</summary><p>Pieces in the garden or on the path mean something has slipped or broken on the roof.</p></details>
+              <details><summary>Gaps around the chimney</summary><p>Lifted or cracked lead where the stack meets the roof is a common source of leaks.</p></details>
+              <details><summary>Overflowing gutters</summary><p>Water spilling over in rain points to blocked, sagging or failed gutters.</p></details>
+              <details><summary>Loose ridge tiles</summary><p>Cracked mortar or moving ridge tiles can be refixed, or replaced with a dry ridge system.</p></details>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-dark">
+          <div class="x-wrap x-split">
+            <blockquote class="rv" style="margin:0"><p class="x-quote__mark" aria-hidden="true">&ldquo;</p><p class="x-h3" style="font-size:clamp(22px,2.6vw,32px);margin-top:-20px">Great attention to detail, thorough and robust repair work. Good value, reliable and hardworking.</p><cite class="x-label x-label--lead" style="display:block;margin-top:20px;font-style:normal">Matthew and Ceri, Penarth</cite></blockquote>
+            <div class="x-stack rv"><p class="x-lead">Tell us what you can see and where you are. We will arrange to come and look.</p><div class="x-btns"><a class="x-btn" href="#/contact">Request a repair</a></div></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ABOUT -->
+      <div class="x-page" id="p-about">
+        <section class="x-sec x-dark" style="padding-bottom:clamp(40px,6vw,80px)">
+          <div class="x-wrap">
+            <p class="x-label rv">About / Ashley and Dave</p>
+            <h1 class="x-dsp rv" style="margin-top:20px;max-width:14ch">Brothers on the roof. Perfectionists on the detail.</h1>
+            <p class="x-lead rv" style="margin-top:26px">A.M.T Roofing is run by brothers Ashley and Dave (David), based in Penarth.</p>
+          </div>
+          <svg class="x-chev x-chev--big" style="margin-top:48px" viewBox="0 0 120 14" preserveAspectRatio="none" aria-hidden="true"><path d="M0 13 L10 1 L20 13 L30 1 L40 13 L50 1 L60 13 L70 1 L80 13 L90 1 L100 13 L110 1 L120 13" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+        </section>
+        <section class="x-sec x-light">
+          <div class="x-wrap x-split x-split--narrow">
+            <div class="x-head rv"><p class="x-label">No. 01 / Who we are</p><h2 class="x-h2">A family firm, local to Penarth.</h2></div>
+            <div class="x-stack rv">
+              <p class="x-lead">"For all your pitched and flat roofing needs, we take on small repairs to full new roofs. We offer a clean, reliable, quality and friendly service."</p>
+              <p class="x-muted">Customers name both brothers in their reviews. Karl Burt wrote that "Ashley is a perfectionist and you can see that in the final results." Matthew and Ceri in Penarth called it a "pleasure to have Ashley and Dave working here."</p>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-stone">
+          <div class="x-wrap">
+            <div class="x-head rv" style="margin-bottom:clamp(28px,4vw,48px)"><p class="x-label">No. 02 / Values</p><h2 class="x-h2">Four things we hold to.</h2></div>
+            <div class="x-cards">
+              <div class="x-card rv"><p class="x-label x-label--lead">Clean</p><h3 class="x-h3">Tidy after every shift</h3><p class="x-muted">"Made sure everything was clean and tidy after every shift," wrote our Cardiff customer.</p></div>
+              <div class="x-card rv"><p class="x-label x-label--lead">Reliable</p><h3 class="x-h3">We turn up and work solid</h3><p class="x-muted">"Even with the weather the guys worked solid."</p></div>
+              <div class="x-card rv"><p class="x-label x-label--lead">Quality</p><h3 class="x-h3">Perfectionist standards</h3><p class="x-muted">"Great attention to detail, thorough and robust repair work."</p></div>
+              <div class="x-card rv"><p class="x-label x-label--lead">Friendly</p><h3 class="x-h3">Easy to have around</h3><p class="x-muted">"Pleasure to have Ashley and Dave working here."</p></div>
+            </div>
+          </div>
+        </section>
+        <section class="x-sec x-graph">
+          <div class="x-wrap x-split">
+            <div class="x-head rv"><p class="x-label">No. 03 / Where we work</p><h2 class="x-h2">Based in Penarth.</h2><p class="x-lead" style="margin-top:18px">Working across Penarth, Llandough, Cogan, Cardiff and the Vale of Glamorgan.</p></div>
+            <ul class="x-chips rv js-areas"></ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- REVIEWS -->
+      <div class="x-page" id="p-reviews">
+        <section class="x-sec x-dark" style="padding-bottom:0">
+          <div class="x-wrap">
+            <p class="x-label rv">Reviews</p>
+            <h1 class="x-dsp rv" style="margin-top:20px;max-width:13ch">In our customers' words.</h1>
+            <div class="x-btns rv" style="margin-top:30px">
+              <a class="x-btn" href="https://www.google.com/maps/search/?api=1&amp;query=A.M.T+Roofing+Penarth" target="_blank" rel="noopener">Google reviews</a>
+              <a class="x-btn x-btn--ghost" href="https://www.facebook.com/p/AMT-Roofing-100063748024972/" target="_blank" rel="noopener">Facebook reviews</a>
+            </div>
+          </div>
+          <div class="x-stats rv" style="margin-top:clamp(40px,6vw,72px)">
+            <div class="x-stat"><b class="x-mono">4.7</b><span>Stars on Google</span></div>
+            <div class="x-stat"><b class="x-mono">61</b><span>Google reviews</span></div>
+            <div class="x-stat"><b class="x-mono">100%</b><span>Recommend on Facebook</span></div>
+            <div class="x-stat"><b class="x-mono">26</b><span>Facebook reviews</span></div>
+          </div>
+        </section>
+        <section class="x-sec x-stone">
+          <div class="x-wrap x-cards" id="review-cards"></div>
+        </section>
+        <section class="x-sec x-light">
+          <div class="x-wrap x-split">
+            <div class="x-head rv"><p class="x-label">Your turn</p><h2 class="x-h2">Want results like these?</h2></div>
+            <div class="x-stack rv"><p class="x-lead">Get in touch for a visit and a clear written quote.</p><div class="x-btns"><a class="x-btn" href="#/contact">Free quote</a></div></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="x-page" id="p-contact">
+        <section class="x-sec x-dark">
+          <div class="x-wrap x-split x-split--narrow" style="align-items:start">
+            <div class="x-stack">
+              <p class="x-label rv">Contact / Free quote</p>
+              <h1 class="x-dsp rv" style="font-size:clamp(44px,7vw,96px)">Let's look at your roof.</h1>
+              <dl class="x-deflist rv" style="margin-top:36px">
+                <div><dt>Phone</dt><dd><a href="tel:+447464879664">07464 879664</a></dd></div>
+                <div><dt>Email</dt><dd><a href="mailto:amtroofing@outlook.com">amtroofing@outlook.com</a></dd></div>
+                <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/p/AMT-Roofing-100063748024972/" target="_blank" rel="noopener">AMT Roofing</a></dd></div>
+                <div><dt>Area</dt><dd>Penarth, Llandough, Cogan, Cardiff and the Vale of Glamorgan</dd></div>
+              </dl>
+            </div>
+            <form class="x-form x-card rv" id="quote" style="background:var(--limestone);color:var(--ink);border:0">
+              <p class="x-h3 full">Request a quote</p>
+              <label class="x-field"><span>Name</span><input name="name" required autocomplete="name" /></label>
+              <label class="x-field"><span>Phone</span><input name="phone" type="tel" required autocomplete="tel" /></label>
+              <label class="x-field"><span>Postcode</span><input name="postcode" autocomplete="postal-code" /></label>
+              <label class="x-field"><span>Job type</span>
+                <select name="job"><option>Pitched roof or re-roof</option><option>Flat roof (GRP)</option><option>Guttering, fascias, soffits</option><option>Repair or leak</option><option>Chimney lead work</option><option>Something else</option></select>
+              </label>
+              <label class="x-field full"><span>Message</span><textarea name="message" placeholder="What is the roof doing? Photos welcome by email."></textarea></label>
+              <div class="full"><button class="x-btn" type="submit" style="border:0;cursor:pointer">Send by email</button><p class="x-muted" style="font-size:13px;margin-top:10px">Opens your email app, addressed to amtroofing@outlook.com.</p></div>
+            </form>
+          </div>
+        </section>
+        <section class="x-sec x-stone">
+          <div class="x-wrap x-split x-split--narrow">
+            <div class="x-head rv"><p class="x-label">Questions</p><h2 class="x-h2">Good to know.</h2></div>
+            <div class="x-faq rv">
+              <details><summary>Do you do small repairs?</summary><p>Yes. In our words, "we take on small repairs to full new roofs", from a leak or slipped tile upwards.</p></details>
+              <details><summary>Do you do flat roofs?</summary><p>Yes, GRP fibreglass flat roofs for extensions, garages and dormers.</p></details>
+              <details><summary>Do you do gutters and fascias?</summary><p>Yes: gutters, fascias, soffits and downpipes, including GRP dry bonding gutters.</p></details>
+              <details><summary>Which areas do you cover?</summary><p>We are based in Penarth, working across Penarth, Llandough, Cogan, Cardiff and the Vale of Glamorgan.</p></details>
+              <details><summary>How do I get a quote?</summary><p>Call 07464 879664, email amtroofing@outlook.com or use the form above. We come and look at the roof, then give you a clear written quote.</p></details>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <section class="x-sec x-dark x-fcta" id="fcta">
+      <div class="x-wrap">
+        <p class="x-label rv">Free quote</p>
+        <h2 class="x-h2 rv" style="margin-top:16px">Tell us about your roof.</h2>
+        <p class="x-lead rv" style="margin:18px auto 0;text-align:center">A call or an email, a look at the roof, then a clear written quote.</p>
+        <div class="x-btns rv" style="justify-content:center;margin-top:28px">
+          <a class="x-btn" href="#/contact">Request a quote</a>
+          <a class="x-btn x-btn--ghost" href="tel:+447464879664">Call 07464 879664</a>
+        </div>
+      </div>
+      <p class="x-word" aria-hidden="true">A.M.T</p>
+      <svg class="x-chev x-chev--big" viewBox="0 0 120 14" preserveAspectRatio="none" aria-hidden="true"><path d="M0 13 L10 1 L20 13 M20 13 L30 1 L40 13 M40 13 L50 1 L60 13 M60 13 L70 1 L80 13 M80 13 L90 1 L100 13 M100 13 L110 1 L120 13" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    </section>
+
+    <footer class="x-foot">
+      <div class="x-wrap">
+        <div class="x-foot__grid">
+          <div>
+            <a class="x-mark" href="#/" style="color:var(--limestone)">
+              <svg width="30" height="20" viewBox="0 0 30 20" fill="none" aria-hidden="true"><path d="M1 15 L15 3 L29 15" stroke="currentColor" stroke-width="2" stroke-linecap="square"/><path d="M6 19 L15 11 L24 19" stroke="currentColor" stroke-width="1.2" opacity=".5"/></svg>
+              <span style="display:block"><b>A.M.T</b><span style="color:var(--lead)">ROOFING · PENARTH</span></span>
+            </a>
+            <p class="x-muted" style="margin-top:16px;max-width:34ch;font-size:15px">For all your pitched and flat roofing needs. Small repairs to full new roofs.</p>
+          </div>
+          <div><h4>Services</h4><ul id="f-svc"></ul></div>
+          <div><h4>Company</h4><ul id="f-co"></ul></div>
+          <div>
+            <h4>Contact</h4>
+            <p><a href="tel:+447464879664">07464 879664</a></p>
+            <p style="margin-top:8px"><a href="mailto:amtroofing@outlook.com">amtroofing@outlook.com</a></p>
+            <p style="margin-top:8px"><a href="https://www.facebook.com/p/AMT-Roofing-100063748024972/" target="_blank" rel="noopener">Facebook</a></p>
+            <p class="x-muted" style="margin-top:6px;font-size:14px">Based in Penarth, Vale of Glamorgan</p>
+          </div>
+        </div>
+        <div class="x-foot__base">
+          <p>Concept preview. Not the official website of A.M.T Roofing.</p>
+          <p>Developed by <a href="https://teta.dpdns.org" target="_blank" rel="noopener" style="color:#d58d5c">Teta Digitals</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="x-callbar">
+      <a class="x-btn x-btn--ghost" style="color:var(--limestone);border-color:var(--hair-dk)" href="#/contact">Free quote</a>
+      <a class="x-btn" href="tel:+447464879664">Call now</a>
+    </div>
+
+    <script>
+      var PAGES = [
+        ["#/", "Home", "p-home"],
+        ["#/pitched-roofs", "Pitched roofs", "p-pitched"],
+        ["#/flat-roofs", "Flat roofs", "p-flat"],
+        ["#/guttering", "Guttering", "p-guttering"],
+        ["#/repairs", "Repairs", "p-repairs"],
+        ["#/about", "About", "p-about"],
+        ["#/reviews", "Reviews", "p-reviews"],
+        ["#/contact", "Contact", "p-contact"]
+      ];
+      var REVIEWS = [
+        ["AMT roofing carried out a complete strip off and re roof of my Victorian age property in Cardiff, 20/10 service and quality from the outset, even with the weather the guys worked solid and made sure everything was clean and tidy after every shift. Also replaced all my guttering / fascia / down pipes to a great standard. Would highly recommend to anyone.", "Google reviewer, Cardiff"],
+        ["Just had a whole re roof installation completed by Ashley and his brother David from A.M.T Roofing. I highly recommend them for any roofing needs. They were clean and tidy and I am extremely happy with the work they did. Ashley is a perfectionist and you can see that in the final results.", "Karl Burt"],
+        ["Ashley and his brother Dave replaced both our main roof and the attached semi. They also replaced our lower roof and all of our gutters, fascias and soffits. They worked very hard, always cleaned up at the end of the day. The work quality was very good, and for a good price.", "Jeremy Blake"],
+        ["Fully echo all the great reviews. Pleasure to have Ashley and Dave working here. Great attention to detail, thorough and robust repair work. Good value, reliable and hardworking. Highly recommended indeed.", "Matthew and Ceri, Penarth"],
+        ["Professional service. Excellent work. Good price. Have already recommended. Will definitely use again.", "Marilyn"]
+      ];
+      var JOB = [
+        ["Scope", "Complete re-roof with Marley Modern tiles"],
+        ["Water goods", "All new fascia and water goods installed"],
+        ["Chimney", "New lead around chimney stack"],
+        ["Ridge", "Dry ridge system"],
+        ["Gutters", "GRP dry bonding gutters installed"],
+        ["Underlay", "Felt support trays"]
+      ];
+      var PROCESS = [
+        ["01", "Call or email", "Tell us what the roof is doing. Phone 07464 879664 or email amtroofing@outlook.com."],
+        ["02", "Visit and look at the roof", "We come out, get up where we need to and see the real condition."],
+        ["03", "Clear written quote", "What the work includes, written down, so you can read it over."],
+        ["04", "The work, cleaned up every day", "We work solid, and the site is left clean and tidy after every shift."]
+      ];
+      var AREAS = ["Penarth", "Llandough", "Cogan", "Cardiff", "Vale of Glamorgan"];
+
+      function h(s) { return s; }
+      var $ = function (s, r) { return (r || document).querySelector(s); };
+
+      // nav
+      $("#navlinks").innerHTML = PAGES.map(function (p) { return '<a href="' + p[0] + '">' + p[1] + "</a>"; }).join("");
+      $("#mobilelinks").innerHTML = PAGES.map(function (p) { return '<a href="' + p[0] + '">' + p[1] + "</a>"; }).join("") +
+        '<div class="x-btns" style="margin-top:20px"><a class="x-btn" href="#/contact">Free quote</a><a class="x-btn x-btn--ghost" href="tel:+447464879664">Call 07464 879664</a></div>';
+      $("#f-svc").innerHTML = PAGES.slice(1, 5).map(function (p) { return "<li><a href=\"" + p[0] + "\">" + p[1] + "</a></li>"; }).join("");
+      $("#f-co").innerHTML = PAGES.slice(5).map(function (p) { return "<li><a href=\"" + p[0] + "\">" + p[1] + "</a></li>"; }).join("") + '<li><a href="#/">Home</a></li>';
+
+      var burger = $("#burger"), mobile = $("#mobile");
+      burger.addEventListener("click", function () {
+        var open = mobile.classList.toggle("is-open");
+        burger.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+
+      // job sheet + process + areas (home)
+      var JOBHTML =
+        '<div class="x-job__top"><p class="x-label">Job sheet · recent work</p><p class="x-mono" style="font-size:15px">4 days on this job start to finish</p></div>' +
+        '<dl class="x-job__rows">' + JOB.map(function (r) { return "<div><dt>" + r[0] + "</dt><dd>" + r[1] + "</dd></div>"; }).join("") + "</dl>" +
+        '<p class="x-job__foot">As posted by A.M.T Roofing on Facebook.</p>';
+      [].forEach.call(document.querySelectorAll(".js-job"), function (n) { n.innerHTML = JOBHTML; });
+      $("#process").innerHTML = PROCESS.map(function (s) {
+        return '<div class="x-step"><b>' + s[0] + '</b><div><h3 class="x-h3">' + s[1] + '</h3><p class="x-muted" style="margin-top:8px">' + s[2] + "</p></div></div>";
+      }).join("");
+      [].forEach.call(document.querySelectorAll("#areas, .js-areas"), function (n) {
+        n.innerHTML = AREAS.map(function (a) { return "<li>" + a + "</li>"; }).join("");
+      });
+      $("#review-cards").innerHTML = REVIEWS.map(function (r, i) {
+        return '<figure class="x-card rv"' + (i === 0 ? ' style="grid-column:1/-1"' : "") + '><p class="x-quote__mark" aria-hidden="true" style="font-size:110px">&ldquo;</p>' +
+          '<blockquote style="margin:-30px 0 0;font:300 clamp(20px,2.2vw,' + (i === 0 ? 34 : 26) + 'px)/1.35 var(--serif)">' + r[0] + "</blockquote>" +
+          '<figcaption class="x-label x-label--lead" style="margin-top:auto;padding-top:14px">' + r[1] + "</figcaption></figure>";
+      }).join("");
+      $("#quote").addEventListener("submit", function (e) {
+        e.preventDefault();
+        var f = e.target, v = function (n) { return f.elements[n].value; };
+        var body = "Name: " + v("name") + "\nPhone: " + v("phone") + "\nPostcode: " + v("postcode") + "\nJob type: " + v("job") + "\n\n" + v("message");
+        location.href = "mailto:amtroofing@outlook.com?subject=" + encodeURIComponent("Quote request: " + v("job")) + "&body=" + encodeURIComponent(body);
+      });
+
+      // review carousel
+      var slides = $("#slides"), dots = $("#dots");
+      if (slides) {
+        slides.innerHTML = REVIEWS.map(function (r, i) {
+          return '<div class="x-slide' + (i ? "" : " is-on") + '"><blockquote>' + r[0] + "</blockquote><cite>" + r[1] + "</cite></div>";
+        }).join("");
+        dots.innerHTML = REVIEWS.map(function (r, i) {
+          return '<button role="tab" aria-selected="' + (i ? "false" : "true") + '" aria-label="Review ' + (i + 1) + '"></button>';
+        }).join("");
+        var idx = 0, timer;
+        function go(n) {
+          idx = (n + REVIEWS.length) % REVIEWS.length;
+          [].forEach.call(slides.children, function (el, i) { el.classList.toggle("is-on", i === idx); });
+          [].forEach.call(dots.children, function (el, i) { el.setAttribute("aria-selected", i === idx ? "true" : "false"); });
+        }
+        [].forEach.call(dots.children, function (b, i) {
+          b.addEventListener("click", function () { go(i); clearInterval(timer); });
+        });
+        timer = setInterval(function () { go(idx + 1); }, 7000);
+      }
+
+      // hover image preview on service index
+      (function () {
+        var list = $("#svc-index"), prev = $("#svc-prev");
+        if (!list || !prev) return;
+        var imgs = prev.querySelectorAll("img");
+        list.addEventListener("mousemove", function (e) {
+          prev.style.left = e.clientX + "px";
+          prev.style.top = e.clientY + "px";
+        });
+        [].forEach.call(list.querySelectorAll("a"), function (a) {
+          a.addEventListener("mouseenter", function () {
+            var k = a.getAttribute("data-img");
+            [].forEach.call(imgs, function (im) { im.style.opacity = im.getAttribute("data-k") === k ? 1 : 0; });
+            prev.classList.add("is-on");
+          });
+          a.addEventListener("mouseleave", function () { prev.classList.remove("is-on"); });
+        });
+      })();
+
+      // reveals
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) {
+            var sibs = [].slice.call(e.target.parentNode.children).filter(function (n) { return n.classList.contains("rv"); });
+            e.target.style.transitionDelay = Math.min(sibs.indexOf(e.target), 5) * 80 + "ms";
+            e.target.classList.add("is-in");
+            io.unobserve(e.target);
+          }
+        });
+      }, { rootMargin: "0px 0px -8% 0px" });
+      function observe() { [].forEach.call(document.querySelectorAll(".rv:not(.is-in)"), function (n) { io.observe(n); }); }
+
+      // router
+      function route() {
+        var hash = location.hash || "#/";
+        var found = PAGES.filter(function (p) { return p[0] === hash; })[0] || PAGES[0];
+        PAGES.forEach(function (p) {
+          var el = document.getElementById(p[2]);
+          if (el) el.classList.toggle("is-on", p === found);
+        });
+        [].forEach.call(document.querySelectorAll('#navlinks a, #mobilelinks a'), function (a) {
+          if (a.getAttribute("href") === found[0]) a.setAttribute("aria-current", "page");
+          else a.removeAttribute("aria-current");
+        });
+        mobile.classList.remove("is-open");
+        burger.setAttribute("aria-expanded", "false");
+        document.title = (found[0] === "#/" ? "A.M.T Roofing Penarth" : found[1] + " · A.M.T Roofing Penarth") + " · Concept preview";
+        window.scrollTo(0, 0);
+        observe();
+      }
+      window.addEventListener("hashchange", route);
+      route();
+    </script>
+  </body>
+</html>
