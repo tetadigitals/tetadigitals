@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Russ Hanes Tire Sales &amp; Services | St Marys, PA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&family=Geist+Mono:wght@400&display=swap"
+    />
+    <link rel="stylesheet" href="hark.css" />
+    <link rel="stylesheet" href="hark-hero.css" />
+    <style>
+      :root {
+        color-scheme: light;
+        --x-green: #1f3a2e;
+        --x-cream: #f6f3ec;
+        --x-char: #2b2b2b;
+        --x-orange: #e2711d;
+        --x-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+        --sans: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+        --text-primary: var(--x-char);
+        --text-secondary: #5a5a55;
+        --fill-primary: var(--x-green);
+        --text-primary-on: var(--x-cream);
+        --text-secondary-on: #c9d3cc;
+        --fill-primary-on: var(--x-cream);
+        --fill-tertiary: #ebe6da;
+        --fill-segment: #2c4d3e;
+        --stroke-primary: #2b2b2b24;
+        --stroke-secondary: #2b2b2b14;
+        --mat-inverse: rgb(31 58 46 / 0.94);
+        --hero-surface: var(--x-green);
+        --hero-text: var(--x-cream);
+        --hero-text-muted: #f6f3eccc;
+        --hero-scrim-strong: rgb(20 38 30 / 0.82);
+        --hero-scrim-soft: rgb(20 38 30 / 0.3);
+        --hero-scrim-side: rgb(20 38 30 / 0.5);
+        --hero-glass: rgb(20 38 30 / 0.45);
+        --hero-glass-faint: rgb(20 38 30 / 0.35);
+      }
+      h1, h2, h3, .stat__fig, .step__num {
+        font-family: var(--x-display);
+        font-weight: 600;
+        letter-spacing: 0.01em;
+      }
+      h1 { text-transform: uppercase; line-height: 1; }
+      h2 { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.05; }
+      h3 { font-size: 22px; line-height: 1.1; }
+      .x-banner {
+        background: var(--x-char);
+        color: var(--x-cream);
+        font: var(--type-caption);
+        text-align: center;
+        padding: 8px var(--gutter);
+      }
+      .x-brand {
+        flex: none;
+        padding: 0 10px 0 12px;
+        font: 600 20px/1 var(--x-display);
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: var(--text-primary-on);
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      .x-brand span { color: var(--x-orange); }
+      .x-call {
+        flex: none;
+        display: inline-flex;
+        align-items: center;
+        min-height: 36px;
+        padding: 0 14px;
+        border-radius: var(--r-pill);
+        background: var(--x-orange);
+        color: var(--x-char);
+        font: var(--type-label);
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      .x-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: var(--tap);
+        padding: 0 20px;
+        border: 0;
+        border-radius: var(--r-pill);
+        background: var(--x-orange);
+        color: var(--x-char);
+        font: var(--type-label);
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .x-cta:hover, .x-call:hover { box-shadow: inset 0 0 0 100px rgb(0 0 0 / 0.08); }
+      .x-form {
+        display: grid;
+        gap: 14px;
+        padding: clamp(18px, 3vw, 28px);
+        border-radius: var(--r-l);
+        background: var(--fill-tertiary);
+      }
+      .x-form label { display: grid; gap: 6px; font: var(--type-label); }
+      .x-form input, .x-form select, .x-form textarea {
+        font: var(--type-body);
+        min-height: var(--tap);
+        padding: 10px 12px;
+        border: 1px solid var(--stroke-primary);
+        border-radius: var(--r-s);
+        background: var(--fill-primary-on);
+        color: var(--text-primary);
+        width: 100%;
+      }
+      .x-form textarea { min-height: 110px; resize: vertical; }
+      .x-row { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+      .x-map { display: block; width: 100%; height: 360px; border: 0; border-radius: var(--r-l); }
+      .x-view[hidden] { display: none; }
+      .x-view { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+      .x-stars { color: #b0560f; letter-spacing: 2px; }
+      .x-call, .x-cta { color: #141414; }
+      @media (max-width: 599px) {
+        .x-brand { display: none; }
+        .x-call { min-height: var(--tap); }
+      }
+    </style>
+  </head>
+  <body>
+    <p class="x-banner">Independent concept preview by Teta Digitals. Not the official website of Russ Hanes Tire Sales &amp; Services.</p>
+    <div class="page" id="top">
+      <header class="nav glass">
+        <a class="x-brand" href="#/">Russ Hanes <span>Tire</span></a>
+        <nav class="seg" aria-label="Pages">
+          <a href="#/">Home</a>
+          <a href="#/tires">Tires</a>
+          <a href="#/alignments">Alignments</a>
+          <a href="#/services">Services</a>
+          <a href="#/inspections">Inspections</a>
+          <a href="#/about">About</a>
+          <a href="#/reviews">Reviews</a>
+          <a href="#/contact">Contact</a>
+        </nav>
+        <a class="x-call" href="tel:+18148342515">Call</a>
+      </header>
+
+      <main class="main">
+        <!-- HOME -->
+        <div class="x-view" data-route="/" data-title="Home">
+          <section class="hero">
+            <img class="hero__img" src="russ-hero.png" alt="Russ Hanes Tire Sales and Services shop in St Marys, PA" />
+            <div class="hero__copy">
+              <p class="hero__eyebrow">Family owned · St Marys, PA</p>
+              <h1>Tires, alignments and inspections done right</h1>
+              <p class="hero__sub">All major tire brands, a Hoffman alignment machine, PA State Inspections, brakes and suspension. One local shop, run by Russ Hanes.</p>
+              <p class="hero__meta">599 Hall Ave, St Marys, PA 15857 · Mon to Sat 9 AM to 5 PM</p>
+            </div>
+            <aside class="callout" aria-label="Call the shop">
+              <p class="callout__head">Call ahead</p>
+              <p class="callout__lead"><strong>(814) 834-2515</strong> Lori in the office can set up a time that works for you.</p>
+              <div class="links">
+                <a class="btn" href="tel:+18148342515">Call now</a>
+                <a class="btn" href="#/contact">Book online</a>
+              </div>
+            </aside>
+          </section>
+
+          <section class="stats" aria-label="At a glance">
+            <div class="stat"><span class="stat__fig">4.8 <span class="x-stars" aria-hidden="true">★</span></span><span class="stat__label">Google rating</span></div>
+            <div class="stat"><span class="stat__fig">107</span><span class="stat__label">Google reviews</span></div>
+            <div class="stat"><span class="stat__fig">~30 min</span><span class="stat__label">Typical alignment, per customers</span></div>
+          </section>
+
+          <section class="section">
+            <div class="head">
+              <p class="head__eyebrow">What we do</p>
+              <h2>Everything that keeps your vehicle planted on the road.</h2>
+            </div>
+            <div class="cards">
+              <div>
+                <h3>Tires</h3>
+                <p>Sales, installation, rotation and balancing. All major brands, including Cooper and Goodyear, for cars, trucks and campers or trailers.</p>
+                <p><a class="link" href="#/tires">Tires and quotes</a></p>
+              </div>
+              <div>
+                <h3>Alignments</h3>
+                <p>Done on our Hoffman alignment machine, in service since June 2018. Customers report alignments taking about 30 minutes.</p>
+                <p><a class="link" href="#/alignments">About alignments</a></p>
+              </div>
+              <div>
+                <h3>Brakes and suspension</h3>
+                <p>Brake work and suspension repair to keep you stopping straight and riding smooth.</p>
+                <p><a class="link" href="#/services">All services</a></p>
+              </div>
+              <div>
+                <h3>PA State Inspections</h3>
+                <p>Official Pennsylvania State Inspections, with any needed repairs handled in the same shop.</p>
+                <p><a class="link" href="#/inspections">Inspections</a></p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="head">
+              <p class="head__eyebrow">Why locals come back</p>
+              <h2>A family shop where you talk to the people doing the work.</h2>
+            </div>
+            <div class="pair">
+              <div class="prose">
+                <p>Russ Hanes Tire Sales &amp; Services is family owned. Russ runs the shop and Lori manages the office, so calls get answered by someone who knows your vehicle.</p>
+                <p>Customers rate the shop 4.8 stars across 107 Google reviews.</p>
+                <div class="links">
+                  <a class="btn" href="#/reviews">Read reviews</a>
+                  <a class="btn" href="#/about">About us</a>
+                </div>
+              </div>
+              <aside class="callout" aria-label="Get a tire quote">
+                <p class="callout__head">Need tires?</p>
+                <p class="callout__lead"><strong>Send your tire size.</strong> We will reply with options from the brands we carry.</p>
+                <a class="btn" href="#/tires">Request a quote</a>
+              </aside>
+            </div>
+          </section>
+        </div>
+        <!-- TIRES -->
+        <div class="x-view" data-route="/tires" data-title="Tires" hidden>
+          <section class="hero">
+            <img class="hero__img" src="russ-tires.png" alt="New tires stacked in the shop" />
+            <div class="hero__copy">
+              <p class="hero__eyebrow">Tire sales and service</p>
+              <h1>All major brands, mounted and balanced</h1>
+              <p class="hero__sub">Cooper, Goodyear and the other major names, for cars, trucks and campers or trailers.</p>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="head">
+              <p class="head__eyebrow">What we offer</p>
+              <h2>From the right tire to a smooth, even ride.</h2>
+            </div>
+            <div class="cards">
+              <div>
+                <h3>Sales</h3>
+                <p>All major tire brands, including Cooper and Goodyear. Tell us how you drive and we will point you to the right fit.</p>
+              </div>
+              <div>
+                <h3>Installation</h3>
+                <p>Mounting and install done in our shop at 599 Hall Ave.</p>
+              </div>
+              <div>
+                <h3>Rotation</h3>
+                <p>Regular rotation helps your tires wear evenly and last longer.</p>
+              </div>
+              <div>
+                <h3>Balancing</h3>
+                <p>Balanced wheels mean less vibration at highway speed and less uneven wear.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="head">
+              <p class="head__eyebrow">Every kind of vehicle</p>
+              <h2>Car, truck, camper or trailer.</h2>
+            </div>
+            <ul class="checklist">
+              <li><span class="checklist__item">Cars <small>Everyday passenger tires</small></span></li>
+              <li><span class="checklist__item">Trucks <small>Pickup and light truck tires</small></span></li>
+              <li><span class="checklist__item">Campers and trailers <small>Trailer tires for towing season</small></span></li>
+            </ul>
+          </section>
+
+          <section class="section" id="quote">
+            <div class="head">
+              <p class="head__eyebrow">Tire quote</p>
+              <h2>Send your size, get your options.</h2>
+              <p class="head__sub">The form opens an email to rht@zitomedia.net. Your size is on the tire sidewall, for example 225/65R17.</p>
+            </div>
+            <form class="x-form" data-mailto="Tire quote request">
+              <div class="x-row">
+                <label>Name <input name="name" data-label="Name" required autocomplete="name" /></label>
+                <label>Phone <input name="phone" type="tel" data-label="Phone" autocomplete="tel" /></label>
+              </div>
+              <div class="x-row">
+                <label>Vehicle <input name="vehicle" data-label="Vehicle" placeholder="Year, make, model" /></label>
+                <label>Tire size <input name="size" data-label="Tire size" placeholder="e.g. 225/65R17" /></label>
+              </div>
+              <div class="x-row">
+                <label>Vehicle type
+                  <select name="type" data-label="Vehicle type">
+                    <option>Car</option><option>Truck</option><option>Camper or trailer</option>
+                  </select>
+                </label>
+                <label>Brand preference
+                  <select name="brand" data-label="Brand preference">
+                    <option>No preference</option><option>Cooper</option><option>Goodyear</option><option>Other major brand</option>
+                  </select>
+                </label>
+              </div>
+              <label>How many tires
+                <select name="qty" data-label="Quantity"><option>4</option><option>2</option><option>1</option><option>Other</option></select>
+              </label>
+              <label>Notes <textarea name="notes" data-label="Notes" placeholder="How you drive, anything else we should know"></textarea></label>
+              <div class="links"><button class="x-cta" type="submit">Email my quote request</button></div>
+              <p class="fineprint">Prefer to talk? Call <a class="link" href="tel:+18148342515">(814) 834-2515</a>.</p>
+            </form>
+          </section>
+        </div>
+
+        <!-- ALIGNMENTS -->
+        <div class="x-view" data-route="/alignments" data-title="Alignments" hidden>
+          <section class="hero">
+            <img class="hero__img" src="russ-alignment.png" alt="A vehicle on the Hoffman alignment machine" />
+            <div class="hero__copy">
+              <p class="hero__eyebrow">Wheel alignments</p>
+              <h1>Precise alignments, usually in about 30 minutes</h1>
+              <p class="hero__sub">Done on our Hoffman alignment machine, in the shop since June 2018.</p>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="head">
+              <p class="head__eyebrow">Signs you need one</p>
+              <h2>Your car will usually tell you.</h2>
+            </div>
+            <div class="cards">
+              <div><h3>Pulling</h3><p>The vehicle drifts left or right on a straight, level road.</p></div>
+              <div><h3>Off-center wheel</h3><p>The steering wheel sits crooked when you drive straight.</p></div>
+              <div><h3>Uneven wear</h3><p>Tires wear faster on the inside or outside edge.</p></div>
+              <div><h3>After a hit</h3><p>A pothole, curb or new tires and suspension parts are good reasons to check.</p></div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="head">
+              <p class="head__eyebrow">How it works</p>
+              <h2>In and out with a straight-tracking vehicle.</h2>
+            </div>
+            <div class="steps">
+              <article class="step">
+                <div class="step__intro"><p class="step__num">01</p><p class="step__eyebrow">Call ahead</p></div>
+                <div><h3>Set a time</h3><p>Call (814) 834-2515 or send a request, and Lori will fit you in.</p></div>
+              </article>
+              <article class="step">
+                <div class="step__intro"><p class="step__num">02</p><p class="step__eyebrow">On the Hoffman</p></div>
+                <div><h3>Measure and adjust</h3><p>Your vehicle goes on the Hoffman machine and the angles are set back to spec.</p></div>
+              </article>
+              <article class="step">
+                <div class="step__intro"><p class="step__num">03</p><p class="step__eyebrow">About 30 minutes</p></div>
+                <div><h3>Back on the road</h3><p>Customers report alignments taking around half an hour.</p></div>
+              </article>
+            </div>
+          </section>
+
+          <aside class="callout" aria-label="Book an alignment">
+            <p class="callout__head">Book an alignment</p>
+            <p class="callout__lead"><strong>Pair it with new tires.</strong> An alignment helps new tires wear evenly from day one.</p>
+            <div class="links"><a class="btn" href="tel:+18148342515">Call (814) 834-2515</a><a class="btn" href="#/contact">Request a time</a></div>
+          </aside>
+        </div>
+        <!-- SERVICES -->
+        <div class="x-view" data-route="/services" data-title="Services" hidden>
+          <section class="hero">
+            <div class="hero__copy">
+              <p class="hero__eyebrow">Services</p>
+              <h1>Tires, alignments, brakes, suspension and inspections</h1>
+              <p class="hero__sub">The work that keeps your vehicle safe, handled under one roof in St Marys.</p>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="head">
+              <p class="head__eyebrow">Full list</p>
+              <h2>What we can do for you.</h2>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th scope="col">Service</th><th scope="col">What it covers</th><th scope="col">Vehicles</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Tire sales <small>All major brands</small></th><td>Cooper, Goodyear and more</td><td>Car, truck, camper, trailer</td></tr>
+                  <tr><th scope="row">Install, rotation, balancing</th><td>Mounting, even wear, smooth ride</td><td>Car, truck, camper, trailer</td></tr>
+                  <tr><th scope="row">Alignments <small>Hoffman machine</small></th><td>About 30 minutes, per customers</td><td>Car, truck</td></tr>
+                  <tr><th scope="row">Brakes</th><td>Brake inspection and repair</td><td>Car, truck</td></tr>
+                  <tr><th scope="row">Suspension</th><td>Suspension inspection and repair</td><td>Car, truck</td></tr>
+                  <tr><th scope="row">PA State Inspection</th><td>Official state inspection</td><td>Car, truck</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="head">
+              <p class="head__eyebrow">Brakes and suspension</p>
+              <h2>Stop straight, ride smooth.</h2>
+            </div>
+            <div class="cards">
+              <div><h3>Brakes</h3><p>Squealing, grinding or a soft pedal? Bring it in and we will take a look.</p></div>
+              <div><h3>Suspension</h3><p>Clunks over bumps, bouncing or uneven tire wear can point to worn suspension parts.</p></div>
+              <div><h3>One stop</h3><p>Suspension work and an alignment go together, and we do both here.</p></div>
+            </div>
+          </section>
+
+          <aside class="callout" aria-label="Schedule service">
+            <p class="callout__head">Schedule service</p>
+            <p class="callout__lead"><strong>Call ahead for the quickest visit.</strong> Open Monday to Saturday, 9 AM to 5 PM.</p>
+            <div class="links"><a class="btn" href="tel:+18148342515">Call (814) 834-2515</a><a class="btn" href="#/contact">Request a time</a></div>
+          </aside>
+        </div>
+
+        <!-- INSPECTIONS -->
+        <div class="x-view" data-route="/inspections" data-title="Inspections" hidden>
+          <section class="hero">
+            <div class="hero__copy">
+              <p class="hero__eyebrow">PA State Inspections</p>
+              <h1>Pennsylvania State Inspections in St Marys</h1>
+              <p class="hero__sub">Get your sticker from a local, family-owned shop that can also handle any repairs.</p>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="head">
+              <p class="head__eyebrow">The visit</p>
+              <h2>Simple from call to sticker.</h2>
+            </div>
+            <div class="steps">
+              <article class="step">
+                <div class="step__intro"><p class="step__num">01</p><p class="step__eyebrow">Call ahead</p></div>
+                <div><h3>Book your inspection</h3><p>Call (814) 834-2515 to set a time before your sticker runs out.</p></div>
+              </article>
+              <article class="step">
+                <div class="step__intro"><p class="step__num">02</p><p class="step__eyebrow">At the shop</p></div>
+                <div><h3>We inspect</h3><p>Your vehicle is checked to Pennsylvania state requirements.</p></div>
+              </article>
+              <article class="step">
+                <div class="step__intro"><p class="step__num">03</p><p class="step__eyebrow">If needed</p></div>
+                <div><h3>Repairs in house</h3><p>Tires, brakes and suspension are all work we do, so fixes can happen here.</p></div>
+              </article>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="head">
+              <p class="head__eyebrow">Before you come in</p>
+              <h2>A quick check at home.</h2>
+            </div>
+            <ul class="checklist">
+              <li><span class="checklist__item">Registration and insurance card <small>Bring them with you</small></span></li>
+              <li><span class="checklist__item">Lights and signals <small>Headlights, brake lights, turn signals</small></span></li>
+              <li><span class="checklist__item">Tires <small>Look for worn tread or damage</small></span></li>
+              <li><span class="checklist__item">Wipers and horn <small>Make sure both work</small></span></li>
+            </ul>
+          </section>
+
+          <aside class="callout" aria-label="Book an inspection">
+            <p class="callout__head">Sticker due?</p>
+            <p class="callout__lead"><strong>Call ahead to book.</strong> Mon to Sat, 9 AM to 5 PM.</p>
+            <div class="links"><a class="btn" href="tel:+18148342515">Call (814) 834-2515</a><a class="btn" href="#/contact">Request a time</a></div>
+          </aside>
+        </div>
+        <!-- ABOUT -->
+        <div class="x-view" data-route="/about" data-title="About" hidden>
+          <section class="hero">
+            <div class="hero__copy">
+              <p class="hero__eyebrow">About us</p>
+              <h1>A family-owned tire shop on Hall Ave</h1>
+              <p class="hero__sub">Russ Hanes Tire Sales &amp; Services serves St Marys and the surrounding area.</p>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="head">
+              <p class="head__eyebrow">Our story</p>
+              <h2>Local people, doing honest work.</h2>
+            </div>
+            <div class="prose">
+              <p>We are a family-owned shop. Russ Hanes runs the work in the bays, and the name on the sign is the person you will talk to.</p>
+              <p>We sell and service tires from all the major brands, align vehicles on a Hoffman machine, handle brakes and suspension, and perform PA State Inspections.</p>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="head">
+              <p class="head__eyebrow">The team</p>
+              <h2>Who you will meet.</h2>
+            </div>
+            <div class="cards">
+              <div><h3>Russ Hanes</h3><p class="quote">Owner</p><p>Runs the shop and stands behind the work done in it.</p></div>
+              <div><h3>Lori</h3><p class="quote">Office manager</p><p>Answers the phone, books your visit and keeps the day on schedule.</p></div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="head">
+              <p class="head__eyebrow">Our equipment</p>
+              <h2>A Hoffman alignment machine since June 2018.</h2>
+            </div>
+            <div class="pair">
+              <div class="prose"><p>Investing in a Hoffman alignment machine let us offer accurate alignments that customers report take about 30 minutes.</p></div>
+              <aside class="callout" aria-label="Follow us">
+                <p class="callout__head">Follow along</p>
+                <p class="callout__lead"><strong>Find us on Facebook.</strong> Shop news and updates.</p>
+                <a class="btn" href="https://www.facebook.com/RussHanesTire" target="_blank" rel="noopener">facebook.com/RussHanesTire</a>
+              </aside>
+            </div>
+          </section>
+        </div>
+
+        <!-- REVIEWS -->
+        <div class="x-view" data-route="/reviews" data-title="Reviews" hidden>
+          <section class="hero">
+            <div class="hero__copy">
+              <p class="hero__eyebrow">Reviews</p>
+              <h1>Rated 4.8 stars by 107 Google reviewers</h1>
+              <p class="hero__sub">What customers say about tires, alignments and service at Russ Hanes.</p>
+            </div>
+          </section>
+
+          <section class="stats" aria-label="Google rating">
+            <div class="stat"><span class="stat__fig">4.8 <span class="x-stars" aria-hidden="true">★★★★★</span></span><span class="stat__label">Average Google rating</span></div>
+            <div class="stat"><span class="stat__fig">107</span><span class="stat__label">Google reviews</span></div>
+          </section>
+
+          <section class="section" id="quotes">
+            <div class="head">
+              <p class="head__eyebrow">In their words</p>
+              <h2>What customers mention most.</h2>
+            </div>
+            <div class="cards">
+              <div><h3>Quick alignments</h3><p>Customers report alignments on the Hoffman machine taking about 30 minutes.</p></div>
+              <div><h3>Family service</h3><p>A family-owned shop where Russ and Lori know their customers.</p></div>
+              <div><h3>Tires for everything</h3><p>Car, truck and camper or trailer tires from all the major brands.</p></div>
+            </div>
+          </section>
+
+          <aside class="callout" aria-label="Read or leave a review">
+            <p class="callout__head">On Google</p>
+            <p class="callout__lead"><strong>Read all 107 reviews, or leave your own.</strong></p>
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Russ+Hanes+Tire+Sales+%26+Services+599+Hall+Ave+St+Marys+PA" target="_blank" rel="noopener">Open on Google</a>
+          </aside>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="x-view" data-route="/contact" data-title="Contact" hidden>
+          <section class="hero">
+            <div class="hero__copy">
+              <p class="hero__eyebrow">Contact</p>
+              <h1>Call, email or stop by</h1>
+              <p class="hero__meta">599 Hall Ave, St Marys, PA 15857 · <a class="link" href="tel:+18148342515">(814) 834-2515</a> · <a class="link" href="mailto:rht@zitomedia.net">rht@zitomedia.net</a></p>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="head">
+              <p class="head__eyebrow">Hours and location</p>
+              <h2>Open six days a week.</h2>
+            </div>
+            <div class="pair">
+              <div>
+                <div class="table-wrap">
+                  <table>
+                    <thead><tr><th scope="col">Day</th><th scope="col">Hours</th></tr></thead>
+                    <tbody>
+                      <tr><th scope="row">Monday</th><td>9 AM to 5 PM</td></tr>
+                      <tr><th scope="row">Tuesday</th><td>9 AM to 5 PM</td></tr>
+                      <tr><th scope="row">Wednesday</th><td>9 AM to 5 PM</td></tr>
+                      <tr><th scope="row">Thursday</th><td>9 AM to 5 PM</td></tr>
+                      <tr><th scope="row">Friday</th><td>9 AM to 5 PM</td></tr>
+                      <tr><th scope="row">Saturday</th><td>9 AM to 5 PM</td></tr>
+                      <tr><th scope="row">Sunday</th><td class="muted">Closed</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="fineprint">Please call ahead at (814) 834-2515 to confirm hours and book your visit.</p>
+              </div>
+              <iframe class="x-map" src="https://www.google.com/maps?q=599+Hall+Ave,+St+Marys,+PA+15857&amp;output=embed" title="Map to 599 Hall Ave, St Marys, PA" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </section>
+
+          <section class="section" id="appointment">
+            <div class="head">
+              <p class="head__eyebrow">Appointment request</p>
+              <h2>Tell us what you need.</h2>
+              <p class="head__sub">The form opens an email to rht@zitomedia.net. We will confirm a time with you.</p>
+            </div>
+            <form class="x-form" data-mailto="Appointment request">
+              <div class="x-row">
+                <label>Name <input name="name" data-label="Name" required autocomplete="name" /></label>
+                <label>Phone <input name="phone" type="tel" data-label="Phone" required autocomplete="tel" /></label>
+              </div>
+              <div class="x-row">
+                <label>Service
+                  <select name="service" data-label="Service">
+                    <option>Tires</option><option>Alignment</option><option>Rotation or balancing</option><option>Brakes</option><option>Suspension</option><option>PA State Inspection</option><option>Other</option>
+                  </select>
+                </label>
+                <label>Preferred day <input name="date" type="date" data-label="Preferred day" /></label>
+              </div>
+              <label>Vehicle <input name="vehicle" data-label="Vehicle" placeholder="Year, make, model" /></label>
+              <label>Details <textarea name="details" data-label="Details"></textarea></label>
+              <div class="links"><button class="x-cta" type="submit">Email my request</button></div>
+            </form>
+          </section>
+
+          <section class="section">
+            <div class="head">
+              <p class="head__eyebrow">FAQ</p>
+              <h2>Common questions.</h2>
+            </div>
+            <div class="cards">
+              <div><h3>Do I need an appointment?</h3><p>Please call ahead so we can have a bay ready for you.</p></div>
+              <div><h3>How long does an alignment take?</h3><p>Customers report about 30 minutes on our Hoffman machine.</p></div>
+              <div><h3>Which tire brands do you carry?</h3><p>All major brands, including Cooper and Goodyear.</p></div>
+              <div><h3>Do you do camper and trailer tires?</h3><p>Yes, along with car and truck tires.</p></div>
+              <div><h3>Are you open Sundays?</h3><p>No. We are open Monday to Saturday, 9 AM to 5 PM.</p></div>
+              <div><h3>How do I get a price?</h3><p>Call us or use the <a class="link" href="#/tires">tire quote form</a>.</p></div>
+            </div>
+          </section>
+        </div>
+        <!-- /PAGES -->
+      </main>
+
+      <footer class="foot">
+        <p><strong>Russ Hanes Tire Sales &amp; Services</strong><br />599 Hall Ave, St Marys, PA 15857 · <a class="link" href="tel:+18148342515">(814) 834-2515</a> · <a class="link" href="mailto:rht@zitomedia.net">rht@zitomedia.net</a> · <a class="link" href="https://www.facebook.com/RussHanesTire" target="_blank" rel="noopener">Facebook</a></p>
+        <nav aria-label="Pages">
+          <a href="#/">Home</a><a href="#/tires">Tires</a><a href="#/alignments">Alignments</a><a href="#/services">Services</a><a href="#/inspections">Inspections</a><a href="#/about">About</a><a href="#/reviews">Reviews</a><a href="#/contact">Contact</a>
+        </nav>
+        <p>Developed by <a class="link" href="https://teta.dpdns.org" target="_blank" rel="noopener">Teta Digitals</a></p>
+      </footer>
+    </div>
+    <script src="hark.js"></script>
+    <script>
+      (function () {
+        var views = [].slice.call(document.querySelectorAll(".x-view"));
+        var links = [].slice.call(document.querySelectorAll('.seg a'));
+        function route() {
+          var h = location.hash.replace(/^#/, "") || "/";
+          if (h.charAt(0) !== "/") return;
+          var v = views.filter(function (x) { return x.getAttribute("data-route") === h; })[0] || views[0];
+          var r = v.getAttribute("data-route");
+          views.forEach(function (x) { x.hidden = x !== v; });
+          links.forEach(function (a) {
+            if (a.getAttribute("href") === "#" + r) a.setAttribute("aria-current", "true");
+            else a.removeAttribute("aria-current");
+          });
+          document.title = v.getAttribute("data-title") + " | Russ Hanes Tire Sales & Services";
+          window.scrollTo(0, 0);
+        }
+        window.addEventListener("hashchange", route);
+        route();
+        document.querySelectorAll("form[data-mailto]").forEach(function (f) {
+          f.addEventListener("submit", function (e) {
+            e.preventDefault();
+            var lines = [];
+            f.querySelectorAll("input, select, textarea").forEach(function (el) {
+              if (el.value) lines.push(el.getAttribute("data-label") + ": " + el.value);
+            });
+            location.href = "mailto:rht@zitomedia.net?subject=" + encodeURIComponent(f.getAttribute("data-mailto")) + "&body=" + encodeURIComponent(lines.join("\n"));
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
