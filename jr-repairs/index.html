@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>JR Repairs · MOT, servicing, repairs and tyres in Kingussie</title>
+<meta name="description" content="Concept preview. JR Repairs Ltd, Newtonmore Road, Kingussie: MOT testing, servicing, mechanical and welding repairs and tyre fitting in the Highlands.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Archivo:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0F1113;--ink2:#171A1D;--ink3:#20252A;--frost:#E9ECEC;--conc:#D8DBD9;--amber:#FF6B1A;--amberD:#9A3A04;--moss:#6E7B5E;--line:rgba(233,236,236,.14);--lineD:rgba(15,17,19,.16);--disp:"Big Shoulders Display",Impact,sans-serif;--sans:"Archivo",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace;--pad:clamp(20px,4vw,64px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--ink);color:var(--frost);font-family:var(--sans);font-size:16px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+::selection{background:var(--amber);color:var(--ink)}
+.grain{position:fixed;inset:-50%;width:200%;height:200%;pointer-events:none;z-index:90;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain 1s steps(5) infinite}
+@keyframes grain{0%{transform:translate(0,0)}25%{transform:translate(-3%,4%)}50%{transform:translate(4%,-3%)}75%{transform:translate(-4%,-2%)}100%{transform:translate(0,0)}}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+/* banner + nav */
+.banner{position:relative;z-index:60;background:var(--amber);color:var(--ink);font-family:var(--mono);font-size:12px;letter-spacing:.04em;text-align:center;padding:8px var(--pad)}
+.nav{position:fixed;left:0;right:0;top:var(--bh,36px);z-index:50;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:16px var(--pad);transition:background .5s,top .4s,padding .4s}
+.nav.solid{background:rgba(15,17,19,.94);backdrop-filter:blur(10px);top:0;padding:12px var(--pad);border-bottom:1px solid var(--line)}
+.mark{display:flex;align-items:center;gap:12px;font-family:var(--disp);font-weight:900;font-size:30px;line-height:.85;letter-spacing:.01em;text-transform:uppercase}
+.mark i{display:grid;place-items:center;width:40px;height:40px;background:var(--amber);color:var(--ink);font-style:normal;font-size:22px}
+.mark small{display:block;font-family:var(--mono);font-weight:400;font-size:12px;letter-spacing:.1em;opacity:.6;margin-top:5px}
+.nav-mid{font-family:var(--mono);font-size:12px;letter-spacing:.1em;opacity:.65}
+.nav-r{justify-self:end;display:flex;align-items:center;gap:22px}
+.menu-btn{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:12px 16px;border:1px solid var(--line)}
+.menu-btn:hover{border-color:var(--amber);color:var(--amber)}
+.menu-btn i{display:grid;gap:4px}.menu-btn i b{display:block;width:18px;height:2px;background:currentColor}
+.u{position:relative;display:inline-block}
+.u:after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:1px;background:currentColor;transform-origin:right;transition:transform .5s cubic-bezier(.7,0,.2,1)}
+.u:hover:after{animation:udraw .8s cubic-bezier(.7,0,.2,1)}
+@keyframes udraw{0%{transform:scaleX(1);transform-origin:right}50%{transform:scaleX(0);transform-origin:right}51%{transform-origin:left}100%{transform:scaleX(1);transform-origin:left}}
+/* overlay */
+.overlay{position:fixed;inset:0;z-index:70;overflow-y:auto;background:var(--ink2);display:grid;grid-template-columns:1.5fr 1fr;padding:100px var(--pad) 36px;clip-path:polygon(0 0,100% 0,100% 0,0 0);transition:clip-path .85s cubic-bezier(.77,0,.18,1);visibility:hidden}
+.overlay.open{clip-path:polygon(0 0,100% 0,100% 100%,0 100%);visibility:visible}
+.overlay nav a{display:flex;align-items:center;gap:20px;font-family:var(--disp);font-weight:800;text-transform:uppercase;font-size:clamp(40px,6.6vw,96px);line-height:.95;letter-spacing:.005em;padding:2px 0;border-bottom:1px solid var(--line);opacity:0;transform:translateX(-40px);transition:opacity .5s,transform .7s cubic-bezier(.2,.7,.2,1),color .25s,padding .4s}
+.overlay.open nav a{opacity:1;transform:none}
+.overlay nav a span{font-family:var(--mono);font-weight:400;font-size:12px;letter-spacing:.12em;opacity:.45;width:34px}
+.overlay nav a:hover,.overlay nav a.on{color:var(--amber);padding-left:14px}
+.ov-side{display:flex;flex-direction:column;justify-content:space-between;padding-left:40px}
+.ov-prev{aspect-ratio:4/5;max-height:54vh;overflow:hidden;background:#000;position:relative}
+.ov-prev:after{content:"";position:absolute;inset:12px;border:1px solid rgba(255,107,26,.6);pointer-events:none}
+.ov-prev img{position:absolute;inset:0;opacity:0;transition:opacity .45s}.ov-prev img.on{opacity:1}
+.ov-meta{font-family:var(--mono);font-size:12px;opacity:.75;display:grid;gap:6px}
+.ov-close{position:absolute;top:28px;right:var(--pad);font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:12px 16px;border:1px solid var(--line)}
+/* layout */
+.page{display:none}.page.on{display:block}
+.wrap{padding:0 var(--pad)}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);display:flex;gap:12px;align-items:center}
+.label:before{content:attr(data-n);color:currentColor;opacity:.7}
+.label:after{content:"";flex:0 0 40px;height:1px;background:currentColor;opacity:.5}
+.d1{font-family:var(--disp);font-weight:900;text-transform:uppercase;font-size:clamp(64px,12.5vw,230px);line-height:.84;letter-spacing:-.005em}
+.d2{font-family:var(--disp);font-weight:800;text-transform:uppercase;font-size:clamp(46px,7vw,124px);line-height:.88}
+.d3{font-family:var(--disp);font-weight:700;text-transform:uppercase;font-size:clamp(30px,3.4vw,54px);line-height:.95}
+.hl{color:var(--amber)}
+.ol{color:transparent;-webkit-text-stroke:1.5px var(--frost)}
+.conc .ol{-webkit-text-stroke-color:var(--ink)}
+.body{font-size:clamp(15px,1.15vw,17px);opacity:.74;max-width:46ch}
+.line-mask{display:block;overflow:hidden;padding-bottom:.04em}.line-mask>span{display:block}
+section{position:relative}
+.sec{padding:clamp(90px,13vw,190px) 0}
+.conc{background:var(--conc);color:var(--ink)}
+.conc .label{color:var(--amberD)}
+.conc .body{opacity:.75}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.cta{display:inline-flex;align-items:center;gap:14px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:20px 28px;border:1px solid currentColor;transition:background .35s,color .35s,border-color .35s;will-change:transform}
+.cta:after{content:"";width:8px;height:8px;border-top:1.5px solid currentColor;border-right:1.5px solid currentColor;transform:rotate(45deg)}
+.cta:hover{background:var(--frost);color:var(--ink);border-color:var(--frost)}
+.conc .cta:hover{background:var(--ink);color:var(--conc);border-color:var(--ink)}
+.cta.fill{background:var(--amber);color:var(--ink);border-color:var(--amber)}
+.cta.fill:hover{background:var(--frost);border-color:var(--frost)}
+.reveal{overflow:hidden;position:relative}
+.g .reveal img{transform:scale(1.18)}
+.tick{position:absolute;width:14px;height:14px;border-color:var(--amber);border-style:solid;z-index:3}
+.tick.tl{top:10px;left:10px;border-width:2px 0 0 2px}.tick.br{bottom:10px;right:10px;border-width:0 2px 2px 0}
+/* hero */
+.hero{height:100svh;min-height:660px;position:relative;overflow:hidden}
+.hero .bg{position:absolute;inset:0}
+.hero .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,17,19,.6) 0%,rgba(15,17,19,.05) 38%,rgba(15,17,19,.9) 100%)}
+.hero .in{position:absolute;left:var(--pad);right:var(--pad);bottom:clamp(90px,13vh,140px)}
+.hero .meta{position:absolute;top:120px;left:var(--pad);right:var(--pad);display:flex;justify-content:space-between;gap:20px}
+.hero-row{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-top:36px;flex-wrap:wrap}
+.spec{border:1px solid var(--line);background:rgba(15,17,19,.55);backdrop-filter:blur(8px);min-width:300px}
+.spec div{display:flex;justify-content:space-between;gap:30px;padding:12px 18px;border-top:1px solid var(--line);font-family:var(--mono);font-size:12px;letter-spacing:.04em}
+.spec div:first-child{border-top:0}
+.spec div span{opacity:.55;text-transform:uppercase}
+.ticker{position:absolute;left:0;right:0;bottom:0;background:var(--amber);color:var(--ink);overflow:hidden;z-index:4;border-top:1px solid var(--ink)}
+.ticker .tr{display:flex;width:max-content;animation:marq 32s linear infinite;font-family:var(--disp);font-weight:800;font-size:22px;letter-spacing:.06em;text-transform:uppercase;padding:12px 0}
+.ticker .tr span{padding-right:2em;white-space:nowrap}
+.ph{height:86svh;min-height:580px}
+.ph .in{bottom:clamp(40px,8vh,100px)}
+/* intro */
+.intro .big{font-family:var(--disp);font-weight:700;text-transform:uppercase;font-size:clamp(34px,4.6vw,80px);line-height:.98;grid-column:2/12}
+.g .intro .big .w{opacity:.16}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(70px,9vw,140px);border-left:1px solid var(--line)}
+.stats div{padding:24px 24px 4px;border-right:1px solid var(--line);border-top:1px solid var(--line)}
+.stats b{display:block;font-family:var(--disp);font-weight:900;font-size:clamp(54px,7vw,120px);line-height:.9}
+.stats span{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;opacity:.55}
+/* horizontal bays */
+.hz{height:100svh;overflow:hidden;position:relative;background:var(--ink2)}
+.hz-track{display:flex;height:100%;align-items:center;gap:3vw;padding:0 var(--pad);width:max-content}
+.hz-head{width:32vw;flex:none;padding-right:2vw}
+.panel{position:relative;flex:none;width:44vw;height:76svh;overflow:hidden;display:block;border:1px solid var(--line)}
+.panel img{transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.panel:hover img{transform:scale(1.05)}
+.panel:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(15,17,19,.92),rgba(15,17,19,0) 60%)}
+.panel .num{position:absolute;top:18px;left:22px;z-index:2;font-family:var(--mono);font-size:12px;letter-spacing:.12em;background:var(--amber);color:var(--ink);padding:6px 10px}
+.panel .cap{position:absolute;left:26px;right:26px;bottom:26px;z-index:2}
+.panel .cap p{font-size:15px;opacity:.78;max-width:38ch;margin-top:12px}
+/* band */
+.band{height:92svh;min-height:540px;overflow:hidden;position:relative;display:flex;align-items:center}
+.band .bg{position:absolute;inset:-10% 0}
+.band .bg:after{content:"";position:absolute;inset:0;background:rgba(15,17,19,.4)}
+.marq{position:relative;white-space:nowrap;font-family:var(--disp);font-weight:900;text-transform:uppercase;font-size:clamp(90px,15vw,260px);line-height:1;color:var(--frost);-webkit-text-stroke:1.5px rgba(233,236,236,.9);display:flex;width:max-content;animation:marq 46s linear infinite}
+.marq span{padding-right:.35em}
+@keyframes marq{to{transform:translateX(-50%)}}
+.band .tag{position:absolute;left:var(--pad);right:var(--pad);bottom:36px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+/* story pin */
+.story{display:grid;grid-template-columns:1fr 1fr;min-height:100svh}
+.story-img{position:relative;height:100svh;overflow:hidden}
+.story-img img{position:absolute;inset:0;opacity:0;transition:opacity 1s,transform 1.6s;transform:scale(1.06)}
+.story-img img.on{opacity:1;transform:scale(1)}
+.story-txt{display:flex;flex-direction:column;justify-content:center;padding:0 var(--pad);height:100svh}
+.steps{position:relative;min-height:340px;margin-top:40px}
+.step{position:absolute;inset:0;opacity:0;transform:translateY(30px);transition:opacity .7s,transform .9s cubic-bezier(.2,.7,.2,1)}
+.step.on{opacity:1;transform:none}
+.step .yr{font-family:var(--disp);font-weight:900;font-size:clamp(80px,9vw,160px);line-height:.85;color:var(--amber)}
+.step h3{font-family:var(--disp);font-weight:700;text-transform:uppercase;font-size:clamp(30px,3vw,48px);line-height:1;margin:16px 0 12px}
+.dots{display:flex;gap:6px;margin-top:20px}.dots i{width:34px;height:4px;background:var(--line);transition:background .4s}.dots i.on{background:var(--amber)}
+/* reviews */
+.rev-q{position:relative;min-height:clamp(280px,25vw,380px);max-width:1180px;margin:50px 0 0}
+.rev-q{display:grid}
+.rev-q blockquote{grid-area:1/1;opacity:0;transform:translateY(20px);transition:opacity .8s,transform 1s}
+.rev-q blockquote.on{opacity:1;transform:none}
+.rev-q p{font-family:var(--disp);font-weight:700;text-transform:uppercase;font-size:clamp(32px,4vw,68px);line-height:.98}
+.rev-q cite{display:block;margin-top:26px;font-style:normal;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.6}
+.rev-ctl{display:flex;align-items:center;gap:22px;margin-top:30px}
+.rev-ctl button{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:12px 16px;border:1px solid var(--lineD)}
+.rev-ctl button:hover{background:var(--ink);color:var(--conc)}
+.prog{width:200px;height:3px;background:var(--lineD);position:relative;overflow:hidden}
+.prog i{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--amberD)}
+.prog i.run{width:100%;transition:width 7s linear}
+/* job card / lists */
+.card{border:1px solid var(--line)}
+.conc .card{border-color:var(--lineD)}
+.card-h{display:flex;justify-content:space-between;gap:20px;padding:14px 20px;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;opacity:.8}
+.conc .card-h{border-color:var(--lineD)}
+.rows li{list-style:none;display:grid;grid-template-columns:70px 1fr auto;gap:20px;align-items:baseline;padding:20px;border-top:1px solid var(--line);font-size:clamp(17px,1.4vw,21px)}
+.conc .rows li{border-color:var(--lineD)}
+.rows li:first-child{border-top:0}
+.rows li em{font-style:normal;font-family:var(--mono);font-size:12px;letter-spacing:.1em;opacity:.5}
+.rows li span{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;opacity:.55}
+.rows li b{font-family:var(--disp);font-weight:700;text-transform:uppercase;font-size:clamp(24px,2.4vw,38px);line-height:1}
+.rows li p{font-size:15px;opacity:.7;margin-top:6px;max-width:60ch}
+/* split + feat */
+.split{display:grid;grid-template-columns:5fr 7fr;gap:clamp(30px,6vw,110px);align-items:center}
+.split.rev2{grid-template-columns:7fr 5fr}
+.split .img{aspect-ratio:4/5;overflow:hidden}
+.split.rev2 .img{aspect-ratio:5/4}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);border-left:1px solid var(--line)}
+.conc .feat{border-color:var(--lineD)}
+.feat>div{padding:30px;border-right:1px solid var(--line);border-top:1px solid var(--line)}
+.conc .feat>div{border-color:var(--lineD)}
+.feat h4{font-family:var(--disp);font-weight:700;text-transform:uppercase;font-size:clamp(26px,2.4vw,38px);margin:14px 0 10px;line-height:1}
+.feat p{font-size:15px;opacity:.72;max-width:34ch}
+.hours{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:clamp(14px,1.2vw,17px)}
+.hours td{padding:16px 0;border-top:1px solid var(--line)}
+.conc .hours td{border-color:var(--lineD)}
+.hours td:last-child{text-align:right}
+.hours tr.today td{color:var(--amber)}
+.conc .hours tr.today td{color:var(--amberD)}
+.status{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:8px 12px;border:1px solid var(--line)}
+.conc .status{border-color:var(--lineD)}
+.status i{width:8px;height:8px;background:#8a8a8a}
+.status.open i{background:#7BE07B;box-shadow:0 0 0 0 rgba(123,224,123,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(123,224,123,0)}100%{box-shadow:0 0 0 0 rgba(123,224,123,0)}}
+.contact-rows a{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:26px 0;border-top:1px solid var(--lineD);font-family:var(--disp);font-weight:800;text-transform:uppercase;font-size:clamp(30px,4.4vw,72px);line-height:1;transition:color .3s,padding .5s}
+.contact-rows a span{font-family:var(--mono);font-weight:400;font-size:12px;letter-spacing:.12em;opacity:.55}
+.contact-rows a:hover{color:var(--amberD);padding-left:16px}
+form.enq{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+form.enq label{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.65;padding-top:26px}
+form.enq input,form.enq select,form.enq textarea{width:100%;background:transparent;border:0;border-bottom:1px solid var(--lineD);padding:12px 0;font:inherit;font-size:18px;color:inherit;border-radius:0;outline:none}
+form.enq input:focus,form.enq select:focus,form.enq textarea:focus{border-color:var(--amberD)}
+form.enq .full{grid-column:1/-1}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:26px 0;font-family:var(--disp);font-weight:700;text-transform:uppercase;font-size:clamp(24px,2.6vw,40px);line-height:1}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-family:var(--mono);color:var(--amber);transition:transform .4s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{padding:0 0 28px;opacity:.74;max-width:60ch}
+.map{aspect-ratio:16/9;filter:grayscale(1) invert(.9) contrast(.95);border:1px solid var(--lineD);width:100%}
+/* footer */
+footer{background:var(--ink);padding:clamp(100px,14vw,200px) 0 0;overflow:hidden;border-top:4px solid var(--amber)}
+.f-cols{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:clamp(70px,8vw,120px);font-size:14px}
+.f-cols h5{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:400;color:var(--amber);margin-bottom:16px}
+.f-cols p,.f-cols a{display:block;opacity:.8;line-height:2}
+.f-word{font-family:var(--disp);font-weight:900;text-transform:uppercase;font-size:27vw;line-height:.8;text-align:center;margin-top:60px;color:#6B7278;-webkit-text-stroke:1px rgba(233,236,236,.1);user-select:none;white-space:nowrap}
+.f-base{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:22px var(--pad) 90px;font-family:var(--mono);font-size:12px;opacity:.65;border-top:1px solid var(--line)}
+.f-base a{text-decoration:underline;text-underline-offset:3px;padding:8px 0}
+/* cursor, loader, wipe */
+.cursor{position:fixed;left:0;top:0;z-index:100;width:12px;height:12px;margin:-6px 0 0 -6px;border:1.5px solid var(--amber);pointer-events:none;transition:width .3s,height .3s,margin .3s,background .3s;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+.cursor.big{width:84px;height:84px;margin:-42px 0 0 -42px;background:var(--amber)}
+.cursor.link{width:40px;height:40px;margin:-20px 0 0 -20px}
+.cursor span{opacity:0;transition:opacity .3s}.cursor.big span{opacity:1}
+@media (hover:none){.cursor{display:none}}
+.loader{position:fixed;inset:0;z-index:200;background:var(--ink);display:flex;flex-direction:column;justify-content:space-between;padding:var(--pad)}
+.loader .top{display:flex;justify-content:space-between}
+.loader .w{font-family:var(--disp);font-weight:900;font-size:clamp(100px,20vw,340px);line-height:.8;text-transform:uppercase}
+.odo{display:flex;gap:4px;font-family:var(--mono);font-size:clamp(28px,4vw,56px)}
+.odo span{background:var(--ink3);padding:4px 10px;border:1px solid var(--line)}
+.odo span:last-child{background:var(--amber);color:var(--ink)}
+.wipe{position:fixed;inset:0;z-index:150;background:var(--amber);transform:translateX(-100%);pointer-events:none}
+.mbar{display:none}
+/* tap targets */
+.mark,.menu-btn,.ov-close,.rev-ctl button{min-height:48px}
+.overlay nav a{min-height:48px}
+.story-txt>a.u{display:inline-flex;align-items:center;min-height:44px}
+.f-cols a{display:flex!important;align-items:center;min-height:44px}
+.f-base a{display:inline-flex;align-items:center;min-height:44px}
+/* responsive */
+@media (max-width:1000px){
+ .overlay{grid-template-columns:1fr}.ov-side{display:none}
+ .nav-mid{display:none}.nav{grid-template-columns:1fr auto}
+ .story{grid-template-columns:1fr}.story-img{height:60svh}.story-txt{height:auto;padding:70px var(--pad)}
+ .steps{min-height:0}.step{position:relative;opacity:1;transform:none;padding:26px 0;border-top:1px solid var(--line)}.dots{display:none}
+ .story-img img{opacity:0}.story-img img:first-child{opacity:1}
+ .hz{height:auto}.hz-track{flex-direction:column;width:auto;align-items:stretch;padding:90px var(--pad);gap:24px}
+ .hz-head{width:auto;padding:0 0 20px}.panel{width:100%;height:66svh}
+}
+@media (max-width:760px){
+ .nav{top:var(--bh,76px)}.nav.solid{top:0}.nav-call{display:none}
+ .mark{font-size:24px}.mark i{width:34px;height:34px;font-size:18px}
+ .banner{font-size:12px}
+ .hero .meta{top:128px}.hero .meta span:nth-child(2){display:none}
+ .hero .in{bottom:84px}
+ .spec{min-width:0;width:100%}
+ .stats{grid-template-columns:1fr 1fr}.stats div{padding:20px 14px 4px;min-width:0}.stats b{font-size:clamp(40px,12vw,64px)}
+ .split,.split.rev2{grid-template-columns:1fr}
+ .feat{grid-template-columns:1fr}
+ .rows li{grid-template-columns:1fr;gap:6px}
+ .f-cols{grid-template-columns:1fr 1fr}
+ form.enq{grid-template-columns:1fr}
+ .intro .big{grid-column:1/-1}
+ .ticker .tr{font-size:17px;padding:10px 0}
+ .contact-rows a{flex-direction:column;gap:8px}
+ .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:55;background:var(--amber);color:var(--ink)}
+ .mbar a{text-align:center;padding:17px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+ .mbar a+a{border-left:1px solid rgba(15,17,19,.3)}
+ .cta{padding:18px 22px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal img{transform:none}.loader{display:none}}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="loader" aria-hidden="true"><div class="top mono"><span>JR Repairs Ltd</span><span>Kingussie PH21</span></div><div class="top" style="align-items:flex-end"><div class="w">JR</div><div class="odo" id="odo"><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span></div></div></div>
+<div class="wipe" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span>View</span></div>
+
+<div class="banner">Independent concept preview by Teta Digitals. Not the official website of JR Repairs Ltd.</div>
+
+<header class="nav" id="nav">
+  <a href="#/" class="mark" aria-label="JR Repairs home"><i>JR</i><span>Repairs<small>KINGUSSIE · HIGHLAND</small></span></a>
+  <span class="nav-mid">57.0787 N · 4.0560 W</span>
+  <div class="nav-r"><a class="nav-call u mono" href="tel:01540662988">01540 662988</a><button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="overlay"><i><b></b><b></b></i>Menu</button></div>
+</header>
+
+<div class="overlay" id="overlay" aria-hidden="true">
+  <button class="ov-close" id="ovClose">Close</button>
+  <nav>
+    <a href="#/" data-img="jr-hero.jpg"><span>01</span>Home</a>
+    <a href="#/mot" data-img="jr-diag.jpg"><span>02</span>MOT</a>
+    <a href="#/servicing-repairs" data-img="jr-brakes.jpg"><span>03</span>Servicing &amp; repairs</a>
+    <a href="#/tyres-store" data-img="jr-tyres.jpg"><span>04</span>Tyres &amp; store</a>
+    <a href="#/about" data-img="jr-desk.jpg"><span>05</span>About us</a>
+    <a href="#/reviews" data-img="jr-road.jpg"><span>06</span>Reviews</a>
+    <a href="#/visit" data-img="jr-hero.jpg"><span>07</span>Visit</a>
+    <a href="#/contact" data-img="jr-desk.jpg"><span>08</span>Contact</a>
+  </nav>
+  <div class="ov-side">
+    <div class="ov-prev" id="ovPrev"><img class="on" data-k="jr-hero.jpg" src="jr-hero.jpg" alt=""><img data-k="jr-diag.jpg" src="jr-diag.jpg" alt=""><img data-k="jr-brakes.jpg" src="jr-brakes.jpg" alt=""><img data-k="jr-tyres.jpg" src="jr-tyres.jpg" alt=""><img data-k="jr-desk.jpg" src="jr-desk.jpg" alt=""><img data-k="jr-road.jpg" src="jr-road.jpg" alt=""></div>
+    <div class="ov-meta"><span>Newtonmore Road, Kingussie PH21 1HF</span><a class="u" href="tel:01540662988">01540 662988</a><a class="u" href="mailto:jr-repairs@outlook.com">jr-repairs@outlook.com</a><span>Mon to Fri · 8am to 5pm</span></div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- HOME -->
+<div class="page" data-route="/">
+  <section class="hero">
+    <div class="bg"><img class="hero-img" src="jr-hero.jpg" alt="A Highland village garage at dusk with the Cairngorms behind"></div>
+    <div class="meta mono"><span>Kingussie · Badenoch</span><span>Family run since 2016</span><span>MOT station</span></div>
+    <div class="in">
+      <h1 class="d1"><span class="line-mask"><span>Keeping the</span></span><span class="line-mask"><span class="hl">Highlands</span></span><span class="line-mask"><span>moving.</span></span></h1>
+      <div class="hero-row">
+        <p class="body">MOTs, servicing, mechanical and welding repairs and tyre fitting on Newtonmore Road, Kingussie. Locals, and plenty of travellers passing through, rate us 5.0 on Google.</p>
+        <div class="spec">
+          <div><span>Google rating</span><b>5.0 / 59 reviews</b></div>
+          <div><span>Hours</span><b>Mon to Fri 8 to 5</b></div>
+          <div><span>Today</span><b class="status" data-status style="border:0;padding:0"><i></i><b>Checking</b></b></div>
+        </div>
+      </div>
+    </div>
+    <div class="ticker" aria-hidden="true"><div class="tr"><span>MOT testing</span><span>Servicing</span><span>Repairs</span><span>Welding</span><span>Tyre fitting</span><span>Diagnostics</span><span>Parts &amp; accessories</span><span>MOT testing</span><span>Servicing</span><span>Repairs</span><span>Welding</span><span>Tyre fitting</span><span>Diagnostics</span><span>Parts &amp; accessories</span></div></div>
+  </section>
+
+  <section class="sec intro">
+    <div class="wrap">
+      <div class="grid">
+        <p class="label" data-n="(01)" style="grid-column:2/12;margin-bottom:40px">The garage on Newtonmore Road</p>
+        <p class="big split-words">James Robertson started JR Repairs in 2016 to give Kingussie and the surrounding area a friendly, professional garage. A family business, built with long hours, it became an approved MOT station in 2018.</p>
+      </div>
+      <div class="stats">
+        <div><b data-count="5.0">5.0</b><span>Stars on Google</span></div>
+        <div><b data-count="59">59</b><span>Google reviews</span></div>
+        <div><b>2016</b><span>Established</span></div>
+        <div><b>8 to 5</b><span>Monday to Friday</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hz" id="hz">
+    <div class="hz-track">
+      <div class="hz-head">
+        <p class="label" data-n="(02)">In the workshop</p>
+        <h2 class="d2" style="margin-top:28px">All under <span class="hl">one roof.</span></h2>
+        <p class="body" style="margin-top:28px">From the annual MOT to a warning light that will not go away, it all happens under one roof in Kingussie.</p>
+      </div>
+      <a class="panel img-hover" href="#/mot"><img src="jr-diag.jpg" alt="A diagnostic reader plugged into a car"><span class="num">JOB 01</span><div class="cap"><h3 class="d3">MOT testing</h3><p>An approved MOT test centre since 2018, with James a qualified MOT tester.</p></div></a>
+      <a class="panel img-hover" href="#/servicing-repairs"><img src="jr-brakes.jpg" alt="A mechanic torquing a wheel beside a brake disc"><span class="num">JOB 02</span><div class="cap"><h3 class="d3">Servicing &amp; repairs</h3><p>Servicing, mechanical repairs, brakes, electrics and welding, for cars and vans.</p></div></a>
+      <a class="panel img-hover" href="#/tyres-store"><img src="jr-tyres.jpg" alt="New tyres stacked beside a tyre machine"><span class="num">JOB 03</span><div class="cap"><h3 class="d3">Tyres</h3><p>Tyre fitting, listed with the Scottish Motor Trade Association.</p></div></a>
+      <a class="panel img-hover" href="#/tyres-store"><img src="jr-desk.jpg" alt="The reception and waiting area with coffee"><span class="num">JOB 04</span><div class="cap"><h3 class="d3">The auto store</h3><p>Parts and accessories on the counter, so you are not waiting on an online order.</p></div></a>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="bg par"><img src="jr-road.jpg" alt="A Highland road through Strathspey towards the Cairngorms"></div>
+    <div class="marq" aria-hidden="true"><span>Kingussie · Badenoch · Strathspey · Cairngorms ·</span><span>Kingussie · Badenoch · Strathspey · Cairngorms ·</span></div>
+    <div class="tag mono"><span>(03) Breakdown on holiday? Drop in.</span><span>57.0787 N · 4.0560 W</span></div>
+  </section>
+
+  <section class="story" id="story">
+    <div class="story-img"><img class="on" src="jr-hero.jpg" alt="The garage at dusk"><img src="jr-diag.jpg" alt="Diagnostics"><img src="jr-brakes.jpg" alt="Brake work"><img src="jr-desk.jpg" alt="Reception"></div>
+    <div class="story-txt">
+      <p class="label" data-n="(04)">Service history</p>
+      <div class="steps">
+        <div class="step on"><div class="yr">2016</div><h3>JR Repairs opens</h3><p class="body">James Robertson takes the opportunity to give Kingussie a friendly, professional garage for repairs, servicing and welding.</p></div>
+        <div class="step"><div class="yr">2017</div><h3>Limited company, MOT tester</h3><p class="body">JR Repairs Limited is incorporated in March, and James qualifies as an MOT tester that summer.</p></div>
+        <div class="step"><div class="yr">2018</div><h3>An MOT station</h3><p class="body">New MOT equipment goes in during March 2018 and the garage qualifies as an MOT station.</p></div>
+        <div class="step"><div class="yr">Today</div><h3>A growing team</h3><p class="body">A busy family-run garage with a front desk, a workshop team, an auto store and a 5.0 rating on Google.</p></div>
+      </div>
+      <div class="dots"><i class="on"></i><i></i><i></i><i></i></div>
+      <a href="#/about" class="u mono" style="margin-top:40px;align-self:flex-start">Read our story</a>
+    </div>
+  </section>
+
+  <section class="sec conc">
+    <div class="wrap">
+      <p class="label" data-n="(05)">5.0 stars from 59 Google reviews</p>
+      <div class="rev-q" data-rev>
+        <blockquote class="on"><p>"Couldn't rate JR repairs highly enough. Our go to garage for MOTs and repairs on our car and van."</p><cite>Google review · Aug 2025</cite></blockquote>
+        <blockquote><p>"Hands down the BEST garage! Even being full they helped us out in a tricky situation when on holiday."</p><cite>Google review · Aug 2025</cite></blockquote>
+        <blockquote><p>"Really friendly team and very smartly appointed waiting area, great coffee!"</p><cite>Google review · Oct 2025</cite></blockquote>
+        <blockquote><p>"Despite them being fully booked... they squeezed us in and got our van back on the road within 12 hrs."</p><cite>Google review · Jul 2024</cite></blockquote>
+      </div>
+      <div class="rev-ctl"><button data-p>Prev</button><div class="prog"><i></i></div><button data-n>Next</button></div>
+    </div>
+  </section>
+</div>
+
+<!-- MOT -->
+<div class="page" data-route="/mot">
+  <section class="hero ph">
+    <div class="bg"><img class="hero-img" src="jr-diag.jpg" alt="A diagnostic reader in use"></div>
+    <div class="meta mono"><span>(02) MOT</span><span>Approved MOT test centre</span></div>
+    <div class="in"><h1 class="d1"><span class="line-mask"><span>MOT, done</span></span><span class="line-mask"><span class="hl">properly.</span></span></h1>
+    <div class="hero-row"><p class="body">JR Repairs has been an MOT station since March 2018, with James qualifying as an MOT tester the summer before. Book a slot by phone or message.</p><a href="tel:01540662988" class="cta fill magnet">Book an MOT</a></div></div>
+  </section>
+  <section class="sec">
+    <div class="wrap split">
+      <div class="img reveal"><span class="tick tl"></span><span class="tick br"></span><img src="jr-brakes.jpg" alt="Brake inspection on the lift"></div>
+      <div><p class="label" data-n="(i)">MOT test centre</p><h2 class="d2" style="margin:28px 0">Class 4 <span class="ol">testing.</span></h2>
+        <p class="body" style="margin-bottom:40px">Listed as a Class 4 MOT test centre, which covers cars and light vans. If work is needed, the same team can carry out the repairs and servicing in house.</p>
+        <div class="feat" style="grid-template-columns:1fr">
+          <div><span class="mono" style="opacity:.5">01</span><h4>Book ahead</h4><p>Call 01540 662988, email, or message us on Facebook.</p></div>
+          <div><span class="mono" style="opacity:.5">02</span><h4>Drop it off</h4><p>Newtonmore Road, Kingussie PH21 1HF, from 8am Monday to Friday.</p></div>
+          <div><span class="mono" style="opacity:.5">03</span><h4>MOT and service</h4><p>Ask about booking your service at the same visit.</p></div>
+        </div></div>
+    </div>
+  </section>
+  <section class="sec conc">
+    <div class="wrap split">
+      <div><p class="label" data-n="(ii)">Opening hours</p><h2 class="d2" style="margin-top:28px">Weekdays, <span class="ol">from eight.</span></h2><span class="status" data-status style="margin-top:30px"><i></i><b>Checking</b></span></div>
+      <table class="hours" data-hours><tr data-d="1"><td>Monday</td><td>8am to 5pm</td></tr><tr data-d="2"><td>Tuesday</td><td>8am to 5pm</td></tr><tr data-d="3"><td>Wednesday</td><td>8am to 5pm</td></tr><tr data-d="4"><td>Thursday</td><td>8am to 5pm</td></tr><tr data-d="5"><td>Friday</td><td>8am to 5pm</td></tr><tr data-d="6"><td>Saturday</td><td>Closed</td></tr><tr data-d="0"><td>Sunday</td><td>Closed</td></tr></table>
+    </div>
+  </section>
+</div>
+
+<!-- SERVICING & REPAIRS -->
+<div class="page" data-route="/servicing-repairs">
+  <section class="hero ph">
+    <div class="bg"><img class="hero-img" src="jr-brakes.jpg" alt="Brake and wheel work on the lift"></div>
+    <div class="meta mono"><span>(03) Servicing &amp; repairs</span><span>Cars and vans</span></div>
+    <div class="in"><h1 class="d1"><span class="line-mask"><span>Big jobs.</span></span><span class="line-mask"><span class="hl">Small jobs.</span></span></h1>
+    <div class="hero-row"><p class="body">High-quality mechanical repairs, welding, servicing and MOTs for the local community. Every job, big or small, gets the same care.</p><a href="#/contact" class="cta fill magnet">Request a booking</a></div></div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <div class="grid"><p class="label" data-n="(i)" style="grid-column:1/-1">The job card</p><h2 class="d2" style="grid-column:1/10;margin:28px 0 70px">What we <span class="ol">work on.</span></h2></div>
+      <div class="card">
+        <div class="card-h"><span>JR Repairs · Workshop</span><span>Newtonmore Road</span></div>
+        <ul class="rows">
+          <li><em>01</em><div><b>Servicing</b><p>Car servicing, with the option to book it alongside your MOT.</p></div><span>Cars</span></li>
+          <li><em>02</em><div><b>Mechanical repairs</b><p>Repairs to the highest standard, for your car or your van.</p></div><span>Cars, vans</span></li>
+          <li><em>03</em><div><b>Brakes</b><p>From a stone stuck by the brakes to a brake fluid change.</p></div><span>Safety</span></li>
+          <li><em>04</em><div><b>Electrics &amp; diagnostics</b><p>Warning lights and limp mode read with a code reader and sorted.</p></div><span>Fault finding</span></li>
+          <li><em>05</em><div><b>Welding repairs</b><p>Welding has been part of the work since the garage opened in 2016.</p></div><span>Fabrication</span></li>
+          <li><em>06</em><div><b>Motorhomes</b><p>Customers have brought motorhome issues to the front desk too. Call to check.</p></div><span>Ask first</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="sec conc">
+    <div class="wrap split rev2">
+      <div class="img reveal"><span class="tick tl"></span><span class="tick br"></span><img src="jr-hero.jpg" alt="The garage at dusk"></div>
+      <div><p class="label" data-n="(ii)">Stuck far from home?</p><h2 class="d2" style="margin:28px 0">Visitors <span class="ol">welcome.</span></h2><p class="body" style="margin-bottom:40px">Reviews tell of holidaymakers with flat batteries, limp mode and breakdowns, squeezed in even on full days. Call first and the team will do what they can.</p><a class="cta magnet" href="tel:01540662988">Call 01540 662988</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- TYRES & STORE -->
+<div class="page" data-route="/tyres-store">
+  <section class="hero ph">
+    <div class="bg"><img class="hero-img" src="jr-tyres.jpg" alt="Tyres beside a tyre fitting machine"></div>
+    <div class="meta mono"><span>(04) Tyres &amp; auto store</span><span>Kingussie</span></div>
+    <div class="in"><h1 class="d1"><span class="line-mask"><span>Rubber,</span></span><span class="line-mask"><span>parts, <span class="hl">fitted.</span></span></span></h1>
+    <div class="hero-row"><p class="body">Tyre fitting in the workshop, and an auto store at the front for parts and accessories. It saves a trip further afield.</p><a href="tel:01540662988" class="cta fill magnet">Ask about tyres</a></div></div>
+  </section>
+  <section class="sec">
+    <div class="wrap split">
+      <div><p class="label" data-n="(i)">Tyres</p><h2 class="d2" style="margin:28px 0">Fitted in <span class="ol">Kingussie.</span></h2><p class="body">JR Repairs is listed for tyre fitting with the Scottish Motor Trade Association. Call with your size and we will let you know what is possible.</p></div>
+      <div class="img reveal"><span class="tick tl"></span><span class="tick br"></span><img src="jr-tyres.jpg" alt="New tyres in the workshop"></div>
+    </div>
+  </section>
+  <section class="sec conc">
+    <div class="wrap">
+      <p class="label" data-n="(ii)">The auto store</p>
+      <h2 class="d2" style="margin:28px 0 60px">Parts on <span class="ol">the counter.</span></h2>
+      <div class="feat">
+        <div><span class="mono" style="opacity:.5">01</span><h4>Parts</h4><p>Pick up parts without waiting on an online order.</p></div>
+        <div><span class="mono" style="opacity:.5">02</span><h4>Accessories</h4><p>Accessories for your car or van, from the same front desk.</p></div>
+        <div><span class="mono" style="opacity:.5">03</span><h4>Ask the desk</h4><p>Not sure what you need? The team are happy to help with any question.</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ABOUT -->
+<div class="page" data-route="/about">
+  <section class="hero ph">
+    <div class="bg"><img class="hero-img" src="jr-desk.jpg" alt="The reception and waiting area"></div>
+    <div class="meta mono"><span>(05) About us</span><span>Family run</span></div>
+    <div class="in"><h1 class="d1"><span class="line-mask"><span>Heart, soul,</span></span><span class="line-mask"><span class="hl">long hours.</span></span></h1></div>
+  </section>
+  <section class="sec intro">
+    <div class="wrap grid"><p class="big split-words">JR Repairs is a family-run business. James and the team have put their heart, soul and many long hours into the garage, and it shows in every review.</p></div>
+  </section>
+  <section class="sec conc">
+    <div class="wrap">
+      <p class="label" data-n="(i)">Service history</p>
+      <div class="card" style="margin-top:40px">
+        <div class="card-h"><span>JR Repairs Limited</span><span>Est. 2016</span></div>
+        <ul class="rows">
+          <li><em>2016</em><div><b>James Robertson opens JR Repairs</b><p>Car repairs, services and welding for Kingussie and the surrounding area.</p></div><span>Founded</span></li>
+          <li><em>2017</em><div><b>JR Repairs Limited</b><p>Incorporated on 14 March 2017. James qualifies as an MOT tester that summer.</p></div><span>Ltd</span></li>
+          <li><em>2018</em><div><b>MOT station</b><p>New MOT equipment installed in March 2018, and the garage qualifies as an MOT station.</p></div><span>Approved</span></li>
+          <li><em>Today</em><div><b>A member garage</b><p>A member of the Scottish Motor Trade Association, rated 5.0 from 59 Google reviews.</p></div><span>SMTA</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <p class="label" data-n="(ii)">The people</p>
+      <h2 class="d2" style="margin:28px 0 60px">Faces you <span class="ol">will meet.</span></h2>
+      <div class="feat">
+        <div><span class="mono" style="opacity:.5">Workshop</span><h4>James Robertson</h4><p>Founder and qualified MOT tester. Customers say James and the guys always do great work.</p></div>
+        <div><span class="mono" style="opacity:.5">Front desk</span><h4>Lora</h4><p>First port of call for enquiries and bookings, praised for a warm welcome and patient answers.</p></div>
+        <div><span class="mono" style="opacity:.5">The team</span><h4>The whole crew</h4><p>"The whole team go above and beyond," in the words of one customer.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="band" style="height:70svh"><div class="bg par"><img src="jr-road.jpg" alt="Strathspey and the Cairngorms"></div><div class="tag mono"><span>Kingussie, Badenoch</span><span>Newtonmore Road</span></div></section>
+</div>
+
+<!-- REVIEWS -->
+<div class="page" data-route="/reviews">
+  <section class="sec" style="padding-top:220px">
+    <div class="wrap">
+      <p class="label" data-n="(06)">Reviews</p>
+      <h1 class="d1" style="margin:28px 0 40px"><span class="line-mask"><span>Five stars,</span></span><span class="line-mask"><span class="hl">fifty-nine times.</span></span></h1>
+      <p class="d3">5.0 <span class="hl">★★★★★</span> <span class="mono" style="opacity:.6">from 59 Google reviews</span></p>
+    </div>
+  </section>
+  <section class="sec conc" style="padding-top:60px">
+    <div class="wrap">
+      <div class="card">
+        <div class="card-h"><span>Customer reports</span><span>Google reviews</span></div>
+        <ul class="rows">
+          <li><em>Oct 25</em><div><p style="opacity:.9;font-size:clamp(17px,1.4vw,21px)">"Stopped by as we had an awful noise coming from the front brake area, suspected stone stuck. The team quickly saw to us and popped it up on the ramp, all sorted within 15 mins. Really friendly team and very smartly appointed waiting area, great coffee! Would highly recommend!"</p></div><span>★★★★★</span></li>
+          <li><em>Sep 25</em><div><p style="opacity:.9;font-size:clamp(17px,1.4vw,21px)">"These guys are excellent, always go out of their way to accommodate. Thank you again for your quick attention and sorting out my electrics."</p></div><span>★★★★★</span></li>
+          <li><em>Sep 25</em><div><p style="opacity:.9;font-size:clamp(17px,1.4vw,21px)">"Walking into JR repairs and having Lora and Yolande there always puts my mind at ease... James and the guys always do great work and are always friendly and polite. Fairly Priced, Friendly and very efficient."</p></div><span>★★★★★</span></li>
+          <li><em>Aug 25</em><div><p style="opacity:.9;font-size:clamp(17px,1.4vw,21px)">"Hands down the BEST garage! Even being full they helped us out in a tricky situation when on holiday. Nothing was too much. Not often you find a wee gem of a garage like this."</p></div><span>★★★★★</span></li>
+          <li><em>Aug 25</em><div><p style="opacity:.9;font-size:clamp(17px,1.4vw,21px)">"Couldn't rate JR repairs highly enough. Our go to garage for MOTs and repairs on our car and van, all work carried out to the highest standard with brilliant customer service. The auto store is also a fantastic addition for picking up any parts or accessories."</p></div><span>★★★★★</span></li>
+          <li><em>Aug 25</em><div><p style="opacity:.9;font-size:clamp(17px,1.4vw,21px)">"We had a very small problem with our car that Isaac was able to fix within a few minutes and did so right as the garage was closing. Lovely young man and service was great!"</p></div><span>★★★★★</span></li>
+          <li><em>Jul 24</em><div><p style="opacity:.9;font-size:clamp(17px,1.4vw,21px)">"We had a vehicle of ours broken down near them (we're in Glasgow) and despite them being fully booked, given the situation, they squeezed us in and got our van back on the road within 12 hrs."</p></div><span>★★★★★</span></li>
+        </ul>
+      </div>
+      <p class="mono" style="margin-top:30px;opacity:.6">All quotes from Google reviews, lightly trimmed</p>
+    </div>
+  </section>
+</div>
+
+<!-- VISIT -->
+<div class="page" data-route="/visit">
+  <section class="hero ph">
+    <div class="bg"><img class="hero-img" src="jr-road.jpg" alt="The road through Strathspey"></div>
+    <div class="meta mono"><span>(07) Visit</span><span>Kingussie PH21 1HF</span></div>
+    <div class="in"><h1 class="d1"><span class="line-mask"><span>Find us on</span></span><span class="line-mask"><span class="hl">Newtonmore Rd.</span></span></h1>
+    <div class="hero-row"><p class="body">JR Repairs Ltd, Newtonmore Road, Kingussie PH21 1HF. The postcode takes you to the door.</p><a class="cta fill magnet" href="https://www.google.com/maps/dir/?api=1&amp;destination=57.078711,-4.055954" target="_blank" rel="noopener">Get directions</a></div></div>
+  </section>
+  <section class="sec">
+    <div class="wrap split">
+      <div><p class="label" data-n="(i)">Opening hours</p><h2 class="d2" style="margin:28px 0">Open <span class="ol">today?</span></h2><span class="status" data-status><i></i><b>Checking</b></span><p class="body" style="margin-top:24px">Hours can change on bank holidays, so it is worth calling ahead.</p></div>
+      <table class="hours" data-hours><tr data-d="1"><td>Monday</td><td>8am to 5pm</td></tr><tr data-d="2"><td>Tuesday</td><td>8am to 5pm</td></tr><tr data-d="3"><td>Wednesday</td><td>8am to 5pm</td></tr><tr data-d="4"><td>Thursday</td><td>8am to 5pm</td></tr><tr data-d="5"><td>Friday</td><td>8am to 5pm</td></tr><tr data-d="6"><td>Saturday</td><td>Closed</td></tr><tr data-d="0"><td>Sunday</td><td>Closed</td></tr></table>
+    </div>
+  </section>
+  <section class="sec conc">
+    <div class="wrap">
+      <iframe class="map" loading="lazy" title="Map to JR Repairs" src="https://www.google.com/maps?q=57.078711,-4.055954&amp;z=15&amp;output=embed"></iframe>
+      <div class="feat" style="margin-top:60px">
+        <div><h4>Waiting area</h4><p>A smartly fitted waiting area, and customers mention a good cup of coffee.</p></div>
+        <div><h4>Passing through?</h4><p>Travellers on holiday in the area have been helped out at short notice.</p></div>
+        <div><h4>Call ahead</h4><p>01540 662988. The front desk handles bookings and enquiries.</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- CONTACT -->
+<div class="page" data-route="/contact">
+  <section class="sec" style="padding-top:220px">
+    <div class="wrap">
+      <p class="label" data-n="(08)">Contact</p>
+      <h1 class="d1" style="margin-top:28px"><span class="line-mask"><span>Book it</span></span><span class="line-mask"><span class="hl">in.</span></span></h1>
+      <p class="body" style="margin-top:28px">Call, email or message on Facebook. Any voicemails and messages are returned as soon as the office can.</p>
+    </div>
+  </section>
+  <section class="sec conc" style="padding-top:80px">
+    <div class="wrap">
+      <div class="contact-rows">
+        <a href="tel:01540662988">01540 662988<span>Phone</span></a>
+        <a href="mailto:jr-repairs@outlook.com" style="font-size:clamp(24px,3.8vw,64px)">jr-repairs@outlook.com<span>Email</span></a>
+        <a href="https://www.facebook.com/JR-Repairs-1138730166180959/" target="_blank" rel="noopener">JR Repairs<span>Facebook</span></a>
+      </div>
+      <div class="split" style="margin-top:clamp(90px,10vw,160px);align-items:start">
+        <div><p class="label" data-n="(i)">Booking request</p><h2 class="d2" style="margin-top:28px">Tell us <span class="ol">the job.</span></h2><p class="body" style="margin-top:24px">This opens your email app with the details filled in. We will come back to you to confirm a time.</p></div>
+        <form class="enq" data-mailto>
+          <div><label for="f1">Name</label><input id="f1" name="Name" required></div>
+          <div><label for="f2">Phone</label><input id="f2" name="Phone" type="tel"></div>
+          <div><label for="f3">Service</label><select id="f3" name="Service"><option>MOT</option><option>Service</option><option>MOT and service</option><option>Repair</option><option>Tyres</option><option>Other</option></select></div>
+          <div><label for="f4">Registration</label><input id="f4" name="Registration"></div>
+          <div class="full"><label for="f5">Preferred date</label><input id="f5" name="Preferred date" type="date"></div>
+          <div class="full"><label for="f6">What's the problem?</label><textarea id="f6" name="message" rows="3"></textarea></div>
+          <div class="full" style="margin-top:36px"><button class="cta magnet" type="submit">Open email to JR Repairs</button></div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap split" style="align-items:start">
+      <div><p class="label" data-n="(ii)">FAQ</p><h2 class="d2" style="margin-top:28px">Questions, <span class="ol">answered.</span></h2></div>
+      <div>
+        <details><summary>When are you open?</summary><p>Monday to Friday, 8am to 5pm. Closed Saturday and Sunday. Hours can change on bank holidays, so call ahead.</p></details>
+        <details><summary>Are you an MOT test centre?</summary><p>Yes. JR Repairs qualified as an MOT station in March 2018 and is listed for Class 4 MOT tests, which covers cars and light vans.</p></details>
+        <details><summary>Do you work on vans?</summary><p>Yes. Customers bring both cars and vans for MOTs and repairs.</p></details>
+        <details><summary>Can you help if I break down on holiday?</summary><p>Call 01540 662988. Visitors have been helped at short notice, even on busy days, though it depends on the workload.</p></details>
+        <details><summary>Do you fit tyres?</summary><p>Yes, tyre fitting is one of the services listed with the Scottish Motor Trade Association. Call with your tyre size.</p></details>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="label" data-n="(09)">MOT · Servicing · Repairs · Tyres</p>
+    <h2 class="d1" style="margin-top:28px">Book it in <span class="hl">today.</span></h2>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:50px"><a class="cta fill magnet" href="tel:01540662988">Call 01540 662988</a><a class="cta magnet" href="#/contact">Booking request</a></div>
+    <div class="f-cols">
+      <div><h5>Find us</h5><p>JR Repairs Ltd<br>Newtonmore Road<br>Kingussie PH21 1HF</p></div>
+      <div><h5>Hours</h5><p>Mon to Fri 8am to 5pm<br>Sat closed<br>Sun closed</p></div>
+      <div><h5>Contact</h5><a class="u" href="tel:01540662988">01540 662988</a><a class="u" href="mailto:jr-repairs@outlook.com">Email us</a><a class="u" href="https://www.facebook.com/JR-Repairs-1138730166180959/" target="_blank" rel="noopener">Facebook</a></div>
+      <div><h5>Explore</h5><a href="#/mot">MOT</a><a href="#/servicing-repairs">Servicing &amp; repairs</a><a href="#/tyres-store">Tyres &amp; store</a><a href="#/about">About us</a><a href="#/visit">Visit</a></div>
+    </div>
+  </div>
+  <div class="f-word" aria-hidden="true">JR Repairs</div>
+  <div class="f-base"><span>Concept preview. Not the official website of JR Repairs Ltd.</span><a href="https://teta.dpdns.org" target="_blank" rel="noopener">Developed by Teta Digitals</a></div>
+</footer>
+
+<div class="mbar"><a href="tel:01540662988">Call</a><a href="https://www.google.com/maps/dir/?api=1&amp;destination=57.078711,-4.055954" target="_blank" rel="noopener">Directions</a></div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+(function(){
+var $=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+var RM=matchMedia("(prefers-reduced-motion: reduce)").matches;
+var G=window.gsap&&window.ScrollTrigger&&!RM; if(G){gsap.registerPlugin(ScrollTrigger);document.documentElement.classList.add("g")}
+var lenis=null;
+if(G&&window.Lenis){lenis=new Lenis({lerp:.1});lenis.on("scroll",ScrollTrigger.update);gsap.ticker.add(function(t){lenis.raf(t*1000)});gsap.ticker.lagSmoothing(0);}
+var nav=document.getElementById("nav"),bn=$(".banner")[0];
+function bh(){if(bn)document.documentElement.style.setProperty("--bh",bn.offsetHeight+"px")}bh();addEventListener("resize",bh);
+addEventListener("scroll",function(){nav.classList.toggle("solid",scrollY>60)},{passive:true});
+
+/* menu overlay */
+var ov=document.getElementById("overlay"),mb=document.getElementById("menuBtn"),ovImgs=$("#ovPrev img");
+function menu(o){ov.classList.toggle("open",o);ov.setAttribute("aria-hidden",!o);mb.setAttribute("aria-expanded",o);$("nav a",ov).forEach(function(a,i){a.style.transitionDelay=o?(0.2+i*0.05)+"s":"0s"});if(lenis)o?lenis.stop():lenis.start();document.body.style.overflow=o?"hidden":""}
+mb.onclick=function(){menu(!ov.classList.contains("open"))};
+document.getElementById("ovClose").onclick=function(){menu(false)};
+$("nav a",ov).forEach(function(a){a.addEventListener("mouseenter",function(){ovImgs.forEach(function(im){im.classList.toggle("on",im.dataset.k===a.dataset.img)})});a.addEventListener("click",function(){menu(false)})});
+addEventListener("keydown",function(e){if(e.key==="Escape")menu(false)});
+
+/* cursor */
+var cur=$(".cursor")[0];
+if(matchMedia("(hover:hover)").matches&&cur){var cx=0,cy=0,tx=0,ty=0;addEventListener("mousemove",function(e){tx=e.clientX;ty=e.clientY});(function loop(){cx+=(tx-cx)*.22;cy+=(ty-cy)*.22;cur.style.transform="translate("+cx+"px,"+cy+"px)";requestAnimationFrame(loop)})();
+document.addEventListener("mouseover",function(e){var t=e.target;cur.classList.toggle("big",!!t.closest(".panel,.reveal,.img-hover"));cur.classList.toggle("link",!t.closest(".panel,.reveal")&&!!t.closest("a,button,summary"))});}
+/* magnetic */
+if(matchMedia("(hover:hover)").matches)$(".magnet").forEach(function(b){b.addEventListener("mousemove",function(e){var r=b.getBoundingClientRect();b.style.transform="translate("+((e.clientX-r.left-r.width/2)*.25)+"px,"+((e.clientY-r.top-r.height/2)*.35)+"px)"});b.addEventListener("mouseleave",function(){b.style.transform=""})});
+
+/* split words */
+$(".split-words").forEach(function(p){var out="";p.childNodes.forEach(function(n){if(n.nodeType===3){out+=n.textContent.split(/(\s+)/).map(function(w){return /\S/.test(w)?'<span class="w">'+w+'</span>':w}).join("")}else{out+='<span class="w">'+n.outerHTML+'</span>'}});p.innerHTML=out});
+
+/* open status, UK time */
+function ukNow(){var f=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/London",weekday:"short",hour:"numeric",minute:"numeric",hour12:false}).formatToParts(new Date()),o={};f.forEach(function(p){o[p.type]=p.value});return{d:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(o.weekday),m:(+o.hour%24)*60+(+o.minute)}}
+function status(){var n=ukNow(),wk=n.d>=1&&n.d<=5,open=false,txt;
+ if(wk&&n.m>=480&&n.m<1020){open=true;txt="Open now, until 5pm"}
+ else if(wk&&n.m<480){txt="Opens today at 8am"}
+ else if(n.d>=1&&n.d<=4){txt="Closed now, open tomorrow 8am"}
+ else{txt="Closed, open Monday 8am"}
+ $("[data-status]").forEach(function(s){s.classList.toggle("open",open);var b=s.querySelector("b");if(b)b.textContent=txt});
+ $("[data-hours] tr").forEach(function(r){r.classList.toggle("today",r.dataset.d!==undefined&&+r.dataset.d===n.d)})}
+status();
+
+/* reviews */
+$("[data-rev]").forEach(function(box){var q=$("blockquote",box),i=0,sec=box.parentNode,bar=$(".prog i",sec)[0],t;function go(j){q[i].classList.remove("on");i=(j+q.length)%q.length;q[i].classList.add("on");if(bar){bar.classList.remove("run");void bar.offsetWidth;bar.classList.add("run")}clearTimeout(t);if(!RM)t=setTimeout(function(){go(i+1)},7000)}$("[data-p]",sec)[0].onclick=function(){go(i-1)};$("[data-n]",sec)[0].onclick=function(){go(i+1)};go(0)});
+
+/* form */
+$("form[data-mailto]").forEach(function(f){f.addEventListener("submit",function(e){e.preventDefault();var d=new FormData(f),b="";d.forEach(function(v,k){if(k!=="message")b+=k+": "+v+"\n"});b+="\n"+(d.get("message")||"");location.href="mailto:jr-repairs@outlook.com?subject="+encodeURIComponent((d.get("Service")||"Booking")+" request from "+(d.get("Name")||"the website"))+"&body="+encodeURIComponent(b)})});
+
+/* page animations */
+var ctx=null;
+function animate(page){
+  if(!G){$(".step",page).forEach(function(s){s.classList.add("on")});return}
+  if(ctx)ctx.revert();
+  ctx=gsap.context(function(){
+    var hi=page.querySelector(".hero-img");if(hi)gsap.fromTo(hi,{scale:1.14},{scale:1,duration:2.2,ease:"power3.out"});
+    $(".line-mask>span",page).forEach(function(l,i){gsap.from(l,{yPercent:115,duration:1.1,ease:"power4.out",delay:.12+i*.08})});
+    $(".hero .meta,.hero-row",page).forEach(function(m){gsap.from(m,{opacity:0,y:20,duration:1,delay:.65})});
+    $(".hero .bg",page).forEach(function(b){gsap.to(b,{yPercent:16,ease:"none",scrollTrigger:{trigger:b.parentNode,start:"top top",end:"bottom top",scrub:true}})});
+    $(".reveal",page).forEach(function(r){gsap.fromTo(r,{clipPath:"inset(0% 100% 0% 0%)"},{clipPath:"inset(0% 0% 0% 0%)",ease:"power3.inOut",duration:1.4,scrollTrigger:{trigger:r,start:"top 85%"}});gsap.to(r.querySelector("img"),{scale:1,ease:"none",scrollTrigger:{trigger:r,start:"top bottom",end:"bottom top",scrub:true}})});
+    $(".par img",page).forEach(function(p){gsap.fromTo(p,{yPercent:-8},{yPercent:8,ease:"none",scrollTrigger:{trigger:p.closest("section"),start:"top bottom",end:"bottom top",scrub:true}})});
+    $(".split-words",page).forEach(function(p){gsap.to($(".w",p),{opacity:1,stagger:.05,ease:"none",scrollTrigger:{trigger:p,start:"top 80%",end:"bottom 45%",scrub:true}})});
+    $(".d2,.feat>div,.rows li,.stats div,.contact-rows a,details,.card-h",page).forEach(function(el){gsap.from(el,{opacity:0,y:36,duration:1,ease:"power3.out",scrollTrigger:{trigger:el,start:"top 92%"}})});
+    $("[data-count]",page).forEach(function(el){var v=parseFloat(el.dataset.count),dec=el.dataset.count.indexOf(".")>-1,o={x:0};gsap.to(o,{x:v,duration:1.8,ease:"power2.out",scrollTrigger:{trigger:el,start:"top 90%"},onUpdate:function(){el.textContent=dec?o.x.toFixed(1):Math.round(o.x)}})});
+    var mm=gsap.matchMedia();
+    mm.add("(min-width:1001px)",function(){
+      var hz=page.querySelector("#hz");if(hz){var tr=hz.querySelector(".hz-track");gsap.to(tr,{x:function(){return-(tr.scrollWidth-innerWidth)},ease:"none",scrollTrigger:{trigger:hz,pin:true,scrub:1,start:"top top",end:function(){return"+="+(tr.scrollWidth-innerWidth)},invalidateOnRefresh:true}});$(".panel img",hz).forEach(function(im){gsap.fromTo(im,{xPercent:-5},{xPercent:5,ease:"none",scrollTrigger:{trigger:hz,start:"top top",end:function(){return"+="+(tr.scrollWidth-innerWidth)},scrub:true}})})}
+      var st=page.querySelector("#story");if(st){var steps=$(".step",st),imgs=$(".story-img img",st),dots=$(".dots i",st);ScrollTrigger.create({trigger:st,pin:true,start:"top top",end:"+="+(steps.length*70)+"%",onUpdate:function(s){var k=Math.min(steps.length-1,Math.floor(s.progress*steps.length));steps.forEach(function(x,j){x.classList.toggle("on",j===k)});imgs.forEach(function(x,j){x.classList.toggle("on",j===k)});dots.forEach(function(x,j){x.classList.toggle("on",j===k)})}})}
+    });
+  },page);
+  ScrollTrigger.refresh();
+}
+
+/* router with side wipe */
+var wipe=$(".wipe")[0],first=true;
+function show(){var r=(location.hash.replace(/^#/,"")||"/");var page=$('.page[data-route="'+r+'"]')[0]||$('.page[data-route="/"]')[0];$(".page").forEach(function(p){p.classList.toggle("on",p===page)});$("nav a",ov).forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+page.dataset.route)});if(lenis)lenis.scrollTo(0,{immediate:true});else scrollTo(0,0);status();animate(page);var h=page.querySelector("h1");document.title=(page.dataset.route==="/"||!h?"":h.textContent.replace(/\s+/g," ").trim()+" · ")+"JR Repairs, Kingussie"}
+function route(){if(first||!G){first=false;show();return}gsap.timeline().set(wipe,{xPercent:-100}).to(wipe,{xPercent:0,duration:.5,ease:"power3.in"}).add(show).to(wipe,{xPercent:100,duration:.65,ease:"power3.out"})}
+addEventListener("hashchange",route);
+
+/* loader: odometer */
+var L=$(".loader")[0],od=$("#odo span");
+function setOdo(v){var s=("000000"+v).slice(-6);od.forEach(function(e,i){e.textContent=s[i]})}
+var seen=false;try{seen=!!sessionStorage.getItem("jrl");sessionStorage.setItem("jrl",1)}catch(e){}
+if(G&&!seen){var o={v:0};gsap.timeline().to(o,{v:2016,duration:1.3,ease:"power2.inOut",onUpdate:function(){setOdo(Math.round(o.v))}}).to(L,{xPercent:100,duration:.8,ease:"power4.inOut",onStart:route}).set(L,{display:"none"})}
+else{L.style.display="none";route()}
+addEventListener("load",function(){if(G)ScrollTrigger.refresh()});
+})();
+</script>
+</body>
+</html>
