@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Warisa's Beauty Lounge · Lashes, nails, waxing and brows on Talbot Street, Dublin 1</title>
+<meta name="description" content="Concept preview. Warisa's Beauty Lounge, a treatment room within Scruples Hair Design at 54 Talbot Street, Dublin 1: eyelash extensions, Shellac nails, waxing, brows and tints.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bone:#F3ECE4;--bone2:#EADFD3;--blush:#E9C9BF;--blushD:#C98E80;--rose:#B5695B;--cocoa:#3A2620;--cocoaD:#24170F;--ink:#2B1C17;--line:rgba(58,38,32,.16);--lineL:rgba(243,236,228,.18);--serif:"Bodoni Moda","Didot",Georgia,serif;--sans:"Manrope",system-ui,sans-serif;--pad:clamp(20px,4vw,64px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bone);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+::selection{background:var(--blush);color:var(--cocoaD)}
+.grain{position:fixed;inset:-50%;width:200%;height:200%;pointer-events:none;z-index:90;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain 1.4s steps(6) infinite}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-3%,2%)}40%{transform:translate(2%,-4%)}60%{transform:translate(-2%,3%)}80%{transform:translate(4%,1%)}100%{transform:translate(0,0)}}
+.banner{position:relative;z-index:60;background:var(--cocoaD);color:rgba(243,236,228,.75);font-size:12px;letter-spacing:.08em;text-align:center;padding:8px var(--pad)}
+.nav{position:fixed;left:0;right:0;top:var(--bh,33px);z-index:50;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:20px var(--pad);transition:background .5s,top .4s,padding .4s,color .4s;color:var(--cocoaD)}
+.nav.solid{background:rgba(243,236,228,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);top:0;padding:14px var(--pad);border-bottom:1px solid var(--line)}
+.menu-btn{justify-self:start;display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.24em;text-transform:uppercase;padding:12px 4px;min-height:44px}
+.menu-btn i{display:grid;gap:6px}.menu-btn i b{display:block;width:28px;height:1px;background:currentColor}
+.menu-btn i b:last-child{width:18px}
+.mark{text-align:center;font-family:var(--serif);font-size:26px;letter-spacing:.32em;line-height:1;text-transform:uppercase;padding-left:.32em}
+.mark small{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.42em;margin-top:6px;opacity:.65}
+.nav-book{justify-self:end;font-size:12px;letter-spacing:.22em;text-transform:uppercase;padding:12px 22px;border:1px solid currentColor;border-radius:999px;transition:background .4s,color .4s}
+.nav-book:hover{background:var(--cocoaD);color:var(--bone)}
+.u{position:relative;display:inline-block}
+.u:after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:1px;background:currentColor;transform-origin:right;transition:transform .6s cubic-bezier(.7,0,.2,1)}
+.u:hover:after{animation:udraw .8s cubic-bezier(.7,0,.2,1)}
+@keyframes udraw{0%{transform:scaleX(1);transform-origin:right}50%{transform:scaleX(0);transform-origin:right}51%{transform-origin:left}100%{transform:scaleX(1);transform-origin:left}}
+/* overlay */
+.overlay{position:fixed;inset:0;z-index:70;background:var(--cocoa);color:var(--bone);display:grid;grid-template-columns:1fr 1.25fr;padding:110px var(--pad) 40px;clip-path:circle(0% at 6% 6%);transition:clip-path 1s cubic-bezier(.77,0,.18,1);visibility:hidden}
+.overlay.open{clip-path:circle(150% at 6% 6%);visibility:visible}
+.ov-side{display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid var(--lineL);padding-right:40px}
+.ov-prev{aspect-ratio:3/4;max-height:56vh;overflow:hidden;border-radius:300px 300px 0 0;background:#000}
+.ov-prev img{transition:opacity .5s,transform 1.4s}
+.ov-meta{font-size:14px;opacity:.75;display:grid;gap:4px;margin-top:30px}
+.overlay nav{padding-left:clamp(30px,5vw,80px);display:flex;flex-direction:column;justify-content:center}
+.overlay nav a{display:flex;align-items:baseline;gap:20px;font-family:var(--serif);font-size:clamp(38px,5.6vw,86px);line-height:1.04;letter-spacing:-.02em;opacity:0;transform:translateY(40px);transition:opacity .6s,transform .9s cubic-bezier(.2,.7,.2,1),color .3s}
+.overlay.open nav a{opacity:1;transform:none}
+.overlay nav a span{font-family:var(--sans);font-size:12px;letter-spacing:.2em;opacity:.45}
+.overlay nav a:hover,.overlay nav a.on{color:var(--blush);font-style:italic}
+.ov-close{position:absolute;top:30px;right:var(--pad);font-size:12px;letter-spacing:.24em;text-transform:uppercase;padding:12px;min-height:44px}
+.overlay nav a{min-height:44px}
+/* type */
+.page{display:none}.page.on{display:block}
+.wrap{padding:0 var(--pad)}
+.kick{font-size:12px;letter-spacing:.26em;text-transform:uppercase;display:flex;gap:14px;align-items:center;color:var(--rose)}
+.kick:before{content:"";width:34px;height:1px;background:currentColor}
+.d1{font-family:var(--serif);font-weight:400;font-size:clamp(58px,10.5vw,190px);line-height:.9;letter-spacing:-.03em}
+.d2{font-family:var(--serif);font-weight:400;font-size:clamp(44px,6.4vw,112px);line-height:.95;letter-spacing:-.025em}
+.d3{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.2vw,52px);line-height:1.05;letter-spacing:-.015em}
+em,.it{font-style:italic}
+.rose{color:var(--rose)}
+.lede{font-size:clamp(15px,1.15vw,18px);color:rgba(43,28,23,.74);max-width:46ch}
+.dark .lede{color:rgba(243,236,228,.74)}
+.line-mask{display:block;overflow:hidden;padding-bottom:.08em}.line-mask>span{display:block}
+section{position:relative}
+.sec{padding:clamp(90px,13vw,190px) 0}
+.blush{background:var(--blush)}
+.sand{background:var(--bone2)}
+.dark{background:var(--cocoa);color:var(--bone)}
+.dark .kick{color:var(--blush)}
+.cta{display:inline-flex;align-items:center;gap:14px;font-size:12px;letter-spacing:.24em;text-transform:uppercase;padding:20px 32px;border:1px solid currentColor;border-radius:999px;transition:background .4s,color .4s,border-color .4s;will-change:transform}
+.cta:hover{background:var(--cocoaD);color:var(--bone);border-color:var(--cocoaD)}
+.cta.fill{background:var(--cocoaD);color:var(--bone);border-color:var(--cocoaD)}
+.cta.fill:hover{background:var(--rose);border-color:var(--rose)}
+.dark .cta:hover{background:var(--bone);color:var(--cocoaD);border-color:var(--bone)}
+.dark .cta.fill{background:var(--bone);color:var(--cocoaD);border-color:var(--bone)}
+.dark .cta.fill:hover{background:var(--blush);border-color:var(--blush)}
+.cta svg{width:14px;height:14px}
+.reveal{overflow:hidden}
+.g .reveal img{transform:scale(1.2)}
+.arch{border-radius:999px 999px 0 0}
+/* home cover */
+.cover{min-height:100svh;padding:150px var(--pad) 40px;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:auto 1fr auto;gap:0 24px;position:relative;overflow:hidden}
+.masthead{grid-column:1/-1;font-family:var(--serif);font-weight:400;font-size:clamp(70px,19vw,330px);line-height:.78;letter-spacing:-.04em;text-align:center;color:var(--cocoaD);white-space:nowrap}
+.masthead em{color:var(--rose)}
+.cover-line{grid-column:1/-1;display:flex;justify-content:space-between;gap:20px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;margin-top:22px}
+.cover-img{grid-column:4/10;grid-row:2/4;margin-top:-6vw;aspect-ratio:3/4;max-height:86svh;justify-self:center;width:100%;max-width:640px;overflow:hidden;position:relative;z-index:1}
+.cover-left{grid-column:1/4;grid-row:2;align-self:end;padding-bottom:40px}
+.cover-right{grid-column:10/13;grid-row:2;align-self:end;padding-bottom:40px;text-align:right}
+.cover-left h2{font-family:var(--serif);font-weight:400;font-style:italic;font-size:clamp(26px,2.5vw,42px);line-height:1.08;margin:18px 0}
+.cov-stat b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(48px,5vw,88px);line-height:1;letter-spacing:-.03em}
+.cov-stat span{font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:.65}
+.cov-stat+.cov-stat{margin-top:28px}
+.ph{min-height:92svh;display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.ph-txt{padding:200px var(--pad) 70px;display:flex;flex-direction:column;justify-content:flex-end}
+.ph-img{position:relative;overflow:hidden}
+.ph-img .bg{position:absolute;inset:-8% 0}
+.ph-meta{display:flex;gap:30px;flex-wrap:wrap;margin-top:40px;align-items:center}
+/* marquee */
+.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:22px 0;background:var(--bone)}
+.ticker .row{display:flex;width:max-content;animation:marq 38s linear infinite}
+.ticker span{font-family:var(--serif);font-style:italic;font-size:clamp(30px,3.6vw,58px);line-height:1;padding-right:.6em;white-space:nowrap}
+.ticker span i{font-style:normal;color:var(--rose);padding-left:.6em;font-size:.6em;vertical-align:middle}
+@keyframes marq{to{transform:translateX(-50%)}}
+/* editorial intro */
+.ed{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:start}
+.ed .drop{grid-column:1/7;font-family:var(--serif);font-size:clamp(30px,3.6vw,60px);line-height:1.12;letter-spacing:-.015em}
+.g .ed .drop .w{opacity:.16}
+.ed .cols{grid-column:8/13;column-count:2;column-gap:30px;font-size:15px;color:rgba(43,28,23,.74)}
+.ed .cols p+p{margin-top:14px}
+.ed .cols p:first-child:first-letter{font-family:var(--serif);float:left;font-size:4.2em;line-height:.8;padding:6px 10px 0 0;color:var(--rose)}
+/* treatments index */
+.tix a{display:grid;grid-template-columns:90px 1fr auto 1fr;align-items:center;gap:30px;padding:30px 0;border-top:1px solid var(--line);position:relative;transition:padding .6s cubic-bezier(.2,.7,.2,1)}
+.tix a:last-child{border-bottom:1px solid var(--line)}
+.tix a:hover{padding-left:20px}
+.tix .n{font-size:12px;letter-spacing:.2em;opacity:.5}
+.tix h3{font-family:var(--serif);font-weight:400;font-size:clamp(40px,6vw,104px);line-height:.95;letter-spacing:-.025em;transition:color .4s}
+.tix a:hover h3{color:var(--rose);font-style:italic}
+.tix .thumb{width:120px;height:150px;overflow:hidden;border-radius:60px 60px 0 0;opacity:0;transform:scale(.8) rotate(-4deg);transition:opacity .5s,transform .7s cubic-bezier(.2,.7,.2,1)}
+.tix a:hover .thumb{opacity:1;transform:none}
+.tix p{font-size:14px;opacity:.7;max-width:34ch;justify-self:end;text-align:right}
+/* stacked ritual cards */
+.stack{display:grid;gap:0}
+.card{position:sticky;top:110px;display:grid;grid-template-columns:1fr 1fr;min-height:70svh;background:var(--bone);border-top:1px solid var(--line);box-shadow:0 -30px 60px -40px rgba(36,23,15,.35)}
+.card:nth-child(2){background:var(--bone2);top:130px}.card:nth-child(3){background:var(--blush);top:150px}.card:nth-child(4){background:var(--bone);top:170px}
+.card .ci{overflow:hidden}
+.card .ct{padding:clamp(30px,5vw,80px);display:flex;flex-direction:column;justify-content:space-between;gap:30px}
+.card .big{font-family:var(--serif);font-style:italic;font-size:clamp(70px,9vw,160px);line-height:.8;color:var(--rose)}
+/* band */
+.band{height:92svh;min-height:540px;overflow:hidden;position:relative;display:flex;align-items:flex-end;color:var(--bone)}
+.band .bg{position:absolute;inset:-12% 0}
+.band .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(36,23,15,0) 30%,rgba(36,23,15,.7))}
+.band .in{position:relative;padding:0 var(--pad) clamp(40px,7vh,90px);display:flex;justify-content:space-between;align-items:flex-end;gap:30px;width:100%;flex-wrap:wrap}
+/* lookbook horizontal */
+.hz{height:100svh;overflow:hidden;position:relative}
+.hz-track{display:flex;height:100%;align-items:center;gap:3vw;padding:0 var(--pad);width:max-content}
+.hz-head{width:30vw;flex:none;padding-right:2vw}
+.look{flex:none;position:relative;display:block}
+.look .im{overflow:hidden;height:62svh}
+.look:nth-child(odd) .im{height:72svh}
+.look.w1 .im{width:38vw}.look.w2 .im{width:28vw;border-radius:999px 999px 0 0}.look.w3 .im{width:46vw}
+.look figcaption{display:flex;justify-content:space-between;gap:20px;margin-top:16px;font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+.look figcaption b{font-family:var(--serif);font-weight:400;font-style:italic;font-size:22px;letter-spacing:0;text-transform:none}
+/* reviews */
+.rev{text-align:center}
+.stars{color:var(--rose);letter-spacing:.3em;font-size:14px}
+.rev-q{position:relative;min-height:clamp(280px,24vw,380px);max-width:1080px;margin:40px auto 0}
+.rev-q blockquote{position:absolute;inset:0;opacity:0;transform:translateY(24px);filter:blur(6px);transition:opacity .9s,transform 1.1s,filter .9s}
+.rev-q blockquote.on{opacity:1;transform:none;filter:none}
+.rev-q p{font-family:var(--serif);font-style:italic;font-size:clamp(26px,3.3vw,52px);line-height:1.15;letter-spacing:-.01em}
+.rev-q cite{display:block;margin-top:28px;font-style:normal;font-size:12px;letter-spacing:.22em;text-transform:uppercase;opacity:.6}
+.rev-ctl{display:flex;align-items:center;justify-content:center;gap:26px;margin-top:30px}
+.rev-ctl button{font-size:12px;letter-spacing:.22em;text-transform:uppercase;padding:12px}
+.prog{width:180px;height:1px;background:var(--line);position:relative;overflow:hidden}
+.dark .prog{background:var(--lineL)}
+.prog i{position:absolute;left:0;top:0;bottom:0;width:0;background:currentColor}
+.prog i.run{width:100%;transition:width 7s linear}
+/* menu lists */
+.tabs{display:flex;flex-wrap:wrap;gap:10px;margin:50px 0 60px}
+.tabs button{font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:13px 22px;border:1px solid var(--line);border-radius:999px;transition:background .3s,color .3s,border-color .3s}
+.tabs button.on,.tabs button:hover{background:var(--cocoaD);color:var(--bone);border-color:var(--cocoaD)}
+.mgroup{display:none}.mgroup.on{display:block}
+.mgroup h3{font-family:var(--serif);font-weight:400;font-style:italic;font-size:clamp(34px,3.6vw,58px);margin-bottom:20px}
+.plist{list-style:none}
+.plist li{display:grid;grid-template-columns:1fr auto auto;gap:24px;align-items:baseline;padding:18px 0;border-top:1px solid var(--line);font-size:clamp(16px,1.3vw,20px)}
+.plist li:last-child{border-bottom:1px solid var(--line)}
+.plist .t{font-size:12px;letter-spacing:.16em;text-transform:uppercase;opacity:.55}
+.plist .p{font-family:var(--serif);font-size:1.3em;min-width:4.2em;text-align:right}
+.note{font-size:13px;opacity:.65;margin-top:26px;max-width:70ch}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,110px)}
+.split{display:grid;grid-template-columns:5fr 7fr;gap:clamp(30px,6vw,110px);align-items:center}
+.split.r{grid-template-columns:7fr 5fr}
+.split .img{aspect-ratio:4/5;overflow:hidden}
+.feat{display:grid;grid-template-columns:repeat(3,1fr)}
+.feat>div{padding:34px 34px 34px 0;border-top:1px solid var(--line)}
+.dark .feat>div{border-color:var(--lineL)}
+.feat h4{font-family:var(--serif);font-weight:400;font-size:clamp(24px,2.2vw,36px);margin:14px 0 10px;line-height:1.08}
+.feat p{font-size:15px;opacity:.72;max-width:34ch}
+.feat .k{font-size:12px;letter-spacing:.2em;color:var(--rose)}
+/* team */
+.team{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,60px)}
+.member .im{aspect-ratio:4/5;overflow:hidden;border-radius:999px 999px 0 0}
+.member h3{font-family:var(--serif);font-weight:400;font-size:clamp(40px,4.6vw,76px);line-height:1;margin:26px 0 8px}
+.member .role{font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:.6}
+.member p{margin-top:14px;font-size:15px;opacity:.75;max-width:40ch}
+.awards{display:flex;flex-wrap:wrap;gap:0;margin-top:40px}
+.awards span{font-family:var(--serif);font-size:clamp(34px,4.4vw,72px);line-height:1.1;padding-right:.45em}
+.awards span:after{content:"·";padding-left:.45em;opacity:.3}.awards span:last-child:after{content:""}
+/* hours, contact */
+.hours{width:100%;border-collapse:collapse;font-size:clamp(17px,1.4vw,21px)}
+.hours td{padding:16px 0;border-top:1px solid var(--line)}
+.hours td:last-child{text-align:right;font-family:var(--serif);font-size:1.2em}
+.hours tr.today td{color:var(--rose);font-style:italic}
+.status{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.status i{width:8px;height:8px;border-radius:50%;background:#9b8f88}
+.status.open i{background:#7FB37A;box-shadow:0 0 0 0 rgba(127,179,122,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(127,179,122,0)}100%{box-shadow:0 0 0 0 rgba(127,179,122,0)}}
+.contact-rows a{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:28px 0;border-top:1px solid var(--line);font-family:var(--serif);font-size:clamp(26px,4vw,64px);line-height:1;letter-spacing:-.02em;transition:color .3s,padding .5s}
+.contact-rows a span{font-family:var(--sans);font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:.5}
+.contact-rows a:hover{color:var(--rose);padding-left:16px;font-style:italic}
+form.enq{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+form.enq label{display:block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:.6;padding-top:26px}
+form.enq input,form.enq select,form.enq textarea{width:100%;background:transparent;border:0;border-bottom:1px solid var(--line);padding:12px 0;font:inherit;font-size:18px;color:inherit;border-radius:0;outline:none}
+form.enq input:focus,form.enq select:focus,form.enq textarea:focus{border-color:var(--cocoaD)}
+form.enq .full{grid-column:1/-1}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:26px 0;font-family:var(--serif);font-size:clamp(22px,2.4vw,36px);line-height:1.15}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-family:var(--sans);font-weight:300;transition:transform .4s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{padding:0 0 28px;opacity:.74;max-width:60ch}
+.map{aspect-ratio:16/9;filter:grayscale(1) sepia(.35) contrast(.92);border:0;width:100%}
+.revlist{list-style:none;columns:2;column-gap:clamp(30px,5vw,80px)}
+.revlist li{break-inside:avoid;padding:34px 0;border-top:1px solid var(--line)}
+.revlist q{display:block;font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.2vw,34px);line-height:1.2;quotes:"\201C" "\201D"}
+.revlist span{display:block;margin-top:16px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:.55}
+.scores{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(60px,8vw,120px)}
+.scores div{padding:26px 0 0;border-top:1px solid var(--line)}
+.dark .scores div{border-color:var(--lineL)}
+.scores b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(46px,5.6vw,92px);line-height:1;letter-spacing:-.03em}
+.scores span{font-size:12px;letter-spacing:.18em;text-transform:uppercase;opacity:.6}
+/* footer */
+footer{background:var(--cocoaD);color:var(--bone);padding:clamp(100px,13vw,190px) 0 0;overflow:hidden}
+.f-cols{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:clamp(70px,8vw,120px);font-size:14px}
+.f-cols h5{font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;opacity:.5;margin-bottom:16px}
+.f-cols p,.f-cols a{display:block;opacity:.82;line-height:2}
+.f-cols a{padding:8px 0;min-height:44px}
+.f-word{font-family:var(--serif);font-size:25vw;line-height:.8;letter-spacing:-.04em;text-align:center;margin-top:60px;color:var(--rose);user-select:none;white-space:nowrap}
+.f-base{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:22px var(--pad) 96px;font-size:12px;opacity:.65;border-top:1px solid var(--lineL)}
+.f-base a{display:inline-block;text-decoration:underline;text-underline-offset:3px;padding:12px 0;min-height:44px}
+/* cursor, loader, wipe */
+.cursor{position:fixed;left:0;top:0;z-index:100;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;background:var(--rose);pointer-events:none;transition:width .35s,height .35s,margin .35s,background .35s;display:flex;align-items:center;justify-content:center;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--bone)}
+.cursor.big{width:90px;height:90px;margin:-45px 0 0 -45px;background:rgba(58,38,32,.88)}
+.cursor.link{width:44px;height:44px;margin:-22px 0 0 -22px;background:rgba(201,142,128,.35)}
+.cursor span{opacity:0;transition:opacity .3s}.cursor.big span{opacity:1}
+@media (hover:none){.cursor{display:none}}
+.loader{position:fixed;inset:0;z-index:200;background:var(--blush);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;color:var(--cocoaD)}
+.loader .w{font-family:var(--serif);font-size:clamp(60px,12vw,200px);line-height:.9;letter-spacing:.06em;text-transform:uppercase;overflow:hidden}
+.loader .w span{display:inline-block}
+.loader .c{font-size:12px;letter-spacing:.3em;text-transform:uppercase}
+.loader .bar{width:160px;height:1px;background:rgba(36,23,15,.2);position:relative;overflow:hidden}
+.loader .bar i{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--cocoaD)}
+.wipe{position:fixed;inset:0;z-index:150;background:var(--blush);transform:translateY(100%);pointer-events:none}
+.mbar{display:none}
+@media (max-width:1000px){
+ .overlay{grid-template-columns:1fr}.ov-side{display:none}.overlay nav{padding-left:0}
+ .cover{grid-template-rows:auto auto auto auto}
+ .cover-img{grid-column:2/12;grid-row:3;margin-top:30px}
+ .cover-left{grid-column:1/-1;grid-row:4;padding:40px 0 0}
+ .cover-right{grid-column:1/-1;grid-row:5;text-align:left;display:flex;gap:40px;padding-bottom:0}
+ .cov-stat+.cov-stat{margin-top:0}
+ .ph{grid-template-columns:1fr}.ph-img{height:60svh;order:2}.ph-txt{padding-top:170px}
+ .ed .drop,.ed .cols{grid-column:1/-1}
+ .card{grid-template-columns:1fr;position:relative;top:auto!important;min-height:0}.card .ci{height:50svh}
+ .hz{height:auto}.hz-track{flex-direction:column;width:auto;align-items:stretch;padding:90px var(--pad);gap:40px}
+ .hz-head{width:auto}.look .im,.look:nth-child(odd) .im{height:60svh;width:100%!important}
+ .tix a{grid-template-columns:50px 1fr}.tix .thumb,.tix p{display:none}
+}
+@media (max-width:760px){
+ .nav{grid-template-columns:auto 1fr;top:var(--bh,52px)}.nav.solid{top:0}.nav-book{display:none}.mark{text-align:right;font-size:20px}
+ .banner{font-size:12px}
+ .mark{padding-top:5px;padding-bottom:5px}
+ .cover{padding-top:150px}.cover-line span:nth-child(2){display:none}
+ .ed .cols{column-count:1}
+ .split,.split.r,.two,.team{grid-template-columns:1fr}
+ .feat{grid-template-columns:1fr}
+ .plist li{grid-template-columns:1fr auto;gap:6px 16px}.plist .t{grid-column:1;grid-row:2}
+ .revlist{columns:1}
+ .scores{grid-template-columns:1fr 1fr;gap:0 20px}
+ .f-cols{grid-template-columns:1fr 1fr}
+ form.enq{grid-template-columns:1fr}
+ .mbar{display:grid;grid-template-columns:1fr 1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:55;background:var(--cocoaD);color:var(--bone)}
+ .mbar a{text-align:center;padding:17px 6px;font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+ .mbar a+a{border-left:1px solid var(--lineL)}
+ .mbar a.bk{background:var(--blush);color:var(--cocoaD)}
+ .contact-rows a{flex-wrap:wrap;gap:10px 20px;overflow-wrap:anywhere}
+ .cta{padding:18px 24px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal img{transform:none!important}.loader{display:none}}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="loader" aria-hidden="true"><div class="w"><span>Warisa</span></div><div class="bar"><i id="lbar"></i></div><div class="c">Talbot Street · Dublin 1</div></div>
+<div class="wipe" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span>View</span></div>
+
+<div class="banner">Independent concept preview by Teta Digitals. Not the official website of Warisa's Beauty Lounge.</div>
+
+<header class="nav" id="nav">
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="overlay"><i><b></b><b></b></i>Menu</button>
+  <a href="#/" class="mark" aria-label="Warisa's Beauty Lounge home">Warisa<small>BEAUTY LOUNGE</small></a>
+  <a class="nav-book magnet" href="https://widget.treatwell.ie/place/warisa-s-beauty-lounge/" target="_blank" rel="noopener">Book online</a>
+</header>
+
+<div class="overlay" id="overlay" aria-hidden="true">
+  <button class="ov-close" id="ovClose">Close</button>
+  <div class="ov-side">
+    <div class="ov-prev"><img id="ovImg" src="warisa-hero.jpg" alt=""></div>
+    <div class="ov-meta"><span>54 Talbot Street, Dublin 1, D01 W6E5</span><span>Within Scruples Hair Design</span><a class="u" href="tel:+353858545729" style="justify-self:start">085 854 5729</a></div>
+  </div>
+  <nav>
+    <a href="#/" data-img="warisa-hero.jpg"><span>01</span>Home</a>
+    <a href="#/treatments" data-img="warisa-room.jpg"><span>02</span>Treatments</a>
+    <a href="#/lashes-brows" data-img="warisa-lashes.jpg"><span>03</span>Lashes &amp; brows</a>
+    <a href="#/nails" data-img="warisa-nails.jpg"><span>04</span>Nails</a>
+    <a href="#/waxing" data-img="warisa-brows.jpg"><span>05</span>Waxing</a>
+    <a href="#/the-lounge" data-img="warisa-room.jpg"><span>06</span>The lounge</a>
+    <a href="#/reviews" data-img="warisa-pedi.jpg"><span>07</span>Reviews</a>
+    <a href="#/visit" data-img="warisa-hero.jpg"><span>08</span>Visit &amp; contact</a>
+  </nav>
+</div>
+
+<main id="main">
+
+<!-- HOME -->
+<div class="page" data-route="/">
+  <section class="cover">
+    <div class="cover-line"><span>Lashes · Nails · Waxing · Brows</span><span>54 Talbot Street, Dublin 1</span><span>Tuesday to Saturday</span></div>
+    <h1 class="masthead"><span class="line-mask"><span>War<em>i</em>sa</span></span></h1>
+    <div class="cover-img reveal arch"><img class="hero-img" src="warisa-hero.jpg" alt="Close-up beauty portrait with soft eyelash extensions"></div>
+    <div class="cover-left">
+      <p class="kick">The beauty lounge</p>
+      <h2>"Look good, feel good. Let us bring out your happiness."</h2>
+      <a class="cta fill magnet" href="https://widget.treatwell.ie/place/warisa-s-beauty-lounge/" target="_blank" rel="noopener">Book a treatment</a>
+    </div>
+    <div class="cover-right">
+      <div class="cov-stat"><b data-count="4.9">4.9</b><span>On Treatwell, 2,416 reviews</span></div>
+      <div class="cov-stat"><b data-count="4.8">4.8</b><span>On Google, 83 reviews</span></div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true"><div class="row"><span>Eyelash extensions<i>✦</i></span><span>Shellac manicures<i>✦</i></span><span>Brazilian &amp; Hollywood<i>✦</i></span><span>Brows &amp; tints<i>✦</i></span><span>Pedicures<i>✦</i></span><span>Eyelash extensions<i>✦</i></span><span>Shellac manicures<i>✦</i></span><span>Brazilian &amp; Hollywood<i>✦</i></span><span>Brows &amp; tints<i>✦</i></span><span>Pedicures<i>✦</i></span></div></div>
+
+  <section class="sec">
+    <div class="wrap ed">
+      <p class="kick" style="grid-column:1/-1;margin-bottom:30px">The edit · No. 54</p>
+      <p class="drop split-words">A calm little treatment room on Talbot Street, dedicated to one thing: making you <em>look and feel good.</em></p>
+      <div class="cols">
+        <p>Warisa's Beauty Lounge sits within Scruples Hair Design on the principal Talbot Street, and caters to all of your beauty needs, including lashes, nails, waxing and facials.</p>
+        <p>Whether you are after dramatic eyelash extensions, a long-lasting and immaculate Shellac manicure or a flawless look for something special, the aim is the same: bring out your beauty and your happiness.</p>
+        <p>It is close to the IFSC, a short walk from O'Connell Street and right next to Connolly station. Ideal for a quick wax on your lunch break, a bit of glam after work, or a weekend appointment while you shop in town.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sand" style="padding-top:clamp(70px,9vw,130px)">
+    <div class="wrap">
+      <div class="two" style="align-items:end;margin-bottom:60px"><div><p class="kick">The treatment index</p><h2 class="d2" style="margin-top:26px">Four things, <em>done beautifully.</em></h2></div><p class="lede">From a ten-minute tint to a full set of lashes. Every price is on the menu, and booking takes a minute.</p></div>
+      <div class="tix">
+        <a href="#/lashes-brows"><span class="n">01</span><h3>Lashes &amp; brows</h3><span class="thumb"><img src="warisa-lashes.jpg" alt=""></span><p>Extensions, refills, tints and brow waxing. From €13.</p></a>
+        <a href="#/nails"><span class="n">02</span><h3>Nails</h3><span class="thumb"><img src="warisa-nails.jpg" alt=""></span><p>CND Shellac, polish, manicures and pedicures. From €12.</p></a>
+        <a href="#/waxing"><span class="n">03</span><h3>Waxing</h3><span class="thumb"><img src="warisa-brows.jpg" alt=""></span><p>Face, body and intimate waxing, plus men's treatments. From €10.</p></a>
+        <a href="#/treatments"><span class="n">04</span><h3>Full menu</h3><span class="thumb"><img src="warisa-room.jpg" alt=""></span><p>Every treatment and price in one place.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="hz" id="hz">
+    <div class="hz-track">
+      <div class="hz-head"><p class="kick">The lookbook</p><h2 class="d2" style="margin-top:26px">Close up, <em>in detail.</em></h2><p class="lede" style="margin-top:26px">Clients keep coming back to the same word: meticulous.</p></div>
+      <figure class="look w1"><div class="im reveal"><img src="warisa-nails.jpg" alt="Hands with a glossy nude Shellac manicure"></div><figcaption><b>Shellac, hand</b><span>30 mins</span></figcaption></figure>
+      <figure class="look w2"><div class="im reveal"><img src="warisa-hero.jpg" alt="Eyelash extensions close-up"></div><figcaption><b>Full set lashes</b><span>Lasts 4 weeks</span></figcaption></figure>
+      <figure class="look w3"><div class="im reveal"><img src="warisa-lashes.jpg" alt="Natural eyelash extensions and tinted brow"></div><figcaption><b>Natural lashes</b><span>Lasts 2 weeks</span></figcaption></figure>
+      <figure class="look w1"><div class="im reveal"><img src="warisa-pedi.jpg" alt="Feet on a linen towel beside a bowl of rose petals"></div><figcaption><b>Pedicure</b><span>From €30</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="sec dark rev">
+    <div class="wrap">
+      <p class="stars">★★★★★</p>
+      <div class="rev-q" data-rev>
+        <blockquote class="on"><p>"Warisa does the best lashes and pays such attention to detail. Her salon is clean and lovely."</p><cite>Christina · Treatwell</cite></blockquote>
+        <blockquote><p>"The best manicure and pedicure in Dublin! They were so meticulous and careful, and my nails turned out perfect."</p><cite>Google review · Jul 2025</cite></blockquote>
+        <blockquote><p>"Warisa is the best waxer I've ever found; she manages to do it all quickly with minimal pain and is gentle and reassuring throughout."</p><cite>Christina · Treatwell</cite></blockquote>
+        <blockquote><p>"Been going here for years. Warisa and Joyce are so nice, quick and experienced."</p><cite>Aisling · Treatwell</cite></blockquote>
+      </div>
+      <div class="rev-ctl"><button data-p>Prev</button><div class="prog"><i></i></div><button data-n>Next</button></div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="bg par"><img src="warisa-room.jpg" alt="A calm treatment room with blush walls"></div>
+    <div class="in"><h2 class="d2">Your hour, <em>on Talbot Street.</em></h2><a class="cta fill magnet" href="#/visit" style="background:var(--bone);color:var(--cocoaD);border-color:var(--bone)">Hours &amp; directions</a></div>
+  </section>
+</div>
+
+<!-- TREATMENTS -->
+<div class="page" data-route="/treatments">
+  <section class="ph">
+    <div class="ph-txt">
+      <p class="kick">02 · The full menu</p>
+      <h1 class="d1" style="margin-top:28px"><span class="line-mask"><span>The</span></span><span class="line-mask"><span><em>treatment</em></span></span><span class="line-mask"><span>menu.</span></span></h1>
+      <div class="ph-meta"><p class="lede">Lashes, nails, waxing and brows, with every price listed. Book online any time, or call or text.</p></div>
+    </div>
+    <div class="ph-img"><div class="bg par"><img class="hero-img" src="warisa-room.jpg" alt="Treatment room"></div></div>
+  </section>
+  <section class="sec" style="padding-top:clamp(60px,8vw,110px)">
+    <div class="wrap">
+      <div class="tabs" role="tablist" data-tabs>
+        <button class="on" data-t="lash">Eyelash extensions</button><button data-t="eye">Eye care</button><button data-t="nail">Nails</button><button data-t="mp">Manicure &amp; pedicure</button><button data-t="wax">Body waxing</button><button data-t="int">Intimate waxing</button><button data-t="face">Face &amp; men</button>
+      </div>
+      <div class="mgroup on" data-g="lash"><h3>Eyelash extensions</h3><ul class="plist">
+        <li>Full set, lasts 4 weeks<span class="t">1 hr</span><span class="p">€55</span></li>
+        <li>Natural lashes, lasts 2 weeks<span class="t">45 mins</span><span class="p">€45</span></li>
+        <li>Refills, from (3 week)<span class="t">45 mins</span><span class="p">€43</span></li>
+        <li>Removal<span class="t">20 mins</span><span class="p">€20</span></li>
+        <li>Removal &amp; reapplication (free removal)<span class="t">1 hr 15 mins</span><span class="p">€55</span></li></ul></div>
+      <div class="mgroup" data-g="eye"><h3>Eye care</h3><ul class="plist">
+        <li>Eyebrow &amp; eyelash tinting<span class="t">10 to 15 mins</span><span class="p">from €13</span></li>
+        <li>Eyebrow wax<span class="t">10 mins</span><span class="p">€13</span></li></ul></div>
+      <div class="mgroup" data-g="nail"><h3>Nails</h3><ul class="plist">
+        <li>File &amp; buff, hands<span class="t">20 mins</span><span class="p">€12</span></li>
+        <li>File &amp; polish, hand<span class="t">30 mins</span><span class="p">€17</span></li>
+        <li>File &amp; polish, toe<span class="t">30 mins</span><span class="p">€20</span></li>
+        <li>File &amp; polish, hand + toe (1 week)<span class="t">45 mins</span><span class="p">€35</span></li>
+        <li>File &amp; Shellac, hand<span class="t">30 mins</span><span class="p">€25</span></li>
+        <li>File &amp; Shellac, toe<span class="t">30 mins</span><span class="p">€27</span></li>
+        <li>File &amp; Shellac, hand + toe (3 week)<span class="t">1 hr</span><span class="p">€45</span></li>
+        <li>Shellac remove &amp; re-application, hand (Shellac only)<span class="t">45 mins</span><span class="p">€32</span></li>
+        <li>Shellac remove &amp; re-application, toe<span class="t">45 mins</span><span class="p">€32</span></li>
+        <li>Shellac remove &amp; re-application, hand + toe<span class="t">1 hr 20 mins</span><span class="p">€60</span></li>
+        <li>Shellac removal<span class="t">25 mins</span><span class="p">€15</span></li></ul></div>
+      <div class="mgroup" data-g="mp"><h3>Manicure &amp; pedicure</h3><ul class="plist">
+        <li>Manicure<span class="t">30 to 45 mins</span><span class="p">from €27</span></li>
+        <li>Pedicure<span class="t">30 mins to 1 hr</span><span class="p">from €30</span></li></ul></div>
+      <div class="mgroup" data-g="wax"><h3>Body waxing</h3><ul class="plist">
+        <li>Leg waxing<span class="t">20 mins to 1 hr</span><span class="p">from €20</span></li>
+        <li>Arm &amp; underarm waxing<span class="t">15 to 20 mins</span><span class="p">from €17</span></li>
+        <li>Arm<span class="t">20 to 30 mins</span><span class="p">from €15</span></li>
+        <li>Underarm<span class="t">15 mins</span><span class="p">€17</span></li></ul></div>
+      <div class="mgroup" data-g="int"><h3>Intimate waxing <span style="font-size:.4em;font-style:normal;font-family:var(--sans);letter-spacing:.2em;text-transform:uppercase;opacity:.6">Women only</span></h3><ul class="plist">
+        <li>Bikini line wax<span class="t">15 mins</span><span class="p">€18</span></li>
+        <li>Hollywood waxing<span class="t">20 mins</span><span class="p">€39</span></li>
+        <li>Brazilian waxing<span class="t">20 mins</span><span class="p">€39</span></li></ul></div>
+      <div class="mgroup" data-g="face"><h3>Face &amp; men</h3><ul class="plist">
+        <li>Facial waxing<span class="t">10 to 15 mins</span><span class="p">from €10</span></li>
+        <li>Men's treatment<span class="t">10 to 40 mins</span><span class="p">from €15</span></li></ul></div>
+      <p class="note">Prices and durations as listed on the salon's Treatwell menu at the time of this preview. Treatwell sometimes shows offer prices; check the current price when you book. Facials are also offered: ask when booking.</p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:50px"><a class="cta fill magnet" href="https://widget.treatwell.ie/place/warisa-s-beauty-lounge/" target="_blank" rel="noopener">Book online</a><a class="cta magnet" href="tel:+353858545729">Call 085 854 5729</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- LASHES & BROWS -->
+<div class="page" data-route="/lashes-brows">
+  <section class="ph">
+    <div class="ph-txt">
+      <p class="kick">03 · Lashes &amp; brows</p>
+      <h1 class="d1" style="margin-top:28px"><span class="line-mask"><span>A flutter</span></span><span class="line-mask"><span>of <em>detail.</em></span></span></h1>
+      <div class="ph-meta"><p class="lede">From soft, natural sets to fuller lashes that last four weeks, plus tints and brow shaping that still look like you.</p><span class="status" data-status><i></i><b>Checking today's hours</b></span></div>
+    </div>
+    <div class="ph-img"><div class="bg par"><img class="hero-img" src="warisa-lashes.jpg" alt="Eyelash extensions close-up"></div></div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <p class="kick">Choose your set</p>
+      <div class="stack" style="margin-top:50px">
+        <div class="card"><div class="ci"><img src="warisa-lashes.jpg" alt="Natural lash extensions"></div><div class="ct"><span class="big">i</span><div><h3 class="d3">Natural lashes</h3><p class="lede" style="margin-top:14px">A lighter set that lasts around two weeks. 45 minutes, €45.</p></div></div></div>
+        <div class="card"><div class="ci"><img src="warisa-hero.jpg" alt="Full set lash extensions"></div><div class="ct"><span class="big">ii</span><div><h3 class="d3">Full set</h3><p class="lede" style="margin-top:14px">The full look, lasting around four weeks. One hour, €55.</p></div></div></div>
+        <div class="card"><div class="ci"><img src="warisa-brows.jpg" alt="Groomed natural brows"></div><div class="ct"><span class="big">iii</span><div><h3 class="d3">Refills &amp; removal</h3><p class="lede" style="margin-top:14px">Refills from €43 at three weeks. Removal €20, or removal and reapplication €55 with the removal free.</p></div></div></div>
+        <div class="card"><div class="ci"><img src="warisa-room.jpg" alt="Treatment room"></div><div class="ct"><span class="big">iv</span><div><h3 class="d3">Brows &amp; tints</h3><p class="lede" style="margin-top:14px">Eyebrow and eyelash tinting from €13, and brow waxing €13. Ten to fifteen minutes.</p></div></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec blush rev">
+    <div class="wrap"><p class="stars">★★★★★</p><p class="d3 it" style="max-width:24ch;margin:30px auto 0">"Always does amazing brows with lovely shape and tint that still looks natural but enhances whole face."</p><p class="kick" style="justify-content:center;margin-top:30px">Christina · Treatwell</p></div>
+  </section>
+</div>
+
+<!-- NAILS -->
+<div class="page" data-route="/nails">
+  <section class="ph">
+    <div class="ph-txt">
+      <p class="kick">04 · Nails</p>
+      <h1 class="d1" style="margin-top:28px"><span class="line-mask"><span>Immaculate,</span></span><span class="line-mask"><span><em>and lasting.</em></span></span></h1>
+      <div class="ph-meta"><p class="lede">CND Shellac and Crystal Nails products, from a quick file and polish to a full hand and toe Shellac that lasts around three weeks.</p></div>
+    </div>
+    <div class="ph-img"><div class="bg par"><img class="hero-img" src="warisa-nails.jpg" alt="Shellac manicure"></div></div>
+  </section>
+  <section class="sec">
+    <div class="wrap split">
+      <div class="img reveal arch"><img src="warisa-pedi.jpg" alt="Pedicure ritual with rose petals"></div>
+      <div><p class="kick">Nichapa's chair</p><h2 class="d2" style="margin:26px 0">Hands <em>and feet.</em></h2>
+        <div class="feat" style="grid-template-columns:1fr">
+          <div><span class="k">01</span><h4>Shellac, hand</h4><p>File and Shellac, 30 minutes, €25. Remove and re-apply, €32.</p></div>
+          <div><span class="k">02</span><h4>Hand + toe Shellac</h4><p>Both together, around three weeks of wear. One hour, €45.</p></div>
+          <div><span class="k">03</span><h4>Manicure &amp; pedicure</h4><p>Manicure from €27, pedicure from €30.</p></div>
+        </div>
+        <a class="cta fill magnet" href="#/treatments" style="margin-top:40px">See every nail price</a></div>
+    </div>
+  </section>
+  <section class="sec dark rev">
+    <div class="wrap"><p class="stars">★★★★★</p><p class="d3 it" style="max-width:26ch;margin:30px auto 0">"I got shellac done and it's easily one of the best service... she was so friendly and a perfectionist I'd say!"</p><p class="kick" style="justify-content:center;margin-top:30px">Google review · Jul 2025</p></div>
+  </section>
+</div>
+
+<!-- WAXING -->
+<div class="page" data-route="/waxing">
+  <section class="ph">
+    <div class="ph-txt">
+      <p class="kick">05 · Waxing</p>
+      <h1 class="d1" style="margin-top:28px"><span class="line-mask"><span>Quick, gentle,</span></span><span class="line-mask"><span><em>reassuring.</em></span></span></h1>
+      <div class="ph-meta"><p class="lede">Face, body and intimate waxing with Warisa, the treatment clients mention most. Ideal on a lunch break.</p><span class="status" data-status><i></i><b>Checking today's hours</b></span></div>
+    </div>
+    <div class="ph-img"><div class="bg par"><img class="hero-img" src="warisa-brows.jpg" alt="Smooth skin and groomed brows"></div></div>
+  </section>
+  <section class="sec sand">
+    <div class="wrap">
+      <div class="two"><div><p class="kick">The waxing menu</p><h2 class="d2" style="margin-top:26px">From <em>€10.</em></h2></div><p class="lede">Intimate waxing is for women only. Men's treatments are available from €15.</p></div>
+      <div class="feat" style="margin-top:60px">
+        <div><span class="k">Intimate</span><h4>Brazilian or Hollywood</h4><p>20 minutes, €39 each. Bikini line, 15 minutes, €18.</p></div>
+        <div><span class="k">Body</span><h4>Legs, arms, underarms</h4><p>Legs from €20, arms from €15, underarm €17.</p></div>
+        <div><span class="k">Face</span><h4>Facial waxing</h4><p>From €10, ten to fifteen minutes. Brow wax €13.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap split r">
+      <div><p class="kick">In good hands</p><h2 class="d2" style="margin:26px 0">Care that <em>listens.</em></h2><p class="d3 it" style="font-size:clamp(22px,2.2vw,34px)">"I recently had an abdominal surgery and she was very professional. She understood the situation and guided me on the timelines for safe waxing."</p><p class="kick" style="margin-top:24px">Google review · Jul 2024</p></div>
+      <div class="img reveal"><img src="warisa-room.jpg" alt="Treatment room"></div>
+    </div>
+  </section>
+</div>
+
+<!-- THE LOUNGE -->
+<div class="page" data-route="/the-lounge">
+  <section class="ph">
+    <div class="ph-txt">
+      <p class="kick">06 · The lounge</p>
+      <h1 class="d1" style="margin-top:28px"><span class="line-mask"><span>Meet</span></span><span class="line-mask"><span><em>Warisa.</em></span></span></h1>
+      <div class="ph-meta"><p class="lede">A treatment room within Scruples Hair Design on Talbot Street, and a team clients describe as exceptional, friendly and welcoming.</p></div>
+    </div>
+    <div class="ph-img"><div class="bg par"><img class="hero-img" src="warisa-room.jpg" alt="The treatment room"></div></div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <p class="kick">The team</p>
+      <div class="team" style="margin-top:50px">
+        <div class="member"><div class="im reveal"><img src="warisa-brows.jpg" alt="Brow and skin treatment"></div><h3>Warisa</h3><p class="role">Face &amp; hair removal</p><p>Rated 5.0 across 1,150 Treatwell reviews, where clients most often call her exceptional, friendly, welcoming and professional.</p></div>
+        <div class="member"><div class="im reveal"><img src="warisa-nails.jpg" alt="Shellac manicure"></div><h3>Nichapa</h3><p class="role">Nails</p><p>Rated 5.0 across 255 Treatwell reviews. "So friendly and a perfectionist," as one Google reviewer put it.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec dark">
+    <div class="wrap">
+      <p class="kick">Recognition</p>
+      <h2 class="d2" style="margin-top:26px">Treatwell <em>Top Rated.</em></h2>
+      <div class="awards"><span>2018</span><span>2019</span><span>2020</span><span>2021</span><span>2022</span><span>2023</span><span>2024</span></div>
+      <div class="scores">
+        <div><b data-count="4.9">4.9</b><span>Treatwell rating</span></div>
+        <div><b>2,416</b><span>Treatwell reviews</span></div>
+        <div><b data-count="4.8">4.8</b><span>Google rating</span></div>
+        <div><b>Tue to Sat</b><span>Open</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap feat">
+      <div><span class="k">Products</span><h4>CND Shellac &amp; Crystal Nails</h4><p>The nail products used in the lounge.</p></div>
+      <div><span class="k">Location</span><h4>Right by Connolly</h4><p>Next to Connolly station, near the IFSC and a short walk from O'Connell Street.</p></div>
+      <div><span class="k">Booking</span><h4>Online, phone or text</h4><p>Book on Treatwell any time, or call or text 085 854 5729.</p></div>
+    </div>
+  </section>
+</div>
+
+<!-- REVIEWS -->
+<div class="page" data-route="/reviews">
+  <section class="sec" style="padding-top:220px">
+    <div class="wrap">
+      <p class="kick">07 · Reviews</p>
+      <h1 class="d1" style="margin:28px 0 40px"><span class="line-mask"><span>In their</span></span><span class="line-mask"><span><em>own words.</em></span></span></h1>
+      <p class="d3">4.9 <span class="rose">★</span> <span style="font-size:.5em;opacity:.65">from 2,416 Treatwell reviews · 4.8 from 83 on Google</span></p>
+    </div>
+  </section>
+  <section class="sec sand" style="padding-top:60px">
+    <div class="wrap">
+      <ul class="revlist">
+        <li><q>Warisa is the best waxer I've ever found; she manages to do it all quickly with minimal pain and is gentle and reassuring throughout.</q><span>Christina · Treatwell</span></li>
+        <li><q>The best manicure and pedicure in Dublin! They were so meticulous and careful, and my nails turned out perfect.</q><span>Google · Jul 2025</span></li>
+        <li><q>Warisa does the best lashes and pays such attention to detail. Her salon is clean and lovely and I always love her tunes and her sunny personality, you can't help but leave feeling good!</q><span>Christina · Treatwell</span></li>
+        <li><q>It's always pleasure to get my brows done with Warisa. She is so friendly and does a wonderful job at a great price.</q><span>Google · Jan 2025</span></li>
+        <li><q>Best Pedicure i've ever had, thanks to Warissa's expertise.</q><span>Google · Aug 2024</span></li>
+        <li><q>Warissa is the loveliest most professional waxer, best place for a Brazilian wax in Dublin!</q><span>Rachel · Treatwell</span></li>
+        <li><q>Been going here for years. Warisa and Joyce are so nice, quick and experienced.</q><span>Aisling · Treatwell</span></li>
+        <li><q>Excellent experience and the result of my nails couldn't have been better. I love this place.</q><span>Google · Aug 2025</span></li>
+      </ul>
+      <p class="note" style="margin-top:40px">Quotes from Google and Treatwell reviews, lightly trimmed for length.</p>
+    </div>
+  </section>
+</div>
+
+<!-- VISIT -->
+<div class="page" data-route="/visit">
+  <section class="ph">
+    <div class="ph-txt">
+      <p class="kick">08 · Visit &amp; contact</p>
+      <h1 class="d1" style="margin-top:28px"><span class="line-mask"><span>54 Talbot</span></span><span class="line-mask"><span><em>Street.</em></span></span></h1>
+      <div class="ph-meta"><p class="lede">Within Scruples Hair Design, Dublin 1, D01 W6E5. Right next to Connolly station, with many bus routes passing by.</p><a class="cta fill magnet" href="https://www.google.com/maps/search/?api=1&amp;query=53.351278,-6.250697" target="_blank" rel="noopener">Get directions</a></div>
+    </div>
+    <div class="ph-img"><div class="bg par"><img class="hero-img" src="warisa-hero.jpg" alt="Beauty portrait"></div></div>
+  </section>
+  <section class="sec">
+    <div class="wrap split">
+      <div><p class="kick">Opening hours</p><h2 class="d2" style="margin:26px 0">Open <em>today?</em></h2><span class="status" data-status><i></i><b>Checking today's hours</b></span></div>
+      <table class="hours" data-hours>
+        <tr data-d="1"><td>Monday</td><td>Closed</td></tr>
+        <tr data-d="2"><td>Tuesday</td><td>10:00 to 17:30</td></tr>
+        <tr data-d="3"><td>Wednesday</td><td>10:00 to 17:30</td></tr>
+        <tr data-d="4"><td>Thursday</td><td>12:00 to 19:00</td></tr>
+        <tr data-d="5"><td>Friday</td><td>10:00 to 19:00</td></tr>
+        <tr data-d="6"><td>Saturday</td><td>10:00 to 16:00</td></tr>
+        <tr data-d="0"><td>Sunday</td><td>Closed</td></tr>
+      </table>
+    </div>
+  </section>
+  <section class="sec sand">
+    <div class="wrap">
+      <div class="contact-rows">
+        <a href="https://widget.treatwell.ie/place/warisa-s-beauty-lounge/" target="_blank" rel="noopener">Book online<span>Treatwell</span></a>
+        <a href="tel:+353858545729">085 854 5729<span>Call or text</span></a>
+        <a href="mailto:warisabeautylounge@gmail.com" style="font-size:clamp(20px,3.4vw,56px)">warisabeautylounge@gmail.com<span>Email</span></a>
+        <a href="https://www.instagram.com/warisasbeautylounge" target="_blank" rel="noopener">@warisasbeautylounge<span>Instagram</span></a>
+        <a href="https://www.facebook.com/warisasbeautylounge" target="_blank" rel="noopener">Warisa's Beauty Lounge<span>Facebook</span></a>
+      </div>
+      <div class="split" style="margin-top:clamp(90px,10vw,160px);align-items:start">
+        <div><p class="kick">Send a message</p><h2 class="d2" style="margin-top:26px">Ask <em>Warisa.</em></h2><p class="lede" style="margin-top:24px">This opens your email app with the details filled in. To book a time straight away, use Book online.</p></div>
+        <form class="enq" data-mailto>
+          <div><label for="f1">Name</label><input id="f1" name="Name" required></div>
+          <div><label for="f2">Phone</label><input id="f2" name="Phone" type="tel"></div>
+          <div><label for="f3">Treatment</label><select id="f3" name="Treatment"><option>Lashes</option><option>Brows &amp; tints</option><option>Nails</option><option>Manicure or pedicure</option><option>Waxing</option><option>Facial</option><option>Other</option></select></div>
+          <div><label for="f4">Preferred day</label><input id="f4" name="Preferred day" type="date"></div>
+          <div class="full"><label for="f6">Message</label><textarea id="f6" name="message" rows="3"></textarea></div>
+          <div class="full" style="margin-top:36px"><button class="cta magnet" type="submit">Open email</button></div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <iframe class="map" loading="lazy" title="Map to Warisa's Beauty Lounge" src="https://www.google.com/maps?q=53.351278,-6.250697&amp;z=16&amp;output=embed"></iframe>
+      <div class="split" style="margin-top:clamp(80px,9vw,140px);align-items:start">
+        <div><p class="kick">FAQ</p><h2 class="d2" style="margin-top:26px">Good <em>to know.</em></h2></div>
+        <div>
+          <details><summary>Where exactly are you?</summary><p>Inside Scruples Hair Design at 54 Talbot Street, Dublin 1, D01 W6E5. It is right next to Connolly station and a short walk from O'Connell Street.</p></details>
+          <details><summary>How do I book?</summary><p>Book online through Treatwell at any time, or call or text 085 854 5729. You can also message on Facebook or Instagram.</p></details>
+          <details><summary>When are you open?</summary><p>Tuesday and Wednesday 10:00 to 17:30, Thursday 12:00 to 19:00, Friday 10:00 to 19:00 and Saturday 10:00 to 16:00. Closed Sunday and Monday.</p></details>
+          <details><summary>How long do lash extensions last?</summary><p>The full set is listed as lasting around four weeks and natural lashes around two weeks. Refills are from €43 at three weeks.</p></details>
+          <details><summary>Do you wax men?</summary><p>Yes, men's treatments are listed from €15. Intimate waxing is for women only.</p></details>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="kick" style="color:var(--blush)">Lashes · Nails · Waxing · Brows</p>
+    <h2 class="d1" style="margin-top:28px">Look good, <em style="color:var(--blush)">feel good.</em></h2>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:50px"><a class="cta fill magnet" href="https://widget.treatwell.ie/place/warisa-s-beauty-lounge/" target="_blank" rel="noopener" style="background:var(--blush);color:var(--cocoaD);border-color:var(--blush)">Book online</a><a class="cta magnet" href="tel:+353858545729">Call 085 854 5729</a></div>
+    <div class="f-cols">
+      <div><h5>Find us</h5><p>Within Scruples Hair Design<br>54 Talbot Street<br>Dublin 1, D01 W6E5</p></div>
+      <div><h5>Hours</h5><p>Tue, Wed 10:00 to 17:30<br>Thu 12:00 to 19:00<br>Fri 10:00 to 19:00<br>Sat 10:00 to 16:00<br>Sun, Mon closed</p></div>
+      <div><h5>Contact</h5><a class="u" href="tel:+353858545729" style="justify-self:start">085 854 5729</a><a href="mailto:warisabeautylounge@gmail.com">Email</a><a href="https://www.instagram.com/warisasbeautylounge" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/warisasbeautylounge" target="_blank" rel="noopener">Facebook</a></div>
+      <div><h5>Explore</h5><a href="#/treatments">Treatments</a><a href="#/lashes-brows">Lashes &amp; brows</a><a href="#/nails">Nails</a><a href="#/waxing">Waxing</a><a href="#/the-lounge">The lounge</a></div>
+    </div>
+  </div>
+  <div class="f-word" aria-hidden="true">Warisa</div>
+  <div class="f-base"><span>Concept preview. Not the official website of Warisa's Beauty Lounge.</span><a href="https://teta.dpdns.org" target="_blank" rel="noopener">Developed by Teta Digitals</a></div>
+</footer>
+
+<div class="mbar"><a href="tel:+353858545729">Call</a><a class="bk" href="https://widget.treatwell.ie/place/warisa-s-beauty-lounge/" target="_blank" rel="noopener">Book</a><a href="https://www.google.com/maps/search/?api=1&amp;query=53.351278,-6.250697" target="_blank" rel="noopener">Directions</a></div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+(function(){
+var $=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+var RM=matchMedia("(prefers-reduced-motion: reduce)").matches;
+var G=window.gsap&&window.ScrollTrigger&&!RM; if(G){gsap.registerPlugin(ScrollTrigger);document.documentElement.classList.add("g")}
+var lenis=null;
+if(G&&window.Lenis){lenis=new Lenis({lerp:.07});lenis.on("scroll",ScrollTrigger.update);gsap.ticker.add(function(t){lenis.raf(t*1000)});gsap.ticker.lagSmoothing(0);}
+var nav=document.getElementById("nav");
+var bn=$(".banner")[0];function bh(){if(bn)nav.style.setProperty("--bh",bn.offsetHeight+"px")}bh();addEventListener("resize",bh);
+addEventListener("scroll",function(){nav.classList.toggle("solid",scrollY>60)},{passive:true});
+
+/* menu overlay */
+var ov=document.getElementById("overlay"),mb=document.getElementById("menuBtn"),ovImg=document.getElementById("ovImg");
+function menu(o){ov.classList.toggle("open",o);ov.setAttribute("aria-hidden",!o);mb.setAttribute("aria-expanded",o);$("nav a",ov).forEach(function(a,i){a.style.transitionDelay=o?(0.3+i*0.05)+"s":"0s"});if(lenis){if(o)lenis.stop();else lenis.start()}document.body.style.overflow=o?"hidden":""}
+mb.onclick=function(){menu(!ov.classList.contains("open"))};
+document.getElementById("ovClose").onclick=function(){menu(false)};
+$("nav a",ov).forEach(function(a){a.addEventListener("mouseenter",function(){ovImg.style.opacity=0;setTimeout(function(){ovImg.src=a.dataset.img;ovImg.style.opacity=1},200)});a.addEventListener("click",function(){menu(false)})});
+addEventListener("keydown",function(e){if(e.key==="Escape")menu(false)});
+
+/* cursor */
+var cur=$(".cursor")[0];
+if(matchMedia("(hover:hover)").matches&&cur){var cx=0,cy=0,tx=0,ty=0;addEventListener("mousemove",function(e){tx=e.clientX;ty=e.clientY});(function loop(){cx+=(tx-cx)*.18;cy+=(ty-cy)*.18;cur.style.transform="translate("+cx+"px,"+cy+"px)";requestAnimationFrame(loop)})();
+document.addEventListener("mouseover",function(e){var t=e.target;var big=!!t.closest(".look,.reveal,.card .ci");cur.classList.toggle("big",big);cur.classList.toggle("link",!big&&!!t.closest("a,button,summary"))});}
+/* magnetic */
+if(matchMedia("(hover:hover)").matches)$(".magnet").forEach(function(b){b.addEventListener("mousemove",function(e){var r=b.getBoundingClientRect();b.style.transform="translate("+((e.clientX-r.left-r.width/2)*.25)+"px,"+((e.clientY-r.top-r.height/2)*.35)+"px)"});b.addEventListener("mouseleave",function(){b.style.transform=""})});
+
+/* split words */
+$(".split-words").forEach(function(p){var out="";p.childNodes.forEach(function(n){if(n.nodeType===3){out+=n.textContent.split(/(\s+)/).map(function(w){return /\S/.test(w)?'<span class="w">'+w+'</span>':w}).join("")}else{out+='<span class="w">'+n.outerHTML+'</span>'}});p.innerHTML=out});
+
+/* tabs */
+$("[data-tabs]").forEach(function(t){var page=t.closest(".page");$("button",t).forEach(function(b){b.addEventListener("click",function(){$("button",t).forEach(function(x){x.classList.toggle("on",x===b)});$(".mgroup",page).forEach(function(g){g.classList.toggle("on",g.dataset.g===b.dataset.t)});if(G){gsap.from($(".mgroup.on li",page),{opacity:0,y:20,stagger:.04,duration:.6,ease:"power3.out"});ScrollTrigger.refresh()}})})});
+
+/* open status, Dublin time */
+function dubNow(){var f=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Dublin",weekday:"short",hour:"numeric",minute:"numeric",hour12:false}).formatToParts(new Date()),o={};f.forEach(function(p){o[p.type]=p.value});return{d:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(o.weekday),m:(+o.hour%24)*60+(+o.minute)}}
+var H={2:[600,1050],3:[600,1050],4:[720,1140],5:[600,1140],6:[600,960]};
+function hm(m){var h=Math.floor(m/60),mi=m%60;return(h<10?"0":"")+h+":"+(mi<10?"0":"")+mi}
+var DN=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+function status(){var n=dubNow(),h=H[n.d],txt,open=false;
+ if(h&&n.m>=h[0]&&n.m<h[1]){open=true;txt="Open now, until "+hm(h[1])}
+ else if(h&&n.m<h[0]){txt="Opens today at "+hm(h[0])}
+ else{for(var k=1;k<8;k++){var d=(n.d+k)%7;if(H[d]){txt="Closed now, opens "+(k===1?"tomorrow":DN[d])+" at "+hm(H[d][0]);break}}}
+ $("[data-status]").forEach(function(s){s.classList.toggle("open",open);s.querySelector("b").textContent=txt});
+ $("[data-hours] tr").forEach(function(r){r.classList.toggle("today",+r.dataset.d===n.d)})}
+status();setInterval(status,60000);
+
+/* reviews rotator */
+$("[data-rev]").forEach(function(box){var q=$("blockquote",box),i=0,sec=box.parentNode,bar=$(".prog i",sec)[0],t;function go(j){q[i].classList.remove("on");i=(j+q.length)%q.length;q[i].classList.add("on");if(bar){bar.classList.remove("run");void bar.offsetWidth;bar.classList.add("run")}clearTimeout(t);if(!RM)t=setTimeout(function(){go(i+1)},7000)}$("[data-p]",sec)[0].onclick=function(){go(i-1)};$("[data-n]",sec)[0].onclick=function(){go(i+1)};go(0)});
+
+/* form */
+$("form[data-mailto]").forEach(function(f){f.addEventListener("submit",function(e){e.preventDefault();var d=new FormData(f),b="";d.forEach(function(v,k){if(k!=="message")b+=k+": "+v+"\n"});b+="\n"+(d.get("message")||"");location.href="mailto:warisabeautylounge@gmail.com?subject="+encodeURIComponent((d.get("Treatment")||"Website")+" enquiry from "+(d.get("Name")||"the website"))+"&body="+encodeURIComponent(b)})});
+
+/* page animations */
+var ctx=null;
+function animate(page){
+  if(ctx){ctx.revert();ctx=null}
+  if(!G)return;
+  ctx=gsap.context(function(){
+    var hi=page.querySelector(".hero-img");if(hi)gsap.fromTo(hi,{scale:1.18},{scale:1,duration:2.6,ease:"power3.out"});
+    $(".line-mask>span",page).forEach(function(l,i){gsap.from(l,{yPercent:115,duration:1.3,ease:"power4.out",delay:.15+i*.1})});
+    $(".cover-line,.cover-left,.cover-right,.ph-meta",page).forEach(function(m){gsap.from(m,{opacity:0,y:24,duration:1.1,delay:.8})});
+    $(".cover-img",page).forEach(function(c){gsap.fromTo(c,{clipPath:"inset(100% 0% 0% 0%)"},{clipPath:"inset(0% 0% 0% 0%)",duration:1.6,ease:"power4.inOut",delay:.3});gsap.to(c,{yPercent:-10,ease:"none",scrollTrigger:{trigger:page.querySelector(".cover"),start:"top top",end:"bottom top",scrub:true}})});
+    $(".masthead",page).forEach(function(m){gsap.to(m,{yPercent:30,opacity:.25,ease:"none",scrollTrigger:{trigger:m,start:"top 15%",end:"+=600",scrub:true}})});
+    $(".reveal",page).forEach(function(r){if(r.classList.contains("cover-img"))return;gsap.fromTo(r,{clipPath:"inset(14% 10% 14% 10%)"},{clipPath:"inset(0% 0% 0% 0%)",ease:"power3.out",duration:1.7,scrollTrigger:{trigger:r,start:"top 88%"}});var im=r.querySelector("img");if(im)gsap.to(im,{scale:1,ease:"none",scrollTrigger:{trigger:r,start:"top bottom",end:"bottom top",scrub:true}})});
+    $(".par img",page).forEach(function(p){gsap.fromTo(p,{yPercent:-7},{yPercent:7,ease:"none",scrollTrigger:{trigger:p.closest("section"),start:"top bottom",end:"bottom top",scrub:true}})});
+    $(".split-words",page).forEach(function(p){gsap.to($(".w",p),{opacity:1,stagger:.05,ease:"none",scrollTrigger:{trigger:p,start:"top 80%",end:"bottom 45%",scrub:true}})});
+    $(".d2,.feat>div,.plist li,.tix a,.revlist li,.awards span,.scores div,.contact-rows a,details,.member",page).forEach(function(el){gsap.from(el,{opacity:0,y:40,duration:1.1,ease:"power3.out",scrollTrigger:{trigger:el,start:"top 92%"}})});
+    $("[data-count]",page).forEach(function(el){var v=parseFloat(el.dataset.count),o={x:0};gsap.to(o,{x:v,duration:1.8,ease:"power2.out",scrollTrigger:{trigger:el,start:"top 95%"},onUpdate:function(){el.textContent=o.x.toFixed(1)}})});
+    var mm=gsap.matchMedia();
+    mm.add("(min-width:1001px)",function(){
+      var hz=page.querySelector("#hz");if(hz){var tr=hz.querySelector(".hz-track");gsap.to(tr,{x:function(){return-(tr.scrollWidth-innerWidth)},ease:"none",scrollTrigger:{trigger:hz,pin:true,scrub:1,start:"top top",end:function(){return"+="+(tr.scrollWidth-innerWidth)},invalidateOnRefresh:true}})}
+      $(".card .ci img",page).forEach(function(im){gsap.fromTo(im,{scale:1.15},{scale:1,ease:"none",scrollTrigger:{trigger:im.closest(".card"),start:"top bottom",end:"top 20%",scrub:true}})});
+    });
+  },page);
+  ScrollTrigger.refresh();
+}
+
+/* router with wipe */
+var wipe=$(".wipe")[0],first=true;
+function show(){var r=(location.hash.replace(/^#/,"")||"/");var page=$('.page[data-route="'+r+'"]')[0]||$('.page[data-route="/"]')[0];$(".page").forEach(function(p){p.classList.toggle("on",p===page)});$("nav a",ov).forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+page.dataset.route)});if(lenis)lenis.scrollTo(0,{immediate:true});else scrollTo(0,0);status();animate(page);var h=page.querySelector("h1");document.title=(page.dataset.route==="/"||!h?"":h.textContent.replace(/\s+/g," ").trim()+" · ")+"Warisa's Beauty Lounge, Dublin 1"}
+function route(){if(first||!G){first=false;show();return}gsap.timeline().set(wipe,{yPercent:100}).to(wipe,{yPercent:0,duration:.6,ease:"power3.in"}).add(show).to(wipe,{yPercent:-100,duration:.8,ease:"power3.out"})}
+addEventListener("hashchange",route);
+
+/* loader */
+var L=$(".loader")[0],lb=document.getElementById("lbar"),seen=false;
+try{seen=!!sessionStorage.getItem("wbl");sessionStorage.setItem("wbl","1")}catch(e){seen=false}
+if(G&&!seen){gsap.timeline().from(".loader .w span",{yPercent:110,duration:1,ease:"power4.out"}).to(lb,{width:"100%",duration:1,ease:"power2.inOut"},"-=.4").to(L,{clipPath:"inset(0 0 100% 0)",duration:.9,ease:"power4.inOut",onStart:route}).set(L,{display:"none"})}
+else{L.style.display="none";route()}
+addEventListener("load",function(){if(G)ScrollTrigger.refresh()});
+})();
+</script>
+</body>
+</html>
