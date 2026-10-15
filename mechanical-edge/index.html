@@ -1,0 +1,784 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Mechanical Edge Automotive · Auto repair, diagnostics and maintenance in Burlington, Ontario</title>
+<meta name="description" content="Concept preview. Repairs, diagnostics and maintenance for all makes and models at 2209 Plains Rd E, Burlington. Fleet services available.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F1F1EC;--paper2:#E7E7E1;--ink:#0D0E11;--ink2:#16181D;--volt:#2E4BFF;--voltL:#7C8CFF;--grid:rgba(13,14,17,.09);--line:rgba(13,14,17,.16);--lineL:rgba(241,241,236,.16);--disp:"Archivo","Helvetica Neue",Arial,sans-serif;--sans:"Inter",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace;--pad:clamp(18px,3.4vw,56px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+::selection{background:var(--volt);color:#fff}
+.grain{position:fixed;inset:-50%;width:200%;height:200%;pointer-events:none;z-index:90;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain 1.2s steps(6) infinite}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-4%,3%)}40%{transform:translate(3%,-5%)}60%{transform:translate(-2%,4%)}80%{transform:translate(5%,1%)}100%{transform:translate(0,0)}}
+/* swiss grid overlay */
+.gridlines{position:fixed;inset:0;z-index:1;pointer-events:none;padding:0 var(--pad);display:grid;grid-template-columns:repeat(12,1fr)}
+.gridlines i{border-left:1px solid var(--grid)}.gridlines i:last-child{border-right:1px solid var(--grid)}
+main,footer,.banner,.nav{position:relative;z-index:2}
+.mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+/* banner + nav */
+.banner{background:var(--ink);color:rgba(241,241,236,.72);text-align:center;padding:8px var(--pad);font-family:var(--mono);font-size:11px;letter-spacing:.04em}
+.nav{position:fixed;left:0;right:0;top:var(--bh,33px);z-index:50;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:16px var(--pad);transition:background .4s,top .4s,padding .4s,border-color .4s;border-bottom:1px solid transparent}
+.nav.solid{background:rgba(241,241,236,.9);backdrop-filter:blur(12px);top:0;padding:12px var(--pad);border-color:var(--line)}
+.mark{display:flex;align-items:center;gap:12px;font-family:var(--disp);font-variation-settings:"wdth" 112;font-weight:800;font-size:17px;letter-spacing:-.01em;line-height:1;text-transform:uppercase}
+.mark svg{width:30px;height:30px;flex:none}
+.mark small{display:block;font-family:var(--mono);font-weight:400;font-size:9px;letter-spacing:.14em;opacity:.55;margin-top:5px}
+.menu-btn{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:12px 16px;border:1px solid var(--ink);border-radius:2px;transition:background .3s,color .3s}
+.menu-btn:hover{background:var(--ink);color:var(--paper)}
+.menu-btn i{display:grid;gap:4px}.menu-btn i b{display:block;width:18px;height:1.5px;background:currentColor}
+.nav-r{justify-self:end;display:flex;align-items:center;gap:22px}
+.nav-call{font-family:var(--mono);font-size:12px;letter-spacing:.06em}
+.u{position:relative;display:inline-block}
+.u:after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .5s cubic-bezier(.7,0,.2,1)}
+.u:hover:after{transform:scaleX(1);transform-origin:left}
+.status{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.status i{width:8px;height:8px;border-radius:50%;background:#9a9a9a;flex:none}
+.status.open i{background:var(--volt);box-shadow:0 0 0 0 rgba(46,75,255,.55);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(46,75,255,0)}100%{box-shadow:0 0 0 0 rgba(46,75,255,0)}}
+/* overlay */
+.overlay{position:fixed;inset:0;z-index:70;background:var(--ink);color:var(--paper);display:grid;grid-template-columns:1.5fr 1fr;padding:110px var(--pad) 36px;clip-path:inset(0 0 100% 0);transition:clip-path .85s cubic-bezier(.77,0,.18,1);visibility:hidden}
+.overlay.open{clip-path:inset(0 0 0 0);visibility:visible}
+.overlay nav{display:flex;flex-direction:column;justify-content:center}
+.overlay nav a{display:flex;align-items:baseline;gap:20px;font-family:var(--disp);font-variation-settings:"wdth" 118;font-weight:800;text-transform:uppercase;font-size:clamp(34px,5.6vw,84px);line-height:1;letter-spacing:-.02em;padding:6px 0;border-top:1px solid var(--lineL);opacity:0;transform:translateY(36px);transition:opacity .5s,transform .8s cubic-bezier(.2,.7,.2,1),color .25s,padding .4s}
+.overlay.open nav a{opacity:1;transform:none}
+.overlay nav a span{font-family:var(--mono);font-weight:400;font-size:11px;letter-spacing:.1em;color:var(--voltL)}
+.overlay nav a:hover,.overlay nav a.on{color:var(--voltL);padding-left:14px}
+.ov-side{display:flex;flex-direction:column;justify-content:space-between;border-left:1px solid var(--lineL);padding-left:40px;gap:30px}
+.ov-prev{aspect-ratio:4/3;overflow:hidden;background:#000;position:relative}
+.ov-prev img{transition:opacity .4s}
+.ov-prev:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 1px,transparent 1px 4px);pointer-events:none}
+.ov-meta{display:grid;gap:6px;font-size:14px;opacity:.8}
+.ov-close{position:absolute;top:28px;right:var(--pad);font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:12px 16px;border:1px solid var(--lineL)}
+/* layout */
+.page{display:none}.page.on{display:block}
+.wrap{padding:0 var(--pad)}
+.g12{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px}
+.label{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;display:flex;gap:14px;align-items:center}
+.label:before{content:attr(data-n);color:var(--volt)}
+.d1{font-family:var(--disp);font-variation-settings:"wdth" 116;font-weight:850;text-transform:uppercase;font-size:clamp(52px,10.4vw,188px);line-height:.86;letter-spacing:-.035em}
+.d2{font-family:var(--disp);font-variation-settings:"wdth" 110;font-weight:800;text-transform:uppercase;font-size:clamp(40px,6.4vw,112px);line-height:.9;letter-spacing:-.03em}
+.d3{font-family:var(--disp);font-variation-settings:"wdth" 104;font-weight:700;font-size:clamp(24px,2.4vw,38px);line-height:1.02;letter-spacing:-.015em}
+.v{color:var(--volt)}
+.body{font-size:clamp(15px,1.12vw,17px);color:rgba(13,14,17,.72);max-width:46ch}
+.dark .body{color:rgba(241,241,236,.7)}
+.line-mask{display:block;overflow:hidden;padding-bottom:.04em}.line-mask>span{display:block}
+section{position:relative}
+.sec{padding:clamp(90px,12vw,180px) 0}
+.dark{background:var(--ink);color:var(--paper)}
+.dark .label:before{color:var(--voltL)}
+.paper2{background:var(--paper2)}
+.cta{display:inline-flex;align-items:center;gap:14px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:19px 26px;border:1px solid currentColor;border-radius:2px;transition:background .3s,color .3s,border-color .3s;will-change:transform}
+.cta:after{content:"";width:8px;height:8px;border-top:1.5px solid currentColor;border-right:1.5px solid currentColor;transform:rotate(45deg);margin-left:4px}
+.cta:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.dark .cta:hover{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.cta.volt{background:var(--volt);color:#fff;border-color:var(--volt)}
+.cta.volt:hover{background:var(--ink);border-color:var(--ink)}
+.dark .cta.volt:hover{background:var(--paper);color:var(--ink)}
+.reveal{overflow:hidden;position:relative}
+.g .reveal img{transform:scale(1.15)}
+.tag{position:absolute;left:14px;top:14px;z-index:3;background:var(--paper);color:var(--ink);font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:6px 9px}
+.cross{position:absolute;width:14px;height:14px;z-index:3}
+.cross:before,.cross:after{content:"";position:absolute;background:var(--volt)}
+.cross:before{left:6px;top:0;width:2px;height:14px}.cross:after{top:6px;left:0;width:14px;height:2px}
+/* hero */
+.hero{min-height:100svh;padding:150px 0 0;display:flex;flex-direction:column}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:28px}
+.readout{display:grid;grid-template-columns:repeat(4,auto);gap:6px 34px}
+.readout div{display:grid;gap:2px}
+.readout b{font-family:var(--mono);font-weight:500;font-size:13px}
+.readout span{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;opacity:.5}
+.hero h1{margin-top:6px}
+.hero-stage{position:relative;flex:1;min-height:52svh;margin-top:clamp(26px,3vw,44px);overflow:hidden;background:#cfcfca;cursor:none}
+.hero-stage img{position:absolute;inset:0}
+.hero-stage .base{filter:grayscale(1) contrast(.82) brightness(1.08)}
+.hero-stage .lamp{--mx:60%;--my:45%;-webkit-mask-image:radial-gradient(circle clamp(120px,15vw,240px) at var(--mx) var(--my),#000 55%,transparent 72%);mask-image:radial-gradient(circle clamp(120px,15vw,240px) at var(--mx) var(--my),#000 55%,transparent 72%)}
+.hero-stage .ring{position:absolute;left:var(--mx,60%);top:var(--my,45%);width:clamp(240px,30vw,480px);height:clamp(240px,30vw,480px);margin:calc(clamp(240px,30vw,480px)/-2) 0 0 calc(clamp(240px,30vw,480px)/-2);border:1px solid rgba(255,255,255,.55);border-radius:50%;pointer-events:none;z-index:2}
+.hero-stage .ring:before,.hero-stage .ring:after{content:"";position:absolute;background:rgba(255,255,255,.7)}
+.hero-stage .ring:before{left:50%;top:-12px;width:1px;height:24px}.hero-stage .ring:after{top:50%;left:-12px;height:1px;width:24px}
+.hero-stage .rlabel{position:absolute;left:calc(var(--mx,60%) + 16px);top:calc(var(--my,45%) + 16px);z-index:3;font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:#fff;background:var(--volt);padding:5px 8px;pointer-events:none;white-space:nowrap}
+.hero-bar{position:absolute;left:0;right:0;bottom:0;z-index:4;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding:16px 18px;background:linear-gradient(0deg,rgba(13,14,17,.7),transparent);color:#fff}
+.ph{padding:170px 0 0}
+.ph .hero-stage{min-height:44svh;flex:none;height:46svh;cursor:auto}
+.ph .hero-stage img{filter:none}
+/* waveform */
+.wave{width:100%;height:120px;display:block}
+.wave path{fill:none;stroke:var(--volt);stroke-width:1.5}
+.wave .base{stroke:var(--line);stroke-width:1}
+.dark .wave .base{stroke:var(--lineL)}
+/* intro */
+.intro-big{grid-column:3/12;font-family:var(--disp);font-variation-settings:"wdth" 100;font-weight:600;font-size:clamp(28px,3.7vw,62px);line-height:1.06;letter-spacing:-.025em}
+.g .intro-big .w{opacity:.16}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(70px,8vw,120px);border-top:1px solid var(--ink)}
+.stats div{padding:20px 20px 0 0;border-right:1px solid var(--line)}
+.stats div:last-child{border-right:0}
+.stats b{display:block;font-family:var(--disp);font-variation-settings:"wdth" 120;font-weight:850;font-size:clamp(46px,6vw,104px);line-height:1;letter-spacing:-.04em}
+.stats span{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.6;display:block;margin-top:10px}
+/* bay stack */
+.stack{position:relative}
+.bay{position:sticky;top:96px;display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;background:var(--paper);border-top:1px solid var(--ink);padding:26px 0 40px;min-height:62svh}
+.bay:nth-child(2){top:116px}.bay:nth-child(3){top:136px}.bay:nth-child(4){top:156px}.bay:nth-child(5){top:176px}
+.bay .code{grid-column:1/3;font-family:var(--mono);font-size:12px;color:var(--volt)}
+.bay .txt{grid-column:3/7;display:flex;flex-direction:column;justify-content:space-between;gap:30px}
+.bay h3{font-family:var(--disp);font-variation-settings:"wdth" 116;font-weight:850;text-transform:uppercase;font-size:clamp(34px,4.4vw,76px);line-height:.9;letter-spacing:-.03em}
+.bay ul{list-style:none;border-top:1px solid var(--line)}
+.bay li{display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid var(--line);font-size:15px}
+.bay li span{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;opacity:.5;align-self:center;text-align:right}
+.bay .img{grid-column:7/13;overflow:hidden;position:relative;min-height:46svh}
+/* process rail */
+.rail{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--lineL);margin-top:70px;position:relative}
+.rail:before{content:"";position:absolute;left:0;top:-1px;height:2px;width:var(--p,0%);background:var(--voltL);transition:width .2s linear}
+.rail div{padding:26px 24px 0 0;border-right:1px solid var(--lineL)}
+.rail div:last-child{border-right:0}
+.rail b{display:block;font-family:var(--mono);font-weight:400;font-size:11px;color:var(--voltL);letter-spacing:.1em}
+.rail h4{font-family:var(--disp);font-variation-settings:"wdth" 108;font-weight:700;font-size:clamp(20px,1.8vw,28px);line-height:1.05;margin:18px 0 10px}
+.rail p{font-size:14px;opacity:.65;max-width:28ch}
+/* marquee */
+.marq-wrap{overflow:hidden;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:18px 0}
+.marq{display:flex;width:max-content;animation:marq 38s linear infinite;font-family:var(--disp);font-variation-settings:"wdth" 125;font-weight:850;text-transform:uppercase;font-size:clamp(44px,7vw,120px);line-height:1;letter-spacing:-.03em}
+.marq span{padding-right:.5em;display:flex;align-items:center;gap:.5em}
+.marq span:after{content:"";width:.3em;height:.3em;background:var(--volt);display:inline-block}
+.marq span:nth-child(even){color:transparent;-webkit-text-stroke:1.5px var(--ink)}
+@keyframes marq{to{transform:translateX(-50%)}}
+/* tickets / reviews */
+.rev-q{position:relative;min-height:clamp(320px,28vw,400px);margin-top:50px}
+.ticket{position:absolute;inset:0;opacity:0;transform:translateY(16px);transition:opacity .7s,transform .9s;display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-content:start}
+.ticket.on{opacity:1;transform:none}
+.ticket .meta{grid-column:1/4;display:grid;gap:10px;align-content:start;border-top:1px solid var(--lineL);padding-top:14px}
+.ticket .meta div{display:flex;justify-content:space-between;gap:10px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+.ticket .meta div span{opacity:.5}
+.ticket p{grid-column:4/13;font-family:var(--disp);font-variation-settings:"wdth" 100;font-weight:600;font-size:clamp(24px,3vw,48px);line-height:1.1;letter-spacing:-.02em}
+.rev-ctl{display:flex;align-items:center;gap:20px;margin-top:30px}
+.rev-ctl button{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:11px 16px;border:1px solid var(--lineL)}
+.rev-ctl button:hover{background:var(--paper);color:var(--ink)}
+.prog{flex:1;max-width:260px;height:1px;background:var(--lineL);position:relative;overflow:hidden}
+.prog i{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--voltL)}
+.prog i.run{width:100%;transition:width 7s linear}
+.rlist{list-style:none;border-top:1px solid var(--ink)}
+.rlist li{display:grid;grid-template-columns:2fr 8fr 2fr;gap:24px;padding:28px 0;border-bottom:1px solid var(--line);align-items:start}
+.rlist li q{font-family:var(--disp);font-variation-settings:"wdth" 100;font-weight:600;font-size:clamp(20px,2.1vw,32px);line-height:1.15;letter-spacing:-.015em;quotes:"\201C" "\201D"}
+.rlist li .mono{opacity:.6}
+.rlist li .mono.r{text-align:right}
+/* split / feat */
+.split{display:grid;grid-template-columns:5fr 7fr;gap:clamp(30px,5vw,90px);align-items:center}
+.split.rv{grid-template-columns:7fr 5fr}
+.split .img{aspect-ratio:4/5;overflow:hidden;position:relative}
+.split.rv .img{aspect-ratio:5/4}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink)}
+.dark .feat{border-color:var(--paper)}
+.feat>div{padding:26px 28px 34px 0;border-right:1px solid var(--line)}
+.dark .feat>div{border-color:var(--lineL)}
+.feat>div:last-child{border-right:0}
+.feat b{font-family:var(--mono);font-weight:400;font-size:11px;color:var(--volt);letter-spacing:.08em}
+.dark .feat b{color:var(--voltL)}
+.feat h4{font-family:var(--disp);font-variation-settings:"wdth" 106;font-weight:700;font-size:clamp(22px,2.1vw,32px);line-height:1.05;margin:16px 0 10px;letter-spacing:-.01em}
+.feat p{font-size:15px;opacity:.7;max-width:34ch}
+.makes{display:flex;flex-wrap:wrap;border-top:1px solid var(--ink);border-left:1px solid var(--line)}
+.makes span{flex:1 1 220px;padding:26px 20px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-family:var(--disp);font-variation-settings:"wdth" 112;font-weight:800;text-transform:uppercase;font-size:clamp(20px,2vw,30px);letter-spacing:-.01em;display:flex;justify-content:space-between;gap:10px;align-items:baseline;transition:background .3s,color .3s}
+.makes span:hover{background:var(--ink);color:var(--paper)}
+.makes span em{font-style:normal;font-family:var(--mono);font-weight:400;font-size:10px;letter-spacing:.08em;opacity:.55}
+.hours{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:clamp(14px,1.2vw,17px)}
+.hours td{padding:15px 0;border-top:1px solid var(--line)}
+.hours tr:last-child td{border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right}
+.hours tr.today td{color:var(--volt);font-weight:500}
+.hours tr.today td:first-child:before{content:"> ";}
+.count{font-family:var(--disp);font-variation-settings:"wdth" 120;font-weight:850;font-size:clamp(46px,6vw,100px);line-height:1;letter-spacing:-.03em;margin:20px 0 8px;font-variant-numeric:tabular-nums}
+.contact-rows a{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:26px 0;border-top:1px solid var(--ink);font-family:var(--disp);font-variation-settings:"wdth" 112;font-weight:800;font-size:clamp(26px,4.4vw,72px);line-height:1;letter-spacing:-.03em;transition:color .25s,padding .4s}
+.contact-rows a:last-child{border-bottom:1px solid var(--ink)}
+.contact-rows a span{font-family:var(--mono);font-weight:400;font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.55}
+.contact-rows a:hover{color:var(--volt);padding-left:14px}
+form.enq{display:grid;grid-template-columns:1fr 1fr;gap:0 30px;border-top:1px solid var(--ink)}
+form.enq label{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;opacity:.6;padding-top:22px}
+form.enq input,form.enq select,form.enq textarea{width:100%;background:transparent;border:0;border-bottom:1px solid var(--line);padding:11px 0;font:inherit;font-size:17px;color:inherit;border-radius:0;outline:none}
+form.enq input:focus,form.enq select:focus,form.enq textarea:focus{border-color:var(--volt)}
+form.enq .full{grid-column:1/-1}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:24px 0;font-family:var(--disp);font-variation-settings:"wdth" 104;font-weight:700;font-size:clamp(20px,2vw,30px);line-height:1.1;letter-spacing:-.01em}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-family:var(--mono);font-weight:400;color:var(--volt);transition:transform .4s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{padding:0 0 26px;opacity:.72;max-width:62ch}
+.map{aspect-ratio:16/8;filter:grayscale(1) contrast(1.05);border:0;width:100%;display:block}
+.mapbox{position:relative;border:1px solid var(--ink)}
+.mapbox .cross{z-index:4}
+/* footer */
+footer{background:var(--ink);color:var(--paper);padding:clamp(100px,12vw,180px) 0 0;overflow:hidden}
+.f-cols{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:clamp(70px,8vw,110px);font-size:14px;border-top:1px solid var(--lineL);padding-top:26px}
+.f-cols h5{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:400;color:var(--voltL);margin-bottom:14px}
+.f-cols p,.f-cols a{display:block;opacity:.8;line-height:2}
+.f-word{font-family:var(--disp);font-variation-settings:"wdth" 125;font-weight:900;text-transform:uppercase;font-size:17.5vw;line-height:.8;letter-spacing:-.05em;text-align:center;margin-top:70px;color:transparent;-webkit-text-stroke:1px rgba(241,241,236,.16);user-select:none;white-space:nowrap}
+.f-base{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:22px var(--pad) 90px;font-family:var(--mono);font-size:11px;letter-spacing:.04em;opacity:.65;border-top:1px solid var(--lineL)}
+.f-base a{text-decoration:underline;text-underline-offset:3px;padding:8px 0}
+/* cursor, loader, wipe */
+.cursor{position:fixed;left:0;top:0;z-index:100;width:12px;height:12px;margin:-6px 0 0 -6px;pointer-events:none;transition:width .3s,height .3s,margin .3s}
+.cursor:before,.cursor:after{content:"";position:absolute;background:var(--volt)}
+.cursor:before{left:50%;top:0;width:1.5px;height:100%;transform:translateX(-50%)}
+.cursor:after{top:50%;left:0;height:1.5px;width:100%;transform:translateY(-50%)}
+.cursor.link{width:34px;height:34px;margin:-17px 0 0 -17px}
+.cursor.big{width:0;height:0;margin:0}
+@media (hover:none){.cursor{display:none}.hero-stage{cursor:auto}}
+.loader{position:fixed;inset:0;z-index:200;background:var(--paper);display:flex;flex-direction:column;justify-content:space-between;padding:var(--pad)}
+.loader .top{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.loader .scan{position:absolute;left:0;right:0;top:0;height:1px;background:var(--volt);box-shadow:0 0 18px var(--volt)}
+.loader .bot{display:flex;justify-content:space-between;align-items:flex-end;gap:20px}
+.loader .w{font-family:var(--disp);font-variation-settings:"wdth" 125;font-weight:900;text-transform:uppercase;font-size:clamp(64px,13vw,230px);line-height:.82;letter-spacing:-.05em}
+.loader .c{font-family:var(--mono);font-size:clamp(28px,4vw,60px);color:var(--volt);font-variant-numeric:tabular-nums}
+.wipe{position:fixed;inset:0;z-index:150;background:var(--volt);transform:translateY(100%);pointer-events:none}
+.mbar{display:none}
+/* responsive */
+@media (max-width:1000px){
+ .overlay{grid-template-columns:1fr}.ov-side{display:none}
+ .bay{position:relative;top:auto!important;min-height:0}.bay .code{grid-column:1/-1;margin-bottom:14px}.bay .txt{grid-column:1/-1}.bay .img{grid-column:1/-1;min-height:46svh;margin-top:28px}
+ .rail{grid-template-columns:1fr 1fr}.rail div{border-bottom:1px solid var(--lineL);padding-bottom:26px}
+ .ticket{grid-template-columns:1fr}.ticket .meta,.ticket p{grid-column:1/-1}.ticket p{margin-top:24px}
+ .rev-q{min-height:440px}
+ .readout{grid-template-columns:repeat(2,auto)}
+ .intro-big{grid-column:1/-1}
+}
+@media (max-width:760px){
+ .gridlines{grid-template-columns:repeat(4,1fr)}.gridlines i:nth-child(n+5){display:none}
+ .nav{grid-template-columns:1fr auto;top:var(--bh,50px)}.nav.solid{top:0}.nav-r{display:none}
+ .mark{font-size:14px}.mark small{display:none}
+ .banner{font-size:10px}
+ .hero{padding-top:140px}
+ .stats{grid-template-columns:1fr 1fr}.stats div:nth-child(2){border-right:0}.stats div:nth-child(n+3){border-top:1px solid var(--line);margin-top:20px}
+ .split,.split.rv{grid-template-columns:1fr}
+ .feat{grid-template-columns:1fr}.feat>div{border-right:0;border-bottom:1px solid var(--line)}
+ .rail{grid-template-columns:1fr}
+ .rlist li{grid-template-columns:1fr;gap:10px}.rlist li .mono.r{text-align:left}
+ .f-cols{grid-template-columns:1fr 1fr}
+ form.enq{grid-template-columns:1fr}
+ .hero-stage .rlabel{display:none}
+ .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:55;background:var(--ink);color:var(--paper)}
+ .mbar a{text-align:center;padding:17px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+ .mbar a:first-child{background:var(--volt)}
+ .cta{padding:17px 20px}
+ .contact-rows a{flex-direction:column;gap:10px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal img{transform:none}.loader{display:none}}
+/* accessibility fixes: min 12px text, 44px tap targets, contrast */
+.banner,.mono,.mark small,.menu-btn,.status,.readout span,.hero-stage .rlabel,.label,.stats span,.bay li span,.tag,.rail b,.ticket .meta div,.rev-ctl button,.f-cols h5,.f-base,.overlay nav a span,.ov-close,.makes span em,form.enq label,.contact-rows a span,.loader .top{font-size:12px}
+.mark,.menu-btn,.ov-close,.rev-ctl button{min-height:44px}
+.f-cols a{display:flex;align-items:center;min-height:44px;line-height:1.3}
+.f-base a{display:inline-flex;align-items:center;min-height:44px;padding:0}
+.hero-bar .mono{background:var(--ink);color:#fff;padding:6px 9px}
+.marq span:nth-child(even){color:#6b6b68}
+.f-word{color:#6a6a67}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="gridlines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<div class="loader" aria-hidden="true"><div class="scan"></div><div class="top"><span>Mechanical Edge Automotive</span><span>Burlington, ON</span></div><div class="bot"><div class="w">Edge</div><div class="c"><span id="cnt">000</span>%</div></div></div>
+<div class="wipe" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+
+<div class="banner">Independent concept preview by Teta Digitals. Not the official website of Mechanical Edge Automotive Inc.</div>
+
+<header class="nav" id="nav">
+  <a href="#/" class="mark" aria-label="Mechanical Edge Automotive home"><svg viewBox="0 0 30 30" aria-hidden="true"><rect x=".75" y=".75" width="28.5" height="28.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M6 22 L15 8 L24 22" fill="none" stroke="#2E4BFF" stroke-width="2.4"/><path d="M6 22 H24" stroke="currentColor" stroke-width="1.5"/></svg><span>Mechanical Edge<small>Automotive Inc · Burlington</small></span></a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="overlay"><i><b></b><b></b></i>Index</button>
+  <div class="nav-r"><span class="status" data-status><i></i><b>Checking hours</b></span><a class="nav-call u" href="tel:+19056340040">905-634-0040</a></div>
+</header>
+
+<div class="overlay" id="overlay" aria-hidden="true">
+  <button class="ov-close" id="ovClose">Close [Esc]</button>
+  <nav>
+    <a href="#/" data-img="me-hero.jpg"><span>00</span>Home</a>
+    <a href="#/services" data-img="me-brakes.jpg"><span>01</span>Services</a>
+    <a href="#/diagnostics" data-img="me-diag.jpg"><span>02</span>Diagnostics</a>
+    <a href="#/fleet" data-img="me-bays.jpg"><span>03</span>Fleet</a>
+    <a href="#/the-shop" data-img="me-engine.jpg"><span>04</span>The shop</a>
+    <a href="#/reviews" data-img="me-hero.jpg"><span>05</span>Reviews</a>
+    <a href="#/visit" data-img="me-bays.jpg"><span>06</span>Visit</a>
+    <a href="#/contact" data-img="me-diag.jpg"><span>07</span>Contact</a>
+  </nav>
+  <div class="ov-side">
+    <div class="ov-prev"><img id="ovImg" src="me-hero.jpg" alt=""></div>
+    <div class="ov-meta"><span class="mono" style="color:var(--voltL)">2209 Plains Rd E, Burlington, ON L7R 3R3</span><a class="u" href="tel:+19056340040">905-634-0040</a><a class="u" href="mailto:mea@bellnet.ca">mea@bellnet.ca</a><span class="status" data-status><i></i><b>Checking hours</b></span></div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- HOME -->
+<div class="page" data-route="/">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-top">
+        <div class="readout">
+          <div><b>43.3449 N</b><span>Latitude</span></div>
+          <div><b>79.8128 W</b><span>Longitude</span></div>
+          <div><b>4.8 / 117</b><span>Google rating</span></div>
+          <div><b>Mon to Fri</b><span>8:00 to 17:30</span></div>
+        </div>
+        <span class="status" data-status><i></i><b>Checking hours</b></span>
+      </div>
+      <h1 class="d1"><span class="line-mask"><span>Honest repairs.</span></span><span class="line-mask"><span><span class="v">Exact</span> answers.</span></span></h1>
+    </div>
+    <div class="wrap" style="flex:1;display:flex">
+      <div class="hero-stage" id="lampStage" style="flex:1">
+        <img class="base hero-img" data-k="me-hero.jpg" src="me-hero.jpg" alt="A vehicle raised on a lift in a bright repair bay">
+        <img class="lamp hero-img" src="me-hero.jpg" alt="" aria-hidden="true">
+        <div class="ring" aria-hidden="true"></div>
+        <div class="rlabel" aria-hidden="true">INSPECTING</div>
+        <span class="cross" style="left:10px;top:10px"></span><span class="cross" style="right:10px;top:10px"></span>
+        <div class="hero-bar"><span class="mono">Repairs, diagnostics and maintenance · All makes and models</span><a class="cta volt magnet" href="tel:+19056340040">Call the shop</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="g12">
+        <p class="label" data-n="[01]" style="grid-column:3/12;margin-bottom:36px">The shop on Plains Road</p>
+        <p class="intro-big split-words">An independent repair shop in Burlington's Glenwood Park area. Repairs, diagnostics and maintenance for all makes and models, with fleet services available. Customers keep coming back for one reason: they say it is <span class="v">a shop you can trust.</span></p>
+      </div>
+      <div class="stats">
+        <div><b data-count="4.8">4.8</b><span>Stars on Google</span></div>
+        <div><b data-count="117">117</b><span>Google reviews</span></div>
+        <div><b data-count="92">92</b><span>% recommend on Facebook</span></div>
+        <div><b>5</b><span>Weekdays, 8:00 to 17:30</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec paper2" style="padding-top:clamp(70px,8vw,120px)">
+    <div class="wrap">
+      <div class="split" style="align-items:end;margin-bottom:60px">
+        <div><p class="label" data-n="[02]">Service index</p><h2 class="d2" style="margin-top:26px">What goes <span class="v">on the lift.</span></h2></div>
+        <p class="body">The work customers describe in their reviews, from routine oil changes to a truck that broke down at the lights outside.</p>
+      </div>
+      <div class="stack">
+        <article class="bay"><div class="code">S-01 / Maintenance</div><div class="txt"><h3>Routine<br>maintenance</h3><ul><li>Oil changes<span>Any make</span></li><li>Inspections<span>Before you go</span></li><li>Older vehicles<span>Welcome</span></li></ul></div><div class="img reveal"><img data-k="me-engine.jpg" src="me-engine.jpg" alt="Checking the oil in an engine bay"><span class="tag">S-01</span></div></article>
+        <article class="bay"><div class="code">S-02 / Brakes and wheels</div><div class="txt"><h3>Brakes,<br>rims, tires</h3><ul><li>Brakes all around<span>Pads, discs</span></li><li>Bent rims, slow leaks<span>Pothole damage</span></li><li>Shaking at speed<span>Investigated</span></li></ul></div><div class="img reveal"><img data-k="me-brakes.jpg" src="me-brakes.jpg" alt="A new brake disc and caliper beside a torque wrench"><span class="tag">S-02</span></div></article>
+        <article class="bay"><div class="code">S-03 / Diagnostics</div><div class="txt"><h3>Diagnostics<br>and repairs</h3><ul><li>Running poorly<span>Found and fixed</span></li><li>Charging faults<span>Alternators</span></li><li>Engine concerns<span>Explained</span></li></ul></div><div class="img reveal"><img data-k="me-diag.jpg" src="me-diag.jpg" alt="A diagnostic scanner plugged in under a dashboard"><span class="tag">S-03</span></div></article>
+        <article class="bay"><div class="code">S-04 / Fleet</div><div class="txt"><h3>Fleet<br>services</h3><ul><li>Work vans<span>Back on the road</span></li><li>Trucks<span>Old and new</span></li><li>Business vehicles<span>Ask about fleets</span></li></ul></div><div class="img reveal"><img data-k="me-bays.jpg" src="me-bays.jpg" alt="A white work van outside a repair shop"><span class="tag">S-04</span></div></article>
+      </div>
+      <div style="margin-top:50px"><a class="cta magnet" href="#/services">All services</a></div>
+    </div>
+  </section>
+
+  <div class="marq-wrap" aria-hidden="true"><div class="marq"><span>All makes</span><span>All models</span><span>Fleet ready</span><span>Burlington</span><span>All makes</span><span>All models</span><span>Fleet ready</span><span>Burlington</span></div></div>
+
+  <section class="sec dark" id="railSec">
+    <div class="wrap">
+      <div class="split" style="align-items:end">
+        <div><p class="label" data-n="[03]">How a visit runs</p><h2 class="d2" style="margin-top:26px">From the call<br>to <span style="color:var(--voltL)">the keys.</span></h2></div>
+        <p class="body">Pieced together from what customers say happened when they brought a vehicle in.</p>
+      </div>
+      <div class="rail" id="rail">
+        <div><b>T+00</b><h4>Call or drop in</h4><p>Phone 905-634-0040 or email. One customer arrived with no appointment and was fitted in.</p></div>
+        <div><b>T+01</b><h4>They listen</h4><p>"They listen patiently, understand your concerns," as one review puts it.</p></div>
+        <div><b>T+02</b><h4>Diagnosis</h4><p>A broken-down truck was diagnosed to an alternator within minutes.</p></div>
+        <div><b>T+03</b><h4>A clear quote</h4><p>"Quote was exactly what they said."</p></div>
+        <div><b>T+04</b><h4>Keys back</h4><p>Often the same day, so the vehicle is ready for work the next.</p></div>
+      </div>
+      <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true" style="margin-top:80px"><path class="base" d="M0 60 H1200"/><path class="trace" d="M0 60 L160 60 L190 60 L205 20 L220 100 L235 60 L420 60 L440 60 L452 34 L466 86 L478 60 L700 60 L720 60 L735 10 L752 110 L768 60 L980 60 L1000 60 L1012 40 L1024 80 L1036 60 L1200 60"/></svg>
+    </div>
+  </section>
+
+  <section class="sec dark" style="padding-top:0">
+    <div class="wrap">
+      <p class="label" data-n="[04]">Job tickets · Google and Facebook reviews</p>
+      <div class="rev-q" data-rev>
+        <div class="ticket"><div class="meta"><div><span>Vehicle</span>Car</div><div><span>Job</span>Oil change, poor running</div><div><span>Customer</span>Alie Johnson</div></div><p>"Russ and Richard are the best and my car when done ran like new! They really care about their customers."</p></div>
+        <div class="ticket"><div class="meta"><div><span>Vehicle</span>Transit van</div><div><span>Job</span>No appointment</div><div><span>Source</span>Google, Apr 2025</div></div><p>"Even with a busy day they made sure to fit us in. Russell was helpful, kind, and ensured it was done that day so we could use it for work the next."</p></div>
+        <div class="ticket"><div class="meta"><div><span>Vehicle</span>Pilot, Atlas, Gladiator, X5</div><div><span>Job</span>Years of service</div><div><span>Customer</span>Paul Thurlow</div></div><p>"I can 100% wholeheartedly trust them with any of my vehicles and all of their needs."</p></div>
+        <div class="ticket"><div class="meta"><div><span>Vehicle</span>Truck</div><div><span>Job</span>Breakdown, alternator</div><div><span>Source</span>Google, Dec 2024</div></div><p>"By 2pm next day my truck was fixed quote was exactly what they said and I don't have to call in on Monday and miss work."</p></div>
+        <div class="ticket"><div class="meta"><div><span>Vehicle</span>Car</div><div><span>Job</span>Bent rims, leaking tires</div><div><span>Customer</span>Andrew Jang</div></div><p>"Russ looked at my vehicle within 24 hours and had it ready the same day."</p></div>
+      </div>
+      <div class="rev-ctl"><button data-p>Prev</button><div class="prog"><i></i></div><button data-n>Next</button><a class="cta magnet" href="#/reviews" style="margin-left:auto">All reviews</a></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap split rv">
+      <div class="img reveal"><img src="me-bays.jpg" alt="The repair shop with its bay doors open"><span class="tag">2209 Plains Rd E</span></div>
+      <div>
+        <p class="label" data-n="[05]">Visit</p>
+        <h2 class="d2" style="margin-top:26px">On Plains Road <span class="v">East.</span></h2>
+        <p class="body" style="margin-top:24px">2209 Plains Rd E, Burlington, ON L7R 3R3. Open Monday to Friday, 8:00 a.m. to 5:30 p.m.</p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:34px"><a class="cta volt magnet" href="https://www.google.com/maps/dir/?api=1&amp;destination=Mechanical+Edge+Automotive+2209+Plains+Rd+E+Burlington+ON+L7R+3R3" target="_blank" rel="noopener">Directions</a><a class="cta magnet" href="#/visit">Hours and map</a></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- SERVICES -->
+<div class="page" data-route="/services">
+  <section class="hero ph">
+    <div class="wrap">
+      <p class="label" data-n="[01]">Services</p>
+      <h1 class="d1" style="margin-top:22px"><span class="line-mask"><span>All makes.</span></span><span class="line-mask"><span class="v">All models.</span></span></h1>
+    </div>
+    <div class="wrap"><div class="hero-stage"><img class="hero-img" src="me-brakes.jpg" alt="Brake disc, caliper and torque wrench on a workshop floor"><span class="cross" style="left:10px;top:10px"></span><span class="cross" style="right:10px;bottom:10px"></span></div></div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <div class="split" style="align-items:end;margin-bottom:60px">
+        <h2 class="d2">Spec <span class="v">sheet.</span></h2>
+        <p class="body">Mechanical Edge describes its work as repairs, diagnostics and maintenance to all makes and models, with fleet services available. Below is the work customers mention in their reviews. Call for anything not listed.</p>
+      </div>
+      <div class="feat">
+        <div><b>S-01</b><h4>Oil changes and maintenance</h4><p>Routine servicing, with a look over the vehicle while it is in.</p></div>
+        <div><b>S-02</b><h4>Brakes</h4><p>Brake work all around, from one axle to the full vehicle.</p></div>
+        <div><b>S-03</b><h4>Rims, tires and vibration</h4><p>Pothole damage, bent rims, slow leaks and shaking at speed.</p></div>
+      </div>
+      <div class="feat" style="margin-top:-1px">
+        <div><b>S-04</b><h4>Diagnostics</h4><p>Cars that run poorly, warning signs and faults that need finding.</p></div>
+        <div><b>S-05</b><h4>Electrical and charging</h4><p>Alternators and the parts that keep a vehicle starting.</p></div>
+        <div><b>S-06</b><h4>Fleet services</h4><p>Vans, trucks and business vehicles that need to be back at work.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec paper2">
+    <div class="wrap">
+      <p class="label" data-n="[02]">Seen in the bays, per customer reviews</p>
+      <h2 class="d2" style="margin:26px 0 50px">Vehicles <span class="v">serviced.</span></h2>
+      <div class="makes"><span>Honda Pilot<em>SUV</em></span><span>Volkswagen Atlas<em>SUV</em></span><span>Jeep Gladiator<em>Truck</em></span><span>BMW X5<em>SUV</em></span><span>Ford Transit<em>Van</em></span><span>Chevrolet Uplander<em>Van</em></span><span>Older trucks<em>Welcome</em></span><span>Your vehicle<em>Ask</em></span></div>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap split">
+      <div><p class="label" data-n="[03]">Book</p><h2 class="d2" style="margin-top:26px">Tell us what <span class="v">it's doing.</span></h2></div>
+      <div><p class="body">The quickest way in is a phone call during shop hours. Or send the details by email and the shop can reply.</p><div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:30px"><a class="cta volt magnet" href="tel:+19056340040">905-634-0040</a><a class="cta magnet" href="#/contact">Email the shop</a></div></div>
+    </div>
+  </section>
+</div>
+
+<!-- DIAGNOSTICS -->
+<div class="page" data-route="/diagnostics">
+  <section class="hero ph">
+    <div class="wrap">
+      <p class="label" data-n="[02]">Diagnostics</p>
+      <h1 class="d1" style="margin-top:22px"><span class="line-mask"><span>Find the fault.</span></span><span class="line-mask"><span><span class="v">Fix</span> the fault.</span></span></h1>
+    </div>
+    <div class="wrap"><div class="hero-stage"><img class="hero-img" src="me-diag.jpg" alt="A diagnostic scanner plugged in under a dashboard"><span class="cross" style="left:10px;top:10px"></span><span class="cross" style="right:10px;bottom:10px"></span></div></div>
+  </section>
+  <section class="sec dark">
+    <div class="wrap">
+      <div class="g12"><p class="label" data-n="[i]" style="grid-column:3/12;margin-bottom:36px">Signal, not guesswork</p>
+      <p class="intro-big split-words">"My truck broke down at the lights right outside ... pushed the truck into the lot and had it diagnosed to a alternator within minutes. They got on the phone immediately and got a part in for the next day and gave me a quote."</p>
+      <p class="mono" style="grid-column:3/12;margin-top:26px;opacity:.6">Google review, Dec 2024</p></div>
+      <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true" style="margin-top:70px"><path class="base" d="M0 60 H1200"/><path class="trace" d="M0 60 L120 60 L140 30 L160 90 L180 60 L320 60 L335 14 L352 106 L368 60 L560 60 L575 40 L590 80 L605 60 L820 60 L838 8 L856 112 L874 60 L1060 60 L1072 44 L1084 76 L1096 60 L1200 60"/></svg>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <div class="split rv" style="margin-bottom:80px">
+        <div class="img reveal"><img src="me-engine.jpg" alt="Checking an engine bay"><span class="tag">D-01</span></div>
+        <div><p class="label" data-n="[ii]">Explained plainly</p><h2 class="d2" style="margin-top:26px">You hear <span class="v">what it is.</span></h2><p class="body" style="margin-top:24px">Reviewers single out the explanations. One new customer wrote that the "care, consistency and explanation of what was happening with my car went above and beyond typical mechanics."</p></div>
+      </div>
+      <div class="feat">
+        <div><b>D-01</b><h4>Running poorly</h4><p>"My car that was running really poorly ... when done ran like new!"</p></div>
+        <div><b>D-02</b><h4>Hard to work on</h4><p>"I have a truck that is in rough shape and not an easy one to work on due to its age. Russ and his team have taken on the work."</p></div>
+        <div><b>D-03</b><h4>Listened to</h4><p>"He takes the time to listen to your concerns about my Jeep."</p></div>
+      </div>
+      <p class="mono" style="margin-top:30px;opacity:.55">All quotes from Google reviews</p>
+    </div>
+  </section>
+</div>
+
+<!-- FLEET -->
+<div class="page" data-route="/fleet">
+  <section class="hero ph">
+    <div class="wrap">
+      <p class="label" data-n="[03]">Fleet</p>
+      <h1 class="d1" style="margin-top:22px"><span class="line-mask"><span>Back to work</span></span><span class="line-mask"><span class="v">tomorrow.</span></span></h1>
+    </div>
+    <div class="wrap"><div class="hero-stage"><img class="hero-img" src="me-bays.jpg" alt="A white work van outside a repair shop"><span class="cross" style="left:10px;top:10px"></span><span class="cross" style="right:10px;bottom:10px"></span></div></div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <div class="split" style="align-items:end;margin-bottom:60px">
+        <h2 class="d2">Fleet services <span class="v">available.</span></h2>
+        <p class="body">For trades, delivery and any business that runs vans or trucks. A vehicle off the road costs a working day, and customers say the shop understands that.</p>
+      </div>
+      <div class="feat">
+        <div><b>F-01</b><h4>Fitted in</h4><p>"We brought our Transit van in with no appointment due to a cancellation elsewhere and even with a busy day they made sure to fit us in."</p></div>
+        <div><b>F-02</b><h4>Same-day turnaround</h4><p>"Ensured it was done that day so we could use it for work the next."</p></div>
+        <div><b>F-03</b><h4>Parts sourced fast</h4><p>"Got a part in for the next day and gave me a quote."</p></div>
+      </div>
+      <p class="mono" style="margin-top:30px;opacity:.55">Quotes from Google reviews</p>
+    </div>
+  </section>
+  <section class="sec dark">
+    <div class="wrap split">
+      <div><p class="label" data-n="[i]">Set up a fleet account</p><h2 class="d2" style="margin-top:26px">Talk to <span style="color:var(--voltL)">the shop.</span></h2></div>
+      <div><p class="body">Tell the shop how many vehicles you run and what they are. They will tell you how they can help.</p><div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:30px"><a class="cta volt magnet" href="tel:+19056340040">Call 905-634-0040</a><a class="cta magnet" href="#/contact">Fleet enquiry</a></div></div>
+    </div>
+  </section>
+</div>
+
+<!-- THE SHOP -->
+<div class="page" data-route="/the-shop">
+  <section class="hero ph">
+    <div class="wrap">
+      <p class="label" data-n="[04]">The shop</p>
+      <h1 class="d1" style="margin-top:22px"><span class="line-mask"><span>Local,</span></span><span class="line-mask"><span>independent, <span class="v">trusted.</span></span></span></h1>
+    </div>
+    <div class="wrap"><div class="hero-stage"><img class="hero-img" src="me-engine.jpg" alt="A mechanic checking an engine"><span class="cross" style="left:10px;top:10px"></span><span class="cross" style="right:10px;bottom:10px"></span></div></div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <div class="g12"><p class="label" data-n="[i]" style="grid-column:3/12;margin-bottom:36px">In customers' words</p>
+      <p class="intro-big split-words">"Russ and Rich run Mechanical Edge, they have always been friendly and professional. Attentive to detail when it comes to looking over my vehicle. This is a wonderful business and I will continue to take my vehicle here for maintenance."</p>
+      <p class="mono" style="grid-column:3/12;margin-top:26px;opacity:.6">Customer review, PreferredMechanic.ca</p></div>
+    </div>
+  </section>
+  <section class="sec paper2">
+    <div class="wrap">
+      <div class="feat">
+        <div><b>01</b><h4>Long-time customers</h4><p>"I have had my car serviced here for many years ... I wouldn't go anywhere else."</p></div>
+        <div><b>02</b><h4>Fair prices</h4><p>"They really go out of their way and are extremely reasonably priced." Price range on Facebook: $$.</p></div>
+        <div><b>03</b><h4>Going the extra mile</h4><p>"Owner drove me home while I waited for my car to be serviced."</p></div>
+      </div>
+      <p class="mono" style="margin-top:30px;opacity:.55">Quotes from Google and Facebook reviews</p>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap split rv">
+      <div class="img reveal"><img src="me-hero.jpg" alt="A vehicle raised on a lift in a bright repair bay"><span class="tag">Glenwood Park, Burlington</span></div>
+      <div><p class="label" data-n="[ii]">Worth the drive</p><h2 class="d2" style="margin-top:26px">Customers come <span class="v">from Oakville.</span></h2><p class="body" style="margin-top:24px">"Very knowledgeable, kind and efficient!! Highly recommend them. I come from Oakville." Facebook review.</p></div>
+    </div>
+  </section>
+</div>
+
+<!-- REVIEWS -->
+<div class="page" data-route="/reviews">
+  <section class="sec" style="padding-top:200px">
+    <div class="wrap">
+      <p class="label" data-n="[05]">Reviews</p>
+      <h1 class="d1" style="margin-top:22px"><span class="line-mask"><span><span class="v">4.8</span> stars.</span></span><span class="line-mask"><span>117 reviews.</span></span></h1>
+      <p class="body" style="margin-top:28px">Google rating, plus 92% recommend from 21 reviews on Facebook. A selection, quoted as written.</p>
+    </div>
+  </section>
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <ul class="rlist">
+        <li><span class="mono">R-01</span><q>I've been dealing with these gentlemen at The Mechanical Edge for years, and I absolutely love their service. I can 100% wholeheartedly trust them with any of my vehicles and all of their needs.</q><span class="mono r">Paul Thurlow · Google</span></li>
+        <li><span class="mono">R-02</span><q>Russell and Richard will take excellent care of you and your vehicles. They listen patiently, understand your concerns. Fix the problem at excellent prices!</q><span class="mono r">Google · Aug 2025</span></li>
+        <li><span class="mono">R-03</span><q>I took my car in for an oil change and for them to take a look at my car that was running really poorly. Russ and Richard are the best and my car when done ran like new!</q><span class="mono r">Alie Johnson · Google</span></li>
+        <li><span class="mono">R-04</span><q>I have had my car serviced here for many years. The team at Mechanical Edge is excellent - trustworthy, knowledgeable and reliable. I wouldn't go anywhere else.</q><span class="mono r">Google · Aug 2025</span></li>
+        <li><span class="mono">R-05</span><q>I was in at Mechanical Edge recently for some work on my car (brakes all around etc), these guys gave me the best prices and top notch results. Very pleased and highly recommend them.</q><span class="mono r">Google · Jul 2024</span></li>
+        <li><span class="mono">R-06</span><q>They really go out of their way and are extremely reasonably priced. Very knowledgeable, kind and efficient!! Highly recommend them. I come from Oakville.</q><span class="mono r">Karen Mate Byers · Facebook</span></li>
+        <li><span class="mono">R-07</span><q>Phenomenal service! Owner drove me home while I waited for my car to be serviced. Very friendly and helpful.</q><span class="mono r">Google · Jul 2025</span></li>
+      </ul>
+      <div style="margin-top:50px;display:flex;gap:14px;flex-wrap:wrap"><a class="cta volt magnet" href="https://www.google.com/maps?q=place_id:ChIJ0QIac-ZhK4gR5W9B8VR3X20" target="_blank" rel="noopener">Read them on Google</a><a class="cta magnet" href="https://www.facebook.com/MechanicalEdge" target="_blank" rel="noopener">Facebook</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- VISIT -->
+<div class="page" data-route="/visit">
+  <section class="hero ph">
+    <div class="wrap">
+      <p class="label" data-n="[06]">Visit</p>
+      <h1 class="d1" style="margin-top:22px"><span class="line-mask"><span>2209 Plains</span></span><span class="line-mask"><span>Road <span class="v">East.</span></span></span></h1>
+    </div>
+    <div class="wrap"><div class="hero-stage"><img class="hero-img" src="me-bays.jpg" alt="The repair shop exterior in the morning"><span class="cross" style="left:10px;top:10px"></span><span class="cross" style="right:10px;bottom:10px"></span></div></div>
+  </section>
+  <section class="sec">
+    <div class="wrap split" style="align-items:start">
+      <div>
+        <p class="label" data-n="[i]">Shop hours · Burlington time</p>
+        <div class="count" id="countdown">--:--:--</div>
+        <span class="status" data-status><i></i><b>Checking hours</b></span>
+        <p class="body" style="margin-top:24px">2209 Plains Rd E, Burlington, ON L7R 3R3. Glenwood Park area.</p>
+        <div style="margin-top:30px"><a class="cta volt magnet" href="https://www.google.com/maps/dir/?api=1&amp;destination=Mechanical+Edge+Automotive+2209+Plains+Rd+E+Burlington+ON+L7R+3R3" target="_blank" rel="noopener">Get directions</a></div>
+      </div>
+      <table class="hours" data-hours>
+        <tr data-d="1"><td>Monday</td><td>8:00 a.m. to 5:30 p.m.</td></tr>
+        <tr data-d="2"><td>Tuesday</td><td>8:00 a.m. to 5:30 p.m.</td></tr>
+        <tr data-d="3"><td>Wednesday</td><td>8:00 a.m. to 5:30 p.m.</td></tr>
+        <tr data-d="4"><td>Thursday</td><td>8:00 a.m. to 5:30 p.m.</td></tr>
+        <tr data-d="5"><td>Friday</td><td>8:00 a.m. to 5:30 p.m.</td></tr>
+        <tr data-d="6"><td>Saturday</td><td>Closed</td></tr>
+        <tr data-d="0"><td>Sunday</td><td>Closed</td></tr>
+      </table>
+    </div>
+  </section>
+  <section class="sec paper2" style="padding-top:80px">
+    <div class="wrap">
+      <div class="mapbox"><span class="cross" style="left:-7px;top:-7px"></span><span class="cross" style="right:-7px;bottom:-7px"></span><iframe class="map" loading="lazy" title="Map to Mechanical Edge Automotive" src="https://www.google.com/maps?q=2209+Plains+Rd+E,+Burlington,+ON+L7R+3R3&amp;output=embed"></iframe></div>
+      <div class="feat" style="margin-top:60px">
+        <div><b>V-01</b><h4>Call ahead</h4><p>A quick call to 905-634-0040 helps the shop plan your visit.</p></div>
+        <div><b>V-02</b><h4>Weekdays</h4><p>Open Monday to Friday. Closed on weekends.</p></div>
+        <div><b>V-03</b><h4>Holiday hours</h4><p>Hours can change on holidays, so call to check.</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- CONTACT -->
+<div class="page" data-route="/contact">
+  <section class="sec" style="padding-top:200px">
+    <div class="wrap">
+      <p class="label" data-n="[07]">Contact</p>
+      <h1 class="d1" style="margin-top:22px"><span class="line-mask"><span>Book it</span></span><span class="line-mask"><span class="v">in.</span></span></h1>
+      <p class="body" style="margin-top:28px">Phone is quickest during shop hours. Email works any time.</p>
+    </div>
+  </section>
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="contact-rows">
+        <a href="tel:+19056340040">905-634-0040<span>Phone</span></a>
+        <a href="mailto:mea@bellnet.ca">mea@bellnet.ca<span>Email</span></a>
+        <a href="https://www.facebook.com/MechanicalEdge" target="_blank" rel="noopener">Mechanical Edge<span>Facebook</span></a>
+      </div>
+      <div class="split" style="margin-top:clamp(90px,10vw,150px);align-items:start">
+        <div><p class="label" data-n="[i]">Service request</p><h2 class="d2" style="margin-top:26px">Describe <span class="v">the symptom.</span></h2><p class="body" style="margin-top:24px">This opens your email app with the details filled in, addressed to the shop.</p></div>
+        <form class="enq" data-mailto>
+          <div><label for="f1">Name</label><input id="f1" name="Name" required></div>
+          <div><label for="f2">Phone</label><input id="f2" name="Phone" type="tel"></div>
+          <div><label for="f3">Vehicle (year, make, model)</label><input id="f3" name="Vehicle"></div>
+          <div><label for="f4">Service</label><select id="f4" name="Service"><option>Maintenance or oil change</option><option>Brakes</option><option>Rims, tires or vibration</option><option>Diagnostics</option><option>Fleet</option><option>Something else</option></select></div>
+          <div class="full"><label for="f5">Preferred day</label><input id="f5" name="Preferred day" type="date"></div>
+          <div class="full"><label for="f6">What is it doing?</label><textarea id="f6" name="message" rows="3"></textarea></div>
+          <div class="full" style="margin-top:34px"><button class="cta volt magnet" type="submit">Open email to the shop</button></div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="sec paper2">
+    <div class="wrap split" style="align-items:start">
+      <div><p class="label" data-n="[ii]">FAQ</p><h2 class="d2" style="margin-top:26px">Quick <span class="v">answers.</span></h2></div>
+      <div>
+        <details><summary>When is the shop open?</summary><p>Monday to Friday, 8:00 a.m. to 5:30 p.m. Closed Saturday and Sunday.</p></details>
+        <details><summary>Do you work on my make?</summary><p>The shop does repairs, diagnostics and maintenance to all makes and models. Customers mention everything from a Honda Pilot to a BMW X5 and older trucks.</p></details>
+        <details><summary>Do you service fleets?</summary><p>Yes, fleet services are available. Call 905-634-0040 to talk it through.</p></details>
+        <details><summary>Where are you?</summary><p>2209 Plains Rd E, Burlington, ON L7R 3R3, in the Glenwood Park area.</p></details>
+        <details><summary>How do I book?</summary><p>Call during shop hours, or send a service request by email to mea@bellnet.ca.</p></details>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="label" data-n="[08]">Repairs · Diagnostics · Maintenance · Fleet</p>
+    <h2 class="d1" style="margin-top:26px">Keep it <span style="color:var(--voltL)">running.</span></h2>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:46px"><a class="cta volt magnet" href="tel:+19056340040">Call 905-634-0040</a><a class="cta magnet" href="#/contact">Service request</a></div>
+    <div class="f-cols">
+      <div><h5>Find us</h5><p>2209 Plains Rd E<br>Burlington, ON<br>L7R 3R3</p></div>
+      <div><h5>Hours</h5><p>Mon to Fri<br>8:00 a.m. to 5:30 p.m.<br>Sat and Sun closed</p></div>
+      <div><h5>Contact</h5><a class="u" href="tel:+19056340040">905-634-0040</a><a class="u" href="mailto:mea@bellnet.ca">mea@bellnet.ca</a><a class="u" href="https://www.facebook.com/MechanicalEdge" target="_blank" rel="noopener">Facebook</a></div>
+      <div><h5>Index</h5><a href="#/services">Services</a><a href="#/diagnostics">Diagnostics</a><a href="#/fleet">Fleet</a><a href="#/the-shop">The shop</a><a href="#/reviews">Reviews</a></div>
+    </div>
+  </div>
+  <div class="f-word" aria-hidden="true">Mech Edge</div>
+  <div class="f-base"><span>Concept preview. Not the official website of Mechanical Edge Automotive Inc.</span><a href="https://teta.dpdns.org" target="_blank" rel="noopener">Developed by Teta Digitals</a></div>
+</footer>
+
+<div class="mbar"><a href="tel:+19056340040">Call</a><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Mechanical+Edge+Automotive+2209+Plains+Rd+E+Burlington+ON+L7R+3R3" target="_blank" rel="noopener">Directions</a></div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+(function(){
+var $=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+var RM=matchMedia("(prefers-reduced-motion: reduce)").matches;
+var G=window.gsap&&window.ScrollTrigger&&!RM; if(G){gsap.registerPlugin(ScrollTrigger);document.documentElement.classList.add("g")}
+var lenis=null;
+if(G&&window.Lenis){lenis=new Lenis({lerp:.1});lenis.on("scroll",ScrollTrigger.update);gsap.ticker.add(function(t){lenis.raf(t*1000)});gsap.ticker.lagSmoothing(0);}
+var nav=document.getElementById("nav"),ban=document.querySelector(".banner");
+function bh(){if(ban)document.documentElement.style.setProperty("--bh",ban.offsetHeight+"px")}bh();addEventListener("resize",bh);
+addEventListener("scroll",function(){nav.classList.toggle("solid",scrollY>60)},{passive:true});
+
+/* menu overlay */
+var ov=document.getElementById("overlay"),mb=document.getElementById("menuBtn"),ovImg=document.getElementById("ovImg");
+function menu(o){ov.classList.toggle("open",o);ov.setAttribute("aria-hidden",!o);mb.setAttribute("aria-expanded",o);$("nav a",ov).forEach(function(a,i){a.style.transitionDelay=o?(0.22+i*0.05)+"s":"0s"});if(lenis){if(o)lenis.stop();else lenis.start()}document.body.style.overflow=o?"hidden":""}
+mb.onclick=function(){menu(!ov.classList.contains("open"))};
+document.getElementById("ovClose").onclick=function(){menu(false)};
+$("nav a",ov).forEach(function(a){a.addEventListener("mouseenter",function(){ovImg.style.opacity=0;setTimeout(function(){var k=$('img[data-k="'+a.dataset.img+'"]')[0];if(k)ovImg.src=k.src;ovImg.style.opacity=1},180)});a.addEventListener("click",function(){menu(false)})});
+addEventListener("keydown",function(e){if(e.key==="Escape")menu(false)});
+
+/* crosshair cursor */
+var cur=$(".cursor")[0],HOV=matchMedia("(hover:hover)").matches;
+if(HOV&&cur){var cx=0,cy=0,tx=0,ty=0;addEventListener("mousemove",function(e){tx=e.clientX;ty=e.clientY});(function loop(){cx+=(tx-cx)*.25;cy+=(ty-cy)*.25;cur.style.transform="translate("+cx+"px,"+cy+"px)";requestAnimationFrame(loop)})();
+document.addEventListener("mouseover",function(e){var t=e.target;cur.classList.toggle("big",!!t.closest("#lampStage"));cur.classList.toggle("link",!t.closest("#lampStage")&&!!t.closest("a,button,summary,.makes span"))});}
+/* magnetic */
+if(HOV)$(".magnet").forEach(function(b){b.addEventListener("mousemove",function(e){var r=b.getBoundingClientRect();b.style.transform="translate("+((e.clientX-r.left-r.width/2)*.22)+"px,"+((e.clientY-r.top-r.height/2)*.32)+"px)"});b.addEventListener("mouseleave",function(){b.style.transform=""})});
+
+/* inspection lamp */
+var stage=document.getElementById("lampStage");
+if(stage){var lx=60,ly=45,gx=60,gy=45,auto=!HOV,tt=0;
+ function setL(){stage.style.setProperty("--mx",lx+"%");stage.style.setProperty("--my",ly+"%");$(".lamp",stage)[0].style.setProperty("--mx",lx+"%");$(".lamp",stage)[0].style.setProperty("--my",ly+"%")}
+ if(HOV){stage.addEventListener("mousemove",function(e){var r=stage.getBoundingClientRect();gx=(e.clientX-r.left)/r.width*100;gy=(e.clientY-r.top)/r.height*100;auto=false});stage.addEventListener("mouseleave",function(){auto=true})}
+ (function lamp(){tt+=RM?0:.006;if(auto){gx=50+28*Math.sin(tt*1.3);gy=48+18*Math.sin(tt*2.1)}lx+=(gx-lx)*.12;ly+=(gy-ly)*.12;setL();requestAnimationFrame(lamp)})();}
+
+/* split words */
+$(".split-words").forEach(function(p){var out="";p.childNodes.forEach(function(n){if(n.nodeType===3){out+=n.textContent.split(/(\s+)/).map(function(w){return /\S/.test(w)?'<span class="w">'+w+'</span>':w}).join("")}else{out+='<span class="w">'+n.outerHTML+'</span>'}});p.innerHTML=out});
+
+/* open status, Burlington (Toronto) time */
+function localNow(){var f=new Intl.DateTimeFormat("en-CA",{timeZone:"America/Toronto",weekday:"short",hour:"numeric",minute:"numeric",second:"numeric",hour12:false}).formatToParts(new Date()),o={};f.forEach(function(p){o[p.type]=p.value});var wd=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf((o.weekday||"").replace(".","").slice(0,3));return{d:wd,m:(+o.hour%24)*60+(+o.minute),s:(+o.hour%24)*3600+(+o.minute)*60+(+o.second)}}
+var OPEN=480,CLOSE=1050;
+function isDay(d){return d>=1&&d<=5}
+function pad(n){return(n<10?"0":"")+n}
+function fmt(sec){var h=Math.floor(sec/3600),m=Math.floor(sec%3600/60),s=sec%60;return pad(h)+":"+pad(m)+":"+pad(s)}
+function status(){var n=localNow(),open=false,txt,cd="",target;
+ if(isDay(n.d)&&n.m>=OPEN&&n.m<CLOSE){open=true;txt="Open now, until 5:30 p.m.";cd="Closes in "+fmt(CLOSE*60-n.s)}
+ else if(isDay(n.d)&&n.m<OPEN){txt="Closed, opens today 8:00 a.m.";cd="Opens in "+fmt(OPEN*60-n.s)}
+ else{var add=1,d=(n.d+1)%7;while(!isDay(d)){add++;d=(d+1)%7}target=(add*86400-n.s)+OPEN*60;txt=add===1?"Closed, opens tomorrow 8:00 a.m.":"Closed, opens Monday 8:00 a.m.";cd="Opens in "+fmt(target)}
+ $("[data-status]").forEach(function(s){s.classList.toggle("open",open);s.querySelector("b").textContent=txt});
+ $("[data-hours] tr").forEach(function(r){r.classList.toggle("today",+r.dataset.d===n.d)});
+ var c=document.getElementById("countdown");if(c)c.textContent=cd.replace(/^(Opens|Closes) in /,"");if(c)c.setAttribute("title",cd);
+}
+status();setInterval(status,1000);
+
+/* reviews rotator */
+$("[data-rev]").forEach(function(box){var q=$(".ticket",box),i=0,sec=box.parentNode,bar=$(".prog i",sec)[0],t;function go(j){q[i].classList.remove("on");i=(j+q.length)%q.length;q[i].classList.add("on");if(bar){bar.classList.remove("run");void bar.offsetWidth;bar.classList.add("run")}clearTimeout(t);if(!RM)t=setTimeout(function(){go(i+1)},7000)}$("[data-p]",sec)[0].onclick=function(){go(i-1)};$("[data-n]",sec)[0].onclick=function(){go(i+1)};go(0)});
+
+/* mailto form */
+$("form[data-mailto]").forEach(function(f){f.addEventListener("submit",function(e){e.preventDefault();var d=new FormData(f),b="";d.forEach(function(v,k){if(k!=="message")b+=k+": "+v+"\n"});b+="\n"+(d.get("message")||"");location.href="mailto:mea@bellnet.ca?subject="+encodeURIComponent((d.get("Service")||"Service")+" request from "+(d.get("Name")||"the website"))+"&body="+encodeURIComponent(b)})});
+
+/* page animations */
+var ctx=null;
+function animate(page){
+  if(!G)return;
+  if(ctx)ctx.revert();
+  ctx=gsap.context(function(){
+    $(".hero-img",page).forEach(function(hi){gsap.fromTo(hi,{scale:1.12},{scale:1,duration:2.2,ease:"power3.out"})});
+    $(".line-mask>span",page).forEach(function(l,i){gsap.from(l,{yPercent:110,duration:1.1,ease:"power4.out",delay:.12+i*.09})});
+    $(".hero-top,.hero-stage",page).forEach(function(m){gsap.from(m,{opacity:0,y:24,duration:1,delay:.5})});
+    $(".hero-stage",page).forEach(function(s){gsap.fromTo(s,{clipPath:"inset(0 0 100% 0)"},{clipPath:"inset(0 0 0% 0)",duration:1.4,ease:"power4.inOut",delay:.3})});
+    $(".reveal",page).forEach(function(r){gsap.fromTo(r,{clipPath:"inset(0 100% 0 0)"},{clipPath:"inset(0 0% 0 0)",ease:"power4.inOut",duration:1.3,scrollTrigger:{trigger:r,start:"top 85%"}});var im=r.querySelector("img");if(im)gsap.to(im,{scale:1,ease:"none",scrollTrigger:{trigger:r,start:"top bottom",end:"bottom top",scrub:true}})});
+    $(".split-words",page).forEach(function(p){gsap.to($(".w",p),{opacity:1,stagger:.05,ease:"none",scrollTrigger:{trigger:p,start:"top 80%",end:"bottom 45%",scrub:true}})});
+    $(".d2,.feat>div,.rlist li,.makes span,.stats div,.contact-rows a,details,.rail div",page).forEach(function(el){gsap.from(el,{opacity:0,y:36,duration:1,ease:"power3.out",scrollTrigger:{trigger:el,start:"top 92%"}})});
+    $("[data-count]",page).forEach(function(el){var v=parseFloat(el.dataset.count),o={x:0};gsap.to(o,{x:v,duration:1.8,ease:"power2.out",scrollTrigger:{trigger:el,start:"top 90%"},onUpdate:function(){el.textContent=v%1?o.x.toFixed(1):Math.round(o.x)}})});
+    $(".wave .trace",page).forEach(function(p){var L=p.getTotalLength();gsap.set(p,{strokeDasharray:L,strokeDashoffset:L});gsap.to(p,{strokeDashoffset:0,ease:"none",scrollTrigger:{trigger:p.closest("svg"),start:"top 90%",end:"bottom 40%",scrub:true}})});
+    var rail=page.querySelector("#rail");if(rail)ScrollTrigger.create({trigger:rail,start:"top 80%",end:"bottom 40%",scrub:true,onUpdate:function(s){rail.style.setProperty("--p",(s.progress*100)+"%")}});
+  },page);
+  ScrollTrigger.refresh();
+}
+
+/* router with wipe */
+var wipe=$(".wipe")[0],first=true;
+function show(){var r=(location.hash.replace(/^#/,"")||"/");var page=$('.page[data-route="'+r+'"]')[0]||$('.page[data-route="/"]')[0];$(".page").forEach(function(p){p.classList.toggle("on",p===page)});$("nav a",ov).forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+page.dataset.route)});if(lenis)lenis.scrollTo(0,{immediate:true});else scrollTo(0,0);status();animate(page);var h=page.querySelector("h1");document.title=(page.dataset.route==="/"||!h?"":h.textContent.replace(/\s+/g," ").trim()+" · ")+"Mechanical Edge Automotive, Burlington"}
+function route(){if(first||!G){first=false;show();return}gsap.timeline().set(wipe,{yPercent:100}).to(wipe,{yPercent:0,duration:.5,ease:"power3.in"}).add(show).to(wipe,{yPercent:-100,duration:.65,ease:"power3.out"})}
+addEventListener("hashchange",route);
+
+/* loader */
+var L=$(".loader")[0],c=document.getElementById("cnt");
+var seen=false;try{seen=!!sessionStorage.getItem("me");sessionStorage.setItem("me",1)}catch(e){}
+if(G&&!seen){var o={v:0};gsap.timeline().to(".loader .scan",{top:"100%",duration:1.2,ease:"power2.inOut"},0).to(o,{v:100,duration:1.2,ease:"power2.inOut",onUpdate:function(){var v=Math.round(o.v);c.textContent=(v<10?"00":v<100?"0":"")+v}},0).to(L,{yPercent:-100,duration:.8,ease:"power4.inOut",onStart:route}).set(L,{display:"none"})}
+else{L.style.display="none";route()}
+addEventListener("load",function(){if(G)ScrollTrigger.refresh()});
+})();
+</script>
+</body>
+</html>
