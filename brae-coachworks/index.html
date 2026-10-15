@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Brae Coachworks · Vehicle accident repair and bodywork in Dunfermline, Fife</title>
+<meta name="description" content="Concept preview. Brae Coachworks is a family run vehicle accident repair and bodywork workshop at Unit 3 Buffies Brae, Dunfermline.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F3F1EC;--paper2:#E9E6DF;--white:#FBFAF7;--ink:#121212;--ink2:#1D1C1B;--lac:#7B0F1C;--lacL:#A3172A;--green:#0E3A2C;--line:rgba(18,18,18,.13);--lineL:rgba(243,241,236,.16);--sans:"Archivo",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace;--pad:clamp(20px,4vw,64px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+::selection{background:var(--lac);color:var(--paper)}
+.grain{position:fixed;inset:-50%;width:200%;height:200%;pointer-events:none;z-index:90;opacity:.05;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain 1.2s steps(6) infinite}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-4%,3%)}40%{transform:translate(3%,-5%)}60%{transform:translate(-2%,4%)}80%{transform:translate(5%,1%)}100%{transform:translate(0,0)}}
+/* type */
+.wide{font-stretch:125%}
+.d1{font-weight:300;font-stretch:125%;font-size:clamp(46px,8.4vw,150px);line-height:.92;letter-spacing:-.045em}
+.d2{font-weight:300;font-stretch:125%;font-size:clamp(36px,5.4vw,96px);line-height:.95;letter-spacing:-.04em}
+.d3{font-weight:400;font-stretch:115%;font-size:clamp(24px,2.6vw,42px);line-height:1.05;letter-spacing:-.025em}
+em,.lc{font-style:normal;color:var(--lac);font-weight:500}
+.dark em,.dark .lc{color:#E3435A}
+.mono{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.label{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;display:flex;gap:14px;align-items:center;opacity:.7}
+.label:before{content:attr(data-n);color:var(--lac);opacity:1}
+.dark .label:before{color:#E3435A}
+.body{font-size:clamp(15px,1.15vw,17px);opacity:.74;max-width:46ch}
+.line-mask{display:block;overflow:hidden;padding-bottom:.08em}.line-mask>span{display:block}
+/* banner + nav */
+.banner{position:relative;z-index:60;background:var(--ink);color:rgba(243,241,236,.75);font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-align:center;padding:9px var(--pad)}
+.nav{position:fixed;left:0;right:0;top:34px;z-index:50;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:18px var(--pad);transition:background .5s,top .4s,padding .4s}
+.nav.solid{background:rgba(243,241,236,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);top:0;padding:13px var(--pad);border-bottom:1px solid var(--line)}
+.mark{display:flex;align-items:center;gap:12px;font-stretch:125%;font-weight:600;font-size:19px;letter-spacing:-.02em;line-height:1}
+.mark i{width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#E3435A,var(--lac) 55%,#3a050b);box-shadow:0 0 0 3px rgba(123,15,28,.12)}
+.mark small{display:block;font-family:var(--mono);font-weight:400;font-size:9px;letter-spacing:.14em;opacity:.55;margin-top:5px;font-stretch:100%}
+.menu-btn{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:12px 4px}
+.menu-btn i{display:grid;gap:5px}.menu-btn i b{display:block;width:26px;height:1.5px;background:currentColor}
+.nav-call{justify-self:end;font-size:14px;font-weight:500}
+.u{position:relative;display:inline-block}
+.u:after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:1px;background:currentColor;transform:scaleX(1);transform-origin:right}
+.u:hover:after{animation:udraw .8s cubic-bezier(.7,0,.2,1)}
+@keyframes udraw{0%{transform:scaleX(1);transform-origin:right}50%{transform:scaleX(0);transform-origin:right}51%{transform-origin:left}100%{transform:scaleX(1);transform-origin:left}}
+/* overlay */
+.overlay{position:fixed;inset:0;z-index:70;background:var(--white);display:grid;grid-template-columns:1.4fr 1fr;padding:110px var(--pad) 40px;clip-path:inset(0 0 100% 0);transition:clip-path .9s cubic-bezier(.77,0,.18,1);visibility:hidden;overflow-y:auto}
+.overlay.open{clip-path:inset(0 0 0 0);visibility:visible}
+.overlay nav a{display:flex;align-items:baseline;gap:18px;font-stretch:125%;font-weight:300;font-size:clamp(34px,5.6vw,84px);line-height:1.04;letter-spacing:-.045em;padding:3px 0;opacity:0;transform:translateY(40px);transition:opacity .6s,transform .8s cubic-bezier(.2,.7,.2,1),color .3s}
+.overlay.open nav a{opacity:1;transform:none}
+.overlay nav a span{font-family:var(--mono);font-size:11px;letter-spacing:.08em;opacity:.45;font-stretch:100%}
+.overlay nav a:hover,.overlay nav a.on{color:var(--lac);font-weight:500}
+.ov-side{display:flex;flex-direction:column;justify-content:space-between;border-left:1px solid var(--line);padding-left:40px;gap:30px}
+.ov-prev{aspect-ratio:4/5;max-height:52vh;overflow:hidden;background:var(--paper2)}
+.ov-prev img{transition:opacity .5s}
+.ov-meta{font-size:14px;opacity:.8;display:grid;gap:4px}
+.ov-close{position:absolute;top:30px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:12px}
+/* layout */
+.page{display:none}.page.on{display:block}
+.wrap{padding:0 var(--pad)}
+section{position:relative}
+.sec{padding:clamp(90px,13vw,190px) 0}
+.alt{background:var(--white)}
+.dark{background:var(--ink);color:var(--paper)}
+.dark .body{opacity:.7}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.cta{display:inline-flex;align-items:center;gap:14px;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;padding:19px 28px;border:1px solid currentColor;border-radius:999px;transition:background .4s,color .4s,border-color .4s;will-change:transform}
+.cta:after{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.cta:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.dark .cta:hover{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.cta.fill{background:var(--lac);color:var(--paper);border-color:var(--lac)}
+.cta.fill:hover{background:var(--ink);border-color:var(--ink)}
+.dark .cta.fill:hover{background:var(--paper);color:var(--ink)}
+.reveal{overflow:hidden}
+.g .reveal img{transform:scale(1.16)}
+/* hero (gallery) */
+.hero{padding:clamp(150px,20vh,210px) 0 0;position:relative}
+.hero-top{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end}
+.hero-meta{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:clamp(30px,4vw,56px);padding-top:16px}
+.frame{position:relative;margin-top:24px;height:72svh;min-height:420px;overflow:hidden;background:var(--paper2)}
+.frame .cap{position:absolute;left:24px;bottom:22px;z-index:2;color:var(--paper);mix-blend-mode:difference}
+.frame .tag{position:absolute;right:24px;top:22px;z-index:2;background:rgba(243,241,236,.9);padding:8px 12px;border-radius:99px}
+.quote-cite{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.6;max-width:22ch;text-align:right}
+.status{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.status i{width:8px;height:8px;border-radius:50%;background:#9a9a9a}
+.status.open i{background:#2E9E5B;box-shadow:0 0 0 0 rgba(46,158,91,.5);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(46,158,91,0)}100%{box-shadow:0 0 0 0 rgba(46,158,91,0)}}
+/* intro */
+.intro .big{font-stretch:112%;font-weight:300;font-size:clamp(28px,3.7vw,62px);line-height:1.1;letter-spacing:-.03em;grid-column:2/12}
+.g .intro .big .w{opacity:.16}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(70px,9vw,140px)}
+.stats div{padding:26px 20px 0 0;border-top:1px solid var(--line)}
+.stats b{display:block;font-stretch:125%;font-weight:300;font-size:clamp(40px,5.2vw,88px);line-height:1;letter-spacing:-.05em}
+.stats span{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.55}
+/* before / after */
+.ba{position:relative;aspect-ratio:1408/768;overflow:hidden;user-select:none;-webkit-user-select:none;background:var(--paper2);touch-action:pan-y}
+.ba img{position:absolute;inset:0}
+.ba .before{clip-path:inset(0 calc(100% - var(--x,50%)) 0 0)}
+.ba .handle{position:absolute;top:0;bottom:0;left:var(--x,50%);width:2px;margin-left:-1px;background:var(--paper);pointer-events:none;z-index:3}
+.ba .handle:after{content:"Drag";position:absolute;top:50%;left:50%;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;background:var(--paper);color:var(--ink);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;box-shadow:0 10px 40px rgba(0,0,0,.25)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;z-index:4;margin:0}
+.ba .lb{position:absolute;top:18px;z-index:2;background:rgba(18,18,18,.78);color:var(--paper);padding:7px 12px;border-radius:99px}
+.ba .lb.l{left:18px}.ba .lb.r{right:18px}
+.note{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;opacity:.55;margin-top:14px}
+/* horizontal services */
+.hz{height:100svh;overflow:hidden;position:relative}
+.hz-track{display:flex;height:100%;align-items:center;gap:3vw;padding:0 var(--pad);width:max-content}
+.hz-head{width:32vw;flex:none;padding-right:2vw}
+.counter{font-family:var(--mono);font-size:12px;letter-spacing:.08em;margin-top:40px;display:flex;gap:8px;align-items:center}
+.counter b{font-weight:500;color:var(--lac)}
+.panel{position:relative;flex:none;width:44vw;height:76svh;display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line)}
+.panel .pimg{flex:1;overflow:hidden;position:relative}
+.panel .pimg img{transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.panel:hover .pimg img{transform:scale(1.05)}
+.panel .pbody{padding:26px 28px 28px;display:grid;grid-template-columns:auto 1fr;gap:6px 22px;align-items:start}
+.panel .num{font-family:var(--mono);font-size:12px;color:var(--lac);padding-top:8px}
+.panel p{font-size:15px;opacity:.7;max-width:40ch;grid-column:2}
+/* marquee band */
+.band{background:var(--lac);color:var(--paper);overflow:hidden;padding:clamp(40px,6vw,80px) 0;position:relative}
+.marq{white-space:nowrap;font-stretch:125%;font-weight:300;font-size:clamp(56px,9vw,160px);line-height:1;letter-spacing:-.05em;display:flex;width:max-content;animation:marq 38s linear infinite}
+.marq span{padding-right:.35em}
+.marq span b{font-weight:300;color:transparent;-webkit-text-stroke:1px rgba(243,241,236,.8)}
+@keyframes marq{to{transform:translateX(-50%)}}
+.band .tag{position:absolute;left:var(--pad);bottom:16px;opacity:.8}
+/* process pin */
+.story{display:grid;grid-template-columns:1fr 1fr;min-height:100svh;background:var(--white)}
+.story-img{position:relative;height:100svh;overflow:hidden;background:var(--paper2)}
+.story-img img{position:absolute;inset:0;opacity:0;transition:opacity 1s,transform 1.6s;transform:scale(1.06)}
+.story-img img.on{opacity:1;transform:scale(1)}
+.story-txt{display:flex;flex-direction:column;justify-content:center;padding:0 var(--pad);height:100svh}
+.steps{position:relative;min-height:320px;margin-top:40px}
+.step{position:absolute;inset:0;opacity:0;transform:translateY(30px);transition:opacity .7s,transform .9s cubic-bezier(.2,.7,.2,1)}
+.step.on{opacity:1;transform:none}
+.step .yr{font-stretch:125%;font-weight:200;font-size:clamp(70px,8vw,140px);line-height:.9;letter-spacing:-.06em;color:var(--lac)}
+.step h3{font-stretch:115%;font-weight:400;font-size:clamp(26px,2.6vw,42px);line-height:1.05;letter-spacing:-.025em;margin:18px 0 14px}
+.dots{display:flex;gap:10px;margin-top:20px}.dots i{width:28px;height:2px;background:var(--line);transition:background .4s}.dots i.on{background:var(--lac)}
+/* reviews */
+.rev{text-align:center}
+.badge{display:inline-flex;align-items:center;gap:14px;border:1px solid var(--lineL);border-radius:99px;padding:10px 18px 10px 12px}
+.badge b{background:var(--paper);color:var(--ink);border-radius:99px;padding:4px 10px;font-weight:600}
+.rev-q{position:relative;min-height:clamp(300px,26vw,380px);max-width:1150px;margin:50px auto 0}
+.rev-q blockquote{position:absolute;inset:0;opacity:0;transform:translateY(20px);transition:opacity .8s,transform 1s}
+.rev-q blockquote.on{opacity:1;transform:none}
+.rev-q p{font-stretch:112%;font-weight:300;font-size:clamp(24px,3vw,48px);line-height:1.15;letter-spacing:-.03em}
+.rev-q cite{display:block;margin-top:28px;font-style:normal;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.55}
+.rev-ctl{display:flex;align-items:center;justify-content:center;gap:26px;margin-top:30px}
+.rev-ctl button{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:12px}
+.prog{width:180px;height:1px;background:var(--lineL);position:relative;overflow:hidden}
+.prog i{position:absolute;left:0;top:0;bottom:0;width:0;background:currentColor}
+.prog i.run{width:100%;transition:width 7s linear}
+/* lists */
+.svc li{list-style:none;display:grid;grid-template-columns:80px 1fr 1fr;gap:24px;padding:30px 0;border-top:1px solid var(--line);align-items:baseline}
+.svc li:last-child{border-bottom:1px solid var(--line)}
+.svc li .mono{color:var(--lac)}
+.svc li p{opacity:.72;max-width:48ch}
+.split{display:grid;grid-template-columns:5fr 7fr;gap:clamp(30px,6vw,110px);align-items:center}
+.split.rev2{grid-template-columns:7fr 5fr}
+.split .img{aspect-ratio:4/5;overflow:hidden}
+.split.rev2 .img{aspect-ratio:5/4}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:0 28px}
+.feat>div{padding:30px 0 34px;border-top:1px solid var(--line)}
+.dark .feat>div{border-color:var(--lineL)}
+.feat h4{font-stretch:115%;font-weight:400;font-size:clamp(22px,2vw,32px);margin:14px 0 10px;line-height:1.1;letter-spacing:-.02em}
+.feat p{font-size:15px;opacity:.72;max-width:36ch}
+.hours{width:100%;border-collapse:collapse;font-size:clamp(16px,1.3vw,20px)}
+.hours td{padding:16px 0;border-top:1px solid var(--line)}
+.hours td:last-child{text-align:right;font-stretch:115%}
+.hours tr.today td{color:var(--lac);font-weight:500}
+.revlist li{list-style:none;display:grid;grid-template-columns:1fr 140px;gap:30px;padding:34px 0;border-top:1px solid var(--line);align-items:baseline}
+.revlist li p{font-stretch:110%;font-weight:300;font-size:clamp(20px,2.2vw,34px);line-height:1.2;letter-spacing:-.025em}
+.revlist li span{text-align:right}
+.case{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.case>div{background:var(--white);border:1px solid var(--line);padding:30px;display:flex;flex-direction:column;gap:18px;min-height:280px}
+.case p.q{font-stretch:108%;font-weight:300;font-size:19px;line-height:1.35;flex:1}
+.swatches{display:flex;gap:10px;margin-top:30px}
+.swatches i{width:34px;height:34px;border-radius:50%;box-shadow:inset -4px -6px 10px rgba(0,0,0,.35),inset 4px 4px 8px rgba(255,255,255,.35)}
+.contact-rows a{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:28px 0;border-top:1px solid var(--line);font-stretch:120%;font-weight:300;font-size:clamp(26px,4vw,64px);line-height:1;letter-spacing:-.04em;transition:color .3s,padding .5s}
+.contact-rows a span{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.5;font-stretch:100%}
+.contact-rows a:hover{color:var(--lac);padding-left:16px}
+form.enq{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+form.enq label{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.6;padding-top:26px}
+form.enq input,form.enq select,form.enq textarea{width:100%;background:transparent;border:0;border-bottom:1px solid var(--line);padding:12px 0;font:inherit;font-size:18px;color:inherit;border-radius:0;outline:none}
+form.enq input:focus,form.enq select:focus,form.enq textarea:focus{border-color:var(--lac)}
+form.enq .full{grid-column:1/-1}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:26px 0;font-stretch:112%;font-weight:400;font-size:clamp(20px,2vw,32px);line-height:1.15;letter-spacing:-.02em}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-weight:200;transition:transform .4s;color:var(--lac)}
+details[open] summary:after{transform:rotate(45deg)}
+details p{padding:0 0 28px;opacity:.74;max-width:60ch}
+.map{aspect-ratio:16/9;filter:grayscale(1) contrast(1.05);border:0;width:100%}
+/* footer */
+footer{background:var(--paper);padding:clamp(100px,14vw,190px) 0 0;overflow:hidden;border-top:1px solid var(--line)}
+.f-cols{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:clamp(70px,8vw,120px);font-size:14px}
+.f-cols h5{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:400;opacity:.5;margin-bottom:16px}
+.f-cols p,.f-cols a{display:block;opacity:.85;line-height:2}
+.f-word{font-stretch:125%;font-weight:800;font-size:27vw;line-height:.78;letter-spacing:-.07em;text-align:center;margin-top:70px;color:transparent;-webkit-text-stroke:1px rgba(18,18,18,.13);user-select:none;white-space:nowrap}
+.f-base{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:22px var(--pad) 90px;font-size:12px;opacity:.7;border-top:1px solid var(--line)}
+.f-base a{text-decoration:underline;text-underline-offset:3px;padding:8px 0}
+/* cursor, loader, wipe */
+.cursor{position:fixed;left:0;top:0;z-index:100;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;background:var(--paper);pointer-events:none;mix-blend-mode:difference;transition:width .35s,height .35s,margin .35s,background .35s;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--paper)}
+.cursor.big{width:86px;height:86px;margin:-43px 0 0 -43px;mix-blend-mode:normal;background:var(--lac)}
+.cursor.link{width:46px;height:46px;margin:-23px 0 0 -23px}
+.cursor span{opacity:0;transition:opacity .3s}.cursor.big span{opacity:1}
+@media (hover:none){.cursor{display:none}}
+.loader{position:fixed;inset:0;z-index:200;background:var(--paper);display:flex;flex-direction:column;justify-content:space-between;padding:var(--pad)}
+.loader .w{font-stretch:125%;font-weight:300;font-size:clamp(60px,13vw,230px);line-height:.85;letter-spacing:-.06em}
+.loader .bar{height:2px;background:var(--line);position:relative;overflow:hidden}
+.loader .bar i{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--lac)}
+.loader .row{display:flex;justify-content:space-between;align-items:flex-end}
+.wipe{position:fixed;inset:0;z-index:150;background:var(--lac);transform:translateY(100%);pointer-events:none}
+.mbar{display:none}
+/* responsive */
+@media (max-width:1000px){
+ .overlay{grid-template-columns:1fr}.ov-side{display:none}
+ .story{grid-template-columns:1fr}.story-img{height:60svh}.story-txt{height:auto;padding:70px var(--pad)}
+ .steps{min-height:0}.step{position:relative;opacity:1;transform:none;padding:28px 0;border-top:1px solid var(--line)}.dots{display:none}
+ .story-img img{opacity:0}.story-img img:first-child{opacity:1;transform:none}
+ .hz{height:auto}.hz-track{flex-direction:column;width:auto;align-items:stretch;padding:90px var(--pad);gap:28px}
+ .hz-head{width:auto;padding:0 0 20px}.panel{width:100%;height:auto}.panel .pimg{height:52svh;flex:none}.counter{display:none}
+ .case{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+ .nav{grid-template-columns:1fr auto;top:50px}.nav.solid{top:0}.nav-call{display:none}
+ .banner{font-size:10px}
+ .hero-top{grid-template-columns:1fr}.quote-cite{text-align:left}
+ .frame{height:56svh;min-height:320px}
+ .stats{grid-template-columns:1fr 1fr;gap:0 20px}
+ .split,.split.rev2{grid-template-columns:1fr}
+ .feat{grid-template-columns:1fr}
+ .svc li{grid-template-columns:1fr;gap:10px}
+ .revlist li{grid-template-columns:1fr;gap:12px}.revlist li span{text-align:left}
+ .f-cols{grid-template-columns:1fr 1fr}
+ form.enq{grid-template-columns:1fr}
+ .intro .big{grid-column:1/-1}
+ .ba .handle:after{width:58px;height:58px;margin:-29px 0 0 -29px}
+ .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:55;background:var(--ink);color:var(--paper)}
+ .mbar a{text-align:center;padding:17px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+ .mbar a:first-child{background:var(--lac)}
+ .cta{padding:17px 22px}
+ .contact-rows a{flex-wrap:wrap;overflow-wrap:anywhere}
+ .loader .w{font-size:clamp(40px,12vw,230px)}
+}
+/* validation fixes: readable text, tap targets, contrast */
+.mono,.label,.menu-btn,.quote-cite,.stats span,.note,.overlay nav a span,.ov-close,.rev-q cite,.rev-ctl button,.f-cols h5,.contact-rows a span,form.enq label,.status,.cursor,.cta,.ba .handle:after{font-size:12px}
+.banner{font-size:12px;letter-spacing:0;line-height:1.4}
+.mark small{font-size:12px;letter-spacing:.08em}
+.mark,.menu-btn,.ov-close,.rev-ctl button{min-height:44px}
+.overlay nav a{min-height:44px;align-items:center}
+.story-txt a.u.mono{display:inline-flex;align-items:center;min-height:44px}
+.story-txt a.u.mono:after{bottom:10px}
+.f-cols a{display:flex;align-items:center;min-height:44px;line-height:1.3}
+.f-base a{display:inline-flex;align-items:center;min-height:44px}
+.frame .cap{mix-blend-mode:normal;background:rgba(18,18,18,.78);color:var(--paper);padding:8px 12px;border-radius:99px}
+.marq span b{color:#E9A3AD;-webkit-text-stroke:0}
+.f-word{color:#DDD9D0;-webkit-text-stroke:0;font-weight:300}
+@media (max-width:760px){.nav{top:52px}.banner{font-size:12px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal img{transform:none}.loader{display:none}}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="loader" aria-hidden="true"><div class="row"><span class="mono">Dunfermline, Fife</span><span class="mono"><span id="cnt">0</span>%</span></div><div><div class="w">Brae<br>Coachworks</div><div class="bar" style="margin-top:30px"><i id="lbar"></i></div></div></div>
+<div class="wipe" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span>View</span></div>
+
+<div class="banner">Independent concept preview by Teta Digitals. Not the official website of Brae Coachworks.</div>
+
+<header class="nav" id="nav">
+  <a href="#/" class="mark" aria-label="Brae Coachworks home"><i></i><span>Brae Coachworks<small>BODYWORK · DUNFERMLINE</small></span></a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="overlay"><i><b></b><b></b></i>Menu</button>
+  <a class="nav-call u" href="tel:01383625400">01383 625400</a>
+</header>
+
+<div class="overlay" id="overlay" aria-hidden="true">
+  <button class="ov-close" id="ovClose">Close</button>
+  <nav>
+    <a href="#/" data-img="brae-hero.jpg"><span>01</span>Home</a>
+    <a href="#/repairs" data-img="brae-spray.jpg"><span>02</span>Repairs</a>
+    <a href="#/before-after" data-img="brae-before.jpg"><span>03</span>Before and after</a>
+    <a href="#/estimates" data-img="brae-workshop.jpg"><span>04</span>Free estimates</a>
+    <a href="#/about" data-img="brae-detail.jpg"><span>05</span>John and the team</a>
+    <a href="#/reviews" data-img="brae-after.jpg"><span>06</span>Reviews</a>
+    <a href="#/visit" data-img="brae-workshop.jpg"><span>07</span>Visit</a>
+    <a href="#/contact" data-img="brae-hero.jpg"><span>08</span>Contact</a>
+  </nav>
+  <div class="ov-side">
+    <div class="ov-prev"><img id="ovImg" src="brae-hero.jpg" alt=""></div>
+    <div class="ov-meta"><span>Unit 3 Buffies Brae, Dunfermline KY12 8ED</span><a class="u" href="tel:01383625400">01383 625400</a><a class="u" href="mailto:braecoachworks@outlook.com">braecoachworks@outlook.com</a></div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- HOME -->
+<div class="page" data-route="/">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-top">
+        <h1 class="d1"><span class="line-mask"><span>Like it just</span></span><span class="line-mask"><span>came out of</span></span><span class="line-mask"><span><em>the factory.</em></span></span></h1>
+        <p class="quote-cite">What one customer said after a car park dent to a door and back panel. Google review, 2022</p>
+      </div>
+      <div class="hero-meta mono"><span>Family run accident repair</span><span>Unit 3 Buffies Brae, Dunfermline</span><span>4.9 on Google, 52 reviews</span><span class="status" data-status><i></i><b>Checking today's hours</b></span></div>
+    </div>
+    <div class="wrap"><div class="frame"><img class="hero-img" src="brae-hero.jpg" alt="A deep red hatchback with a flawless gloss finish in a bright workshop"><span class="tag mono">Bodywork · Paint · Accident repair</span><span class="cap mono">Scroll</span></div></div>
+  </section>
+
+  <section class="sec intro">
+    <div class="wrap">
+      <div class="grid">
+        <p class="label" data-n="(01)" style="grid-column:2/12;margin-bottom:40px">The workshop on Buffies Brae</p>
+        <p class="big split-words">Brae Coachworks is a family run business in Dunfermline dealing with vehicle accident repairs. John and his team look at every car in person, give a free estimate, and finish the job to a standard that keeps them <em>booked well in advance.</em></p>
+      </div>
+      <div class="stats">
+        <div><b data-count="4.9">4.9</b><span>Stars on Google</span></div>
+        <div><b data-count="52">52</b><span>Google reviews</span></div>
+        <div><b>Free</b><span>Repair estimates</span></div>
+        <div><b>Family</b><span>Run workshop</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" style="padding-top:0;background:var(--paper)">
+    <div class="wrap">
+      <div class="grid" style="align-items:end;margin-bottom:50px">
+        <div style="grid-column:1/8"><p class="label" data-n="(02)">Before and after</p><h2 class="d2" style="margin-top:28px">Drag to see the <em>difference.</em></h2></div>
+        <p class="body" style="grid-column:9/13">Dents, scrapes and scratches, put right and refinished so the panel reads as one clean line again.</p>
+      </div>
+      <div class="ba" data-ba data-auto><img src="brae-after.jpg" alt="Rear door and quarter panel after repair"><img class="before" src="brae-before.jpg" alt="Rear door and quarter panel with a dent and deep scratches"><span class="lb l mono">Before</span><span class="lb r mono">After</span><span class="handle"></span><input type="range" min="0" max="100" value="50" aria-label="Compare before and after"></div>
+      <p class="note">Concept imagery for this preview. Brae Coachworks' own before and after photos would sit here.</p>
+    </div>
+  </section>
+
+  <section class="hz" id="hz">
+    <div class="hz-track">
+      <div class="hz-head">
+        <p class="label" data-n="(03)">What we repair</p>
+        <h2 class="d2" style="margin-top:30px">Bodywork, <em>done properly.</em></h2>
+        <p class="body" style="margin-top:30px">From a small paintwork repair to accident damage across several panels. Every job starts with John seeing the car.</p>
+        <div class="counter"><b data-cnt>01</b><span>/ 04</span></div>
+      </div>
+      <a class="panel" href="#/repairs"><div class="pimg"><img src="brae-workshop.jpg" alt="A car masked up for repair in a tidy workshop"></div><div class="pbody"><span class="num">01</span><h3 class="d3">Accident repair</h3><p>The core of the business: repairing vehicles after an accident, big or small.</p></div></a>
+      <a class="panel" href="#/repairs"><div class="pimg"><img src="brae-before.jpg" alt="A dented and scratched rear door"></div><div class="pbody"><span class="num">02</span><h3 class="d3">Dents and panels</h3><p>Dented doors and back panels, like the car park bumps customers describe in their reviews.</p></div></a>
+      <a class="panel" href="#/repairs"><div class="pimg"><img src="brae-detail.jpg" alt="Close-up of glossy metallic paint"></div><div class="pbody"><span class="num">03</span><h3 class="d3">Scratches and paintwork</h3><p>Scratched and damaged paint repaired to a finish customers call beautiful.</p></div></a>
+      <a class="panel" href="#/repairs"><div class="pimg"><img src="brae-spray.jpg" alt="A painter spraying a wing panel in a booth"></div><div class="pbody"><span class="num">04</span><h3 class="d3">Paint and spray</h3><p>Spray work when a repair needs it, with honest advice on whether it is worth it for your car.</p></div></a>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="marq" aria-hidden="true"><span>Accident repair · <b>Dents</b> · Scratches · <b>Paintwork</b> · Dunfermline ·</span><span>Accident repair · <b>Dents</b> · Scratches · <b>Paintwork</b> · Dunfermline ·</span></div>
+    <p class="tag mono">(04) Family run on Buffies Brae</p>
+  </section>
+
+  <section class="story" id="story">
+    <div class="story-img"><img class="on" src="brae-workshop.jpg" alt="The workshop"><img src="brae-before.jpg" alt="Damage being assessed"><img src="brae-spray.jpg" alt="Paint being applied"><img src="brae-after.jpg" alt="A finished panel"></div>
+    <div class="story-txt">
+      <p class="label" data-n="(05)">How a repair works</p>
+      <div class="steps">
+        <div class="step on"><div class="yr">01</div><h3>Bring the car in</h3><p class="body">For a quote, the team always prefer to see the car in person, because there can be hidden damage.</p></div>
+        <div class="step"><div class="yr">02</div><h3>A free estimate</h3><p class="body">Brae Coachworks provide a free estimate for repairs to your vehicle, priced on visiting.</p></div>
+        <div class="step"><div class="yr">03</div><h3>Book a date</h3><p class="body">The workshop is busy and booked well in advance, so you agree a date to bring the car back. If new parts are needed, a deposit is taken before they are ordered.</p></div>
+        <div class="step"><div class="yr">04</div><h3>Collect your car</h3><p class="body">One customer describes the whole team taking time to speak to them when they collected the car.</p></div>
+      </div>
+      <div class="dots"><i class="on"></i><i></i><i></i><i></i></div>
+      <a href="#/estimates" class="u mono" style="margin-top:40px;align-self:flex-start">About estimates</a>
+    </div>
+  </section>
+
+  <section class="sec dark rev">
+    <div class="wrap">
+      <span class="badge mono"><b>4.9</b>From 52 Google reviews</span>
+      <div class="rev-q" data-rev>
+        <blockquote class="on"><p>"The job they did is exceptional! My before and after photos may not do it justice but it looks like it just came out of the factory."</p><cite>Google review · Jul 2022</cite></blockquote>
+        <blockquote><p>"Great service from this body shop and very quick turn around. Would definitely recommend this business. 5 stars all round."</p><cite>Google review · Feb 2026</cite></blockquote>
+        <blockquote><p>"Simply incredible magicians of everything car bodywork and paint related. Genuinely blown away."</p><cite>Google review · Apr 2024</cite></blockquote>
+        <blockquote><p>"John and his team have made it as painless as possible, great fair price and the work is faultless."</p><cite>Google review · Mar 2024</cite></blockquote>
+      </div>
+      <div class="rev-ctl"><button data-p>Prev</button><div class="prog"><i></i></div><button data-n>Next</button></div>
+    </div>
+  </section>
+</div>
+
+<!-- REPAIRS -->
+<div class="page" data-route="/repairs">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-top">
+        <h1 class="d1"><span class="line-mask"><span>Accident</span></span><span class="line-mask"><span><em>repairs.</em></span></span></h1>
+        <a href="#/contact" class="cta fill magnet">Ask for an estimate</a>
+      </div>
+      <div class="hero-meta mono"><span>(02) Repairs</span><span>Cars and vehicles</span><span>Free estimates</span></div>
+    </div>
+    <div class="wrap"><div class="frame"><img class="hero-img" src="brae-spray.jpg" alt="Deep red paint being sprayed onto a wing panel"></div></div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <p class="label" data-n="(i)">The work</p>
+      <h2 class="d2" style="margin:28px 0 70px;max-width:16ch">What Brae Coachworks <em>put right.</em></h2>
+      <ul class="svc">
+        <li><span class="mono">01</span><h3 class="d3">Accident repair</h3><p>Brae Coachworks is a family run business dealing with vehicle accident repairs. Bring the car in and the team will assess it properly.</p></li>
+        <li><span class="mono">02</span><h3 class="d3">Dents and panel damage</h3><p>Dented doors and back panels repaired. One customer brought in a car with a door and rear panel dented on a car park pole.</p></li>
+        <li><span class="mono">03</span><h3 class="d3">Scratches and paintwork</h3><p>Badly scratched paint after an accident, and smaller paintwork repairs, refinished to a high standard.</p></li>
+        <li><span class="mono">04</span><h3 class="d3">Spray work</h3><p>When damage goes deeper than it looks, you get a straight answer on what it needs, and whether it is worth doing.</p></li>
+      </ul>
+    </div>
+  </section>
+  <section class="sec alt">
+    <div class="wrap split rev2">
+      <div class="img reveal"><img src="brae-detail.jpg" alt="Water beading on glossy green metallic paint"></div>
+      <div><p class="label" data-n="(ii)">Honest advice</p><h2 class="d2" style="margin:28px 0">Told straight, <em>even when it costs them.</em></h2><p class="body" style="margin-bottom:36px">"The proprietor said a full spray would be needed, but said the car was not worth the cost. I thank him for his honesty." Google review, Dec 2025.</p><a class="cta magnet" href="tel:01383625400">Call 01383 625400</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- BEFORE AFTER -->
+<div class="page" data-route="/before-after">
+  <section class="sec" style="padding-top:clamp(160px,20vh,220px)">
+    <div class="wrap">
+      <p class="label" data-n="(03)">Before and after</p>
+      <h1 class="d1" style="margin:28px 0 50px"><span class="line-mask"><span>Every panel,</span></span><span class="line-mask"><span><em>one clean line.</em></span></span></h1>
+      <div class="ba" data-ba><img src="brae-after.jpg" alt="Rear door and quarter panel after repair"><img class="before" src="brae-before.jpg" alt="Rear door and quarter panel with a dent and deep scratches"><span class="lb l mono">Before</span><span class="lb r mono">After</span><span class="handle"></span><input type="range" min="0" max="100" value="50" aria-label="Compare before and after"></div>
+      <p class="note">Concept imagery for this preview. On the finished site this becomes a gallery of Brae Coachworks' real jobs, easy to update from a phone.</p>
+    </div>
+  </section>
+  <section class="sec alt">
+    <div class="wrap">
+      <p class="label" data-n="(i)">Jobs, in customers' words</p>
+      <h2 class="d2" style="margin:28px 0 60px">Real repairs, <em>described by real customers.</em></h2>
+      <div class="case">
+        <div><span class="mono lc">Door and back panel</span><p class="q">"I managed to bump into a pole in a car park, denting a door and the back panel on my car... The job they did is exceptional!"</p><span class="mono" style="opacity:.55">Google review · Jul 2022</span></div>
+        <div><span class="mono lc">Accident scratches</span><p class="q">"Very skilled team who fixed my car after it became badly scratched in an accident. The car looks absolutely perfect."</p><span class="mono" style="opacity:.55">Google review · Oct 2017</span></div>
+        <div><span class="mono lc">Bodywork repair</span><p class="q">"Great service and excellent bodywork repair. Friendly, professional and the job was finished to a very high standard."</p><span class="mono" style="opacity:.55">Google review · Nov 2025</span></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ESTIMATES -->
+<div class="page" data-route="/estimates">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-top">
+        <h1 class="d1"><span class="line-mask"><span>Free estimates,</span></span><span class="line-mask"><span><em>in person.</em></span></span></h1>
+        <a href="tel:01383625400" class="cta fill magnet">Call to arrange</a>
+      </div>
+      <div class="hero-meta mono"><span>(04) Free estimates</span><span>Priced on visiting</span><span class="status" data-status><i></i><b>Checking today's hours</b></span></div>
+    </div>
+    <div class="wrap"><div class="frame"><img class="hero-img" src="brae-workshop.jpg" alt="A tidy workshop with a car masked for repair"></div></div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <div class="grid"><p class="label" data-n="(i)" style="grid-column:1/-1">Good to know</p><h2 class="d2" style="grid-column:1/10;margin:28px 0 70px">Why they want to <em>see the car first.</em></h2></div>
+      <div class="feat">
+        <div><span class="label" data-n="01"></span><h4>Hidden damage</h4><p>For a quote, the team always prefer to see the car in person, because damage can hide behind a panel.</p></div>
+        <div><span class="label" data-n="02"></span><h4>Free of charge</h4><p>Brae Coachworks provide a free estimate for repairs to your vehicle.</p></div>
+        <div><span class="label" data-n="03"></span><h4>Parts deposit</h4><p>If your vehicle needs new parts, a deposit is taken before the parts are ordered.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec dark">
+    <div class="wrap split">
+      <div><p class="label" data-n="(ii)">Plan ahead</p><h2 class="d2" style="margin-top:28px">Booked well <em>in advance.</em></h2></div>
+      <div><p class="body" style="font-size:clamp(17px,1.5vw,22px);max-width:40ch">The workshop is busy, and repair dates often book up weeks ahead. Get your estimate early, then lock in a date. The latest availability is posted on Facebook.</p><a class="cta magnet" style="margin-top:36px" href="https://www.facebook.com/braecoachworks/" target="_blank" rel="noopener">Latest dates on Facebook</a></div>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap split" style="align-items:start">
+      <div><p class="label" data-n="(iii)">FAQ</p><h2 class="d2" style="margin-top:28px">Questions, <em>answered.</em></h2></div>
+      <div>
+        <details><summary>Is the estimate free?</summary><p>Yes. Brae Coachworks provide a free estimate for repairs to your vehicle.</p></details>
+        <details><summary>Can I get a quote from photos?</summary><p>Photos help, but the team always prefer to see the car in person, because there can be hidden damage.</p></details>
+        <details><summary>Do I pay anything up front?</summary><p>If the repair needs new parts, a deposit is taken before they are ordered.</p></details>
+        <details><summary>How soon can you fit me in?</summary><p>The workshop is often booked weeks ahead. Call 01383 625400 or check Facebook for the next available date.</p></details>
+        <details><summary>When can I bring the car for an estimate?</summary><p>Monday to Thursday, 8am to 4pm, and Friday mornings. Call ahead to check, especially on Fridays and around holidays.</p></details>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ABOUT -->
+<div class="page" data-route="/about">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-top">
+        <h1 class="d1"><span class="line-mask"><span>John</span></span><span class="line-mask"><span>and <em>the team.</em></span></span></h1>
+      </div>
+      <div class="hero-meta mono"><span>(05) About</span><span>Family run</span><span>Dunfermline, Fife</span></div>
+    </div>
+    <div class="wrap"><div class="frame"><img class="hero-img" src="brae-detail.jpg" alt="Glossy deep green paint with water beading"></div></div>
+  </section>
+  <section class="sec intro">
+    <div class="wrap grid"><p class="big split-words">A family run workshop where the owner takes time to explain the repair, and the whole team stops to talk when you collect your car. One customer called it <em>old school greatness.</em></p></div>
+  </section>
+  <section class="sec alt">
+    <div class="wrap">
+      <div class="feat">
+        <div><span class="label" data-n="01"></span><h4>Family run</h4><p>Brae Coachworks is a family run business dealing with vehicle accident repairs, from Unit 3 Buffies Brae in Dunfermline.</p></div>
+        <div><span class="label" data-n="02"></span><h4>Part of the town</h4><p>In 2019 John McIntosh of Brae Coachworks sprayed the community art "coos" in Dunfermline Public Park with anti-graffiti lacquer, as reported by the Dunfermline Press.</p></div>
+        <div><span class="label" data-n="03"></span><h4>Meet Bodhi</h4><p>The newest member of the team, introduced on Facebook in October 2026. A very good workshop dog.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap split">
+      <div class="img reveal"><img src="brae-spray.jpg" alt="Spray painting a panel"></div>
+      <div><p class="label" data-n="(i)">Word of mouth</p><h2 class="d2" style="margin:28px 0">Recommended, <em>again and again.</em></h2><p class="body">"We are grateful to all our customers for keeping us so booked up and for all your recommendations which are very much appreciated." Brae Coachworks on Facebook, 2026.</p>
+      <div class="swatches" aria-hidden="true"><i style="background:#7B0F1C"></i><i style="background:#0E3A2C"></i><i style="background:#F3F1EC"></i><i style="background:#1A2340"></i><i style="background:#121212"></i></div></div>
+    </div>
+  </section>
+</div>
+
+<!-- REVIEWS -->
+<div class="page" data-route="/reviews">
+  <section class="sec" style="padding-top:clamp(160px,20vh,220px)">
+    <div class="wrap">
+      <p class="label" data-n="(06)">Reviews</p>
+      <h1 class="d1" style="margin:28px 0 40px"><span class="line-mask"><span>In their</span></span><span class="line-mask"><span><em>own words.</em></span></span></h1>
+      <p class="d3">4.9 <span class="lc">★★★★★</span> <span style="font-size:.5em;opacity:.6">from 52 Google reviews</span></p>
+    </div>
+  </section>
+  <section class="sec alt" style="padding-top:60px">
+    <div class="wrap">
+      <ul class="revlist">
+        <li><p>"Great service from this body shop and very quick turn around. Would definitely recommend this business. 5 stars all round."</p><span class="mono">Feb 2026</span></li>
+        <li><p>"I took my car in for an arranged small repair to the paint work. On closer inspection a problem much more serious was found. The proprietor said a full spray would be needed, but said the car was not worth the cost. I thank him for his honesty, and offered to pay for his lengthy assessment, no charge he said."</p><span class="mono">Dec 2025</span></li>
+        <li><p>"Great service and excellent bodywork repair. Friendly, professional and the job was finished to a very high standard. Highly recommend."</p><span class="mono">Nov 2025</span></li>
+        <li><p>"Simply incredible magicians of everything car bodywork and paint related. Genuinely blown away... Friendly owner who took time to talk to me to explain the repair."</p><span class="mono">Apr 2024</span></li>
+        <li><p>"John and his team have made it as painless as possible, great fair price and the work is faultless, priced on visiting and date planned. They are booked well in advance which tells it's own story."</p><span class="mono">Mar 2024</span></li>
+        <li><p>"Professional and friendly, great value for money and excellent results!"</p><span class="mono">Jul 2022</span></li>
+        <li><p>"The car looks absolutely perfect, I'm really impressed by the beautiful finish and the speed with which John and team completed the repair."</p><span class="mono">Oct 2017</span></li>
+      </ul>
+      <p class="label" style="margin-top:40px">All quotes from Google reviews</p>
+    </div>
+  </section>
+</div>
+
+<!-- VISIT -->
+<div class="page" data-route="/visit">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-top">
+        <h1 class="d1"><span class="line-mask"><span>Unit 3,</span></span><span class="line-mask"><span><em>Buffies Brae.</em></span></span></h1>
+        <a class="cta fill magnet" href="https://www.google.com/maps/search/?api=1&amp;query=Brae+Coachworks+Unit+3+Buffies+Brae+Dunfermline+KY12+8ED" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="hero-meta mono"><span>(07) Visit</span><span>Dunfermline KY12 8ED</span><span class="status" data-status><i></i><b>Checking today's hours</b></span></div>
+    </div>
+  </section>
+  <section class="sec" style="padding-top:60px">
+    <div class="wrap split">
+      <div><p class="label" data-n="(i)">Opening hours</p><h2 class="d2" style="margin:28px 0">Open <em>today?</em></h2><p class="body">Hours can change around holidays, which are announced on Facebook. Friday hours vary, so call ahead.</p></div>
+      <table class="hours" data-hours><tr data-d="1"><td>Monday</td><td>8am to 4pm</td></tr><tr data-d="2"><td>Tuesday</td><td>8am to 4pm</td></tr><tr data-d="3"><td>Wednesday</td><td>8am to 4pm</td></tr><tr data-d="4"><td>Thursday</td><td>8am to 4pm</td></tr><tr data-d="5"><td>Friday</td><td>Mornings, call ahead</td></tr><tr data-d="6"><td>Saturday</td><td>Closed</td></tr><tr data-d="0"><td>Sunday</td><td>Closed</td></tr></table>
+    </div>
+  </section>
+  <section class="sec alt">
+    <div class="wrap">
+      <iframe class="map" loading="lazy" title="Map to Brae Coachworks" src="https://www.google.com/maps?q=56.074936,-3.466089&amp;z=16&amp;output=embed"></iframe>
+      <div class="feat" style="margin-top:60px">
+        <div><h4>Address</h4><p>Brae Coachworks, Unit 3 Buffies Brae, Dunfermline KY12 8ED</p></div>
+        <div><h4>Before you come</h4><p>Call 01383 625400 to arrange a time for your free estimate.</p></div>
+        <div><h4>Updates</h4><p>Holiday closures and booking dates are posted on the Brae Coachworks Facebook page.</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- CONTACT -->
+<div class="page" data-route="/contact">
+  <section class="sec" style="padding-top:clamp(160px,20vh,220px)">
+    <div class="wrap">
+      <p class="label" data-n="(08)">Contact</p>
+      <h1 class="d1" style="margin-top:28px"><span class="line-mask"><span>Tell us about</span></span><span class="line-mask"><span><em>the damage.</em></span></span></h1>
+      <p class="body" style="margin-top:30px">Phone, email or Facebook. For an accurate price, the team will want to see the car in person.</p>
+    </div>
+  </section>
+  <section class="sec alt" style="padding-top:80px">
+    <div class="wrap">
+      <div class="contact-rows">
+        <a href="tel:01383625400">01383 625400<span>Phone</span></a>
+        <a href="mailto:braecoachworks@outlook.com" style="font-size:clamp(20px,3.4vw,56px)">braecoachworks@outlook.com<span>Email</span></a>
+        <a href="https://www.facebook.com/braecoachworks/" target="_blank" rel="noopener">Brae Coachworks<span>Facebook</span></a>
+      </div>
+      <div class="split" style="margin-top:clamp(90px,10vw,160px);align-items:start">
+        <div><p class="label" data-n="(i)">Estimate request</p><h2 class="d2" style="margin-top:28px">Start with <em>the details.</em></h2><p class="body" style="margin-top:24px">This opens your email app with everything filled in. Attach a photo or two if you like, and the team will arrange a time to see the car.</p></div>
+        <form class="enq" data-mailto>
+          <div><label for="f1">Name</label><input id="f1" name="Name" required></div>
+          <div><label for="f2">Phone</label><input id="f2" name="Phone" type="tel"></div>
+          <div><label for="f3">Vehicle</label><input id="f3" name="Vehicle" placeholder="Make and model"></div>
+          <div><label for="f4">Damage</label><select id="f4" name="Damage"><option>Accident damage</option><option>Dent</option><option>Scratches or paintwork</option><option>Something else</option></select></div>
+          <div class="full"><label for="f6">What happened</label><textarea id="f6" name="message" rows="3"></textarea></div>
+          <div class="full" style="margin-top:36px"><button class="cta fill magnet" type="submit">Open email to Brae Coachworks</button></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="label" data-n="(09)">Accident repair · Dents · Paintwork</p>
+    <h2 class="d1" style="margin-top:28px">Back to <em>factory fresh.</em></h2>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:50px"><a class="cta fill magnet" href="tel:01383625400">Call 01383 625400</a><a class="cta magnet" href="#/contact">Request an estimate</a></div>
+    <div class="f-cols">
+      <div><h5>Find us</h5><p>Unit 3 Buffies Brae<br>Dunfermline<br>Fife KY12 8ED</p></div>
+      <div><h5>Hours</h5><p>Mon to Thu 8am to 4pm<br>Fri mornings, call ahead<br>Sat and Sun closed</p></div>
+      <div><h5>Contact</h5><a class="u" href="tel:01383625400">01383 625400</a><a class="u" href="mailto:braecoachworks@outlook.com">Email us</a><a class="u" href="https://www.facebook.com/braecoachworks/" target="_blank" rel="noopener">Facebook</a></div>
+      <div><h5>Explore</h5><a href="#/repairs">Repairs</a><a href="#/before-after">Before and after</a><a href="#/estimates">Free estimates</a><a href="#/about">About</a><a href="#/visit">Visit</a></div>
+    </div>
+  </div>
+  <div class="f-word" aria-hidden="true">BRAE</div>
+  <div class="f-base"><span>Concept preview. Not the official website of Brae Coachworks.</span><a href="https://teta.dpdns.org" target="_blank" rel="noopener">Developed by Teta Digitals</a></div>
+</footer>
+
+<div class="mbar"><a href="tel:01383625400">Call</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Brae+Coachworks+Unit+3+Buffies+Brae+Dunfermline+KY12+8ED" target="_blank" rel="noopener">Directions</a></div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+(function(){
+var $=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+var RM=matchMedia("(prefers-reduced-motion: reduce)").matches;
+var G=window.gsap&&window.ScrollTrigger&&!RM; if(G){gsap.registerPlugin(ScrollTrigger);document.documentElement.classList.add("g")}
+var lenis=null;
+if(G&&window.Lenis){lenis=new Lenis({lerp:.09});lenis.on("scroll",ScrollTrigger.update);gsap.ticker.add(function(t){lenis.raf(t*1000)});gsap.ticker.lagSmoothing(0);}
+var nav=document.getElementById("nav");
+addEventListener("scroll",function(){nav.classList.toggle("solid",scrollY>60)},{passive:true});
+
+/* menu overlay */
+var ov=document.getElementById("overlay"),mb=document.getElementById("menuBtn"),ovImg=document.getElementById("ovImg");
+function menu(o){ov.classList.toggle("open",o);ov.setAttribute("aria-hidden",!o);mb.setAttribute("aria-expanded",o);$("nav a",ov).forEach(function(a,i){a.style.transitionDelay=o?(0.25+i*0.05)+"s":"0s"});if(lenis){if(o)lenis.stop();else lenis.start()}document.body.style.overflow=o?"hidden":""}
+mb.onclick=function(){menu(!ov.classList.contains("open"))};
+document.getElementById("ovClose").onclick=function(){menu(false)};
+$("nav a",ov).forEach(function(a){a.addEventListener("mouseenter",function(){ovImg.style.opacity=0;setTimeout(function(){ovImg.src=a.dataset.img;ovImg.style.opacity=1},200)});a.addEventListener("click",function(){menu(false)})});
+addEventListener("keydown",function(e){if(e.key==="Escape")menu(false)});
+
+/* cursor */
+var cur=$(".cursor")[0];
+if(matchMedia("(hover:hover)").matches&&cur){var cx=0,cy=0,tx=0,ty=0;addEventListener("mousemove",function(e){tx=e.clientX;ty=e.clientY});(function loop(){cx+=(tx-cx)*.2;cy+=(ty-cy)*.2;cur.style.transform="translate("+cx+"px,"+cy+"px)";requestAnimationFrame(loop)})();
+document.addEventListener("mouseover",function(e){var t=e.target;var big=!!t.closest(".panel,.reveal,.ba");cur.classList.toggle("big",big);cur.querySelector("span").textContent=t.closest(".ba")?"Drag":"View";cur.classList.toggle("link",!big&&!!t.closest("a,button,summary"))});}
+/* magnetic */
+if(matchMedia("(hover:hover)").matches)$(".magnet").forEach(function(b){b.addEventListener("mousemove",function(e){var r=b.getBoundingClientRect();b.style.transform="translate("+((e.clientX-r.left-r.width/2)*.25)+"px,"+((e.clientY-r.top-r.height/2)*.35)+"px)"});b.addEventListener("mouseleave",function(){b.style.transform=""})});
+
+/* split words */
+$(".split-words").forEach(function(p){var out="";p.childNodes.forEach(function(n){if(n.nodeType===3){out+=n.textContent.split(/(\s+)/).map(function(w){return /\S/.test(w)?'<span class="w">'+w+'</span>':w}).join("")}else{out+='<span class="w">'+n.outerHTML+'</span>'}});p.innerHTML=out});
+
+/* before / after */
+function setBA(box,v){box.style.setProperty("--x",v+"%");var i=box.querySelector("input");if(i&&+i.value!==Math.round(v))i.value=Math.round(v)}
+$("[data-ba]").forEach(function(box){var i=box.querySelector("input");i.addEventListener("input",function(){box.dataset.touched=1;setBA(box,+i.value)});setBA(box,50)});
+
+/* open status, UK time */
+function ukNow(){var f=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/London",weekday:"short",hour:"numeric",minute:"numeric",hour12:false}).formatToParts(new Date()),o={};f.forEach(function(p){o[p.type]=p.value});return{d:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(o.weekday),m:(+o.hour%24)*60+(+o.minute)}}
+var H={1:[480,960],2:[480,960],3:[480,960],4:[480,960],5:[540,720]};
+function status(){var n=ukNow(),h=H[n.d],txt,open=false;
+ if(h&&n.m>=h[0]&&n.m<h[1]){open=true;txt=n.d===5?"Open this morning, call ahead":"Open now, until 4pm"}
+ else if(h&&n.m<h[0]){txt=n.d===5?"Open this morning, call ahead":"Opens today at 8am"}
+ else if(n.d>=1&&n.d<=3){txt="Closed now, opens tomorrow at 8am"}
+ else if(n.d===4){txt="Closed now, open Friday morning"}
+ else{txt="Closed now, opens Monday at 8am"}
+ $("[data-status]").forEach(function(s){s.classList.toggle("open",open);s.querySelector("b").textContent=txt});
+ $("[data-hours] tr").forEach(function(r){r.classList.toggle("today",+r.dataset.d===n.d)})}
+status();
+
+/* reviews */
+$("[data-rev]").forEach(function(box){var q=$("blockquote",box),i=0,sec=box.parentNode,bar=$(".prog i",sec)[0],t;function go(j){q[i].classList.remove("on");i=(j+q.length)%q.length;q[i].classList.add("on");if(bar){bar.classList.remove("run");void bar.offsetWidth;bar.classList.add("run")}clearTimeout(t);if(!RM)t=setTimeout(function(){go(i+1)},7000)}$("[data-p]",sec)[0].onclick=function(){go(i-1)};$("[data-n]",sec)[0].onclick=function(){go(i+1)};go(0)});
+
+/* form */
+$("form[data-mailto]").forEach(function(f){f.addEventListener("submit",function(e){e.preventDefault();var d=new FormData(f),b="";d.forEach(function(v,k){if(k!=="message")b+=k+": "+v+"\n"});b+="\n"+(d.get("message")||"");location.href="mailto:braecoachworks@outlook.com?subject="+encodeURIComponent("Estimate request from "+(d.get("Name")||"the website"))+"&body="+encodeURIComponent(b)})});
+
+/* page animations */
+var ctx=null;
+function animate(page){
+  if(!G){$(".step",page).forEach(function(s){s.classList.add("on")});return}
+  if(ctx)ctx.revert();
+  ctx=gsap.context(function(){
+    var hi=page.querySelector(".hero-img");if(hi)gsap.fromTo(hi,{scale:1.18},{scale:1,duration:2.4,ease:"power3.out"});
+    $(".frame",page).forEach(function(f){gsap.fromTo(f,{clipPath:"inset(10% 6% 0% 6%)"},{clipPath:"inset(0% 0% 0% 0%)",ease:"none",scrollTrigger:{trigger:f,start:"top 90%",end:"top 20%",scrub:true}})});
+    $(".line-mask>span",page).forEach(function(l,i){gsap.from(l,{yPercent:110,duration:1.2,ease:"power4.out",delay:.15+i*.09})});
+    $(".hero-meta,.quote-cite,.hero-top .cta",page).forEach(function(m){gsap.from(m,{opacity:0,y:20,duration:1,delay:.7})});
+    $(".reveal",page).forEach(function(r){gsap.fromTo(r,{clipPath:"inset(18% 12% 18% 12%)"},{clipPath:"inset(0% 0% 0% 0%)",ease:"power3.out",duration:1.6,scrollTrigger:{trigger:r,start:"top 85%"}});gsap.to(r.querySelector("img"),{scale:1,ease:"none",scrollTrigger:{trigger:r,start:"top bottom",end:"bottom top",scrub:true}})});
+    $(".split-words",page).forEach(function(p){gsap.to($(".w",p),{opacity:1,stagger:.05,ease:"none",scrollTrigger:{trigger:p,start:"top 80%",end:"bottom 45%",scrub:true}})});
+    $(".d2,.feat>div,.svc li,.revlist li,.case>div,.stats div,.contact-rows a,details",page).forEach(function(el){gsap.from(el,{opacity:0,y:40,duration:1.1,ease:"power3.out",scrollTrigger:{trigger:el,start:"top 90%"}})});
+    $("[data-count]",page).forEach(function(el){var v=parseFloat(el.dataset.count),o={x:0};gsap.to(o,{x:v,duration:1.8,ease:"power2.out",scrollTrigger:{trigger:el,start:"top 90%"},onUpdate:function(){el.textContent=v%1?o.x.toFixed(1):Math.round(o.x)}})});
+    $("[data-ba][data-auto]",page).forEach(function(box){var o={v:92};gsap.to(o,{v:50,ease:"power2.inOut",scrollTrigger:{trigger:box,start:"top 80%",end:"center 45%",scrub:true},onUpdate:function(){if(!box.dataset.touched)setBA(box,o.v)}})});
+    var mm=gsap.matchMedia();
+    mm.add("(min-width:1001px)",function(){
+      var hz=page.querySelector("#hz");if(hz){var tr=hz.querySelector(".hz-track"),cnt=hz.querySelector("[data-cnt]"),pn=$(".panel",hz).length;gsap.to(tr,{x:function(){return-(tr.scrollWidth-innerWidth)},ease:"none",scrollTrigger:{trigger:hz,pin:true,scrub:1,start:"top top",end:function(){return"+="+(tr.scrollWidth-innerWidth)},invalidateOnRefresh:true,onUpdate:function(s){if(cnt)cnt.textContent="0"+Math.min(pn,1+Math.floor(s.progress*pn))}}});$(".panel img",hz).forEach(function(im){gsap.fromTo(im,{xPercent:-5,scale:1.1},{xPercent:5,scale:1.1,ease:"none",scrollTrigger:{trigger:hz,start:"top top",end:function(){return"+="+(tr.scrollWidth-innerWidth)},scrub:true}})})}
+      var st=page.querySelector("#story");if(st){var steps=$(".step",st),imgs=$(".story-img img",st),dots=$(".dots i",st);ScrollTrigger.create({trigger:st,pin:true,start:"top top",end:"+="+(steps.length*70)+"%",onUpdate:function(s){var k=Math.min(steps.length-1,Math.floor(s.progress*steps.length));steps.forEach(function(x,j){x.classList.toggle("on",j===k)});imgs.forEach(function(x,j){x.classList.toggle("on",j===k)});dots.forEach(function(x,j){x.classList.toggle("on",j===k)})}})}
+    });
+  },page);
+  ScrollTrigger.refresh();
+}
+
+/* router with wipe */
+var wipe=$(".wipe")[0],first=true;
+function show(){var r=(location.hash.replace(/^#/,"")||"/");var page=$('.page[data-route="'+r+'"]')[0]||$('.page[data-route="/"]')[0];$(".page").forEach(function(p){p.classList.toggle("on",p===page)});$("nav a",ov).forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+page.dataset.route)});if(lenis)lenis.scrollTo(0,{immediate:true});else scrollTo(0,0);status();animate(page);document.title=(page.dataset.route==="/"?"":page.querySelector("h1").textContent.replace(/\s+/g," ").trim()+" · ")+"Brae Coachworks, Dunfermline"}
+function route(){if(first||!G){first=false;show();return}gsap.timeline().set(wipe,{yPercent:100}).to(wipe,{yPercent:0,duration:.55,ease:"power3.in"}).add(show).to(wipe,{yPercent:-100,duration:.7,ease:"power3.out"})}
+addEventListener("hashchange",route);
+
+/* loader */
+var L=$(".loader")[0],c=document.getElementById("cnt"),lb=document.getElementById("lbar");
+if(G&&!sessionStorage.getItem("brae")){sessionStorage.setItem("brae",1);var o={v:0};gsap.timeline().to(o,{v:100,duration:1.3,ease:"power2.inOut",onUpdate:function(){c.textContent=Math.round(o.v);lb.style.width=o.v+"%"}}).to(L,{yPercent:-100,duration:.8,ease:"power4.inOut",onStart:route}).set(L,{display:"none"})}
+else{L.style.display="none";route()}
+addEventListener("load",function(){if(G)ScrollTrigger.refresh()});
+})();
+</script>
+</body>
+</html>
